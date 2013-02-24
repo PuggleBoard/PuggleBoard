@@ -1,0 +1,68 @@
+Jonathan P Newman
+jnewman6 snail gatech dot edu
+
+Revisions:
+2013 01 24
+
+********************************************************************************
+                    T I N Y - C L A M P  C A P E  B. O. M.
+********************************************************************************
+
+
+Part No.            Description             Manufac.      Digikey No.           Quantity      
+
+INTEGRATED CIRCUITS
+--
+AD5754              quad DAC                Analog        AD5724RBREZ-ND        1             
+AD7656YSTZ-1        quad ADC                Analog        AD7656YSTZ-1-ND       1             
+ADR421              2.5 Vref                Analog        ADR421BR-REEL7CT-ND   2             
+
+
+PASSIVE COMPONENTS
+--
+44WR10KLFT7         10K Trimmer                 Bourns        987-1046-2-ND     x
+
+for voltage refs:
+10k trimmer
+15k resistor
+10 uF cap 
+0.1 uF cap (2x)
+
+for DAC:
+
+
+for ADC:
+1 uF cap (7x, max config, some of these are not nessesary)
+2x schottky diode for supply pins (RB021VA90CT-ND)
+6x 240 Ohm resistors in series with AI channels
+
+
+Power reg:
+2X logical level vreg for Vdig and Vanalog (dig)
++12 V vreg for Vdd (analog)
+-12 V vreg for Vss (analog)
++5 V vreg for bone power (with required current ratings)
+
+
+PV36P502C01B00      5K Trimmer                  Murata        490-2869-ND       1
+44WR10KLFT7         10K Trimmer                 Bourns        987-1046-2-ND     x
+AC07000001507JAC00  resistor, 0.15 ohm, 5%      Vishay        PPC7W.15CT-ND     1
+PAC500002007FAC000  resistor, 0.2 ohm, 1%       Vishay        PPC5D.20CT-ND     1
+AC07000003307JAC00  resistor, 0.33 ohm, 5%      Vishay        PPC7W.33CT-ND     1
+NFR2500004707JR500  resistor, 0.47 ohm          Vishay        PPC.47ACT-ND      1
+AC05000007507JAC00	resistor, 0.75 ohm					Vishay				PPC5W.75CT-ND			1
+PR01000101200JR500  resistor, 120 ohm           Vishay        PPC120W-1CT-ND    1
+PR01000102400JR500  resistor, 240 ohm           Vishay        PPC240W-1CT-ND    1
+PR01000104700JR500  resistor, 470 ohm           Vishay        PPC470W-1CT-ND    1
+PR01000101001JR500  resistor, 1 kohm            Vishay        PPC1.0KW-1CT-ND   1
+PR01000101501JR500  resistor, 1.5 kohm          Vishay        PPC1.5KW-1CT-ND   1
+PR01000105101JR500  resistor, 5.1 kohm          Vishay        PPC5.1KW-1CT-ND   2
+PR01000101002JR500  resistor, 10 kohm           Vishay        PPC10KW-1CT-ND    2 
+PR01000101004JR500  resistor, 1 Mohm            Vishay        PPC1.0MW-1CT-ND   1
+RPE5C1H220J2K1Z03B  capacitor, 20 pf            Murata        490-3709-ND       1
+RDEF51H104Z0K1C03B  capacitor, 100nf            Murata        490-5401-ND       4
+ECA-1HM010          capacitor, 1 uF             Panasonic     P5174-ND          1  
+ECA-1CM100          capacitor, 10 uF            Panasonic     P5134-ND          1
+LTL1CHTBK4          On LED, 20 mA               lite-on       160-1602-ND       1
+
+
