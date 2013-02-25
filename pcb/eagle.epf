@@ -349,7 +349,7 @@ UsedLibrary="/home/jon/Desktop/github/BoneClamp/pcb/lbr/boneclamp-lbr/boneclamp.
 
 [Win_1]
 Type="Control Panel"
-Loc="0 0 599 399"
+Loc="0 25 599 424"
 State=2
 Number=0
 

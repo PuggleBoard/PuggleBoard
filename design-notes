@@ -1,0 +1,10 @@
+Condenced design notes
+BoneClamp PCB
+
+A. Power and grounding for AD5754:
+
+1. If the AD5724/AD5734/AD5754 are in a system where multiple devices require an AGND-to- DGND connection, the connection should be made at one point only. The star ground point should be established as close as possible to the device.
+
+2. The AD5724/AD5734/AD5754 should have ample supply bypass- ing of a 10 µF capacitor in parallel with a 0.1 µF capacitor on each supply located as close to the package as possible, ideally right up against the device. The 10 µF capacitor is the tantalum bead type. The 0.1 µF capacitor should have low effective series resistance (ESR) and low effective series inductance (ESI), such as the common ceramic types,
+
+
