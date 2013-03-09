@@ -1,0 +1,24 @@
+Jon Newman
+2013-02-01 11:20:51 2012 01 31
+BoneClamp prototyping supplies
+
+Digikey:
+4X MCP4922-E/P-ND
+2X AD5754RBREZ-ND
+2X ADR421BR-REEL7CT-ND
+2X AD7656YSTZ-1-ND
+5X 732-2671-ND
+2X MCP3201-CI/P-ND
+2X MCP3202-CI/P-ND
+2X MCP3204-CI/P-ND
+
+Other:
+2X DIP Breakout for LQFP-64 (http://www.proto-advantage.com/store/product_info.php?products_id=2200113)
+4X SOIC breakout (https://www.sparkfun.com/products/494?)
+4X breadboards (http://www.amazon.com/Breadboard-jumper-wire-75pcs-pack/dp/B0040DEI9M/ref=sr_1_1?ie=UTF8&qid=1359351199&sr=8-1&keywords=jumper+wire)
+lots of jumper wire  (http://www.amazon.com/microtivity-750-point-Experiment-Breadboard-Jumper/dp/B008A9UORM/ref=sr_1_1?s=electronics&ie=UTF8&qid=1359351214&sr=1-1&keywords=breadboard)
+20X SMD headers (https://www.sparkfun.com/products/11541)
+
+Dev. Tools:
+1X http://dangerousprototypes.com/docs/Bus_Pirate
+1X http://dangerousprototypes.com/open-logic-sniffer/
