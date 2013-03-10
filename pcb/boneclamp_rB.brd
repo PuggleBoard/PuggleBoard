@@ -3806,6 +3806,72 @@ at 30/07/2012 10:08:22</description>
 <text x="-3.4544" y="2.54" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-3.4544" y="-4.445" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
+<package name="SOP65P490X110-8N">
+<smd name="1" x="-2.2606" y="0.9652" dx="1.397" dy="0.4318" layer="1"/>
+<smd name="2" x="-2.2606" y="0.3302" dx="1.397" dy="0.4318" layer="1"/>
+<smd name="3" x="-2.2606" y="-0.3302" dx="1.397" dy="0.4318" layer="1"/>
+<smd name="4" x="-2.2606" y="-0.9652" dx="1.397" dy="0.4318" layer="1"/>
+<smd name="5" x="2.2606" y="-0.9652" dx="1.397" dy="0.4318" layer="1"/>
+<smd name="6" x="2.2606" y="-0.3302" dx="1.397" dy="0.4318" layer="1"/>
+<smd name="7" x="2.2606" y="0.3302" dx="1.397" dy="0.4318" layer="1"/>
+<smd name="8" x="2.2606" y="0.9652" dx="1.397" dy="0.4318" layer="1"/>
+<wire x1="-1.4478" y1="-1.4986" x2="1.4478" y2="-1.4986" width="0.1524" layer="21"/>
+<wire x1="1.4478" y1="1.4986" x2="0.3048" y2="1.4986" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0.1524" layer="21"/>
+<wire x1="-0.3048" y1="1.4986" x2="-1.4478" y2="1.4986" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0.1524" layer="21" curve="-180"/>
+<text x="-3.0988" y="1.27" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
+<wire x1="-1.4986" y1="-1.4986" x2="1.4986" y2="-1.4986" width="0" layer="51"/>
+<wire x1="1.4986" y1="-1.4986" x2="1.4986" y2="-1.1684" width="0" layer="51"/>
+<wire x1="1.4986" y1="-1.1684" x2="1.4986" y2="-0.7874" width="0" layer="51"/>
+<wire x1="1.4986" y1="-0.7874" x2="1.4986" y2="-0.508" width="0" layer="51"/>
+<wire x1="1.4986" y1="-0.508" x2="1.4986" y2="-0.127" width="0" layer="51"/>
+<wire x1="1.4986" y1="-0.127" x2="1.4986" y2="0.127" width="0" layer="51"/>
+<wire x1="1.4986" y1="0.127" x2="1.4986" y2="0.508" width="0" layer="51"/>
+<wire x1="1.4986" y1="0.508" x2="1.4986" y2="0.7874" width="0" layer="51"/>
+<wire x1="1.4986" y1="1.4986" x2="0.3048" y2="1.4986" width="0" layer="51"/>
+<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0" layer="51"/>
+<wire x1="-0.3048" y1="1.4986" x2="-1.4986" y2="1.4986" width="0" layer="51"/>
+<wire x1="-1.4986" y1="1.4986" x2="-1.4986" y2="1.1684" width="0" layer="51"/>
+<wire x1="-1.4986" y1="1.1684" x2="-1.4986" y2="0.7874" width="0" layer="51"/>
+<wire x1="-1.4986" y1="0.7874" x2="-1.4986" y2="0.508" width="0" layer="51"/>
+<wire x1="-1.4986" y1="0.508" x2="-1.4986" y2="0.127" width="0" layer="51"/>
+<wire x1="-1.4986" y1="0.127" x2="-1.4986" y2="-0.127" width="0" layer="51"/>
+<wire x1="-1.4986" y1="-0.127" x2="-1.4986" y2="-0.508" width="0" layer="51"/>
+<wire x1="-1.4986" y1="-0.508" x2="-1.4986" y2="-0.7874" width="0" layer="51"/>
+<wire x1="-1.4986" y1="1.1684" x2="-2.5146" y2="1.1684" width="0" layer="51"/>
+<wire x1="-2.5146" y1="1.1684" x2="-2.5146" y2="0.7874" width="0" layer="51"/>
+<wire x1="-2.5146" y1="0.7874" x2="-1.4986" y2="0.7874" width="0" layer="51"/>
+<wire x1="-1.4986" y1="0.508" x2="-2.5146" y2="0.508" width="0" layer="51"/>
+<wire x1="-2.5146" y1="0.508" x2="-2.5146" y2="0.127" width="0" layer="51"/>
+<wire x1="-2.5146" y1="0.127" x2="-1.4986" y2="0.127" width="0" layer="51"/>
+<wire x1="-1.4986" y1="-0.127" x2="-2.5146" y2="-0.127" width="0" layer="51"/>
+<wire x1="-2.5146" y1="-0.127" x2="-2.5146" y2="-0.508" width="0" layer="51"/>
+<wire x1="-2.5146" y1="-0.508" x2="-1.4986" y2="-0.508" width="0" layer="51"/>
+<wire x1="-1.4986" y1="-1.4986" x2="-1.4986" y2="-1.1684" width="0" layer="51"/>
+<wire x1="-1.4986" y1="-1.1684" x2="-1.4986" y2="-0.7874" width="0" layer="51"/>
+<wire x1="-1.4986" y1="-0.7874" x2="-2.5146" y2="-0.7874" width="0" layer="51"/>
+<wire x1="-2.5146" y1="-0.7874" x2="-2.5146" y2="-1.1684" width="0" layer="51"/>
+<wire x1="-2.5146" y1="-1.1684" x2="-1.4986" y2="-1.1684" width="0" layer="51"/>
+<wire x1="1.4986" y1="-1.1684" x2="2.5146" y2="-1.1684" width="0" layer="51"/>
+<wire x1="2.5146" y1="-1.1684" x2="2.5146" y2="-0.7874" width="0" layer="51"/>
+<wire x1="2.5146" y1="-0.7874" x2="1.4986" y2="-0.7874" width="0" layer="51"/>
+<wire x1="1.4986" y1="-0.508" x2="2.5146" y2="-0.508" width="0" layer="51"/>
+<wire x1="2.5146" y1="-0.508" x2="2.5146" y2="-0.127" width="0" layer="51"/>
+<wire x1="2.5146" y1="-0.127" x2="1.4986" y2="-0.127" width="0" layer="51"/>
+<wire x1="1.4986" y1="0.127" x2="2.5146" y2="0.127" width="0" layer="51"/>
+<wire x1="2.5146" y1="0.127" x2="2.5146" y2="0.508" width="0" layer="51"/>
+<wire x1="2.5146" y1="0.508" x2="1.4986" y2="0.508" width="0" layer="51"/>
+<wire x1="1.4986" y1="1.4986" x2="1.4986" y2="1.1684" width="0" layer="51"/>
+<wire x1="1.4986" y1="1.1684" x2="1.4986" y2="0.7874" width="0" layer="51"/>
+<wire x1="1.4986" y1="0.7874" x2="2.5146" y2="0.7874" width="0" layer="51"/>
+<wire x1="2.5146" y1="0.7874" x2="2.5146" y2="1.1684" width="0" layer="51"/>
+<wire x1="2.5146" y1="1.1684" x2="1.4986" y2="1.1684" width="0" layer="51"/>
+<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0" layer="51" curve="-180"/>
+<text x="-3.0988" y="1.27" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
+<text x="-3.4544" y="2.54" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-3.4544" y="-4.445" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+</package>
 </packages>
 </library>
 </libraries>
@@ -4086,6 +4152,13 @@ design rules under a new name.</description>
 <element name="C5" library="rcl" package="C0805" value="1uF" x="-83.82" y="-177.8"/>
 <element name="C6" library="rcl" package="C0805" value="0.01uF" x="-83.82" y="-184.15"/>
 <element name="C7" library="rcl" package="C0805" value="10uF" x="-83.82" y="-190.5"/>
+<element name="U3" library="linear-extended-01" package="SOP65P490X110-8N" value="LT1962EMS8-5PBF" x="-82.55" y="-199.39">
+<attribute name="PACKAGE" value="MSOP-8" x="-82.55" y="-199.39" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="57M7401" x="-82.55" y="-199.39" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="LT1962EMS8-5#PBF" x="-82.55" y="-199.39" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER" value="Linear Technologies" x="-82.55" y="-199.39" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="1273624" x="-82.55" y="-199.39" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="AIN0">
@@ -4547,6 +4620,9 @@ design rules under a new name.</description>
 <contactref element="U2" pad="3"/>
 <contactref element="C6" pad="1"/>
 <wire x1="-84.77" y1="-184.15" x2="-83.7692" y2="-169.8498" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="IN">
+<contactref element="U3" pad="8"/>
 </signal>
 </signals>
 </board>
