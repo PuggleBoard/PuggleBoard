@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -12325,10 +12325,12 @@ at 30/07/2012 10:08:22</description>
 <part name="U$19" library="boneclamp" deviceset="V_SIG" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="AGND" device=""/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C0805" value="1uF"/>
-<part name="C6" library="rcl" deviceset="C-EU" device="C0805" value="0.01uF"/>
+<part name="C6" library="rcl" deviceset="C-EU" device="C0805" value="10nF"/>
 <part name="C7" library="rcl" deviceset="C-EU" device="C0805" value="10uF"/>
 <part name="U$20" library="boneclamp" deviceset="V_SIG" device=""/>
 <part name="U3" library="linear-extended-01" deviceset="LT1962EMS8-5PBF" device=""/>
+<part name="TP5" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="TP6" library="testpad" deviceset="TP" device="B1,27"/>
 </parts>
 <sheets>
 <sheet>
@@ -12985,6 +12987,8 @@ at 30/07/2012 10:08:22</description>
 <instance part="R11" gate="G$1" x="-27.94" y="50.8" rot="R90"/>
 <instance part="SJ5" gate="1" x="-27.94" y="38.1" rot="R90"/>
 <instance part="U$41" gate="G$1" x="-73.66" y="30.48" rot="R180"/>
+<instance part="TP5" gate="G$1" x="-66.04" y="33.02"/>
+<instance part="TP6" gate="G$1" x="-66.04" y="63.5"/>
 </instances>
 <busses>
 </busses>
@@ -12998,7 +13002,8 @@ at 30/07/2012 10:08:22</description>
 <wire x1="-27.94" y1="60.96" x2="-43.18" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="-43.18" y1="60.96" x2="-50.8" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="-50.8" y1="60.96" x2="-58.42" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="-58.42" y1="60.96" x2="-73.66" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="60.96" x2="-66.04" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="60.96" x2="-73.66" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="35.56" x2="5.08" y2="60.96" width="0.1524" layer="91"/>
 <junction x="5.08" y="60.96"/>
 <pinref part="C22" gate="G$1" pin="1"/>
@@ -13023,6 +13028,8 @@ at 30/07/2012 10:08:22</description>
 <pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="-20.32" y1="60.96" x2="-20.32" y2="55.88" width="0.1524" layer="91"/>
 <junction x="-20.32" y="60.96"/>
+<pinref part="TP6" gate="G$1" pin="TP"/>
+<junction x="-66.04" y="60.96"/>
 </segment>
 </net>
 <net name="DGND" class="0">

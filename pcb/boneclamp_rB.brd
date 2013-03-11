@@ -4150,7 +4150,7 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="1663814" x="-82.55" y="-168.91" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C5" library="rcl" package="C0805" value="1uF" x="-83.82" y="-177.8"/>
-<element name="C6" library="rcl" package="C0805" value="0.01uF" x="-83.82" y="-184.15"/>
+<element name="C6" library="rcl" package="C0805" value="10nF" x="-83.82" y="-184.15"/>
 <element name="C7" library="rcl" package="C0805" value="10uF" x="-83.82" y="-190.5"/>
 <element name="U3" library="linear-extended-01" package="SOP65P490X110-8N" value="LT1962EMS8-5PBF" x="-82.55" y="-199.39">
 <attribute name="PACKAGE" value="MSOP-8" x="-82.55" y="-199.39" size="1.778" layer="27" display="off"/>
@@ -4158,6 +4158,12 @@ design rules under a new name.</description>
 <attribute name="MPN" value="LT1962EMS8-5#PBF" x="-82.55" y="-199.39" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER" value="Linear Technologies" x="-82.55" y="-199.39" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1273624" x="-82.55" y="-199.39" size="1.778" layer="27" display="off"/>
+</element>
+<element name="TP5" library="testpad" package="B1,27" value="TPB1,27" x="-85.09" y="-208.28">
+<attribute name="TP_SIGNAL_NAME" value="" x="-85.09" y="-208.28" size="1.778" layer="27" display="off"/>
+</element>
+<element name="TP6" library="testpad" package="B1,27" value="TPB1,27" x="-85.09" y="-213.36">
+<attribute name="TP_SIGNAL_NAME" value="" x="-85.09" y="-213.36" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
@@ -4438,6 +4444,7 @@ design rules under a new name.</description>
 <contactref element="R11" pad="2"/>
 <contactref element="R10" pad="2"/>
 <contactref element="U$42" pad="11"/>
+<contactref element="TP6" pad="TP"/>
 <wire x1="13.55" y1="-5.08" x2="-65.7606" y2="-21.2852" width="0" layer="19" extent="1-1"/>
 <wire x1="13.55" y1="0" x2="13.55" y2="-5.08" width="0" layer="19" extent="1-1"/>
 <wire x1="13.55" y1="5.08" x2="13.55" y2="0" width="0" layer="19" extent="1-1"/>
@@ -4449,6 +4456,7 @@ design rules under a new name.</description>
 <wire x1="34.29" y1="30.48" x2="23.495" y2="41.97" width="0" layer="19" extent="1-1"/>
 <wire x1="50.165" y1="21.59" x2="34.29" y2="30.48" width="0" layer="19" extent="1-1"/>
 <wire x1="52.705" y1="21.59" x2="50.165" y2="21.59" width="0" layer="19" extent="1-1"/>
+<wire x1="-85.09" y1="-213.36" x2="-65.7606" y2="-21.2852" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$13">
 <contactref element="U1" pad="46"/>
