@@ -35,6 +35,10 @@ VDAC BIAS:
 ----------
 U1,2    N.A     AD8022ARZ-ND      8SOIC       2   DIGI-KEY
 
+
+ADC
+R1,2 	47k		A103211CT-ND	0805			2	DIGI-KEY
+
 PROTOTYPE SUPPLIES:
 -------------------
 A1    N.A.    PA0063            20-QFN to DIP       1    PROTO-ADVANTAGE
