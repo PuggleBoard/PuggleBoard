@@ -3748,7 +3748,7 @@ design rules under a new name.</description>
 <element name="R10" library="rcl" package="R0603" value="5.6k" x="12.7" y="0"/>
 <element name="R11" library="rcl" package="R0603" value="10k" x="12.7" y="-5.08"/>
 <element name="SJ5" library="jumper" package="SJ" value="" x="12.7" y="-11.43"/>
-<element name="U$42" library="analog-devices-02" package="MO-153-AB" value="AD5686RARUZ" x="17.78" y="60.96"/>
+<element name="U$42" library="analog-devices-02" package="MO-153-AB" value="AD5686" x="17.78" y="60.96"/>
 <element name="U7" library="analog-devices-02" package="QFN50P400X400X100-21N" value="AD7682BCPZ" x="36.83" y="60.96">
 <attribute name="PACKAGE" value="20-LFCSP" x="36.83" y="60.96" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="14N5814" x="36.83" y="60.96" size="1.778" layer="27" display="off"/>
@@ -3829,6 +3829,8 @@ design rules under a new name.</description>
 <element name="C1" library="rcl" package="C0805" value="10uF" x="-111.76" y="-314.96"/>
 <element name="R15" library="resistor" package="R0805" value="10k,1%" x="-111.76" y="-321.31"/>
 <element name="R16" library="resistor" package="R0805" value="10k,1%" x="-111.76" y="-327.66"/>
+<element name="SJ7" library="jumper" package="SJ" value="" x="-111.76" y="-334.01"/>
+<element name="SJ8" library="jumper" package="SJ" value="" x="-111.76" y="-339.09"/>
 </elements>
 <signals>
 <signal name="AIN0">
@@ -3941,6 +3943,10 @@ design rules under a new name.</description>
 <contactref element="U1" pad="4"/>
 <contactref element="R16" pad="2"/>
 <contactref element="C1" pad="2"/>
+<contactref element="U$42" pad="4"/>
+<contactref element="U$42" pad="10"/>
+<contactref element="U$42" pad="9"/>
+<contactref element="U$42" pad="16"/>
 <wire x1="-82.87" y1="-177.8" x2="-83.7692" y2="-167.9702" width="0" layer="19" extent="1-1"/>
 <wire x1="-82.87" y1="-184.15" x2="-82.87" y2="-177.8" width="0" layer="19" extent="1-1"/>
 <wire x1="-82.87" y1="-190.5" x2="-82.87" y2="-184.15" width="0" layer="19" extent="1-1"/>
@@ -3977,7 +3983,11 @@ design rules under a new name.</description>
 <wire x1="9.84" y1="59.69" x2="7.94" y2="55.88" width="0" layer="19" extent="1-1"/>
 <wire x1="7.94" y1="63.5" x2="9.84" y2="59.69" width="0" layer="19" extent="1-1"/>
 <wire x1="9.84" y1="67.31" x2="7.94" y2="63.5" width="0" layer="19" extent="1-1"/>
-<wire x1="25.4" y1="57.658" x2="9.84" y2="59.69" width="0" layer="19" extent="1-1"/>
+<wire x1="14.9606" y1="61.2902" x2="9.84" y2="59.69" width="0" layer="19" extent="1-1"/>
+<wire x1="20.5994" y1="63.246" x2="14.9606" y2="61.2902" width="0" layer="19" extent="1-1"/>
+<wire x1="20.5994" y1="59.3344" x2="20.5994" y2="63.246" width="0" layer="19" extent="1-1"/>
+<wire x1="20.5994" y1="58.674" x2="20.5994" y2="59.3344" width="0" layer="19" extent="1-1"/>
+<wire x1="25.4" y1="57.658" x2="20.5994" y2="58.674" width="0" layer="19" extent="1-1"/>
 <wire x1="35.052" y1="59.9694" x2="25.4" y2="57.658" width="0" layer="19" extent="1-1"/>
 <wire x1="35.052" y1="60.452" x2="35.052" y2="59.9694" width="0" layer="19" extent="1-1"/>
 <wire x1="36.83" y1="60.96" x2="35.052" y2="60.452" width="0" layer="19" extent="1-1"/>
@@ -4261,11 +4271,15 @@ design rules under a new name.</description>
 <signal name="ADC_SDO">
 <contactref element="SJ6" pad="2"/>
 </signal>
-<signal name="N$10">
+<signal name="ADC_SCLK">
 <contactref element="U7" pad="13"/>
 </signal>
 <signal name="N$11">
 <contactref element="U7" pad="12"/>
+<contactref element="SJ8" pad="2"/>
+<contactref element="SJ7" pad="2"/>
+<wire x1="-110.998" y1="-334.01" x2="-110.998" y2="-339.09" width="0" layer="19" extent="1-1"/>
+<wire x1="38.608" y1="60.452" x2="-110.998" y2="-334.01" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$12">
 <contactref element="U7" pad="11"/>
@@ -4274,8 +4288,10 @@ design rules under a new name.</description>
 <contactref element="U1" pad="1"/>
 <contactref element="U1" pad="2"/>
 <contactref element="R15" pad="1"/>
+<contactref element="U$42" pad="1"/>
 <wire x1="-112.9538" y1="-304.165" x2="-112.61" y2="-321.31" width="0" layer="19" extent="1-1"/>
 <wire x1="-112.9538" y1="-302.895" x2="-112.9538" y2="-304.165" width="0" layer="19" extent="1-1"/>
+<wire x1="14.9606" y1="63.246" x2="-112.9538" y2="-302.895" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="R16" pad="1"/>
@@ -4285,6 +4301,21 @@ design rules under a new name.</description>
 <wire x1="-110.91" y1="-321.31" x2="-112.61" y2="-327.66" width="0" layer="19" extent="1-1"/>
 <wire x1="-112.71" y1="-314.96" x2="-110.91" y2="-321.31" width="0" layer="19" extent="1-1"/>
 <wire x1="-108.0262" y1="-306.705" x2="-112.71" y2="-314.96" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ADC_SDID">
+<contactref element="SJ8" pad="1"/>
+</signal>
+<signal name="ADC_SDI">
+<contactref element="SJ7" pad="1"/>
+</signal>
+<signal name="DAC_SCLK">
+<contactref element="U$42" pad="12"/>
+</signal>
+<signal name="DAC_RST">
+<contactref element="U$42" pad="15"/>
+</signal>
+<signal name="DAC_CS">
+<contactref element="U$42" pad="13"/>
 </signal>
 </signals>
 </board>
