@@ -3853,48 +3853,16 @@ design rules under a new name.</description>
 <wire x1="35.8394" y1="62.738" x2="35.052" y2="61.9506" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DAC_A">
-<contactref element="R1" pad="2"/>
-<contactref element="C15" pad="1"/>
-<contactref element="TP4" pad="TP"/>
-<contactref element="U$42" pad="3"/>
 <contactref element="JP5" pad="3"/>
-<wire x1="8.89" y1="29.21" x2="14.9606" y2="61.9252" width="0" layer="19" extent="1-1"/>
-<wire x1="9.84" y1="71.12" x2="8.89" y2="29.21" width="0" layer="19" extent="1-1"/>
-<wire x1="7.94" y1="74.93" x2="9.84" y2="71.12" width="0" layer="19" extent="1-1"/>
-<wire x1="16.51" y1="77.47" x2="14.9606" y2="61.9252" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DAC_B">
-<contactref element="R2" pad="2"/>
-<contactref element="C16" pad="1"/>
-<contactref element="TP3" pad="TP"/>
-<contactref element="U$42" pad="2"/>
 <contactref element="JP5" pad="5"/>
-<wire x1="8.89" y1="34.29" x2="14.9606" y2="62.5856" width="0" layer="19" extent="1-1"/>
-<wire x1="9.84" y1="63.5" x2="8.89" y2="34.29" width="0" layer="19" extent="1-1"/>
-<wire x1="7.94" y1="67.31" x2="9.84" y2="63.5" width="0" layer="19" extent="1-1"/>
-<wire x1="19.05" y1="77.47" x2="14.9606" y2="62.5856" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DAC_C">
-<contactref element="TP2" pad="TP"/>
-<contactref element="R3" pad="2"/>
-<contactref element="C17" pad="1"/>
-<contactref element="U$42" pad="6"/>
 <contactref element="JP5" pad="7"/>
-<wire x1="8.89" y1="39.37" x2="14.9606" y2="59.9948" width="0" layer="19" extent="1-1"/>
-<wire x1="9.84" y1="55.88" x2="8.89" y2="39.37" width="0" layer="19" extent="1-1"/>
-<wire x1="7.94" y1="59.69" x2="9.84" y2="55.88" width="0" layer="19" extent="1-1"/>
-<wire x1="21.59" y1="77.47" x2="14.9606" y2="59.9948" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DAC_D">
-<contactref element="R4" pad="2"/>
-<contactref element="C18" pad="1"/>
-<contactref element="TP1" pad="TP"/>
-<contactref element="U$42" pad="7"/>
 <contactref element="JP5" pad="9"/>
-<wire x1="8.89" y1="44.45" x2="14.9606" y2="59.3344" width="0" layer="19" extent="1-1"/>
-<wire x1="9.84" y1="48.26" x2="8.89" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="7.94" y1="52.07" x2="9.84" y2="48.26" width="0" layer="19" extent="1-1"/>
-<wire x1="24.13" y1="77.47" x2="14.9606" y2="59.3344" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="AGND">
 <contactref element="U$1" pad="47"/>
@@ -4316,6 +4284,42 @@ design rules under a new name.</description>
 </signal>
 <signal name="DAC_CS">
 <contactref element="U$42" pad="13"/>
+</signal>
+<signal name="_DAC_D">
+<contactref element="R4" pad="2"/>
+<contactref element="C18" pad="1"/>
+<contactref element="TP1" pad="TP"/>
+<contactref element="U$42" pad="7"/>
+<wire x1="7.94" y1="52.07" x2="14.9606" y2="59.3344" width="0" layer="19" extent="1-1"/>
+<wire x1="9.84" y1="48.26" x2="7.94" y2="52.07" width="0" layer="19" extent="1-1"/>
+<wire x1="8.89" y1="44.45" x2="9.84" y2="48.26" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="_DAC_C">
+<contactref element="TP2" pad="TP"/>
+<contactref element="R3" pad="2"/>
+<contactref element="C17" pad="1"/>
+<contactref element="U$42" pad="6"/>
+<wire x1="9.84" y1="55.88" x2="14.9606" y2="59.9948" width="0" layer="19" extent="1-1"/>
+<wire x1="7.94" y1="59.69" x2="9.84" y2="55.88" width="0" layer="19" extent="1-1"/>
+<wire x1="8.89" y1="39.37" x2="9.84" y2="55.88" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="_DAC_B">
+<contactref element="R2" pad="2"/>
+<contactref element="C16" pad="1"/>
+<contactref element="TP3" pad="TP"/>
+<contactref element="U$42" pad="2"/>
+<wire x1="9.84" y1="63.5" x2="7.94" y2="67.31" width="0" layer="19" extent="1-1"/>
+<wire x1="14.9606" y1="62.5856" x2="9.84" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="8.89" y1="34.29" x2="14.9606" y2="62.5856" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="_DAC_A">
+<contactref element="R1" pad="2"/>
+<contactref element="C15" pad="1"/>
+<contactref element="TP4" pad="TP"/>
+<contactref element="U$42" pad="3"/>
+<wire x1="9.84" y1="71.12" x2="7.94" y2="74.93" width="0" layer="19" extent="1-1"/>
+<wire x1="14.9606" y1="61.9252" x2="9.84" y2="71.12" width="0" layer="19" extent="1-1"/>
+<wire x1="8.89" y1="29.21" x2="14.9606" y2="61.9252" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
