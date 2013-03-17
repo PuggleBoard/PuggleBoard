@@ -1,0 +1,61 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    NC DRILL Log                                                     )
+(                                                                     )
+(    Drawing          : #Taaaaaa00388.tmp                             )
+(    Software Version : 16.5P002                                      )
+(    Date/Time        : Mon Feb 20 23:44:34 2012                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+
+ Processing NC Parameters file ...
+
+ NC PARAMETERS
+ -------------
+
+ FORMAT   		2.3
+ MACHINE-OFFSET		x:0.000000	y:0.000000
+ FEEDRATE		1
+ COORDINATES		ABSOLUTE
+ OUTPUT-UNITS		ENGLISH
+ TOOL-ORDER		INCREASING
+ REPEAT-CODES		YES
+ SUPPRESS-LEAD-ZEROES	NO
+ SUPPRESS-TRAIL-ZEROES	NO
+ SUPPRESS-EQUAL		NO
+ TOOL-SELECT		NO
+ HEADER			none
+ LEADER			12
+ CODE			ASCII
+ SEPARATE		NO
+ OPTIMIZE_DRILLING	NO
+ ENHANCED_EXCELLON	NO
+ SCALE			1.000000
+
+ WARNING: Design precision is greater than that of the drill output file data.
+          Data rounding errors are very possible.
+
+
+ Drill files being output to directory 'D:/Projects/Projects_CircuitCo/2012/4.BeagleBone_Battery_Cape_start05Feb/PCBVN/gerber_20Feb' ...
+
+
+
+     'BeagleBone_Battery_Cape_20Feb-1-2.drl' created for holes connecting TOP and BOTTOM
+     -----------------------------------------------------------------------------------
+
+           Num     Size      +/- Tolerance     Plating   Quantity
+
+            1.   8.0000    3.0000/  3.0000      PLATED         13
+            2.  12.0000    3.0000/  3.0000      PLATED         16
+            3.  38.0000    3.0000/  3.0000      PLATED         10
+            4.  40.0000    3.0000/  3.0000      PLATED        108
+            5.  60.0000    3.0000/  3.0000      PLATED          2
+            6. 104.0000    0.0000/  0.0000      PLATED          8
+            7. 125.0000    3.0000/  3.0000      PLATED          2
+
+     ---- Total holes:                                        159
+
+     ---- Total head travel:              5.81 feet (1.77 meters)
+

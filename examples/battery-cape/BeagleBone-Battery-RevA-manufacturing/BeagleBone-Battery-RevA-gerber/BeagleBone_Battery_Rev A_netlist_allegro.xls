@@ -1,0 +1,97 @@
+<html>
+<head><title>Net List Report</title></head>
+<b><u>Design Name</u>&nbsp D:/Projects/Projects_CircuitCo/2012/4.BeagleBone_Battery_Cape_start05Feb/PCBVN/gerber_20Feb/BeagleBone_Battery_Cape_20Feb.brd</b><br>
+<b><u>Date</u>&nbsp Mon Feb 20 23:12:33 2012</b><br>
+<body>
+<center><table border><caption><b><u>Net List Report</u></b></caption>
+<tr>
+<td><b>Net Name</b></td>
+<td><b>Net Pins</b></td>
+</tr>
+<tr>
+<td nowrap>AIN4</td>
+<td nowrap>J2.33 R1.1 R2.2</td>
+</tr>
+<tr>
+<td nowrap>DGND</td>
+<td nowrap>C1.1 C2.2 C3.1 C4.1 J1.1 J1.2 J2.1 J2.2 J2.43 J2.44 J2.45 J2.46 J5.2 J7.2 J8.2 J9.2 R2.1 R8.1 R9.2 R10.1 S6.2 S6.3 S6.4 SW1.1 SW1.2 TP2.1 U1.5 U1.6 U1.7 U1.10 U1.13 U1.17 U2.4</td>
+</tr>
+<tr>
+<td nowrap>GPIO1_16</td>
+<td nowrap>J2.15 R7.2 U1.12</td>
+</tr>
+<tr>
+<td nowrap>I2C2_SCL</td>
+<td nowrap>J2.19 R12.2 U2.6</td>
+</tr>
+<tr>
+<td nowrap>I2C2_SDA</td>
+<td nowrap>J2.20 R13.2 U2.5</td>
+</tr>
+<tr>
+<td nowrap>N17101594</td>
+<td nowrap>R4.2 R9.1 U1.14</td>
+</tr>
+<tr>
+<td nowrap>N17101621</td>
+<td nowrap>C1.2 C2.1 D1.2 R4.1 U1.1 U1.15 U1.16</td>
+</tr>
+<tr>
+<td nowrap>N17101637</td>
+<td nowrap>L1.2 U1.3 U1.4</td>
+</tr>
+<tr>
+<td nowrap>N17101693</td>
+<td nowrap>R5.1 R8.2 U1.9</td>
+</tr>
+<tr>
+<td nowrap>N17101809</td>
+<td nowrap>R6.2 U1.11</td>
+</tr>
+<tr>
+<td nowrap>N17102365</td>
+<td nowrap>J4.2 J5.1</td>
+</tr>
+<tr>
+<td nowrap>N17103656</td>
+<td nowrap>R17.2 TP1.1 U2.7</td>
+</tr>
+<tr>
+<td nowrap>N17106363</td>
+<td nowrap>D2.1 R10.2</td>
+</tr>
+<tr>
+<td nowrap>N17107516</td>
+<td nowrap>J6.2 J7.1</td>
+</tr>
+<tr>
+<td nowrap>PWR_BUT</td>
+<td nowrap>J2.9 S6.1</td>
+</tr>
+<tr>
+<td nowrap>SW1_A0</td>
+<td nowrap>R16.2 SW1.4 U2.1</td>
+</tr>
+<tr>
+<td nowrap>SW1_A1</td>
+<td nowrap>R15.2 SW1.3 U2.2</td>
+</tr>
+<tr>
+<td nowrap>SW1_A3</td>
+<td nowrap>R14.2 U2.3</td>
+</tr>
+<tr>
+<td nowrap>VBAT</td>
+<td nowrap>C3.2 J4.1 J6.1 J8.1 J9.1 L1.1 R1.2 R5.2 R6.1 U1.8</td>
+</tr>
+<tr>
+<td nowrap>VDD_3V3</td>
+<td nowrap>C4.2 J2.3 J2.4 R7.1 R12.1 R13.1 R14.1 R15.1 R16.1 R17.1 U2.8</td>
+</tr>
+<tr>
+<td nowrap>VDD_5V</td>
+<td nowrap>D1.1 D2.2 J2.5 J2.6</td>
+</tr>
+</center></table>
+</body>
+</html>

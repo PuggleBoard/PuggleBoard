@@ -1,0 +1,428 @@
+<html>
+<head><title>Placed Component Report</title></head>
+<b><u>Design Name</u>&nbsp D:/Projects/Projects_CircuitCo/2012/4.BeagleBone_Battery_Cape_start05Feb/PCBVN/gerber_20Feb/BeagleBone_Battery_Cape_20Feb.brd</b><br>
+<b><u>Date</u>&nbsp Mon Feb 20 23:12:53 2012</b><br>
+Total Placed Components: </b></u>&nbsp37<br><br><BODY>
+
+<center><table border><caption><b><u>Placed Component Report</u></b></caption>
+<tr>
+<td><b>REFDES</b></td>
+<td><b>COMP_DEVICE_TYPE</b></td>
+<td><b>COMP_VALUE</b></td>
+<td><b>COMP_TOL</b></td>
+<td><b>SYM_NAME</b></td>
+<td><b>SYM_X</b></td>
+<td><b>SYM_Y</b></td>
+<td><b>SYM_ROTATE</b></td>
+<td><b>SYM_MIRROR</b></td>
+</tr>
+<tr>
+<td nowrap>C1</td>
+<td nowrap>CAP_10UF_Y5V_10V_10%_0805_805_1</td>
+<td nowrap>10uF,10V</td>
+<td>&nbsp</td>
+<td nowrap align=right>805</td>
+<td nowrap align=right>2280.00</td>
+<td nowrap align=right>1055.00</td>
+<td nowrap align=right>90.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>C2</td>
+<td nowrap>CAPACITOR POL_3216_47UF, 10V</td>
+<td nowrap>47uF, 10V</td>
+<td>&nbsp</td>
+<td nowrap align=right>3216</td>
+<td nowrap align=right>2380.00</td>
+<td nowrap align=right>1045.00</td>
+<td nowrap align=right>270.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>C3</td>
+<td nowrap>CAP_10UF_Y5V_10V_10%_0805_805_1</td>
+<td nowrap>10uF,10V</td>
+<td>&nbsp</td>
+<td nowrap align=right>805</td>
+<td nowrap align=right>2037.50</td>
+<td nowrap align=right>1687.50</td>
+<td nowrap align=right>180.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>C4</td>
+<td nowrap>CAP,0.1UF_402_0.1UF</td>
+<td nowrap>0.1uF</td>
+<td>&nbsp</td>
+<td nowrap align=right>402</td>
+<td nowrap align=right>1250.00</td>
+<td nowrap align=right>850.00</td>
+<td nowrap align=right>90.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>D1</td>
+<td nowrap>DIODE SCHOTTKY_0_SOD-323F_PMEG1</td>
+<td nowrap>PMEG1020EJ</td>
+<td>&nbsp</td>
+<td nowrap>SOD-323F</td>
+<td nowrap align=right>2495.00</td>
+<td nowrap align=right>1050.00</td>
+<td nowrap align=right>270.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>D2</td>
+<td nowrap>LED_LTST-C150GKT_LED2-31SQ_DISC</td>
+<td nowrap>LTST-C190GKT</td>
+<td>&nbsp</td>
+<td nowrap>LED2-31SQ</td>
+<td nowrap align=right>100.00</td>
+<td nowrap align=right>425.00</td>
+<td nowrap align=right>0.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>J1</td>
+<td nowrap>HDR_46_F_2_0.1_0.1_HEADER23X2_M</td>
+<td nowrap>MALE HEADER 2x23</td>
+<td>&nbsp</td>
+<td nowrap>HEADER23X2</td>
+<td nowrap align=right>775.00</td>
+<td nowrap align=right>1975.00</td>
+<td nowrap align=right>0.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>J2</td>
+<td nowrap>HDR_46_F_2_0.1_0.1_HEADER23X2_M</td>
+<td nowrap>MALE HEADER 2x23</td>
+<td>&nbsp</td>
+<td nowrap>HEADER23X2</td>
+<td nowrap align=right>775.00</td>
+<td nowrap align=right>75.00</td>
+<td nowrap align=right>0.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>J3</td>
+<td nowrap>HDR_10_F_2_0.1_HEADER5X2_MALE H</td>
+<td nowrap>MALE HDR5x2</td>
+<td>&nbsp</td>
+<td nowrap>HEADER5X2</td>
+<td nowrap align=right>275.00</td>
+<td nowrap align=right>650.00</td>
+<td nowrap align=right>90.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>J4</td>
+<td nowrap>CON2_SIP2_BH2AA-PC</td>
+<td nowrap>BH2AA-PC</td>
+<td>&nbsp</td>
+<td nowrap>SIP2</td>
+<td nowrap align=right>1550.00</td>
+<td nowrap align=right>2500.00</td>
+<td nowrap align=right>180.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>J5</td>
+<td nowrap>CON2_SIP2_BH2AA-PC</td>
+<td nowrap>BH2AA-PC</td>
+<td>&nbsp</td>
+<td nowrap>SIP2</td>
+<td nowrap align=right>1750.00</td>
+<td nowrap align=right>2500.00</td>
+<td nowrap align=right>180.000</td>
+<td nowrap>YES</td>
+</tr>
+<tr>
+<td nowrap>J6</td>
+<td nowrap>CON2_SIP2_BH2AA-PC</td>
+<td nowrap>BH2AA-PC</td>
+<td>&nbsp</td>
+<td nowrap>SIP2</td>
+<td nowrap align=right>1550.00</td>
+<td nowrap align=right>-350.00</td>
+<td nowrap align=right>180.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>J7</td>
+<td nowrap>CON2_SIP2_BH2AA-PC</td>
+<td nowrap>BH2AA-PC</td>
+<td>&nbsp</td>
+<td nowrap>SIP2</td>
+<td nowrap align=right>1750.00</td>
+<td nowrap align=right>-350.00</td>
+<td nowrap align=right>180.000</td>
+<td nowrap>YES</td>
+</tr>
+<tr>
+<td nowrap>J8</td>
+<td nowrap>CON2_B2S_CON2</td>
+<td nowrap>CON2</td>
+<td>&nbsp</td>
+<td nowrap>B2S</td>
+<td nowrap align=right>475.00</td>
+<td nowrap align=right>2075.00</td>
+<td nowrap align=right>0.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>J9</td>
+<td nowrap>CON2_B2S_CON2</td>
+<td nowrap>CON2</td>
+<td>&nbsp</td>
+<td nowrap>B2S</td>
+<td nowrap align=right>475.00</td>
+<td nowrap align=right>75.00</td>
+<td nowrap align=right>180.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>L1</td>
+<td nowrap>INDUCTOR FERRITE/SM_IND237SMD_2</td>
+<td nowrap align=right>7447779006</td>
+<td>&nbsp</td>
+<td nowrap>IND237SMD_287SQ</td>
+<td nowrap align=right>2050.00</td>
+<td nowrap align=right>1462.50</td>
+<td nowrap align=right>0.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>R1</td>
+<td nowrap>RES_330_0402_0402_200K</td>
+<td nowrap>200K</td>
+<td>&nbsp</td>
+<td nowrap align=right>0402</td>
+<td nowrap align=right>2250.00</td>
+<td nowrap align=right>290.00</td>
+<td nowrap align=right>180.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>R2</td>
+<td nowrap>RES_330_0402_0402_100K</td>
+<td nowrap>100K</td>
+<td>&nbsp</td>
+<td nowrap align=right>0402</td>
+<td nowrap align=right>2345.00</td>
+<td nowrap align=right>290.00</td>
+<td nowrap align=right>180.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>R4</td>
+<td nowrap>RES_330_0402_0402_0, DNI</td>
+<td nowrap>0, DNI</td>
+<td>&nbsp</td>
+<td nowrap align=right>0402</td>
+<td nowrap align=right>2125.00</td>
+<td nowrap align=right>1002.50</td>
+<td nowrap align=right>180.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>R5</td>
+<td nowrap>RES_330_0402_0402_2M</td>
+<td nowrap>2M</td>
+<td>&nbsp</td>
+<td nowrap align=right>0402</td>
+<td nowrap align=right>1912.50</td>
+<td nowrap align=right>1200.00</td>
+<td nowrap align=right>0.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>R6</td>
+<td nowrap>RES_330_0402_0402_10K</td>
+<td nowrap>10K</td>
+<td>&nbsp</td>
+<td nowrap align=right>0402</td>
+<td nowrap align=right>1912.50</td>
+<td nowrap align=right>1100.00</td>
+<td nowrap align=right>0.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>R7</td>
+<td nowrap>RES_330_0402_0402_1M</td>
+<td nowrap>1M</td>
+<td>&nbsp</td>
+<td nowrap align=right>0402</td>
+<td nowrap align=right>1912.50</td>
+<td nowrap align=right>1050.00</td>
+<td nowrap align=right>0.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>R8</td>
+<td nowrap>RES_330_0402_0402_390K</td>
+<td nowrap>390K</td>
+<td>&nbsp</td>
+<td nowrap align=right>0402</td>
+<td nowrap align=right>1912.50</td>
+<td nowrap align=right>1150.00</td>
+<td nowrap align=right>180.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>R9</td>
+<td nowrap>RES_330_0402_0402_0, DNI</td>
+<td nowrap>0, DNI</td>
+<td>&nbsp</td>
+<td nowrap align=right>0402</td>
+<td nowrap align=right>2025.00</td>
+<td nowrap align=right>1002.50</td>
+<td nowrap align=right>180.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>R10</td>
+<td nowrap>RES_330_0402_R402-25_1K</td>
+<td nowrap>1K</td>
+<td>&nbsp</td>
+<td nowrap>R402-25</td>
+<td nowrap align=right>100.00</td>
+<td nowrap align=right>350.00</td>
+<td nowrap align=right>180.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>R12</td>
+<td nowrap>RES_470_1/10W_5%_0402_402_5.6K,</td>
+<td nowrap>5.6K,5%</td>
+<td>&nbsp</td>
+<td nowrap align=right>402</td>
+<td nowrap align=right>1150.00</td>
+<td nowrap align=right>850.00</td>
+<td nowrap align=right>90.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>R13</td>
+<td nowrap>RES_470_1/10W_5%_0402_402_5.6K,</td>
+<td nowrap>5.6K,5%</td>
+<td>&nbsp</td>
+<td nowrap align=right>402</td>
+<td nowrap align=right>1100.00</td>
+<td nowrap align=right>850.00</td>
+<td nowrap align=right>90.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>R14</td>
+<td nowrap>RES_4.7K_0402_402_4.75K</td>
+<td nowrap>4.75K</td>
+<td>&nbsp</td>
+<td nowrap align=right>402</td>
+<td nowrap align=right>1150.00</td>
+<td nowrap align=right>1300.00</td>
+<td nowrap align=right>270.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>R15</td>
+<td nowrap>RES_4.7K_0402_402_4.75K</td>
+<td nowrap>4.75K</td>
+<td>&nbsp</td>
+<td nowrap align=right>402</td>
+<td nowrap align=right>1200.00</td>
+<td nowrap align=right>1300.00</td>
+<td nowrap align=right>270.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>R16</td>
+<td nowrap>RES_4.7K_0402_402_4.75K</td>
+<td nowrap>4.75K</td>
+<td>&nbsp</td>
+<td nowrap align=right>402</td>
+<td nowrap align=right>1250.00</td>
+<td nowrap align=right>1300.00</td>
+<td nowrap align=right>270.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>R17</td>
+<td nowrap>RES_4.7K_0402_402_10K</td>
+<td nowrap>10K</td>
+<td>&nbsp</td>
+<td nowrap align=right>402</td>
+<td nowrap align=right>1200.00</td>
+<td nowrap align=right>850.00</td>
+<td nowrap align=right>90.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>S6</td>
+<td nowrap>SW_KT11P2JM_4_SW4-B3F-315X_DISC</td>
+<td nowrap>B3F-3100</td>
+<td>&nbsp</td>
+<td nowrap>SW4-B3F-315X</td>
+<td nowrap align=right>125.00</td>
+<td nowrap align=right>150.00</td>
+<td nowrap align=right>0.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>SW1</td>
+<td nowrap>SW DIP-2_SWDIP4_100-339SMD_SW D</td>
+<td nowrap>SW DIP-2</td>
+<td>&nbsp</td>
+<td nowrap>SWDIP4_100-339SMD</td>
+<td nowrap align=right>1200.00</td>
+<td nowrap align=right>1600.00</td>
+<td nowrap align=right>270.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>TP1</td>
+<td nowrap>T POINT A_TP1-8040_T POINT A</td>
+<td nowrap>T POINT A</td>
+<td>&nbsp</td>
+<td nowrap>TP1-8040</td>
+<td nowrap align=right>1350.00</td>
+<td nowrap align=right>1037.50</td>
+<td nowrap align=right>0.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>TP2</td>
+<td nowrap>T POINT A_TP1-8040_T POINT A</td>
+<td nowrap>T POINT A</td>
+<td>&nbsp</td>
+<td nowrap>TP1-8040</td>
+<td nowrap align=right>1350.00</td>
+<td nowrap align=right>1287.50</td>
+<td nowrap align=right>0.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>U1</td>
+<td nowrap>TPS61032RSA_1_QFN16_RSA_TPS6103</td>
+<td nowrap>TPS61032RSA</td>
+<td>&nbsp</td>
+<td nowrap>QFN16_RSA</td>
+<td nowrap align=right>2075.00</td>
+<td nowrap align=right>1150.00</td>
+<td nowrap align=right>90.000</td>
+<td nowrap>NO</td>
+</tr>
+<tr>
+<td nowrap>U2</td>
+<td nowrap>CAT24C256W_SOIC_8_CAT24C256W</td>
+<td nowrap>CAT24C256W</td>
+<td>&nbsp</td>
+<td nowrap>SOIC_8</td>
+<td nowrap align=right>1175.00</td>
+<td nowrap align=right>1075.00</td>
+<td nowrap align=right>180.000</td>
+<td nowrap>NO</td>
+</tr>
+</center></table>
+</BODY>
+</HTML>
