@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11988,6 +11988,7 @@ at 31/07/2012 09:37:13</description>
 <part name="S2" library="smd-special" deviceset="SWS003" device=""/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0805" value="0.1uF"/>
 <part name="SUPPLY4" library="supply2" deviceset="AGND" device=""/>
+<part name="TP7" library="testpad" deviceset="TP" device="B1,27"/>
 </parts>
 <sheets>
 <sheet>
@@ -12653,6 +12654,7 @@ at 31/07/2012 09:37:13</description>
 <instance part="TP6" gate="G$1" x="-81.28" y="63.5"/>
 <instance part="JP1" gate="A" x="-48.26" y="40.64" rot="R270"/>
 <instance part="S2" gate="G$1" x="-83.82" y="20.32" rot="R90"/>
+<instance part="TP7" gate="G$1" x="15.24" y="25.4"/>
 </instances>
 <busses>
 </busses>
@@ -12725,12 +12727,15 @@ at 31/07/2012 09:37:13</description>
 <net name="I2C2_SDA" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="SDA"/>
-<wire x1="12.7" y1="22.86" x2="20.32" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="22.86" x2="15.24" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="22.86" x2="20.32" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="45.72" x2="20.32" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="20.32" y1="22.86" x2="25.4" y2="22.86" width="0.1524" layer="91"/>
 <junction x="20.32" y="22.86"/>
 <label x="26.67" y="22.225" size="1.778" layer="95"/>
+<pinref part="TP7" gate="G$1" pin="TP"/>
+<junction x="15.24" y="22.86"/>
 </segment>
 </net>
 <net name="N$14" class="0">
