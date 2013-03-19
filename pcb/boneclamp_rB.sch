@@ -9769,7 +9769,7 @@ chip</description>
 <rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
-<package name="R0603">
+<package name="R0603@1">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
 chip</description>
 <wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
@@ -11098,7 +11098,7 @@ type 0309, grid 2.5 mm</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="R0603" package="R0603">
+<device name="R0603" package="R0603@1">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -11985,38 +11985,38 @@ at 31/07/2012 09:37:13</description>
 <part name="U$24" library="boneclamp" deviceset="V_SIG" device=""/>
 <part name="U8" library="ti-extended" deviceset="TPS63700DRCT" device=""/>
 <part name="U$18" library="boneclamp" deviceset="V_SIG" device=""/>
-<part name="C23" library="rcl" deviceset="C-EU" device="C0805" value="10uF"/>
-<part name="R5" library="resistor" deviceset="R-US_" device="R0805" value="100k"/>
-<part name="C24" library="rcl" deviceset="C-EU" device="C0805" value="22nF"/>
-<part name="C26" library="rcl" deviceset="C-EU" device="C0805" value="0.1uF"/>
+<part name="C23" library="rcl" deviceset="C-EU" device="C0603" value="10uF"/>
+<part name="R5" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
+<part name="C24" library="rcl" deviceset="C-EU" device="C0603" value="22nF"/>
+<part name="C26" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="SUPPLY21" library="supply2" deviceset="AGND" device=""/>
-<part name="C27" library="rcl" deviceset="C-EU" device="C0805" value="4.7nF"/>
+<part name="C27" library="rcl" deviceset="C-EU" device="C0603" value="4.7nF"/>
 <part name="SUPPLY24" library="supply2" deviceset="AGND" device=""/>
-<part name="U$27" library="boneclamp" deviceset="SCHOTTKY-DIODE-2" device="" value=""/>
-<part name="U$28" library="boneclamp" deviceset="L-US" device="" value="4.7uH"/>
-<part name="C29" library="rcl" deviceset="C-EU" device="C0805" value="10nF"/>
-<part name="C30" library="rcl" deviceset="C-EU" device="C0805" value="4.7uF"/>
-<part name="C31" library="rcl" deviceset="C-EU" device="C0805" value="4.7uF"/>
-<part name="C32" library="rcl" deviceset="C-EU" device="C0805" value="4.7uF"/>
-<part name="C33" library="rcl" deviceset="C-EU" device="C0805" value="4.7uF"/>
-<part name="R12" library="resistor" deviceset="R-US_" device="R0805" value="750"/>
-<part name="R13" library="resistor" deviceset="R-US_" device="R0805" value="150k"/>
-<part name="C34" library="rcl" deviceset="C-EU" device="C0805" value="0.22uF"/>
+<part name="D1" library="boneclamp" deviceset="SCHOTTKY-DIODE-2" device="" value=""/>
+<part name="L1" library="boneclamp" deviceset="L-US" device="" value="4.7uH"/>
+<part name="C29" library="rcl" deviceset="C-EU" device="C0603" value="10nF"/>
+<part name="C30" library="rcl" deviceset="C-EU" device="C0603" value="4.7uF"/>
+<part name="C31" library="rcl" deviceset="C-EU" device="C0603" value="4.7uF"/>
+<part name="C32" library="rcl" deviceset="C-EU" device="C0603" value="4.7uF"/>
+<part name="C33" library="rcl" deviceset="C-EU" device="C0603" value="4.7uF"/>
+<part name="R12" library="rcl" deviceset="R-US_" device="R0603" value="750"/>
+<part name="R13" library="rcl" deviceset="R-US_" device="R0603" value="150k"/>
+<part name="C34" library="rcl" deviceset="C-EU" device="C0603" value="0.22uF"/>
 <part name="SUPPLY3" library="supply2" deviceset="AGND" device=""/>
 <part name="U$29" library="boneclamp" deviceset="V_SIG" device=""/>
-<part name="C35" library="rcl" deviceset="C-EU" device="C0805" value="10pF"/>
+<part name="C35" library="rcl" deviceset="C-EU" device="C0603" value="10pF"/>
 <part name="U2" library="linear-extended-01" deviceset="LT1964ES5-5TRMPBF" device=""/>
 <part name="U$19" library="boneclamp" deviceset="V_SIG" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="AGND" device=""/>
-<part name="C5" library="rcl" deviceset="C-EU" device="C0805" value="1uF"/>
-<part name="C6" library="rcl" deviceset="C-EU" device="C0805" value="10nF"/>
-<part name="C7" library="rcl" deviceset="C-EU" device="C0805" value="10uF"/>
+<part name="C5" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
+<part name="C6" library="rcl" deviceset="C-EU" device="C0603" value="10nF"/>
+<part name="C7" library="rcl" deviceset="C-EU" device="C0603" value="10uF"/>
 <part name="U$20" library="boneclamp" deviceset="V_SIG" device=""/>
 <part name="TP5" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="TP6" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="U4" library="ti-extended" deviceset="TLV70025DDCR" device="" value="TLV70245DBVT"/>
-<part name="C8" library="rcl" deviceset="C-EU" device="C0805" value="1uF"/>
-<part name="C9" library="rcl" deviceset="C-EU" device="C0805" value="1uF"/>
+<part name="C8" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
+<part name="C9" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
 <part name="SUPPLY10" library="supply2" deviceset="AGND" device=""/>
 <part name="U$21" library="boneclamp" deviceset="V_SIG" device=""/>
 <part name="U$22" library="boneclamp" deviceset="V_SIG" device=""/>
@@ -12074,6 +12074,7 @@ at 31/07/2012 09:37:13</description>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0805" value="0.1uF"/>
 <part name="SUPPLY4" library="supply2" deviceset="AGND" device=""/>
 <part name="TP7" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="C3" library="rcl" deviceset="C-EU" device="C0805" value="10uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -12175,7 +12176,7 @@ at 31/07/2012 09:37:13</description>
 <instance part="SJ6" gate="1" x="25.4" y="7.62"/>
 <instance part="U$13" gate="G$1" x="33.02" y="7.62"/>
 <instance part="U$14" gate="G$1" x="-33.02" y="-12.7" rot="MR0"/>
-<instance part="U$15" gate="G$1" x="-53.34" y="-7.62" rot="MR0"/>
+<instance part="U$15" gate="G$1" x="-63.5" y="-7.62" rot="MR0"/>
 <instance part="U$32" gate="G$1" x="-63.5" y="12.7" rot="MR0"/>
 <instance part="U$43" gate="G$1" x="-33.02" y="10.16" rot="MR0"/>
 <instance part="U$44" gate="G$1" x="-33.02" y="17.78" rot="MR0"/>
@@ -12190,6 +12191,7 @@ at 31/07/2012 09:37:13</description>
 <instance part="ADC_SDID" gate="G$1" x="-63.5" y="7.62" rot="MR0"/>
 <instance part="C2" gate="G$1" x="81.28" y="25.4"/>
 <instance part="SUPPLY4" gate="G$1" x="81.28" y="15.24"/>
+<instance part="C3" gate="G$1" x="-60.96" y="-22.86"/>
 </instances>
 <busses>
 </busses>
@@ -12232,9 +12234,10 @@ at 31/07/2012 09:37:13</description>
 <junction x="27.94" y="-53.34"/>
 <pinref part="C14" gate="G$1" pin="2"/>
 <wire x1="-83.82" y1="-27.94" x2="-83.82" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="-83.82" y1="-53.34" x2="-48.26" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="-53.34" x2="-60.96" y2="-53.34" width="0.1524" layer="91"/>
 <junction x="-48.26" y="-53.34"/>
 <pinref part="U1" gate="A" pin="-VS"/>
+<wire x1="-60.96" y1="-53.34" x2="-48.26" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="-53.34" x2="116.84" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="R16" gate="G$1" pin="2"/>
 <wire x1="96.52" y1="-27.94" x2="96.52" y2="-53.34" width="0.1524" layer="91"/>
@@ -12242,6 +12245,9 @@ at 31/07/2012 09:37:13</description>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="104.14" y1="-27.94" x2="104.14" y2="-53.34" width="0.1524" layer="91"/>
 <junction x="104.14" y="-53.34"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="-60.96" y1="-27.94" x2="-60.96" y2="-53.34" width="0.1524" layer="91"/>
+<junction x="-60.96" y="-53.34"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
@@ -12271,9 +12277,13 @@ at 31/07/2012 09:37:13</description>
 <wire x1="-17.78" y1="-10.16" x2="-20.32" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="-10.16" x2="-20.32" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="-20.32" y="-7.62"/>
-<wire x1="-48.26" y1="-7.62" x2="-53.34" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="-7.62" x2="-60.96" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="-48.26" y="-7.62"/>
-<label x="-59.69" y="-8.255" size="1.778" layer="95"/>
+<label x="-69.85" y="-8.255" size="1.778" layer="95"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="-60.96" y1="-7.62" x2="-63.5" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="-20.32" x2="-60.96" y2="-7.62" width="0.1524" layer="91"/>
+<junction x="-60.96" y="-7.62"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -12904,8 +12914,8 @@ at 31/07/2012 09:37:13</description>
 <instance part="SUPPLY21" gate="G$1" x="-33.02" y="66.04"/>
 <instance part="C27" gate="G$1" x="25.4" y="48.26"/>
 <instance part="SUPPLY24" gate="G$1" x="0" y="27.94"/>
-<instance part="U$27" gate="G$1" x="43.18" y="60.96" rot="R90"/>
-<instance part="U$28" gate="G$1" x="35.56" y="50.8"/>
+<instance part="D1" gate="G$1" x="43.18" y="60.96" rot="R90"/>
+<instance part="L1" gate="G$1" x="35.56" y="50.8"/>
 <instance part="C29" gate="G$1" x="60.96" y="48.26"/>
 <instance part="C30" gate="G$1" x="73.66" y="48.26"/>
 <instance part="C31" gate="G$1" x="81.28" y="48.26"/>
@@ -12974,7 +12984,7 @@ at 31/07/2012 09:37:13</description>
 <pinref part="C27" gate="G$1" pin="2"/>
 <wire x1="25.4" y1="30.48" x2="35.56" y2="30.48" width="0.1524" layer="91"/>
 <junction x="25.4" y="30.48"/>
-<pinref part="U$28" gate="G$1" pin="2"/>
+<pinref part="L1" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="30.48" x2="35.56" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="30.48" x2="60.96" y2="30.48" width="0.1524" layer="91"/>
 <junction x="35.56" y="30.48"/>
@@ -13105,7 +13115,7 @@ at 31/07/2012 09:37:13</description>
 <wire x1="48.26" y1="60.96" x2="48.26" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="U8" gate="A" pin="OUT"/>
 <wire x1="48.26" y1="66.04" x2="17.78" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="U$27" gate="G$1" pin="C"/>
+<pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="48.26" y1="60.96" x2="60.96" y2="60.96" width="0.1524" layer="91"/>
 <junction x="48.26" y="60.96"/>
 <wire x1="60.96" y1="60.96" x2="60.96" y2="50.8" width="0.1524" layer="91"/>
@@ -13150,10 +13160,10 @@ at 31/07/2012 09:37:13</description>
 </net>
 <net name="N$27" class="0">
 <segment>
-<pinref part="U$27" gate="G$1" pin="A"/>
+<pinref part="D1" gate="G$1" pin="A"/>
 <pinref part="U8" gate="A" pin="SW"/>
 <wire x1="17.78" y1="60.96" x2="35.56" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="U$28" gate="G$1" pin="1"/>
+<pinref part="L1" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="60.96" x2="40.64" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="58.42" x2="35.56" y2="60.96" width="0.1524" layer="91"/>
 <junction x="35.56" y="60.96"/>
