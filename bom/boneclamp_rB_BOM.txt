@@ -15,6 +15,12 @@ R3    750k    P750KCCT-ND       0805          1    DIGI-KEY
 D1    N.A.    SL02-GS08CT-ND    DO-219AB      1    DIGI-KEY
 L1    4.7uH   445-3235-1-ND     N.A.          1    DIGI-KEY  
 
+
+DC-DC SWITCHED CAPACITOR VOLTAGE INVERTER (-VIN OUTPUT):
+-----------------------------------------------------------
+U1    N.A.    LM2663M/NOPB-ND PSOP-8          1    DIGI-KEY
+C1,2  47uF    399-4714-1-ND   1206            2    DIGI-KEY
+
 -5 VOLT LDO REGULATOR:
 ----------------------
 U1    N.A.    LT1964ES5-5#TRMPBFCT-ND    10-SON      1    DIGI-KEY  
