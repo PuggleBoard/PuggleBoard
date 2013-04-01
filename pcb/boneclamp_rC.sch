@@ -14651,6 +14651,9 @@ how daisy chain will work.</text>
 <sheet>
 <description>POWER</description>
 <plain>
+<text x="15.24" y="6.35" size="1.778" layer="97">Must replace this LDO
+with something that can
+accept a +5V supply...</text>
 </plain>
 <instances>
 <instance part="SJ4" gate="1" x="88.9" y="-10.16"/>
@@ -16017,7 +16020,7 @@ how daisy chain will work.</text>
 <junction x="33.02" y="-167.64"/>
 </segment>
 </net>
-<net name="VBIAS" class="0">
+<net name="VBIAS+" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="-IN2"/>
 <wire x1="45.72" y1="-154.94" x2="45.72" y2="-157.48" width="0.1524" layer="91"/>
@@ -16053,6 +16056,7 @@ how daisy chain will work.</text>
 <segment>
 <pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="-12.7" y1="-144.78" x2="-33.02" y2="-144.78" width="0.1524" layer="91"/>
+<label x="-41.91" y="-145.415" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$9" class="0">
