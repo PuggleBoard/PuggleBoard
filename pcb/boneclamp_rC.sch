@@ -1613,6 +1613,22 @@ package type OT</description>
 <text x="-5.2324" y="17.2212" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-4.7498" y="-20.701" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
 </symbol>
+<symbol name="LM2663">
+<pin name="SD" x="-17.78" y="7.62" length="middle" direction="pwr"/>
+<pin name="CAP+" x="-17.78" y="2.54" length="middle" direction="in"/>
+<pin name="GND" x="-17.78" y="-2.54" length="middle" direction="in"/>
+<pin name="OSC" x="17.78" y="2.54" length="middle" direction="in" rot="R180"/>
+<pin name="LV" x="17.78" y="-2.54" length="middle" direction="in" rot="R180"/>
+<pin name="CAP-" x="-17.78" y="-7.62" length="middle" direction="pas"/>
+<pin name="V+" x="17.78" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="VOUT" x="17.78" y="-7.62" length="middle" direction="out" rot="R180"/>
+<wire x1="-12.7" y1="12.7" x2="-12.7" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="12.7" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="12.7" x2="-12.7" y2="12.7" width="0.4064" layer="94"/>
+<text x="-5.3594" y="14.1986" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-6.5532" y="-18.2118" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TPS63700DRCT" prefix="U">
@@ -1785,6 +1801,28 @@ package type OT</description>
 <connect gate="G$1" pin="V+" pad="5"/>
 <connect gate="G$1" pin="V-" pad="2"/>
 <connect gate="G$1" pin="VOUT-" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LM2663">
+<gates>
+<gate name="G$1" symbol="LM2663" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC127P600X175-8N">
+<connects>
+<connect gate="G$1" pin="CAP+" pad="2"/>
+<connect gate="G$1" pin="CAP-" pad="4"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="LV" pad="6"/>
+<connect gate="G$1" pin="OSC" pad="7"/>
+<connect gate="G$1" pin="SD" pad="1"/>
+<connect gate="G$1" pin="V+" pad="8"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -13799,6 +13837,12 @@ general purpose rectifier, 1 A</description>
 <part name="SUPPLY1" library="supply2" deviceset="AGND" device=""/>
 <part name="R24" library="resistor" deviceset="R-US_" device="R0805" value="1k"/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0805" value="10uF"/>
+<part name="U$12" library="ti-extended" deviceset="LM2663" device=""/>
+<part name="U$13" library="boneclamp" deviceset="V_SIG" device=""/>
+<part name="C11" library="rcl" deviceset="C-US" device="C1206" value="47uF"/>
+<part name="SUPPLY37" library="supply2" deviceset="AGND" device=""/>
+<part name="U$14" library="boneclamp" deviceset="V_SIG" device=""/>
+<part name="C12" library="rcl" deviceset="C-US" device="C1206" value="47uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -14839,6 +14883,12 @@ how daisy chain will work.</text>
 <instance part="U$21" gate="G$1" x="-53.34" y="-55.88" rot="R180"/>
 <instance part="U$22" gate="G$1" x="-53.34" y="-55.88" rot="R180"/>
 <instance part="U$25" gate="G$1" x="43.18" y="-55.88"/>
+<instance part="U$12" gate="G$1" x="0" y="157.48"/>
+<instance part="U$13" gate="G$1" x="50.8" y="165.1"/>
+<instance part="C11" gate="G$1" x="38.1" y="137.16" rot="R180"/>
+<instance part="SUPPLY37" gate="G$1" x="38.1" y="124.46"/>
+<instance part="U$14" gate="G$1" x="50.8" y="149.86"/>
+<instance part="C12" gate="G$1" x="-38.1" y="157.48"/>
 </instances>
 <busses>
 </busses>
@@ -14942,6 +14992,22 @@ how daisy chain will work.</text>
 <wire x1="0" y1="-83.82" x2="-38.1" y2="-83.82" width="0.1524" layer="91"/>
 <junction x="0" y="-83.82"/>
 </segment>
+<segment>
+<pinref part="SUPPLY37" gate="G$1" pin="AGND"/>
+<wire x1="38.1" y1="127" x2="38.1" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="U$12" gate="G$1" pin="LV"/>
+<wire x1="17.78" y1="154.94" x2="25.4" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="154.94" x2="25.4" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="129.54" x2="38.1" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="U$12" gate="G$1" pin="GND"/>
+<wire x1="-17.78" y1="154.94" x2="-27.94" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="154.94" x2="-27.94" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="129.54" x2="25.4" y2="129.54" width="0.1524" layer="91"/>
+<junction x="25.4" y="129.54"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="38.1" y1="129.54" x2="38.1" y2="134.62" width="0.1524" layer="91"/>
+<junction x="38.1" y="129.54"/>
+</segment>
 </net>
 <net name="DGND" class="0">
 <segment>
@@ -14979,6 +15045,10 @@ how daisy chain will work.</text>
 <pinref part="U4" gate="A" pin="EN"/>
 <wire x1="-22.86" y1="-60.96" x2="-17.78" y2="-60.96" width="0.1524" layer="91"/>
 <label x="-64.135" y="-56.515" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$12" gate="G$1" pin="V+"/>
+<wire x1="50.8" y1="165.1" x2="17.78" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -15055,6 +15125,14 @@ how daisy chain will work.</text>
 <junction x="-22.86" y="2.54"/>
 <label x="-60.96" y="1.905" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$12" gate="G$1" pin="VOUT"/>
+<wire x1="17.78" y1="149.86" x2="38.1" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="C11" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="149.86" x2="50.8" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="142.24" x2="38.1" y2="149.86" width="0.1524" layer="91"/>
+<junction x="38.1" y="149.86"/>
+</segment>
 </net>
 <net name="N$27" class="0">
 <segment>
@@ -15120,6 +15198,21 @@ how daisy chain will work.</text>
 <wire x1="27.94" y1="-55.88" x2="43.18" y2="-55.88" width="0.1524" layer="91"/>
 <junction x="27.94" y="-55.88"/>
 <label x="44.45" y="-56.515" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$34" class="0">
+<segment>
+<pinref part="U$12" gate="G$1" pin="CAP-"/>
+<wire x1="-17.78" y1="149.86" x2="-38.1" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="149.86" x2="-38.1" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="C12" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<pinref part="C12" gate="G$1" pin="1"/>
+<pinref part="U$12" gate="G$1" pin="CAP+"/>
+<wire x1="-38.1" y1="160.02" x2="-17.78" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
