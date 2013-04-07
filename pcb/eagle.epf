@@ -349,8 +349,8 @@ UsedLibrary="/home/jon/Desktop/github/BoneClamp/pcb/lbr/ti-lbr/ti-extended.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="119 48 1070 447"
-State=3
+Loc="244 202 1195 601"
+State=2
 Number=0
 
 [Desktop]
