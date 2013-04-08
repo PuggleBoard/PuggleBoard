@@ -4110,6 +4110,9 @@ design rules under a new name.</description>
 <element name="C3" library="rcl" package="C0805" value="0.1uF" x="-43.815" y="-109.22"/>
 <element name="R16" library="resistor" package="R0805" value="10k" x="-43.815" y="-115.57"/>
 <element name="R23" library="resistor" package="R0805" value="10k" x="-43.815" y="-121.285"/>
+<element name="TP8" library="testpad" package="B1,27" value="TPB1,27" x="-45.085" y="-127">
+<attribute name="TP_SIGNAL_NAME" value="" x="-45.085" y="-127" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="AIN0">
@@ -4565,6 +4568,7 @@ design rules under a new name.</description>
 <contactref element="C3" pad="1"/>
 <contactref element="R16" pad="2"/>
 <contactref element="R16" pad="1"/>
+<contactref element="TP8" pad="TP"/>
 <wire x1="228.6762" y1="7.62" x2="228.6762" y2="8.89" width="0" layer="19" extent="1-1"/>
 <wire x1="190.715" y1="68.58" x2="228.6762" y2="8.89" width="0" layer="19" extent="1-1"/>
 <wire x1="273.37" y1="100.965" x2="190.715" y2="68.58" width="0" layer="19" extent="1-1"/>
@@ -4578,6 +4582,7 @@ design rules under a new name.</description>
 <wire x1="-44.765" y1="-109.22" x2="-45.085" y2="25.4" width="0" layer="19" extent="1-1"/>
 <wire x1="-44.665" y1="-115.57" x2="-44.765" y2="-109.22" width="0" layer="19" extent="1-1"/>
 <wire x1="-42.965" y1="-115.57" x2="-44.665" y2="-115.57" width="0" layer="19" extent="1-1"/>
+<wire x1="-45.085" y1="-127" x2="-44.665" y2="-115.57" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DAC_SCLK">
 <contactref element="U$42" pad="12"/>
