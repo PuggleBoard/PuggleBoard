@@ -12043,11 +12043,28 @@ at 30/07/2012 11:04:18</description>
 <part name="R16" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="R23" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="TP8" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="SUPPLY23" library="supply2" deviceset="AGND" device=""/>
+<part name="SUPPLY24" library="supply2" deviceset="AGND" device=""/>
+<part name="SUPPLY25" library="supply2" deviceset="AGND" device=""/>
+<part name="SUPPLY26" library="supply2" deviceset="AGND" device=""/>
+<part name="SUPPLY27" library="supply2" deviceset="AGND" device=""/>
+<part name="SUPPLY28" library="supply2" deviceset="AGND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <description>Beaglebone interface</description>
 <plain>
+<text x="20.32" y="-2.54" size="1.778" layer="97">WHICH GPIO PINS WILL 
+SUPPORT ADC/DAC DATA BUSES?
+
+ADC
+1.CS
+2. SDI
+3. SDO
+
+DAC
+1. CS
+2. SDO</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="-35.56" y="48.26"/>
@@ -12213,6 +12230,7 @@ how daisy chain will work.</text>
 <text x="76.2" y="228.6" size="1.778" layer="97">Vin= +-4.096/2 +2.048</text>
 <text x="76.2" y="167.64" size="1.778" layer="97">Vin= +-4.096/2 +2.048</text>
 <text x="-99.06" y="167.64" size="1.778" layer="97">Vin= +-4.096/2 +2.048</text>
+<text x="-69.85" y="63.5" size="1.778" layer="97">Where is VCOM going??</text>
 </plain>
 <instances>
 <instance part="U12" gate="A" x="2.54" y="71.12"/>
@@ -12390,7 +12408,7 @@ how daisy chain will work.</text>
 <wire x1="2.54" y1="99.06" x2="27.94" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VDD" class="0">
+<net name="+4.5V" class="0">
 <segment>
 <pinref part="U12" gate="A" pin="VA"/>
 <wire x1="-22.86" y1="99.06" x2="-88.9" y2="99.06" width="0.1524" layer="91"/>
@@ -12532,7 +12550,7 @@ how daisy chain will work.</text>
 <wire x1="-116.84" y1="96.52" x2="-22.86" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VSS" class="0">
+<net name="-4.5V" class="0">
 <segment>
 <pinref part="C58" gate="G$1" pin="1"/>
 <wire x1="-101.6" y1="208.28" x2="-101.6" y2="213.36" width="0.1524" layer="91"/>
@@ -12885,7 +12903,7 @@ how daisy chain will work.</text>
 <label x="-102.235" y="12.065" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VDD" class="0">
+<net name="+4.5V" class="0">
 <segment>
 <label x="-90.17" y="-11.43" size="1.778" layer="95" rot="R180"/>
 <pinref part="U$42" gate="G$1" pin="VDD"/>
@@ -13241,7 +13259,7 @@ how daisy chain will work.</text>
 <label x="131.445" y="60.325" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VSS" class="0">
+<net name="-4.5V" class="0">
 <segment>
 <pinref part="C31" gate="G$1" pin="1"/>
 <wire x1="-68.58" y1="129.54" x2="-68.58" y2="134.62" width="0.1524" layer="91"/>
@@ -13380,6 +13398,13 @@ how daisy chain will work.</text>
 <sheet>
 <description>POWER</description>
 <plain>
+<text x="40.64" y="-20.32" size="1.778" layer="97">Vout 
+= -1.25*(1 + R1/R2) 
+= -4.5V</text>
+<text x="-63.5" y="43.18" size="1.778" layer="97">ADD POWER INDICATION LED
+ADD GROUND TEST POINT (THRU HOLE)</text>
+<text x="-45.72" y="63.5" size="1.778" layer="97">MAKE THE SWITCHING INVETER OPTIONAL.
+JUMPER THE SD PIN TO THE +5V RAIL AND PUT THE VSS_PRE TO A SCREW TERMINAL OR SIMILAR.</text>
 </plain>
 <instances>
 <instance part="SJ4" gate="1" x="88.9" y="-10.16"/>
@@ -13388,24 +13413,30 @@ how daisy chain will work.</text>
 <instance part="U4" gate="A" x="0" y="-58.42"/>
 <instance part="C8" gate="G$1" x="-38.1" y="-60.96"/>
 <instance part="C9" gate="G$1" x="27.94" y="-60.96"/>
-<instance part="SUPPLY10" gate="G$1" x="0" y="-86.36"/>
+<instance part="SUPPLY10" gate="G$1" x="-38.1" y="-86.36"/>
 <instance part="U$21" gate="G$1" x="-53.34" y="-55.88" rot="R180"/>
 <instance part="U$22" gate="G$1" x="-53.34" y="-55.88" rot="R180"/>
 <instance part="U$25" gate="G$1" x="43.18" y="-55.88"/>
-<instance part="U$12" gate="G$1" x="0" y="55.88"/>
-<instance part="U$13" gate="G$1" x="50.8" y="63.5"/>
-<instance part="C11" gate="G$1" x="38.1" y="35.56" rot="R180"/>
-<instance part="SUPPLY37" gate="G$1" x="38.1" y="22.86"/>
-<instance part="U$14" gate="G$1" x="50.8" y="48.26"/>
-<instance part="C12" gate="G$1" x="-38.1" y="55.88"/>
-<instance part="U5" gate="A" x="0" y="0"/>
-<instance part="U$61" gate="G$1" x="-55.88" y="2.54" rot="R180"/>
-<instance part="C13" gate="G$1" x="-50.8" y="-12.7"/>
-<instance part="SUPPLY3" gate="G$1" x="0" y="-27.94"/>
-<instance part="C14" gate="G$1" x="27.94" y="-12.7"/>
-<instance part="R12" gate="G$1" x="-38.1" y="-15.24" rot="R270"/>
-<instance part="R5" gate="G$1" x="-27.94" y="-15.24" rot="R270"/>
-<instance part="U$19" gate="G$1" x="35.56" y="2.54"/>
+<instance part="U$12" gate="G$1" x="2.54" y="35.56"/>
+<instance part="U$13" gate="G$1" x="53.34" y="43.18"/>
+<instance part="C11" gate="G$1" x="40.64" y="15.24" rot="R180"/>
+<instance part="SUPPLY37" gate="G$1" x="40.64" y="5.08"/>
+<instance part="U$14" gate="G$1" x="53.34" y="27.94"/>
+<instance part="C12" gate="G$1" x="-35.56" y="35.56"/>
+<instance part="U5" gate="A" x="2.54" y="-12.7"/>
+<instance part="U$61" gate="G$1" x="-53.34" y="-10.16" rot="R180"/>
+<instance part="C13" gate="G$1" x="-48.26" y="-25.4"/>
+<instance part="SUPPLY3" gate="G$1" x="30.48" y="-40.64"/>
+<instance part="C14" gate="G$1" x="30.48" y="-25.4"/>
+<instance part="R12" gate="G$1" x="-35.56" y="-27.94" rot="R270"/>
+<instance part="R5" gate="G$1" x="-25.4" y="-27.94" rot="R270"/>
+<instance part="U$19" gate="G$1" x="38.1" y="-10.16"/>
+<instance part="SUPPLY23" gate="G$1" x="-48.26" y="-40.64"/>
+<instance part="SUPPLY24" gate="G$1" x="-35.56" y="-40.64"/>
+<instance part="SUPPLY25" gate="G$1" x="-17.78" y="-30.48"/>
+<instance part="SUPPLY26" gate="G$1" x="27.94" y="-86.36"/>
+<instance part="SUPPLY27" gate="G$1" x="27.94" y="5.08"/>
+<instance part="SUPPLY28" gate="G$1" x="-25.4" y="5.08"/>
 </instances>
 <busses>
 </busses>
@@ -13417,51 +13448,60 @@ how daisy chain will work.</text>
 <wire x1="78.74" y1="-10.16" x2="83.82" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="-66.04" x2="27.94" y2="-83.82" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="-83.82" x2="0" y2="-83.82" width="0.1524" layer="91"/>
-<pinref part="SUPPLY10" gate="G$1" pin="AGND"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<pinref part="SUPPLY37" gate="G$1" pin="AGND"/>
+<wire x1="40.64" y1="7.62" x2="40.64" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY3" gate="G$1" pin="AGND"/>
+<pinref part="C14" gate="G$1" pin="2"/>
+<wire x1="30.48" y1="-38.1" x2="30.48" y2="-30.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C13" gate="G$1" pin="2"/>
+<wire x1="-48.26" y1="-30.48" x2="-48.26" y2="-38.1" width="0.1524" layer="91"/>
+<pinref part="SUPPLY23" gate="G$1" pin="AGND"/>
+</segment>
+<segment>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="-35.56" y1="-33.02" x2="-35.56" y2="-38.1" width="0.1524" layer="91"/>
+<pinref part="SUPPLY24" gate="G$1" pin="AGND"/>
+</segment>
+<segment>
+<pinref part="U5" gate="A" pin="GND"/>
+<pinref part="SUPPLY25" gate="G$1" pin="AGND"/>
+<wire x1="-15.24" y1="-22.86" x2="-17.78" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="-22.86" x2="-17.78" y2="-27.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="-38.1" y1="-66.04" x2="-38.1" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="-68.58" x2="-38.1" y2="-83.82" width="0.1524" layer="91"/>
 <junction x="-38.1" y="-68.58"/>
 <pinref part="U4" gate="A" pin="GND"/>
 <wire x1="-17.78" y1="-68.58" x2="-38.1" y2="-68.58" width="0.1524" layer="91"/>
-<wire x1="0" y1="-83.82" x2="-38.1" y2="-83.82" width="0.1524" layer="91"/>
-<junction x="0" y="-83.82"/>
+<pinref part="SUPPLY10" gate="G$1" pin="AGND"/>
 </segment>
 <segment>
-<pinref part="SUPPLY37" gate="G$1" pin="AGND"/>
-<wire x1="38.1" y1="25.4" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="C9" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="-66.04" x2="27.94" y2="-83.82" width="0.1524" layer="91"/>
+<pinref part="SUPPLY26" gate="G$1" pin="AGND"/>
+</segment>
+<segment>
 <pinref part="U$12" gate="G$1" pin="LV"/>
-<wire x1="17.78" y1="53.34" x2="25.4" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="53.34" x2="25.4" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="27.94" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="U$12" gate="G$1" pin="GND"/>
-<wire x1="-17.78" y1="53.34" x2="-27.94" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="53.34" x2="-27.94" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="27.94" x2="25.4" y2="27.94" width="0.1524" layer="91"/>
-<junction x="25.4" y="27.94"/>
-<pinref part="C11" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="27.94" x2="38.1" y2="33.02" width="0.1524" layer="91"/>
-<junction x="38.1" y="27.94"/>
+<wire x1="20.32" y1="33.02" x2="27.94" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="33.02" x2="27.94" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="SUPPLY27" gate="G$1" pin="AGND"/>
 </segment>
 <segment>
-<pinref part="C13" gate="G$1" pin="2"/>
-<wire x1="-50.8" y1="-17.78" x2="-50.8" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="-50.8" y1="-25.4" x2="-38.1" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="SUPPLY3" gate="G$1" pin="AGND"/>
-<pinref part="C14" gate="G$1" pin="2"/>
-<wire x1="-38.1" y1="-25.4" x2="-17.78" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="-17.78" y1="-25.4" x2="0" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="0" y1="-25.4" x2="27.94" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="-25.4" x2="27.94" y2="-17.78" width="0.1524" layer="91"/>
-<junction x="0" y="-25.4"/>
-<pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="-38.1" y1="-20.32" x2="-38.1" y2="-25.4" width="0.1524" layer="91"/>
-<junction x="-38.1" y="-25.4"/>
-<pinref part="U5" gate="A" pin="GND"/>
-<wire x1="-17.78" y1="-10.16" x2="-17.78" y2="-25.4" width="0.1524" layer="91"/>
+<pinref part="U$12" gate="G$1" pin="GND"/>
+<wire x1="-15.24" y1="33.02" x2="-25.4" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="33.02" x2="-25.4" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="SUPPLY28" gate="G$1" pin="AGND"/>
+<wire x1="-25.4" y1="33.02" x2="-25.4" y2="43.18" width="0.1524" layer="91"/>
+<junction x="-25.4" y="33.02"/>
+<pinref part="U$12" gate="G$1" pin="SD"/>
+<wire x1="-25.4" y1="43.18" x2="-15.24" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DGND" class="0">
@@ -13488,36 +13528,36 @@ how daisy chain will work.</text>
 </segment>
 <segment>
 <pinref part="U$12" gate="G$1" pin="V+"/>
-<wire x1="50.8" y1="63.5" x2="17.78" y2="63.5" width="0.1524" layer="91"/>
-<label x="52.705" y="62.865" size="1.778" layer="95"/>
+<wire x1="53.34" y1="43.18" x2="20.32" y2="43.18" width="0.1524" layer="91"/>
+<label x="55.245" y="42.545" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="_VSS" class="0">
+<net name="VSS_PRE" class="0">
 <segment>
 <pinref part="U$12" gate="G$1" pin="VOUT"/>
-<wire x1="17.78" y1="48.26" x2="38.1" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="27.94" x2="40.64" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="48.26" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="40.64" x2="38.1" y2="48.26" width="0.1524" layer="91"/>
-<junction x="38.1" y="48.26"/>
-<label x="52.705" y="47.625" size="1.778" layer="95"/>
+<wire x1="40.64" y1="27.94" x2="53.34" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="20.32" x2="40.64" y2="27.94" width="0.1524" layer="91"/>
+<junction x="40.64" y="27.94"/>
+<label x="55.245" y="27.305" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="C13" gate="G$1" pin="1"/>
-<wire x1="-17.78" y1="2.54" x2="-25.4" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="2.54" x2="-50.8" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="-50.8" y1="2.54" x2="-55.88" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="-50.8" y1="-10.16" x2="-50.8" y2="2.54" width="0.1524" layer="91"/>
-<junction x="-50.8" y="2.54"/>
-<label x="-63.5" y="1.905" size="1.778" layer="95"/>
+<wire x1="-15.24" y1="-10.16" x2="-22.86" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="-10.16" x2="-48.26" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="-10.16" x2="-53.34" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="-22.86" x2="-48.26" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="-48.26" y="-10.16"/>
+<label x="-66.04" y="-10.795" size="1.778" layer="95"/>
 <pinref part="U5" gate="A" pin="IN"/>
 <pinref part="U5" gate="A" pin="~SHDN"/>
-<wire x1="-17.78" y1="-5.08" x2="-25.4" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="-5.08" x2="-25.4" y2="2.54" width="0.1524" layer="91"/>
-<junction x="-25.4" y="2.54"/>
+<wire x1="-15.24" y1="-17.78" x2="-22.86" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="-17.78" x2="-22.86" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="-22.86" y="-10.16"/>
 </segment>
 </net>
-<net name="VDD" class="0">
+<net name="+4.5V" class="0">
 <segment>
 <pinref part="U4" gate="A" pin="OUT"/>
 <pinref part="C9" gate="G$1" pin="1"/>
@@ -13531,8 +13571,8 @@ how daisy chain will work.</text>
 <net name="N$34" class="0">
 <segment>
 <pinref part="U$12" gate="G$1" pin="CAP-"/>
-<wire x1="-17.78" y1="48.26" x2="-38.1" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="48.26" x2="-38.1" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="27.94" x2="-35.56" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="27.94" x2="-35.56" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="C12" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -13540,36 +13580,36 @@ how daisy chain will work.</text>
 <segment>
 <pinref part="C12" gate="G$1" pin="1"/>
 <pinref part="U$12" gate="G$1" pin="CAP+"/>
-<wire x1="-38.1" y1="58.42" x2="-17.78" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="38.1" x2="-15.24" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VSS" class="0">
+<net name="-4.5V" class="0">
 <segment>
 <pinref part="U5" gate="A" pin="OUT"/>
-<wire x1="17.78" y1="2.54" x2="22.86" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-10.16" x2="25.4" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="C14" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="2.54" x2="27.94" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="2.54" x2="35.56" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="-10.16" x2="27.94" y2="2.54" width="0.1524" layer="91"/>
-<junction x="27.94" y="2.54"/>
+<wire x1="25.4" y1="-10.16" x2="30.48" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-10.16" x2="38.1" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-22.86" x2="30.48" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="30.48" y="-10.16"/>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="-27.94" y1="-20.32" x2="-27.94" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="-22.86" x2="22.86" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="-22.86" x2="22.86" y2="2.54" width="0.1524" layer="91"/>
-<junction x="22.86" y="2.54"/>
-<label x="36.83" y="1.905" size="1.778" layer="95"/>
+<wire x1="-25.4" y1="-33.02" x2="-25.4" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="-35.56" x2="25.4" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="-35.56" x2="25.4" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="25.4" y="-10.16"/>
+<label x="39.37" y="-10.795" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="R12" gate="G$1" pin="1"/>
-<wire x1="-38.1" y1="-10.16" x2="-33.02" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="-33.02" y1="-10.16" x2="-33.02" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="-22.86" x2="-30.48" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="-22.86" x2="-30.48" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="U5" gate="A" pin="SET"/>
-<wire x1="-33.02" y1="-2.54" x2="-17.78" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="-15.24" x2="-15.24" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="-27.94" y1="-10.16" x2="-33.02" y2="-10.16" width="0.1524" layer="91"/>
-<junction x="-33.02" y="-10.16"/>
+<wire x1="-25.4" y1="-22.86" x2="-30.48" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="-30.48" y="-22.86"/>
 </segment>
 </net>
 </nets>
@@ -13583,7 +13623,7 @@ how daisy chain will work.</text>
 </plain>
 <instances>
 <instance part="U14" gate="A" x="0" y="0"/>
-<instance part="U$76" gate="G$1" x="-45.72" y="7.62" rot="R180"/>
+<instance part="U$76" gate="G$1" x="-60.96" y="7.62" rot="R180"/>
 <instance part="C39" gate="G$1" x="-33.02" y="-5.08" rot="R180"/>
 <instance part="C47" gate="G$1" x="-25.4" y="-5.08" rot="R180"/>
 <instance part="C48" gate="G$1" x="25.4" y="2.54"/>
@@ -13646,15 +13686,15 @@ how daisy chain will work.</text>
 <pinref part="SUPPLY13" gate="G$1" pin="AGND"/>
 </segment>
 </net>
-<net name="VDD" class="0">
+<net name="+4.5V" class="0">
 <segment>
 <pinref part="U14" gate="A" pin="VIN"/>
-<wire x1="-45.72" y1="7.62" x2="-33.02" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="7.62" x2="-33.02" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="C39" gate="G$1" pin="2"/>
 <wire x1="-33.02" y1="7.62" x2="-17.78" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="0" x2="-33.02" y2="7.62" width="0.1524" layer="91"/>
 <junction x="-33.02" y="7.62"/>
-<label x="-52.07" y="6.985" size="1.778" layer="95"/>
+<label x="-69.85" y="6.985" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="-17.78" y1="-43.18" x2="-38.1" y2="-43.18" width="0.1524" layer="91"/>
@@ -13720,25 +13760,6 @@ how daisy chain will work.</text>
 <junction x="-30.48" y="-55.88"/>
 </segment>
 </net>
-<net name="_VREF" class="0">
-<segment>
-<pinref part="U14" gate="A" pin="VOUT"/>
-<wire x1="17.78" y1="7.62" x2="25.4" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="7.62" x2="25.4" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="C48" gate="G$1" pin="1"/>
-<wire x1="25.4" y1="7.62" x2="35.56" y2="7.62" width="0.1524" layer="91"/>
-<junction x="25.4" y="7.62"/>
-<pinref part="TP9" gate="G$1" pin="TP"/>
-<wire x1="35.56" y1="7.62" x2="40.64" y2="7.62" width="0.1524" layer="91"/>
-<junction x="35.56" y="7.62"/>
-<label x="41.91" y="6.985" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U1" gate="A" pin="+IN1"/>
-<wire x1="-60.96" y1="-48.26" x2="-17.78" y2="-48.26" width="0.1524" layer="91"/>
-<label x="-69.85" y="-48.895" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="VBIAS+" class="0">
 <segment>
 <wire x1="73.66" y1="-53.34" x2="73.66" y2="-45.72" width="0.1524" layer="91"/>
@@ -13774,6 +13795,25 @@ how daisy chain will work.</text>
 <junction x="-25.4" y="-15.24"/>
 <pinref part="C47" gate="G$1" pin="1"/>
 <wire x1="-25.4" y1="-7.62" x2="-25.4" y2="-15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VREF_PRE" class="0">
+<segment>
+<pinref part="U14" gate="A" pin="VOUT"/>
+<wire x1="17.78" y1="7.62" x2="25.4" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="7.62" x2="25.4" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="C48" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="7.62" x2="35.56" y2="7.62" width="0.1524" layer="91"/>
+<junction x="25.4" y="7.62"/>
+<pinref part="TP9" gate="G$1" pin="TP"/>
+<wire x1="35.56" y1="7.62" x2="40.64" y2="7.62" width="0.1524" layer="91"/>
+<junction x="35.56" y="7.62"/>
+<label x="41.91" y="6.985" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="+IN1"/>
+<wire x1="-60.96" y1="-48.26" x2="-17.78" y2="-48.26" width="0.1524" layer="91"/>
+<label x="-74.93" y="-48.895" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
