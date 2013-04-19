@@ -1,3 +1,7 @@
+------------
+1. POWER 
+------------
+
 DC-DC INVERTER (-5 VOLT OUTPUT):
 --------------------------------
 U1    N.A.    296-18729-1-ND    10-SON        1    DIGI-KEY    
@@ -15,7 +19,6 @@ R3    750k    P750KCCT-ND       0805          1    DIGI-KEY
 D1    N.A.    SL02-GS08CT-ND    DO-219AB      1    DIGI-KEY
 L1    4.7uH   445-3235-1-ND     N.A.          1    DIGI-KEY  
 
-
 DC-DC SWITCHED CAPACITOR VOLTAGE INVERTER (-VIN OUTPUT):
 -----------------------------------------------------------
 U1    N.A.    LM2663M/NOPB-ND PSOP-8          1    DIGI-KEY
@@ -32,6 +35,12 @@ C3    10nF    399-9154-1-ND     0805          1     DIGI-KEY
 -------------------------
 U1    N.A     296-28110-1-ND    SOT23-5       1   DIGI-KEY
 C1,2  1uF     399-1284-1-ND     0805          2    DIGI-KEY  
+L     N.A.    350-2044-1-ND     0805          1   DIGI-KEY
+
+
+----------------------
+2. SIGNAL CONDITIONING
+----------------------
 
 VADC BIAS:
 ----------
@@ -41,12 +50,27 @@ VDAC BIAS:
 ----------
 U1,2    N.A     AD8022ARZ-ND      8SOIC       2   DIGI-KEY
 
+----------------------
+2. SIGNAL CONVERSION
+----------------------
 
-ADC
+ADC:
+----
 R1,2 	47k		A103211CT-ND	0805			2	DIGI-KEY
 
-PROTOTYPE SUPPLIES:
--------------------
+
+-----------------------
+4. BEAGLEBONE INTERFACE
+-----------------------
+
+TEST1-4 N.A.    350-2041-1-ND 0805  4   DIGI-KEY
+R1-4    2k      
+
+----------------------
+5. PROTOTYPE SUPPLIES
+----------------------
+
+BREAKOUT BOARDS
 A1    N.A.    PA0063            20-QFN to DIP       1    PROTO-ADVANTAGE
 A2    N.A.    PA0034            TSSOP-16 to DIP     1    PROTO-ADVANTAGE
 A3    N.A.    PA0191            TSSOP-10 to DIP     1    PROTO-ADVANTAGE
