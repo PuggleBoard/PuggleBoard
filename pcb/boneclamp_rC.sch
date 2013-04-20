@@ -13650,7 +13650,7 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY3" library="supply2" deviceset="AGND" device=""/>
 <part name="C35" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
 <part name="R30" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
-<part name="R31" library="rcl" deviceset="R-US_" device="R0603" value="260k"/>
+<part name="R31" library="rcl" deviceset="R-US_" device="R0603" value="261k"/>
 <part name="U6" library="ti-extended" deviceset="OPA365AIDBVR" device=""/>
 <part name="R15" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="R17" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
