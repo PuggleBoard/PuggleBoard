@@ -13597,12 +13597,11 @@ Source: www.kingbright.com</description>
 <part name="U14" library="ti-extended" deviceset="REF5040MDREP" device=""/>
 <part name="C39" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
 <part name="C40" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
-<part name="C38" library="rcl" deviceset="C-EU" device="C0603"/>
 <part name="SUPPLY22" library="supply2" deviceset="AGND" device=""/>
 <part name="VREF_PRE" library="testpad" deviceset="TP" device="B1,27"/>
-<part name="C10" library="rcl" deviceset="C-EU" device="C0603" value="4.7uF"/>
+<part name="C10" library="rcl" deviceset="C-EU" device="C0805" value="4.7uF"/>
 <part name="C15" library="rcl" deviceset="C-EU" device="C0603" value="22uF"/>
-<part name="C9" library="rcl" deviceset="C-EU" device="C0603" value="4.7uF"/>
+<part name="C9" library="rcl" deviceset="C-EU" device="C0805" value="4.7uF"/>
 <part name="DGND5" library="supply2" deviceset="PE" device="" value="DGND"/>
 <part name="SUPPLY11" library="supply2" deviceset="AGND" device=""/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
@@ -13635,7 +13634,7 @@ Source: www.kingbright.com</description>
 <part name="C7" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="SUPPLY36" library="supply2" deviceset="AGND" device=""/>
 <part name="U15" library="analog-devices-02" deviceset="AD8032ARZ-REEL7" device=""/>
-<part name="C44" library="rcl" deviceset="C-EU" device="C0603" value="10uF"/>
+<part name="C44" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="C41" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="SUPPLY4" library="supply2" deviceset="AGND" device=""/>
 <part name="SUPPLY29" library="supply2" deviceset="AGND" device=""/>
@@ -13677,7 +13676,7 @@ Source: www.kingbright.com</description>
 <part name="C22" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="SUPPLY21" library="supply2" deviceset="AGND" device=""/>
 <part name="VBIAS" library="testpad" deviceset="TP" device="B1,27"/>
-<part name="R36" library="boneclamp" deviceset="TRIM_US-" device=""/>
+<part name="R36" library="boneclamp" deviceset="TRIM_US-" device="" value="10k"/>
 <part name="C42" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="SUPPLY13" library="supply2" deviceset="AGND" device=""/>
 <part name="R34" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
@@ -13716,6 +13715,7 @@ Source: www.kingbright.com</description>
 <part name="EXT_PWR" library="led" deviceset="LED" device="CHIPLED_0805"/>
 <part name="SUPPLY34" library="supply2" deviceset="AGND" device=""/>
 <part name="R14" library="rcl" deviceset="R-US_" device="R0603" value="10"/>
+<part name="C38" library="rcl" deviceset="C-US" device="C1206" value="4.7uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -14032,7 +14032,7 @@ using single, isolated via.</text>
 <instance part="ADC_A+" gate="G$1" x="-5.08" y="228.6"/>
 <instance part="ADC_C+" gate="G$1" x="170.18" y="228.6"/>
 <instance part="ADC_D+" gate="G$1" x="170.18" y="167.64"/>
-<instance part="R14" gate="G$1" x="27.94" y="55.88" rot="R180"/>
+<instance part="R14" gate="G$1" x="17.78" y="55.88" rot="R180"/>
 </instances>
 <busses>
 <bus name="ADC_SPI[0..4]">
@@ -14307,10 +14307,10 @@ using single, isolated via.</text>
 </segment>
 <segment>
 <pinref part="U5" gate="A" pin="REF-"/>
-<wire x1="50.8" y1="53.34" x2="43.18" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="53.34" x2="43.18" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="53.34" x2="48.26" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="53.34" x2="48.26" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="C15" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="45.72" x2="38.1" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="45.72" x2="38.1" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="U5" gate="A" pin="AGND"/>
 <wire x1="50.8" y1="35.56" x2="38.1" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="35.56" x2="-17.78" y2="35.56" width="0.1524" layer="91"/>
@@ -14408,12 +14408,12 @@ using single, isolated via.</text>
 <pinref part="C15" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="53.34" x2="38.1" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="33.02" y1="55.88" x2="38.1" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="55.88" x2="38.1" y2="55.88" width="0.1524" layer="91"/>
 <junction x="38.1" y="55.88"/>
 </segment>
 <segment>
 <pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="22.86" y1="55.88" x2="2.54" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="55.88" x2="2.54" y2="55.88" width="0.1524" layer="91"/>
 <label x="2.54" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -15434,7 +15434,7 @@ using single, isolated via.</text>
 <sheet>
 <description>VREF</description>
 <plain>
-<text x="30.48" y="-5.08" size="1.778" layer="97">Output capacitor:
+<text x="35.56" y="-5.08" size="1.778" layer="97">Output capacitor:
  C &gt;= 1.0uF 
 1.0&lt;= ESR &lt;= 1.5 Ohms.</text>
 </plain>
@@ -15442,7 +15442,6 @@ using single, isolated via.</text>
 <instance part="U14" gate="A" x="0" y="0"/>
 <instance part="C39" gate="G$1" x="-33.02" y="-5.08" rot="R180"/>
 <instance part="C40" gate="G$1" x="-25.4" y="-5.08" rot="R180"/>
-<instance part="C38" gate="G$1" x="25.4" y="2.54"/>
 <instance part="SUPPLY22" gate="G$1" x="25.4" y="-10.16"/>
 <instance part="VREF_PRE" gate="G$1" x="35.56" y="10.16"/>
 <instance part="U15" gate="A" x="0" y="-50.8"/>
@@ -15459,15 +15458,16 @@ using single, isolated via.</text>
 <instance part="R34" gate="G$1" x="40.64" y="-30.48" rot="R180"/>
 <instance part="R35" gate="G$1" x="60.96" y="-45.72" rot="R180"/>
 <instance part="VREF" gate="G$1" x="73.66" y="-27.94"/>
+<instance part="C38" gate="G$1" x="25.4" y="2.54"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="AGND" class="0">
 <segment>
-<pinref part="C38" gate="G$1" pin="2"/>
 <wire x1="25.4" y1="-7.62" x2="25.4" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="SUPPLY22" gate="G$1" pin="AGND"/>
+<pinref part="C38" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="-17.78" y1="-68.58" x2="-30.48" y2="-68.58" width="0.1524" layer="91"/>
@@ -15612,13 +15612,13 @@ using single, isolated via.</text>
 <pinref part="U14" gate="A" pin="VOUT"/>
 <wire x1="17.78" y1="7.62" x2="25.4" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="7.62" x2="25.4" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="C38" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="7.62" x2="35.56" y2="7.62" width="0.1524" layer="91"/>
 <junction x="25.4" y="7.62"/>
 <pinref part="VREF_PRE" gate="G$1" pin="TP"/>
 <junction x="35.56" y="7.62"/>
 <wire x1="35.56" y1="7.62" x2="86.36" y2="7.62" width="0.1524" layer="91"/>
 <label x="73.66" y="7.62" size="1.778" layer="95"/>
+<pinref part="C38" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="U15" gate="A" pin="+IN1"/>
