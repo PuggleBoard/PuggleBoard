@@ -3343,15 +3343,15 @@ design rules under a new name.</description>
 <contactref element="C56" pad="1"/>
 <contactref element="U12" pad="20"/>
 <contactref element="C55" pad="1"/>
+<contactref element="A_I/O" pad="1"/>
+<contactref element="A_I/O" pad="2"/>
+<contactref element="EXT_PWR" pad="C"/>
+<contactref element="PWR_EXT" pad="2"/>
 <contactref element="C60" pad="1"/>
 <contactref element="C61" pad="1"/>
 <contactref element="C62" pad="1"/>
 <contactref element="C63" pad="1"/>
 <contactref element="U12" pad="23"/>
-<contactref element="A_I/O" pad="1"/>
-<contactref element="A_I/O" pad="2"/>
-<contactref element="EXT_PWR" pad="C"/>
-<contactref element="PWR_EXT" pad="2"/>
 <wire x1="236.435" y1="22.86" x2="230.085" y2="22.86" width="0" layer="19" extent="1-1"/>
 <wire x1="228.6762" y1="5.08" x2="230.085" y2="22.86" width="0" layer="19" extent="1-1"/>
 <wire x1="230.085" y1="-2.54" x2="228.6762" y2="5.08" width="0" layer="19" extent="1-1"/>
@@ -3654,6 +3654,7 @@ design rules under a new name.</description>
 <contactref element="R16" pad="1"/>
 <contactref element="VREF" pad="TP"/>
 <contactref element="R34" pad="1"/>
+<contactref element="R34" pad="2"/>
 <wire x1="228.6762" y1="7.62" x2="228.6762" y2="8.89" width="0" layer="19" extent="1-1"/>
 <wire x1="190.715" y1="68.58" x2="228.6762" y2="8.89" width="0" layer="19" extent="1-1"/>
 <wire x1="273.47" y1="100.965" x2="190.715" y2="68.58" width="0" layer="19" extent="1-1"/>
@@ -3668,7 +3669,8 @@ design rules under a new name.</description>
 <wire x1="-44.665" y1="-115.57" x2="-44.665" y2="-109.22" width="0" layer="19" extent="1-1"/>
 <wire x1="-42.965" y1="-115.57" x2="-44.665" y2="-115.57" width="0" layer="19" extent="1-1"/>
 <wire x1="-45.085" y1="-127" x2="-44.665" y2="-115.57" width="0" layer="19" extent="1-1"/>
-<wire x1="-70.7" y1="-266.065" x2="-45.085" y2="-127" width="0" layer="19" extent="1-1"/>
+<wire x1="-69" y1="-266.065" x2="-45.085" y2="-127" width="0" layer="19" extent="1-1"/>
+<wire x1="-70.7" y1="-266.065" x2="-69" y2="-266.065" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="~RST">
 <contactref element="U$42" pad="15"/>
@@ -3984,9 +3986,6 @@ design rules under a new name.</description>
 <contactref element="R41" pad="1"/>
 <contactref element="EXT_PWR" pad="A"/>
 <wire x1="-68.58" y1="-257.59" x2="-70.7" y2="-260.985" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$8">
-<contactref element="R34" pad="2"/>
 </signal>
 </signals>
 </board>
