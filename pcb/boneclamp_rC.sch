@@ -14066,6 +14066,7 @@ using single, isolated via.</text>
 <wire x1="-5.08" y1="165.1" x2="5.08" y2="165.1" width="0.1524" layer="91"/>
 <junction x="-5.08" y="165.1"/>
 <label x="0" y="165.1" size="1.778" layer="95"/>
+<pinref part="ADC_B+" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -14457,6 +14458,7 @@ using single, isolated via.</text>
 <wire x1="-5.08" y1="226.06" x2="5.08" y2="226.06" width="0.1524" layer="91"/>
 <junction x="-5.08" y="226.06"/>
 <label x="0" y="226.06" size="1.778" layer="95"/>
+<pinref part="ADC_A+" gate="G$1" pin="TP"/>
 </segment>
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
@@ -14479,6 +14481,7 @@ using single, isolated via.</text>
 <wire x1="170.18" y1="226.06" x2="180.34" y2="226.06" width="0.1524" layer="91"/>
 <junction x="170.18" y="226.06"/>
 <label x="175.26" y="226.06" size="1.778" layer="95"/>
+<pinref part="ADC_C+" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="ADC_D+" class="0">
@@ -14496,6 +14499,7 @@ using single, isolated via.</text>
 <wire x1="170.18" y1="165.1" x2="180.34" y2="165.1" width="0.1524" layer="91"/>
 <junction x="170.18" y="165.1"/>
 <label x="175.26" y="165.1" size="1.778" layer="95"/>
+<pinref part="ADC_D+" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="ADC_SPI3" class="0">
