@@ -66,6 +66,8 @@ R1,2 	47k		A103211CT-ND	0805			2	DIGI-KEY
 TEST1-4 N.A.    350-2041-1-ND 0805  4   DIGI-KEY
 R1-4    2k      
 
+RESET  N.A.     450-1129-ND     1   DIGI-KEY
+
 ----------------------
 5. PROTOTYPE SUPPLIES
 ----------------------
