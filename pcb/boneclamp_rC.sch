@@ -15645,7 +15645,7 @@ using single, isolated via.</text>
 <instance part="I2C2_SCLK" gate="G$1" x="-25.4" y="33.02"/>
 <instance part="VDRIVE" gate="G$1" x="-81.28" y="63.5"/>
 <instance part="JP3" gate="A" x="-48.26" y="40.64" rot="R270"/>
-<instance part="ADDRESS" gate="G$1" x="-83.82" y="20.32" rot="R90"/>
+<instance part="ADDRESS" gate="G$1" x="-86.36" y="20.32" rot="MR90"/>
 <instance part="I2C2_SDA" gate="G$1" x="15.24" y="25.4"/>
 <instance part="DGND6" gate="PE" x="50.8" y="5.08"/>
 </instances>
@@ -15693,18 +15693,18 @@ using single, isolated via.</text>
 </net>
 <net name="DGND" class="0">
 <segment>
-<wire x1="-91.44" y1="20.32" x2="-101.6" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="-101.6" y1="20.32" x2="-101.6" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="-101.6" y1="17.78" x2="-91.44" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="-101.6" y1="17.78" x2="-101.6" y2="7.62" width="0.1524" layer="91"/>
-<junction x="-101.6" y="17.78"/>
+<wire x1="-101.6" y1="22.86" x2="-101.6" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="DGND8" gate="PE" pin="PE"/>
-<pinref part="ADDRESS" gate="G$1" pin="5"/>
-<pinref part="ADDRESS" gate="G$1" pin="6"/>
-<wire x1="-101.6" y1="20.32" x2="-101.6" y2="22.86" width="0.1524" layer="91"/>
-<junction x="-101.6" y="20.32"/>
-<pinref part="ADDRESS" gate="G$1" pin="4"/>
+<pinref part="ADDRESS" gate="G$1" pin="3"/>
+<wire x1="-101.6" y1="20.32" x2="-101.6" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-101.6" y1="17.78" x2="-101.6" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="-101.6" y1="22.86" x2="-91.44" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="ADDRESS" gate="G$1" pin="2"/>
+<wire x1="-91.44" y1="20.32" x2="-101.6" y2="20.32" width="0.1524" layer="91"/>
+<junction x="-101.6" y="20.32"/>
+<pinref part="ADDRESS" gate="G$1" pin="1"/>
+<wire x1="-101.6" y1="17.78" x2="-91.44" y2="17.78" width="0.1524" layer="91"/>
+<junction x="-101.6" y="17.78"/>
 </segment>
 <segment>
 <pinref part="U16" gate="G$1" pin="GND"/>
@@ -15733,22 +15733,22 @@ using single, isolated via.</text>
 <net name="N$14" class="0">
 <segment>
 <pinref part="U16" gate="G$1" pin="A0"/>
-<wire x1="-78.74" y1="17.78" x2="-73.66" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="-73.66" y1="17.78" x2="-15.24" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="-73.66" y1="17.78" x2="-73.66" y2="45.72" width="0.1524" layer="91"/>
-<junction x="-73.66" y="17.78"/>
 <pinref part="R37" gate="G$1" pin="1"/>
-<pinref part="ADDRESS" gate="G$1" pin="1"/>
+<pinref part="ADDRESS" gate="G$1" pin="6"/>
+<wire x1="-78.74" y1="17.78" x2="-73.66" y2="17.78" width="0.1524" layer="91"/>
+<junction x="-73.66" y="17.78"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
 <pinref part="U16" gate="G$1" pin="A1"/>
 <wire x1="-15.24" y1="20.32" x2="-66.04" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="ADDRESS" gate="G$1" pin="2"/>
 <pinref part="R38" gate="G$1" pin="1"/>
-<wire x1="-66.04" y1="20.32" x2="-78.74" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="-66.04" y1="45.72" x2="-66.04" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="ADDRESS" gate="G$1" pin="5"/>
+<wire x1="-78.74" y1="20.32" x2="-66.04" y2="20.32" width="0.1524" layer="91"/>
 <junction x="-66.04" y="20.32"/>
 </segment>
 </net>
@@ -15758,7 +15758,7 @@ using single, isolated via.</text>
 <wire x1="-15.24" y1="22.86" x2="-58.42" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="-58.42" y1="22.86" x2="-58.42" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="R39" gate="G$1" pin="1"/>
-<pinref part="ADDRESS" gate="G$1" pin="3"/>
+<pinref part="ADDRESS" gate="G$1" pin="4"/>
 <wire x1="-78.74" y1="22.86" x2="-58.42" y2="22.86" width="0.1524" layer="91"/>
 <junction x="-58.42" y="22.86"/>
 </segment>
