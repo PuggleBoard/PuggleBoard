@@ -15329,17 +15329,18 @@ using single, isolated via.</text>
 <segment>
 <pinref part="U12" gate="A" pin="OUT"/>
 <wire x1="20.32" y1="-10.16" x2="25.4" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="C35" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="-10.16" x2="30.48" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="-10.16" x2="43.18" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="-22.86" x2="30.48" y2="-10.16" width="0.1524" layer="91"/>
-<junction x="30.48" y="-10.16"/>
 <pinref part="R31" gate="G$1" pin="2"/>
+<wire x1="30.48" y1="-10.16" x2="43.18" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="-33.02" x2="-25.4" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="-35.56" x2="25.4" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="-35.56" x2="25.4" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="25.4" y="-10.16"/>
 <label x="35.56" y="-10.16" size="1.778" layer="95"/>
+<pinref part="C35" gate="G$1" pin="1"/>
+<wire x1="30.48" y1="-22.86" x2="30.48" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="-4.5V" gate="G$1" pin="TP"/>
+<junction x="30.48" y="-10.16"/>
 </segment>
 </net>
 <net name="N$5" class="0">
