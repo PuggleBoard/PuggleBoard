@@ -13657,7 +13657,7 @@ Source: www.kingbright.com</description>
 <part name="C17" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="C16" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="SUPPLY31" library="supply2" deviceset="AGND" device=""/>
-<part name="U7" library="ti-extended" deviceset="OPA365AIDBVR" device=""/>
+<part name="U7" library="ti-extended" deviceset="OPA365AIDBVR" device="" value="OPA365"/>
 <part name="R16" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="R18" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="C19" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
