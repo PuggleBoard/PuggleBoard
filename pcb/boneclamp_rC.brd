@@ -3007,8 +3007,8 @@ design rules under a new name.</description>
 </element>
 <element name="C39" library="rcl" package="C0603" value="1uF" x="54.229" y="105.918" rot="R180"/>
 <element name="C40" library="rcl" package="C0603" value="1uF" x="59.944" y="106.934"/>
-<element name="VREF_PRE" library="testpad" package="B1,27" value="TPB1,27" x="189.23" y="77.47">
-<attribute name="TP_SIGNAL_NAME" value="" x="189.23" y="77.47" size="1.778" layer="27" display="off"/>
+<element name="VREF_PRE" library="testpad" package="B1,27" value="TPB1,27" x="-62.738" y="160.401">
+<attribute name="TP_SIGNAL_NAME" value="" x="-62.738" y="160.401" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C10" library="rcl" package="C0805" value="4.7uF" x="189.865" y="73.66"/>
 <element name="C15" library="rcl" package="C0603" value="22uF" x="189.865" y="68.58"/>
@@ -3078,7 +3078,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="42.799" y="14.986" size="0.8128" layer="27"/>
 </element>
 <element name="C43" library="rcl" package="C0603" value="0.1uF" x="195.58" y="-1.27"/>
-<element name="A_I/O" library="adafruit" package="2X05/90" value="PINHD-2X5/90" x="15.875" y="83.185"/>
+<element name="A_I/O" library="adafruit" package="2X05/90" value="PINHD-2X5/90" x="21.209" y="83.058"/>
 <element name="U12" library="Maxim_By_element14_Batch_1" package="SOT95P280X145-5N" value="MAX1735" x="39.37" y="31.75" smashed="yes" rot="R90">
 <attribute name="PACKAGE" value="SOT-23-5" x="39.37" y="31.75" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="68K9417" x="39.37" y="31.75" size="1.778" layer="27" rot="R90" display="off"/>
@@ -3155,7 +3155,7 @@ design rules under a new name.</description>
 <element name="VBIAS" library="testpad" package="B1,27" value="TPB1,27" x="-74.422" y="155.067">
 <attribute name="TP_SIGNAL_NAME" value="" x="-74.422" y="155.067" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R36" library="boneclamp" package="M84-TRIMMER" value="10k" x="41.275" y="82.042"/>
+<element name="R36" library="boneclamp" package="M84-TRIMMER" value="10k" x="37.084" y="81.28" rot="R90"/>
 <element name="C42" library="rcl" package="C0603" value="0.1uF" x="-24.384" y="38.735"/>
 <element name="R34" library="rcl" package="R0603" value="10k" x="-24.892" y="33.147"/>
 <element name="R35" library="rcl" package="R0603" value="10k" x="63.5" y="93.599"/>
@@ -3204,17 +3204,17 @@ design rules under a new name.</description>
 <element name="RESET" library="adafruit" package="EVQ-Q2-A" value="SPST_TACT" x="6.35" y="10.795" smashed="yes">
 <attribute name="NAME" x="3.35" y="14.295" size="1.27" layer="25"/>
 </element>
-<element name="ADC_B+" library="testpad" package="B1,27" value="TPB1,27" x="253.365" y="55.245">
-<attribute name="TP_SIGNAL_NAME" value="" x="253.365" y="55.245" size="1.778" layer="27" display="off"/>
+<element name="ADC_B+" library="testpad" package="B1,27" value="TPB1,27" x="-54.61" y="162.179">
+<attribute name="TP_SIGNAL_NAME" value="" x="-54.61" y="162.179" size="1.778" layer="27" display="off"/>
 </element>
-<element name="ADC_A+" library="testpad" package="B1,27" value="TPB1,27" x="253.365" y="50.8">
-<attribute name="TP_SIGNAL_NAME" value="" x="253.365" y="50.8" size="1.778" layer="27" display="off"/>
+<element name="ADC_A+" library="testpad" package="B1,27" value="TPB1,27" x="-54.61" y="157.734">
+<attribute name="TP_SIGNAL_NAME" value="" x="-54.61" y="157.734" size="1.778" layer="27" display="off"/>
 </element>
-<element name="ADC_C+" library="testpad" package="B1,27" value="TPB1,27" x="253.365" y="46.355">
-<attribute name="TP_SIGNAL_NAME" value="" x="253.365" y="46.355" size="1.778" layer="27" display="off"/>
+<element name="ADC_C+" library="testpad" package="B1,27" value="TPB1,27" x="-54.61" y="153.289">
+<attribute name="TP_SIGNAL_NAME" value="" x="-54.61" y="153.289" size="1.778" layer="27" display="off"/>
 </element>
-<element name="ADC_D+" library="testpad" package="B1,27" value="TPB1,27" x="253.365" y="41.91">
-<attribute name="TP_SIGNAL_NAME" value="" x="253.365" y="41.91" size="1.778" layer="27" display="off"/>
+<element name="ADC_D+" library="testpad" package="B1,27" value="TPB1,27" x="-54.61" y="148.844">
+<attribute name="TP_SIGNAL_NAME" value="" x="-54.61" y="148.844" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R33" library="rcl" package="R0603" value="2k" x="49.53" y="4.953" smashed="yes" rot="R180">
 <attribute name="NAME" x="47.117" y="5.969" size="0.8128" layer="25" rot="R270"/>
@@ -3339,7 +3339,7 @@ design rules under a new name.</description>
 <wire x1="22.86" y1="73.152" x2="23.114" y2="73.406" width="0.3048" layer="1"/>
 <wire x1="23.114" y1="73.406" x2="23.114" y2="74.129" width="0.3048" layer="1"/>
 <wire x1="23.114" y1="74.129" x2="23.075" y2="74.168" width="0.3048" layer="1"/>
-<wire x1="21.59" y1="72.771" x2="13.335" y2="78.105" width="0" layer="19" extent="1-1"/>
+<wire x1="21.59" y1="72.771" x2="18.669" y2="77.978" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DAC_B">
 <contactref element="A_I/O" pad="5"/>
@@ -3353,7 +3353,7 @@ design rules under a new name.</description>
 <wire x1="30.099" y1="73.152" x2="30.353" y2="73.406" width="0.3048" layer="1"/>
 <wire x1="30.353" y1="73.406" x2="30.353" y2="74.129" width="0.3048" layer="1"/>
 <wire x1="30.353" y1="74.129" x2="30.314" y2="74.168" width="0.3048" layer="1"/>
-<wire x1="15.875" y1="78.105" x2="28.829" y2="72.771" width="0" layer="19" extent="1-1"/>
+<wire x1="21.209" y1="77.978" x2="28.829" y2="72.771" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DAC_C">
 <contactref element="A_I/O" pad="7"/>
@@ -3367,7 +3367,7 @@ design rules under a new name.</description>
 <wire x1="37.338" y1="73.152" x2="37.592" y2="73.406" width="0.3048" layer="1"/>
 <wire x1="37.592" y1="73.406" x2="37.592" y2="74.002" width="0.3048" layer="1"/>
 <wire x1="37.592" y1="74.002" x2="37.553" y2="74.168" width="0.3048" layer="1"/>
-<wire x1="18.415" y1="78.105" x2="36.068" y2="72.771" width="0" layer="19" extent="1-1"/>
+<wire x1="23.749" y1="77.978" x2="36.068" y2="72.771" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DAC_D">
 <contactref element="A_I/O" pad="9"/>
@@ -3381,7 +3381,7 @@ design rules under a new name.</description>
 <wire x1="44.704" y1="73.152" x2="44.831" y2="73.279" width="0.3048" layer="1"/>
 <wire x1="44.831" y1="73.279" x2="44.831" y2="74.129" width="0.3048" layer="1"/>
 <wire x1="44.831" y1="74.129" x2="44.792" y2="74.168" width="0.3048" layer="1"/>
-<wire x1="20.955" y1="78.105" x2="43.434" y2="72.771" width="0" layer="19" extent="1-1"/>
+<wire x1="26.289" y1="77.978" x2="43.434" y2="72.771" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="AGND">
 <contactref element="R23" pad="1"/>
@@ -3612,8 +3612,8 @@ design rules under a new name.</description>
 <wire x1="275.27" y1="107.315" x2="275.17" y2="113.665" width="0" layer="19" extent="1-1"/>
 <wire x1="275.17" y1="100.965" x2="275.27" y2="107.315" width="0" layer="19" extent="1-1"/>
 <wire x1="56.476" y1="98.298" x2="188.915" y2="73.66" width="0" layer="19" extent="1-1"/>
-<wire x1="43.815" y1="79.502" x2="56.476" y2="98.298" width="0" layer="19" extent="1-1"/>
-<wire x1="46.482" y1="69.635" x2="43.815" y2="79.502" width="0" layer="19" extent="1-1"/>
+<wire x1="39.624" y1="83.82" x2="56.476" y2="98.298" width="0" layer="19" extent="1-1"/>
+<wire x1="46.482" y1="69.635" x2="39.624" y2="83.82" width="0" layer="19" extent="1-1"/>
 <wire x1="45.088" y1="2.667" x2="45.085" y2="2.794" width="0" layer="19" extent="1-1"/>
 <wire x1="45.505" y1="30.353" x2="50.165" y2="19.05" width="0" layer="19" extent="1-1"/>
 <wire x1="45.72" y1="32.9946" x2="45.505" y2="30.353" width="0" layer="19" extent="1-1"/>
@@ -3939,22 +3939,22 @@ design rules under a new name.</description>
 <signal name="ADC_D">
 <contactref element="R6" pad="2"/>
 <contactref element="A_I/O" pad="10"/>
-<wire x1="242.15" y1="23.495" x2="20.955" y2="80.645" width="0" layer="19" extent="1-1"/>
+<wire x1="242.15" y1="23.495" x2="26.289" y2="80.518" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_C">
 <contactref element="R2" pad="2"/>
 <contactref element="A_I/O" pad="8"/>
-<wire x1="242.15" y1="45.72" x2="18.415" y2="80.645" width="0" layer="19" extent="1-1"/>
+<wire x1="242.15" y1="45.72" x2="23.749" y2="80.518" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_B">
 <contactref element="R5" pad="2"/>
 <contactref element="A_I/O" pad="6"/>
-<wire x1="242.15" y1="67.945" x2="15.875" y2="80.645" width="0" layer="19" extent="1-1"/>
+<wire x1="242.15" y1="67.945" x2="21.209" y2="80.518" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_A">
 <contactref element="R1" pad="2"/>
 <contactref element="A_I/O" pad="4"/>
-<wire x1="13.335" y1="80.645" x2="49.872" y2="105.537" width="0" layer="19" extent="1-1"/>
+<wire x1="18.669" y1="80.518" x2="49.872" y2="105.537" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_B+">
 <contactref element="R11" pad="2"/>
@@ -3963,7 +3963,7 @@ design rules under a new name.</description>
 <contactref element="ADC_B+" pad="TP"/>
 <wire x1="229.8446" y1="76.5048" x2="229.45" y2="114.3" width="0" layer="19" extent="1-1"/>
 <wire x1="227.75" y1="61.595" x2="229.8446" y2="76.5048" width="0" layer="19" extent="1-1"/>
-<wire x1="253.365" y1="55.245" x2="227.75" y2="61.595" width="0" layer="19" extent="1-1"/>
+<wire x1="-54.61" y1="162.179" x2="227.75" y2="61.595" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VREF">
 <contactref element="U15" pad="1"/>
@@ -3985,7 +3985,7 @@ design rules under a new name.</description>
 <contactref element="R14" pad="2"/>
 <wire x1="190.715" y1="68.58" x2="273.47" y2="100.965" width="0" layer="19" extent="1-1"/>
 <wire x1="39.917" y1="74.168" x2="190.715" y2="68.58" width="0" layer="19" extent="1-1"/>
-<wire x1="38.735" y1="79.502" x2="39.917" y2="74.168" width="0" layer="19" extent="1-1"/>
+<wire x1="39.624" y1="78.74" x2="39.917" y2="74.168" width="0" layer="19" extent="1-1"/>
 <wire x1="32.678" y1="74.168" x2="39.917" y2="74.168" width="0" layer="19" extent="1-1"/>
 <wire x1="25.439" y1="74.168" x2="32.678" y2="74.168" width="0" layer="19" extent="1-1"/>
 <wire x1="18.2" y1="74.168" x2="25.439" y2="74.168" width="0" layer="19" extent="1-1"/>
@@ -4152,7 +4152,7 @@ design rules under a new name.</description>
 <contactref element="U15" pad="5"/>
 <contactref element="R36" pad="2"/>
 <wire x1="40.4368" y1="52.578" x2="241.085" y2="-2.54" width="0" layer="19" extent="1-1"/>
-<wire x1="41.275" y1="84.582" x2="40.4368" y2="52.578" width="0" layer="19" extent="1-1"/>
+<wire x1="34.544" y1="81.28" x2="40.4368" y2="52.578" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VBIAS">
 <contactref element="U3" pad="3"/>
@@ -4258,7 +4258,7 @@ design rules under a new name.</description>
 <contactref element="C38" pad="1"/>
 <wire x1="17.269" y1="54.61" x2="35.5092" y2="53.848" width="0" layer="19" extent="1-1"/>
 <wire x1="13.6398" y1="52.959" x2="17.269" y2="54.61" width="0" layer="19" extent="1-1"/>
-<wire x1="189.23" y1="77.47" x2="35.5092" y2="53.848" width="0" layer="19" extent="1-1"/>
+<wire x1="-62.738" y1="160.401" x2="35.5092" y2="53.848" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_A+">
 <contactref element="R3" pad="1"/>
@@ -4267,7 +4267,7 @@ design rules under a new name.</description>
 <contactref element="ADC_A+" pad="TP"/>
 <wire x1="48.172" y1="100.457" x2="53.6702" y2="100.6856" width="0" layer="19" extent="1-1"/>
 <wire x1="229.45" y1="119.38" x2="53.6702" y2="100.6856" width="0" layer="19" extent="1-1"/>
-<wire x1="253.365" y1="50.8" x2="229.45" y2="119.38" width="0" layer="19" extent="1-1"/>
+<wire x1="-54.61" y1="157.734" x2="229.45" y2="119.38" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_C+">
 <contactref element="R12" pad="2"/>
@@ -4276,7 +4276,7 @@ design rules under a new name.</description>
 <contactref element="ADC_C+" pad="TP"/>
 <wire x1="229.8446" y1="54.2798" x2="229.45" y2="109.22" width="0" layer="19" extent="1-1"/>
 <wire x1="227.75" y1="39.37" x2="229.8446" y2="54.2798" width="0" layer="19" extent="1-1"/>
-<wire x1="253.365" y1="46.355" x2="229.8446" y2="54.2798" width="0" layer="19" extent="1-1"/>
+<wire x1="-54.61" y1="153.289" x2="229.8446" y2="54.2798" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_D+">
 <contactref element="R13" pad="2"/>
@@ -4284,8 +4284,8 @@ design rules under a new name.</description>
 <contactref element="U4" pad="1"/>
 <contactref element="ADC_D+" pad="TP"/>
 <wire x1="229.8446" y1="32.0548" x2="227.75" y2="17.145" width="0" layer="19" extent="1-1"/>
-<wire x1="253.365" y1="41.91" x2="229.8446" y2="32.0548" width="0" layer="19" extent="1-1"/>
-<wire x1="229.45" y1="104.14" x2="253.365" y2="41.91" width="0" layer="19" extent="1-1"/>
+<wire x1="-54.61" y1="148.844" x2="229.8446" y2="32.0548" width="0" layer="19" extent="1-1"/>
+<wire x1="229.45" y1="104.14" x2="-54.61" y2="148.844" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DAC_C+">
 <contactref element="DAC_C+" pad="TP"/>
