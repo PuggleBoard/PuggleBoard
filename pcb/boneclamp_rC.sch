@@ -13577,7 +13577,7 @@ Source: www.kingbright.com</description>
 <part name="C37" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
 <part name="SUPPLY10" library="supply2" deviceset="AGND" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="AGND" device=""/>
-<part name="JP3" library="jumper" deviceset="JP1E" device=""/>
+<part name="~W" library="jumper" deviceset="JP1E" device=""/>
 <part name="ADDRESS" library="smd-special" deviceset="SWS003" device=""/>
 <part name="I2C2_SDA" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="DGND1" library="supply2" deviceset="PE" device="" value="DGND"/>
@@ -15644,7 +15644,7 @@ using single, isolated via.</text>
 <instance part="R40" gate="G$1" x="-50.8" y="50.8" rot="R90"/>
 <instance part="I2C2_SCLK" gate="G$1" x="-25.4" y="33.02"/>
 <instance part="VDRIVE" gate="G$1" x="-81.28" y="63.5"/>
-<instance part="JP3" gate="A" x="-48.26" y="40.64" rot="R270"/>
+<instance part="~W" gate="A" x="-48.26" y="40.64" rot="R270"/>
 <instance part="ADDRESS" gate="G$1" x="-86.36" y="20.32" rot="MR90"/>
 <instance part="I2C2_SDA" gate="G$1" x="15.24" y="25.4"/>
 <instance part="DGND6" gate="PE" x="50.8" y="5.08"/>
@@ -15780,7 +15780,7 @@ using single, isolated via.</text>
 <net name="N$22" class="0">
 <segment>
 <pinref part="R40" gate="G$1" pin="1"/>
-<pinref part="JP3" gate="A" pin="1"/>
+<pinref part="~W" gate="A" pin="1"/>
 <wire x1="-50.8" y1="40.64" x2="-50.8" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -15788,7 +15788,7 @@ using single, isolated via.</text>
 <segment>
 <pinref part="U16" gate="G$1" pin="WP"/>
 <wire x1="-50.8" y1="27.94" x2="-15.24" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="A" pin="2"/>
+<pinref part="~W" gate="A" pin="2"/>
 <wire x1="-50.8" y1="27.94" x2="-50.8" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
