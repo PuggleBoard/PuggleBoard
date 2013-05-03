@@ -1548,7 +1548,6 @@ at 30/07/2012 17:45:58</description>
 <wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0.1524" layer="21"/>
 <wire x1="-0.3048" y1="1.524" x2="-0.5334" y2="1.524" width="0.1524" layer="21"/>
 <wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0.1524" layer="21" curve="-180"/>
-<text x="-2.1336" y="1.3716" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <wire x1="-0.8636" y1="-1.524" x2="0.8636" y2="-1.524" width="0" layer="51"/>
 <wire x1="0.8636" y1="-1.524" x2="0.8636" y2="-1.1938" width="0" layer="51"/>
 <wire x1="0.8636" y1="-1.1938" x2="0.8636" y2="-0.7112" width="0" layer="51"/>
@@ -1581,7 +1580,6 @@ at 30/07/2012 17:45:58</description>
 <wire x1="1.4986" y1="0.7112" x2="1.4986" y2="1.1938" width="0" layer="51"/>
 <wire x1="1.4986" y1="1.1938" x2="0.8636" y2="1.1938" width="0" layer="51"/>
 <wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0" layer="51" curve="-180"/>
-<text x="-2.1336" y="1.3716" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <text x="-3.4544" y="2.54" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-3.4544" y="-4.445" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
@@ -13590,11 +13588,11 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY7" library="supply2" deviceset="AGND" device=""/>
 <part name="R24" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="R25" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
-<part name="U5" library="ti-extended" deviceset="ADS8331IBPW" device=""/>
+<part name="U5" library="ti-extended" deviceset="ADS8331IBPW" device="" value="ADS8331"/>
 <part name="U1" library="ti-extended" deviceset="OPA365AIDBVR" device=""/>
 <part name="R1" library="rcl" deviceset="R-US_" device="R0603" value="20k"/>
 <part name="R3" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
-<part name="U14" library="ti-extended" deviceset="REF5040MDREP" device=""/>
+<part name="U14" library="ti-extended" deviceset="REF5040MDREP" device="" value="REF5040"/>
 <part name="C39" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
 <part name="C40" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
 <part name="SUPPLY22" library="supply2" deviceset="AGND" device=""/>
@@ -13633,7 +13631,7 @@ Source: www.kingbright.com</description>
 <part name="C8" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="C7" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="SUPPLY36" library="supply2" deviceset="AGND" device=""/>
-<part name="U15" library="analog-devices-02" deviceset="AD8032ARZ-REEL7" device=""/>
+<part name="U15" library="analog-devices-02" deviceset="AD8032ARZ-REEL7" device="" value="AD8032"/>
 <part name="C44" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="C41" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="SUPPLY4" library="supply2" deviceset="AGND" device=""/>
