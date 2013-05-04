@@ -13931,9 +13931,8 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <label x="27.94" y="73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="BB1" gate="G$1" pin="GPIO1_1"/>
-<wire x1="-7.62" y1="81.28" x2="10.16" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="81.28" x2="10.16" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="BB1" gate="G$1" pin="GPIO1_4"/>
+<wire x1="-63.5" y1="81.28" x2="-81.28" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC_SPI1" class="0">
@@ -13942,8 +13941,9 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <label x="27.94" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="BB1" gate="G$1" pin="GPIO1_4"/>
-<wire x1="-63.5" y1="81.28" x2="-81.28" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="BB1" gate="G$1" pin="GPIO1_1"/>
+<wire x1="-7.62" y1="81.28" x2="10.16" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="81.28" x2="10.16" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC_SPI2" class="0">
@@ -13952,8 +13952,8 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <label x="27.94" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="BB1" gate="G$1" pin="GPIO1_5"/>
-<wire x1="-7.62" y1="83.82" x2="10.16" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="BB1" gate="G$1" pin="GPIO1_30"/>
+<wire x1="-63.5" y1="83.82" x2="-81.28" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC_SPI3" class="0">
@@ -13962,8 +13962,8 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <label x="27.94" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="BB1" gate="G$1" pin="GPIO1_30"/>
-<wire x1="-63.5" y1="83.82" x2="-81.28" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="BB1" gate="G$1" pin="GPIO1_5"/>
+<wire x1="-7.62" y1="83.82" x2="10.16" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC_SPI4" class="0">
@@ -13982,8 +13982,8 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <label x="76.2" y="73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="BB1" gate="G$1" pin="GPIO1_14"/>
-<wire x1="-7.62" y1="91.44" x2="10.16" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="BB1" gate="G$1" pin="GPIO1_15"/>
+<wire x1="-63.5" y1="91.44" x2="-81.28" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DAC_SPI1" class="0">
@@ -13992,8 +13992,8 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <label x="76.2" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="BB1" gate="G$1" pin="GPIO1_15"/>
-<wire x1="-63.5" y1="91.44" x2="-81.28" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="BB1" gate="G$1" pin="GPIO1_14"/>
+<wire x1="-7.62" y1="91.44" x2="10.16" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DAC_SPI2" class="0">
