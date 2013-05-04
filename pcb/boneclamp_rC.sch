@@ -3756,6 +3756,20 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <text x="-1.905" y="-3.4925" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="0.55" y1="0.6" x2="1.55" y2="0.85" layer="21"/>
 </package>
+<package name="M84W-TRIMMER">
+<smd name="2" x="0" y="2.54" dx="1.016" dy="2.794" layer="1"/>
+<smd name="1" x="-2.54" y="-2.54" dx="1.016" dy="2.794" layer="1"/>
+<smd name="3" x="2.54" y="-2.54" dx="1.016" dy="2.794" layer="1"/>
+<rectangle x1="-3.175" y1="-2.159" x2="3.175" y2="2.159" layer="39"/>
+<wire x1="-3.175" y1="2.2225" x2="-3.175" y2="-2.2225" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="-2.2225" x2="3.175" y2="-2.2225" width="0.127" layer="22"/>
+<wire x1="3.175" y1="-2.2225" x2="3.175" y2="2.2225" width="0.127" layer="21"/>
+<wire x1="3.175" y1="2.2225" x2="-3.175" y2="2.2225" width="0.127" layer="21"/>
+<text x="-3.175" y="4.445" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.175" y="-5.715" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="-2.286" y="1.27" radius="0.567959375" width="0.127" layer="21"/>
+<wire x1="-2.286" y1="0.762" x2="-2.286" y2="1.778" width="0.127" layer="21"/>
+</package>
 <package name="M84-TRIMMER">
 <smd name="2" x="0" y="2.54" dx="1.016" dy="2.794" layer="1"/>
 <smd name="1" x="-2.54" y="-2.54" dx="1.016" dy="2.794" layer="1"/>
@@ -3771,6 +3785,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="3.81" y1="1.5875" x2="3.4925" y2="1.5875" width="0.127" layer="21"/>
 <text x="-3.175" y="4.445" size="1.27" layer="25">&gt;NAME</text>
 <wire x1="3.81" y1="0.9525" x2="3.175" y2="0.9525" width="0.127" layer="21"/>
+<text x="-3.175" y="-5.715" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -4296,7 +4311,17 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="" package="M84-TRIMMER">
+<device name="M84" package="M84-TRIMMER">
+<connects>
+<connect gate="G$1" pin="A" pad="3"/>
+<connect gate="G$1" pin="E" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="M84W" package="M84W-TRIMMER">
 <connects>
 <connect gate="G$1" pin="A" pad="3"/>
 <connect gate="G$1" pin="E" pad="1"/>
@@ -13674,7 +13699,7 @@ Source: www.kingbright.com</description>
 <part name="C22" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="SUPPLY21" library="supply2" deviceset="AGND" device=""/>
 <part name="VBIAS" library="testpad" deviceset="TP" device="B1,27"/>
-<part name="R36" library="boneclamp" deviceset="TRIM_US-" device="" value="10k"/>
+<part name="R36" library="boneclamp" deviceset="TRIM_US-" device="M84W" value="10k"/>
 <part name="C42" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="SUPPLY13" library="supply2" deviceset="AGND" device=""/>
 <part name="R34" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
@@ -13714,6 +13739,7 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY34" library="supply2" deviceset="AGND" device=""/>
 <part name="R14" library="rcl" deviceset="R-US_" device="R0603" value="10"/>
 <part name="C38" library="rcl" deviceset="C-US" device="C1206" value="4.7uF"/>
+<part name="SJ2" library="jumper" deviceset="SJ" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13734,12 +13760,13 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 </plain>
 <instances>
 <instance part="BB1" gate="G$1" x="-35.56" y="48.26"/>
-<instance part="DGND2" gate="PE" x="2.54" y="-20.32"/>
+<instance part="DGND2" gate="PE" x="-86.36" y="104.14" rot="MR0"/>
 <instance part="SUPPLY8" gate="G$1" x="17.78" y="33.02"/>
 <instance part="A_I/O" gate="G$1" x="53.34" y="30.48"/>
 <instance part="PWR_EXT" gate="A" x="53.34" y="7.62"/>
 <instance part="RESET" gate="G$1" x="81.28" y="7.62" rot="R270"/>
 <instance part="DGND10" gate="PE" x="93.98" y="0"/>
+<instance part="SJ2" gate="1" x="-78.74" y="109.22" rot="MR0"/>
 </instances>
 <busses>
 <bus name="ADC_SPI[0..4]">
@@ -13774,11 +13801,8 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 </net>
 <net name="DGND" class="0">
 <segment>
-<pinref part="RESET" gate="G$1" pin="S"/>
 <pinref part="RESET" gate="G$1" pin="S1"/>
-<wire x1="86.36" y1="7.62" x2="86.36" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="5.08" x2="93.98" y2="5.08" width="0.1524" layer="91"/>
-<junction x="86.36" y="5.08"/>
 <pinref part="DGND10" gate="PE" pin="PE"/>
 <wire x1="93.98" y1="2.54" x2="93.98" y2="5.08" width="0.1524" layer="91"/>
 </segment>
@@ -13900,11 +13924,20 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <wire x1="27.94" y1="73.66" x2="40.64" y2="73.66" width="0.1524" layer="91"/>
 <label x="27.94" y="73.66" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="BB1" gate="G$1" pin="GPIO1_1"/>
+<wire x1="-7.62" y1="81.28" x2="10.16" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="81.28" x2="10.16" y2="81.28" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="ADC_SPI1" class="0">
 <segment>
 <wire x1="40.64" y1="71.12" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
 <label x="27.94" y="71.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="BB1" gate="G$1" pin="GPIO1_4"/>
+<wire x1="-63.5" y1="81.28" x2="-81.28" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC_SPI2" class="0">
@@ -13912,11 +13945,19 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <wire x1="27.94" y1="68.58" x2="40.64" y2="68.58" width="0.1524" layer="91"/>
 <label x="27.94" y="68.58" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="BB1" gate="G$1" pin="GPIO1_5"/>
+<wire x1="-7.62" y1="83.82" x2="10.16" y2="83.82" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="ADC_SPI3" class="0">
 <segment>
 <wire x1="40.64" y1="66.04" x2="27.94" y2="66.04" width="0.1524" layer="91"/>
 <label x="27.94" y="66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="BB1" gate="G$1" pin="GPIO1_30"/>
+<wire x1="-63.5" y1="83.82" x2="-81.28" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC_SPI4" class="0">
@@ -13924,11 +13965,19 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <wire x1="27.94" y1="63.5" x2="40.64" y2="63.5" width="0.1524" layer="91"/>
 <label x="27.94" y="63.5" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="BB1" gate="G$1" pin="GPIO1_31"/>
+<wire x1="-7.62" y1="86.36" x2="10.16" y2="86.36" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="DAC_SPI0" class="0">
 <segment>
 <wire x1="88.9" y1="73.66" x2="76.2" y2="73.66" width="0.1524" layer="91"/>
 <label x="76.2" y="73.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="BB1" gate="G$1" pin="GPIO1_14"/>
+<wire x1="-7.62" y1="91.44" x2="10.16" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DAC_SPI1" class="0">
@@ -13936,20 +13985,25 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <wire x1="76.2" y1="71.12" x2="88.9" y2="71.12" width="0.1524" layer="91"/>
 <label x="76.2" y="71.12" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="BB1" gate="G$1" pin="GPIO1_15"/>
+<wire x1="-63.5" y1="91.44" x2="-81.28" y2="91.44" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="DAC_SPI2" class="0">
 <segment>
 <wire x1="76.2" y1="68.58" x2="88.9" y2="68.58" width="0.1524" layer="91"/>
 <label x="76.2" y="68.58" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="BB1" gate="G$1" pin="GPIO1_12"/>
+<wire x1="-7.62" y1="96.52" x2="10.16" y2="96.52" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="~RST" class="0">
 <segment>
-<pinref part="RESET" gate="G$1" pin="P"/>
 <pinref part="RESET" gate="G$1" pin="P1"/>
-<wire x1="76.2" y1="7.62" x2="76.2" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="5.08" x2="66.04" y2="5.08" width="0.1524" layer="91"/>
-<junction x="76.2" y="5.08"/>
 <label x="66.04" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -13958,6 +14012,21 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <pinref part="PWR_EXT" gate="A" pin="3"/>
 <wire x1="35.56" y1="5.08" x2="50.8" y2="5.08" width="0.1524" layer="91"/>
 <label x="35.56" y="5.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="BB1" gate="G$1" pin="GND@7"/>
+<wire x1="-63.5" y1="109.22" x2="-73.66" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="SJ2" gate="1" pin="1"/>
+</segment>
+</net>
+<net name="PE" class="0">
+<segment>
+<pinref part="DGND2" gate="PE" pin="PE"/>
+<wire x1="-86.36" y1="109.22" x2="-86.36" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="SJ2" gate="1" pin="2"/>
+<wire x1="-83.82" y1="109.22" x2="-86.36" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -14577,8 +14646,8 @@ using single, isolated via.</text>
 <instance part="SUPPLY6" gate="G$1" x="-81.28" y="-30.48"/>
 <instance part="C24" gate="G$1" x="25.4" y="10.16"/>
 <instance part="SUPPLY7" gate="G$1" x="25.4" y="-2.54"/>
-<instance part="R24" gate="G$1" x="-50.8" y="-20.32" rot="R270"/>
-<instance part="R25" gate="G$1" x="-43.18" y="-20.32" rot="R270"/>
+<instance part="R24" gate="G$1" x="-50.8" y="12.7" rot="MR90"/>
+<instance part="R25" gate="G$1" x="-43.18" y="12.7" rot="MR90"/>
 <instance part="U6" gate="A" x="0" y="144.78"/>
 <instance part="R15" gate="G$1" x="-40.64" y="139.7" rot="R180"/>
 <instance part="R17" gate="G$1" x="0" y="111.76" rot="R180"/>
@@ -14798,14 +14867,13 @@ using single, isolated via.</text>
 </segment>
 <segment>
 <pinref part="R24" gate="G$1" pin="2"/>
-<wire x1="-50.8" y1="-25.4" x2="-50.8" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="17.78" x2="-50.8" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="R25" gate="G$1" pin="2"/>
-<wire x1="-43.18" y1="-25.4" x2="-43.18" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="-50.8" y1="-33.02" x2="-43.18" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="-33.02" x2="-43.18" y2="-43.18" width="0.1524" layer="91"/>
-<junction x="-43.18" y="-33.02"/>
-<wire x1="-43.18" y1="-43.18" x2="-55.88" y2="-43.18" width="0.1524" layer="91"/>
-<label x="-55.88" y="-43.18" size="1.778" layer="95"/>
+<wire x1="-43.18" y1="17.78" x2="-43.18" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="22.86" x2="-43.18" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="22.86" x2="-88.9" y2="22.86" width="0.1524" layer="91"/>
+<junction x="-50.8" y="22.86"/>
+<label x="-88.9" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="~RST" class="0">
@@ -14814,7 +14882,7 @@ using single, isolated via.</text>
 <wire x1="-17.78" y1="2.54" x2="-50.8" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="R24" gate="G$1" pin="1"/>
 <wire x1="-50.8" y1="2.54" x2="-88.9" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="-50.8" y1="-15.24" x2="-50.8" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="7.62" x2="-50.8" y2="2.54" width="0.1524" layer="91"/>
 <junction x="-50.8" y="2.54"/>
 <label x="-88.9" y="2.54" size="1.778" layer="95"/>
 </segment>
@@ -14899,7 +14967,7 @@ using single, isolated via.</text>
 <net name="DAC_LDAC" class="0">
 <segment>
 <pinref part="R25" gate="G$1" pin="1"/>
-<wire x1="-43.18" y1="-15.24" x2="-43.18" y2="0" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="7.62" x2="-43.18" y2="0" width="0.1524" layer="91"/>
 <pinref part="U10" gate="G$1" pin="LDAC*"/>
 <wire x1="-88.9" y1="0" x2="-43.18" y2="0" width="0.1524" layer="91"/>
 <junction x="-43.18" y="0"/>

@@ -447,6 +447,7 @@ molded</description>
 <wire x1="3.81" y1="1.5875" x2="3.4925" y2="1.5875" width="0.127" layer="21"/>
 <text x="-3.175" y="4.445" size="1.27" layer="25">&gt;NAME</text>
 <wire x1="3.81" y1="0.9525" x2="3.175" y2="0.9525" width="0.127" layer="21"/>
+<text x="-3.175" y="-5.715" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="3223G">
 <description>&lt;b&gt;3 mm SMD Trimming Potentiometer&lt;/b&gt; Side Adjust&lt;p&gt;
@@ -2036,6 +2037,20 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <text x="-1.905" y="-3.4925" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="0.55" y1="0.6" x2="1.55" y2="0.85" layer="21"/>
 </package>
+<package name="M84W-TRIMMER">
+<smd name="2" x="0" y="2.54" dx="1.016" dy="2.794" layer="1"/>
+<smd name="1" x="-2.54" y="-2.54" dx="1.016" dy="2.794" layer="1"/>
+<smd name="3" x="2.54" y="-2.54" dx="1.016" dy="2.794" layer="1"/>
+<rectangle x1="-3.175" y1="-2.159" x2="3.175" y2="2.159" layer="39"/>
+<wire x1="-3.175" y1="2.2225" x2="-3.175" y2="-2.2225" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="-2.2225" x2="3.175" y2="-2.2225" width="0.127" layer="22"/>
+<wire x1="3.175" y1="-2.2225" x2="3.175" y2="2.2225" width="0.127" layer="21"/>
+<wire x1="3.175" y1="2.2225" x2="-3.175" y2="2.2225" width="0.127" layer="21"/>
+<text x="-3.175" y="4.445" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.175" y="-5.715" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="-2.286" y="1.27" radius="0.567959375" width="0.127" layer="21"/>
+<wire x1="-2.286" y1="0.762" x2="-2.286" y2="1.778" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="V_SIG">
@@ -2827,7 +2842,17 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="" package="M84-TRIMMER">
+<device name="M84" package="M84-TRIMMER">
+<connects>
+<connect gate="G$1" pin="A" pad="3"/>
+<connect gate="G$1" pin="E" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="M84W" package="M84W-TRIMMER">
 <connects>
 <connect gate="G$1" pin="A" pad="3"/>
 <connect gate="G$1" pin="E" pad="1"/>
