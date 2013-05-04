@@ -661,7 +661,7 @@
 <wire x1="15.875" y1="5.8928" x2="15.875" y2="20.32" width="0.127" layer="21"/>
 <wire x1="15.875" y1="20.32" x2="33.655" y2="20.32" width="0.127" layer="21"/>
 <wire x1="33.655" y1="20.32" x2="33.655" y2="0" width="0.127" layer="21"/>
-<wire x1="33.655" y1="0" x2="48.26" y2="0" width="0.127" layer="21"/>
+<wire x1="33.655" y1="0" x2="48.26" y2="0" width="0.127" layer="20"/>
 <wire x1="48.26" y1="0" x2="54.61" y2="6.35" width="0.127" layer="20" curve="90"/>
 <wire x1="38.735" y1="5.715" x2="39.37" y2="6.35" width="0.1524" layer="21"/>
 <wire x1="39.37" y1="6.35" x2="39.37" y2="7.62" width="0.1524" layer="21"/>
@@ -13760,13 +13760,13 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 </plain>
 <instances>
 <instance part="BB1" gate="G$1" x="-35.56" y="48.26"/>
-<instance part="DGND2" gate="PE" x="-86.36" y="104.14" rot="MR0"/>
-<instance part="SUPPLY8" gate="G$1" x="17.78" y="33.02"/>
+<instance part="DGND2" gate="PE" x="17.78" y="38.1"/>
+<instance part="SUPPLY8" gate="G$1" x="-88.9" y="38.1"/>
 <instance part="A_I/O" gate="G$1" x="53.34" y="30.48"/>
 <instance part="PWR_EXT" gate="A" x="53.34" y="7.62"/>
 <instance part="RESET" gate="G$1" x="81.28" y="7.62" rot="R270"/>
 <instance part="DGND10" gate="PE" x="93.98" y="0"/>
-<instance part="SJ2" gate="1" x="-78.74" y="109.22" rot="MR0"/>
+<instance part="SJ2" gate="1" x="10.16" y="43.18"/>
 </instances>
 <busses>
 <bus name="ADC_SPI[0..4]">
@@ -13806,14 +13806,14 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <pinref part="DGND10" gate="PE" pin="PE"/>
 <wire x1="93.98" y1="2.54" x2="93.98" y2="5.08" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="DGND2" gate="PE" pin="PE"/>
+<wire x1="17.78" y1="43.18" x2="17.78" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="SJ2" gate="1" pin="2"/>
+<wire x1="15.24" y1="43.18" x2="17.78" y2="43.18" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="AGND" class="0">
-<segment>
-<wire x1="17.78" y1="43.18" x2="17.78" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="SUPPLY8" gate="G$1" pin="AGND"/>
-<pinref part="BB1" gate="G$1" pin="GND@2"/>
-<wire x1="-7.62" y1="43.18" x2="17.78" y2="43.18" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <wire x1="35.56" y1="7.62" x2="50.8" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="PWR_EXT" gate="A" pin="2"/>
@@ -13828,6 +13828,12 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <pinref part="A_I/O" gate="G$1" pin="2"/>
 <wire x1="58.42" y1="33.02" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
 <label x="66.04" y="33.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SUPPLY8" gate="G$1" pin="AGND"/>
+<wire x1="-88.9" y1="40.64" x2="-88.9" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="BB1" gate="G$1" pin="GND@1"/>
+<wire x1="-88.9" y1="43.18" x2="-63.5" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VDD_5V" class="0">
@@ -14014,19 +14020,11 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <label x="35.56" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$28" class="0">
+<net name="N$8" class="0">
 <segment>
-<pinref part="BB1" gate="G$1" pin="GND@7"/>
-<wire x1="-63.5" y1="109.22" x2="-73.66" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="SJ2" gate="1" pin="1"/>
-</segment>
-</net>
-<net name="PE" class="0">
-<segment>
-<pinref part="DGND2" gate="PE" pin="PE"/>
-<wire x1="-86.36" y1="109.22" x2="-86.36" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="SJ2" gate="1" pin="2"/>
-<wire x1="-83.82" y1="109.22" x2="-86.36" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="BB1" gate="G$1" pin="GND@2"/>
+<wire x1="5.08" y1="43.18" x2="-7.62" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
