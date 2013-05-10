@@ -13574,7 +13574,6 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY12" library="supply2" deviceset="AGND" device=""/>
 <part name="SUPPLY14" library="supply2" deviceset="AGND" device=""/>
 <part name="SUPPLY15" library="supply2" deviceset="AGND" device=""/>
-<part name="SUPPLY16" library="supply2" deviceset="AGND" device=""/>
 <part name="DAC_D+" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="DAC_C+" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="DAC_B+" library="testpad" deviceset="TP" device="B1,27"/>
@@ -13742,6 +13741,7 @@ Source: www.kingbright.com</description>
 <part name="SJ2" library="jumper" deviceset="SJ" device=""/>
 <part name="C46" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
 <part name="SUPPLY38" library="supply2" deviceset="AGND" device=""/>
+<part name="SUPPLY16" library="supply2" deviceset="AGND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13791,11 +13791,6 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <nets>
 <net name="VDRIVE" class="0">
 <segment>
-<pinref part="BB1" gate="G$1" pin="VDD_3V3EXP@1"/>
-<wire x1="-63.5" y1="40.64" x2="-81.28" y2="40.64" width="0.1524" layer="91"/>
-<label x="-81.28" y="40.64" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="BB1" gate="G$1" pin="VDD_3V3EXP@2"/>
 <wire x1="-7.62" y1="40.64" x2="10.16" y2="40.64" width="0.1524" layer="91"/>
 <label x="0" y="40.64" size="1.778" layer="95"/>
@@ -13839,11 +13834,6 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 </segment>
 </net>
 <net name="VDD_5V" class="0">
-<segment>
-<pinref part="BB1" gate="G$1" pin="VDD_5V@1"/>
-<wire x1="-63.5" y1="38.1" x2="-81.28" y2="38.1" width="0.1524" layer="91"/>
-<label x="-81.28" y="38.1" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="BB1" gate="G$1" pin="VDD_5V@2"/>
 <wire x1="-7.62" y1="38.1" x2="10.16" y2="38.1" width="0.1524" layer="91"/>
@@ -14631,7 +14621,6 @@ using single, isolated via.</text>
 <instance part="SUPPLY12" gate="G$1" x="48.26" y="-22.86"/>
 <instance part="SUPPLY14" gate="G$1" x="48.26" y="-45.72"/>
 <instance part="SUPPLY15" gate="G$1" x="48.26" y="-68.58"/>
-<instance part="SUPPLY16" gate="G$1" x="48.26" y="-90.805"/>
 <instance part="DAC_D+" gate="G$1" x="35.56" y="-5.08"/>
 <instance part="DAC_C+" gate="G$1" x="35.56" y="-27.94"/>
 <instance part="DAC_B+" gate="G$1" x="35.56" y="-50.8"/>
@@ -14672,6 +14661,7 @@ using single, isolated via.</text>
 <instance part="C23" gate="G$1" x="119.38" y="60.96"/>
 <instance part="C22" gate="G$1" x="106.68" y="60.96"/>
 <instance part="SUPPLY21" gate="G$1" x="114.3" y="43.18"/>
+<instance part="SUPPLY16" gate="G$1" x="48.26" y="-91.44"/>
 </instances>
 <busses>
 <bus name="DAC_SPI[0..2]">
@@ -14733,17 +14723,6 @@ using single, isolated via.</text>
 <wire x1="106.68" y1="81.28" x2="99.06" y2="81.28" width="0.1524" layer="91"/>
 <junction x="106.68" y="81.28"/>
 <label x="99.06" y="81.28" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="R28" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="-88.9" x2="48.26" y2="-88.9" width="0.1524" layer="91"/>
-<pinref part="C31" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="-88.9" x2="53.34" y2="-88.9" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="-88.9" x2="53.34" y2="-86.36" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="-88.9" x2="48.26" y2="-91.44" width="0.1524" layer="91"/>
-<junction x="48.26" y="-88.9"/>
 </segment>
 </net>
 <net name="AGND" class="0">
@@ -14853,6 +14832,15 @@ using single, isolated via.</text>
 <wire x1="114.3" y1="48.26" x2="114.3" y2="45.72" width="0.1524" layer="91"/>
 <junction x="114.3" y="48.26"/>
 <pinref part="SUPPLY21" gate="G$1" pin="AGND"/>
+</segment>
+<segment>
+<pinref part="R28" gate="G$1" pin="1"/>
+<pinref part="C31" gate="G$1" pin="2"/>
+<wire x1="43.18" y1="-88.9" x2="48.26" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="-88.9" x2="53.34" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="-88.9" x2="53.34" y2="-86.36" width="0.1524" layer="91"/>
+<pinref part="SUPPLY16" gate="G$1" pin="AGND"/>
+<junction x="48.26" y="-88.9"/>
 </segment>
 </net>
 <net name="VDRIVE" class="0">
