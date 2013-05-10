@@ -13598,7 +13598,6 @@ Source: www.kingbright.com</description>
 <part name="C36" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
 <part name="C37" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
 <part name="SUPPLY10" library="supply2" deviceset="AGND" device=""/>
-<part name="SUPPLY2" library="supply2" deviceset="AGND" device=""/>
 <part name="~W" library="jumper" deviceset="JP1E" device=""/>
 <part name="ADDRESS" library="smd-special" deviceset="SWS003" device=""/>
 <part name="I2C2_SDA" library="testpad" deviceset="TP" device="B1,27"/>
@@ -13742,6 +13741,7 @@ Source: www.kingbright.com</description>
 <part name="C46" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
 <part name="SUPPLY38" library="supply2" deviceset="AGND" device=""/>
 <part name="SUPPLY16" library="supply2" deviceset="AGND" device=""/>
+<part name="DGND9" library="supply2" deviceset="PE" device="" value="DGND"/>
 </parts>
 <sheets>
 <sheet>
@@ -14626,7 +14626,6 @@ using single, isolated via.</text>
 <instance part="DAC_B+" gate="G$1" x="35.56" y="-50.8"/>
 <instance part="DAC_A+" gate="G$1" x="35.56" y="-73.66"/>
 <instance part="U10" gate="G$1" x="0" y="0"/>
-<instance part="SUPPLY2" gate="G$1" x="-33.02" y="-30.48"/>
 <instance part="DGND1" gate="PE" x="-60.96" y="-30.48"/>
 <instance part="C28" gate="G$1" x="-60.96" y="-17.78"/>
 <instance part="C27" gate="G$1" x="-71.12" y="-17.78"/>
@@ -14662,6 +14661,7 @@ using single, isolated via.</text>
 <instance part="C22" gate="G$1" x="106.68" y="60.96"/>
 <instance part="SUPPLY21" gate="G$1" x="114.3" y="43.18"/>
 <instance part="SUPPLY16" gate="G$1" x="48.26" y="-91.44"/>
+<instance part="DGND9" gate="PE" x="-33.02" y="-30.48"/>
 </instances>
 <busses>
 <bus name="DAC_SPI[0..2]">
@@ -14755,24 +14755,6 @@ using single, isolated via.</text>
 <wire x1="48.26" y1="-66.04" x2="48.26" y2="-68.58" width="0.1524" layer="91"/>
 <junction x="48.26" y="-66.04"/>
 <pinref part="SUPPLY15" gate="G$1" pin="AGND"/>
-</segment>
-<segment>
-<pinref part="SUPPLY2" gate="G$1" pin="AGND"/>
-<wire x1="-33.02" y1="-27.94" x2="-33.02" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="U10" gate="G$1" pin="GND"/>
-<wire x1="-33.02" y1="-15.24" x2="-17.78" y2="-15.24" width="0.1524" layer="91"/>
-<junction x="-33.02" y="-15.24"/>
-<pinref part="U10" gate="G$1" pin="RSTSEL"/>
-<wire x1="-17.78" y1="5.08" x2="-33.02" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="-33.02" y1="5.08" x2="-33.02" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="U10" gate="G$1" pin="GAIN"/>
-<wire x1="-33.02" y1="-5.08" x2="-33.02" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="-33.02" y1="-5.08" x2="-17.78" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="-33.02" y="-5.08"/>
-<wire x1="-33.02" y1="5.08" x2="-33.02" y2="12.7" width="0.1524" layer="91"/>
-<junction x="-33.02" y="5.08"/>
-<pinref part="U10" gate="G$1" pin="SDO"/>
-<wire x1="-33.02" y1="12.7" x2="-17.78" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY6" gate="G$1" pin="AGND"/>
@@ -14950,6 +14932,24 @@ using single, isolated via.</text>
 <pinref part="C28" gate="G$1" pin="2"/>
 <pinref part="DGND1" gate="PE" pin="PE"/>
 <wire x1="-60.96" y1="-22.86" x2="-60.96" y2="-27.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="-33.02" y1="-27.94" x2="-33.02" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="U10" gate="G$1" pin="GND"/>
+<wire x1="-33.02" y1="-15.24" x2="-17.78" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="-33.02" y="-15.24"/>
+<pinref part="U10" gate="G$1" pin="RSTSEL"/>
+<wire x1="-17.78" y1="5.08" x2="-33.02" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="5.08" x2="-33.02" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="U10" gate="G$1" pin="GAIN"/>
+<wire x1="-33.02" y1="-5.08" x2="-33.02" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="-5.08" x2="-17.78" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="-33.02" y="-5.08"/>
+<wire x1="-33.02" y1="5.08" x2="-33.02" y2="12.7" width="0.1524" layer="91"/>
+<junction x="-33.02" y="5.08"/>
+<pinref part="U10" gate="G$1" pin="SDO"/>
+<wire x1="-33.02" y1="12.7" x2="-17.78" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="DGND9" gate="PE" pin="PE"/>
 </segment>
 </net>
 <net name="DAC_LDAC" class="0">
