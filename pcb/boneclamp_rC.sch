@@ -13593,7 +13593,7 @@ Source: www.kingbright.com</description>
 <part name="R40" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="U10" library="analog-devices-02" deviceset="AD5686RARUZ" device="" value="AD5686"/>
 <part name="I2C2_SCLK" library="testpad" deviceset="TP" device="B1,27"/>
-<part name="VDRIVE" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="VDRIVE" library="testpad" deviceset="TP" device="PAD1-17" value="TPPAD1-17"/>
 <part name="U13" library="ti-extended" deviceset="TLV70025DDCR" device="" value="TLV70245"/>
 <part name="C36" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
 <part name="C37" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
@@ -13714,7 +13714,7 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY30" library="supply2" deviceset="AGND" device=""/>
 <part name="R29" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="-4.5V" library="testpad" deviceset="TP" device="B1,27"/>
-<part name="+4.5V" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="+4.5V" library="testpad" deviceset="TP" device="PAD1-17" value="TPPAD1-17"/>
 <part name="VSS_PRE" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="DGND6" library="supply2" deviceset="PE" device="" value="DGND"/>
 <part name="R32" library="rcl" deviceset="R-US_" device="R0603" value="2k"/>
@@ -13742,6 +13742,7 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY38" library="supply2" deviceset="AGND" device=""/>
 <part name="SUPPLY16" library="supply2" deviceset="AGND" device=""/>
 <part name="DGND9" library="supply2" deviceset="PE" device="" value="DGND"/>
+<part name="SUPPLY2" library="supply2" deviceset="AGND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13799,9 +13800,14 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <net name="DGND" class="0">
 <segment>
 <pinref part="RESET" gate="G$1" pin="S1"/>
-<wire x1="86.36" y1="5.08" x2="93.98" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="5.08" x2="88.9" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="DGND10" gate="PE" pin="PE"/>
+<wire x1="88.9" y1="5.08" x2="93.98" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="2.54" x2="93.98" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="RESET" gate="G$1" pin="S"/>
+<wire x1="86.36" y1="7.62" x2="88.9" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="7.62" x2="88.9" y2="5.08" width="0.1524" layer="91"/>
+<junction x="88.9" y="5.08"/>
 </segment>
 <segment>
 <pinref part="DGND2" gate="PE" pin="PE"/>
@@ -13925,6 +13931,7 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <segment>
 <pinref part="BB1" gate="G$1" pin="GPIO1_4"/>
 <wire x1="-63.5" y1="81.28" x2="-81.28" y2="81.28" width="0.1524" layer="91"/>
+<label x="-81.28" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADC_SPI1" class="0">
@@ -13936,6 +13943,7 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <pinref part="BB1" gate="G$1" pin="GPIO1_1"/>
 <wire x1="-7.62" y1="81.28" x2="10.16" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="81.28" x2="10.16" y2="81.28" width="0.1524" layer="91"/>
+<label x="-2.54" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADC_SPI2" class="0">
@@ -13946,6 +13954,7 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <segment>
 <pinref part="BB1" gate="G$1" pin="GPIO1_30"/>
 <wire x1="-63.5" y1="83.82" x2="-81.28" y2="83.82" width="0.1524" layer="91"/>
+<label x="-81.28" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADC_SPI3" class="0">
@@ -13956,6 +13965,7 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <segment>
 <pinref part="BB1" gate="G$1" pin="GPIO1_31"/>
 <wire x1="-7.62" y1="86.36" x2="10.16" y2="86.36" width="0.1524" layer="91"/>
+<label x="-2.54" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADC_SPI4" class="0">
@@ -13966,6 +13976,7 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <segment>
 <pinref part="BB1" gate="G$1" pin="GPIO1_5"/>
 <wire x1="-7.62" y1="83.82" x2="10.16" y2="83.82" width="0.1524" layer="91"/>
+<label x="-2.54" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DAC_SPI0" class="0">
@@ -13976,6 +13987,7 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <segment>
 <pinref part="BB1" gate="G$1" pin="GPIO1_15"/>
 <wire x1="-63.5" y1="91.44" x2="-81.28" y2="91.44" width="0.1524" layer="91"/>
+<label x="-81.28" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DAC_SPI1" class="0">
@@ -13986,6 +13998,7 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <segment>
 <pinref part="BB1" gate="G$1" pin="GPIO1_14"/>
 <wire x1="-7.62" y1="91.44" x2="10.16" y2="91.44" width="0.1524" layer="91"/>
+<label x="-2.54" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DAC_SPI2" class="0">
@@ -14001,8 +14014,13 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <net name="~RST" class="0">
 <segment>
 <pinref part="RESET" gate="G$1" pin="P1"/>
-<wire x1="76.2" y1="5.08" x2="66.04" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="5.08" x2="73.66" y2="5.08" width="0.1524" layer="91"/>
 <label x="66.04" y="5.08" size="1.778" layer="95"/>
+<pinref part="RESET" gate="G$1" pin="P"/>
+<wire x1="73.66" y1="5.08" x2="66.04" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="7.62" x2="73.66" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="7.62" x2="73.66" y2="5.08" width="0.1524" layer="91"/>
+<junction x="73.66" y="5.08"/>
 </segment>
 </net>
 <net name="VSS_EXT" class="0">
@@ -14453,15 +14471,6 @@ using single, isolated via.</text>
 </net>
 <net name="VREF" class="0">
 <segment>
-<pinref part="U5" gate="A" pin="REF+"/>
-<wire x1="50.8" y1="55.88" x2="38.1" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="C15" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="53.34" x2="38.1" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="55.88" x2="38.1" y2="55.88" width="0.1524" layer="91"/>
-<junction x="38.1" y="55.88"/>
-</segment>
-<segment>
 <pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="12.7" y1="55.88" x2="2.54" y2="55.88" width="0.1524" layer="91"/>
 <label x="2.54" y="55.88" size="1.778" layer="95"/>
@@ -14595,6 +14604,17 @@ using single, isolated via.</text>
 <wire x1="45.72" y1="76.2" x2="50.8" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="R14" gate="G$1" pin="1"/>
+<pinref part="U5" gate="A" pin="REF+"/>
+<wire x1="22.86" y1="55.88" x2="38.1" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="C15" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="55.88" x2="50.8" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="53.34" x2="38.1" y2="55.88" width="0.1524" layer="91"/>
+<junction x="38.1" y="55.88"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -14662,6 +14682,7 @@ using single, isolated via.</text>
 <instance part="SUPPLY21" gate="G$1" x="114.3" y="43.18"/>
 <instance part="SUPPLY16" gate="G$1" x="48.26" y="-91.44"/>
 <instance part="DGND9" gate="PE" x="-33.02" y="-30.48"/>
+<instance part="SUPPLY2" gate="G$1" x="-20.32" y="-22.86"/>
 </instances>
 <busses>
 <bus name="DAC_SPI[0..2]">
@@ -14824,6 +14845,12 @@ using single, isolated via.</text>
 <pinref part="SUPPLY16" gate="G$1" pin="AGND"/>
 <junction x="48.26" y="-88.9"/>
 </segment>
+<segment>
+<pinref part="SUPPLY2" gate="G$1" pin="AGND"/>
+<wire x1="-20.32" y1="-20.32" x2="-20.32" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="U10" gate="G$1" pin="GND"/>
+<wire x1="-20.32" y1="-15.24" x2="-17.78" y2="-15.24" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VDRIVE" class="0">
 <segment>
@@ -14934,21 +14961,13 @@ using single, isolated via.</text>
 <wire x1="-60.96" y1="-22.86" x2="-60.96" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="-33.02" y1="-27.94" x2="-33.02" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="U10" gate="G$1" pin="GND"/>
-<wire x1="-33.02" y1="-15.24" x2="-17.78" y2="-15.24" width="0.1524" layer="91"/>
-<junction x="-33.02" y="-15.24"/>
+<wire x1="-33.02" y1="-27.94" x2="-33.02" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="U10" gate="G$1" pin="RSTSEL"/>
 <wire x1="-17.78" y1="5.08" x2="-33.02" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="5.08" x2="-33.02" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="U10" gate="G$1" pin="GAIN"/>
-<wire x1="-33.02" y1="-5.08" x2="-33.02" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="-5.08" x2="-17.78" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="-33.02" y="-5.08"/>
-<wire x1="-33.02" y1="5.08" x2="-33.02" y2="12.7" width="0.1524" layer="91"/>
-<junction x="-33.02" y="5.08"/>
-<pinref part="U10" gate="G$1" pin="SDO"/>
-<wire x1="-33.02" y1="12.7" x2="-17.78" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="DGND9" gate="PE" pin="PE"/>
 </segment>
 </net>
