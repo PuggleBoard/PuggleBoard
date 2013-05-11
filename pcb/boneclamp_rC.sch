@@ -791,22 +791,14 @@
 </package>
 <package name="2X05/90">
 <wire x1="-6.35" y1="-0.635" x2="-3.81" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-3.81" y1="-0.635" x2="-3.81" y2="1.905" width="0.1524" layer="21"/>
 <wire x1="-3.81" y1="1.905" x2="-6.35" y2="1.905" width="0.1524" layer="21"/>
 <wire x1="-6.35" y1="1.905" x2="-6.35" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="8.255" x2="-5.08" y2="2.54" width="0.762" layer="21"/>
 <wire x1="-3.81" y1="-0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-0.635" x2="-1.27" y2="1.905" width="0.1524" layer="21"/>
 <wire x1="-1.27" y1="1.905" x2="-3.81" y2="1.905" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="8.255" x2="-2.54" y2="2.54" width="0.762" layer="21"/>
 <wire x1="-1.27" y1="-0.635" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-0.635" x2="1.27" y2="1.905" width="0.1524" layer="21"/>
 <wire x1="1.27" y1="1.905" x2="-1.27" y2="1.905" width="0.1524" layer="21"/>
-<wire x1="0" y1="8.255" x2="0" y2="2.54" width="0.762" layer="21"/>
 <wire x1="1.27" y1="-0.635" x2="3.81" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="3.81" y1="-0.635" x2="3.81" y2="1.905" width="0.1524" layer="21"/>
 <wire x1="3.81" y1="1.905" x2="1.27" y2="1.905" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="8.255" x2="2.54" y2="2.54" width="0.762" layer="21"/>
 <pad name="2" x="-5.08" y="-2.54" drill="1.016" shape="octagon"/>
 <pad name="4" x="-2.54" y="-2.54" drill="1.016" shape="octagon"/>
 <pad name="6" x="0" y="-2.54" drill="1.016" shape="octagon"/>
@@ -836,7 +828,6 @@
 <wire x1="3.81" y1="-0.635" x2="6.35" y2="-0.635" width="0.1524" layer="21"/>
 <wire x1="6.35" y1="-0.635" x2="6.35" y2="1.905" width="0.1524" layer="21"/>
 <wire x1="6.35" y1="1.905" x2="3.81" y2="1.905" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="8.255" x2="5.08" y2="2.54" width="0.762" layer="21"/>
 <pad name="10" x="5.08" y="-2.54" drill="1.016" shape="octagon"/>
 <pad name="9" x="5.08" y="-5.08" drill="1.016" shape="octagon"/>
 <rectangle x1="4.699" y1="1.905" x2="5.461" y2="2.413" layer="21"/>
@@ -13720,7 +13711,7 @@ Source: www.kingbright.com</description>
 <part name="R32" library="rcl" deviceset="R-US_" device="R0603" value="2k"/>
 <part name="PWR" library="led" deviceset="LED" device="CHIPLED_0805"/>
 <part name="SUPPLY32" library="supply2" deviceset="AGND" device=""/>
-<part name="AGND" library="testpad" deviceset="TP" device="PAD1-17"/>
+<part name="AGND1" library="testpad" deviceset="TP" device="PAD1-17"/>
 <part name="DGND" library="testpad" deviceset="TP" device="PAD1-17"/>
 <part name="SUPPLY33" library="supply2" deviceset="AGND" device=""/>
 <part name="DGND7" library="supply2" deviceset="PE" device="" value="DGND"/>
@@ -13743,6 +13734,8 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY16" library="supply2" deviceset="AGND" device=""/>
 <part name="DGND9" library="supply2" deviceset="PE" device="" value="DGND"/>
 <part name="SUPPLY2" library="supply2" deviceset="AGND" device=""/>
+<part name="AGND2" library="testpad" deviceset="TP" device="PAD1-17"/>
+<part name="SUPPLY39" library="supply2" deviceset="AGND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15235,7 +15228,7 @@ using single, isolated via.</text>
 <instance part="R32" gate="G$1" x="86.36" y="-55.88" rot="R180"/>
 <instance part="PWR" gate="G$1" x="96.52" y="-55.88" rot="R90"/>
 <instance part="SUPPLY32" gate="G$1" x="106.68" y="-58.42"/>
-<instance part="AGND" gate="G$1" x="78.74" y="-27.94"/>
+<instance part="AGND1" gate="G$1" x="78.74" y="-27.94"/>
 <instance part="DGND" gate="G$1" x="99.06" y="-27.94"/>
 <instance part="SUPPLY33" gate="G$1" x="78.74" y="-38.1"/>
 <instance part="DGND7" gate="PE" x="99.06" y="-38.1"/>
@@ -15243,6 +15236,8 @@ using single, isolated via.</text>
 <instance part="EXT_PWR" gate="G$1" x="96.52" y="-68.58" rot="R90"/>
 <instance part="SUPPLY34" gate="G$1" x="106.68" y="-71.12"/>
 <instance part="C46" gate="G$1" x="88.9" y="10.16"/>
+<instance part="AGND2" gate="G$1" x="68.58" y="-27.94"/>
+<instance part="SUPPLY39" gate="G$1" x="68.58" y="-38.1"/>
 </instances>
 <busses>
 </busses>
@@ -15317,13 +15312,18 @@ using single, isolated via.</text>
 </segment>
 <segment>
 <pinref part="SUPPLY33" gate="G$1" pin="AGND"/>
-<pinref part="AGND" gate="G$1" pin="TP"/>
+<pinref part="AGND1" gate="G$1" pin="TP"/>
 <wire x1="78.74" y1="-35.56" x2="78.74" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="EXT_PWR" gate="G$1" pin="C"/>
 <pinref part="SUPPLY34" gate="G$1" pin="AGND"/>
 <wire x1="101.6" y1="-68.58" x2="106.68" y2="-68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY39" gate="G$1" pin="AGND"/>
+<pinref part="AGND2" gate="G$1" pin="TP"/>
+<wire x1="68.58" y1="-35.56" x2="68.58" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DGND" class="0">
