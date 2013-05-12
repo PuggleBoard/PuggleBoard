@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -22696,11 +22696,11 @@ diameter 2 mm, horizontal, grid 10.16 mm</description>
 <rectangle x1="28.575" y1="69.215" x2="43.815" y2="86.36" layer="43"/>
 <rectangle x1="40.005" y1="0" x2="50.165" y2="11.43" layer="43"/>
 <rectangle x1="15.875" y1="0" x2="33.655" y2="20.32" layer="39"/>
-<wire x1="15.875" y1="5.8928" x2="15.875" y2="19.685" width="0.127" layer="20"/>
-<wire x1="15.875" y1="19.685" x2="16.51" y2="20.32" width="0.127" layer="20" curve="-90"/>
-<wire x1="16.51" y1="20.32" x2="33.02" y2="20.32" width="0.127" layer="20"/>
-<wire x1="33.02" y1="20.32" x2="33.655" y2="19.685" width="0.127" layer="20" curve="-90"/>
-<wire x1="33.655" y1="19.685" x2="33.655" y2="0" width="0.127" layer="20"/>
+<wire x1="15.875" y1="5.8928" x2="15.875" y2="19.939" width="0.127" layer="20"/>
+<wire x1="15.875" y1="19.939" x2="16.256" y2="20.32" width="0.127" layer="20" curve="-90"/>
+<wire x1="16.256" y1="20.32" x2="33.274" y2="20.32" width="0.127" layer="20"/>
+<wire x1="33.274" y1="20.32" x2="33.655" y2="19.939" width="0.127" layer="20" curve="-90"/>
+<wire x1="33.655" y1="19.939" x2="33.655" y2="0" width="0.127" layer="20"/>
 <wire x1="33.655" y1="0" x2="48.26" y2="0" width="0.127" layer="20"/>
 <wire x1="48.26" y1="0" x2="54.61" y2="6.35" width="0.127" layer="20" curve="90"/>
 <wire x1="38.735" y1="5.715" x2="39.37" y2="6.35" width="0.1524" layer="21"/>
