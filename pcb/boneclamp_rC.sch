@@ -3743,7 +3743,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <smd name="3" x="2.54" y="-2.54" dx="1.016" dy="2.794" layer="1"/>
 <rectangle x1="-3.175" y1="-2.159" x2="3.175" y2="2.159" layer="39"/>
 <wire x1="-3.175" y1="2.2225" x2="-3.175" y2="-2.2225" width="0.127" layer="21"/>
-<wire x1="-3.175" y1="-2.2225" x2="3.175" y2="-2.2225" width="0.127" layer="22"/>
+<wire x1="-3.175" y1="-2.2225" x2="3.175" y2="-2.2225" width="0.127" layer="21"/>
 <wire x1="3.175" y1="-2.2225" x2="3.175" y2="2.2225" width="0.127" layer="21"/>
 <wire x1="3.175" y1="2.2225" x2="-3.175" y2="2.2225" width="0.127" layer="21"/>
 <text x="-3.175" y="4.445" size="1.27" layer="25">&gt;NAME</text>
@@ -3757,7 +3757,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <smd name="3" x="2.54" y="-2.54" dx="1.016" dy="2.794" layer="1"/>
 <rectangle x1="-3.175" y1="-2.159" x2="3.175" y2="2.159" layer="39"/>
 <wire x1="-3.175" y1="2.2225" x2="-3.175" y2="-2.2225" width="0.127" layer="21"/>
-<wire x1="-3.175" y1="-2.2225" x2="3.175" y2="-2.2225" width="0.127" layer="22"/>
+<wire x1="-3.175" y1="-2.2225" x2="3.175" y2="-2.2225" width="0.127" layer="21"/>
 <wire x1="3.175" y1="-2.2225" x2="3.175" y2="2.2225" width="0.127" layer="21"/>
 <wire x1="3.175" y1="2.2225" x2="-3.175" y2="2.2225" width="0.127" layer="21"/>
 <wire x1="3.175" y1="2.2225" x2="3.81" y2="2.2225" width="0.127" layer="21"/>
