@@ -13732,7 +13732,8 @@ Source: www.kingbright.com</description>
 <text x="76.2" y="86.36" size="1.778" layer="97">DAC_SPI MAPPING
 1. DAC_SCLK (DAC_SPI0)
 2. DAC_CS (DAC_SPI1)
-3. DAC_SDI (DAC_SPI2)</text>
+3. DAC_SDI (DAC_SPI2)
+4. DAC_SDO (DAC_SPI3)</text>
 <text x="48.26" y="106.68" size="1.778" layer="97">WHICH GPIO PINS WILL 
 SUPPORT ADC/DAC DATA BUSES?</text>
 </plain>
@@ -13755,9 +13756,9 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <wire x1="38.1" y1="78.74" x2="27.94" y2="78.74" width="0.762" layer="92"/>
 </segment>
 </bus>
-<bus name="DAC_SPI[0..2]">
+<bus name="DAC_SPI[0..3]">
 <segment>
-<wire x1="88.9" y1="76.2" x2="88.9" y2="68.58" width="0.762" layer="92"/>
+<wire x1="88.9" y1="76.2" x2="88.9" y2="66.04" width="0.762" layer="92"/>
 <label x="91.44" y="78.74" size="1.778" layer="95" rot="MR0"/>
 <wire x1="88.9" y1="76.2" x2="86.36" y2="78.74" width="0.762" layer="92"/>
 <wire x1="86.36" y1="78.74" x2="76.2" y2="78.74" width="0.762" layer="92"/>
@@ -14011,6 +14012,17 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <pinref part="SJ_A/DGND1" gate="1" pin="1"/>
 <pinref part="BB1" gate="G$1" pin="GND@1"/>
 <wire x1="-71.12" y1="43.18" x2="-63.5" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DAC_SPI3" class="0">
+<segment>
+<wire x1="76.2" y1="66.04" x2="88.9" y2="66.04" width="0.1524" layer="91"/>
+<label x="76.2" y="66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="BB1" gate="G$1" pin="GPIO1_13"/>
+<wire x1="-63.5" y1="96.52" x2="-81.28" y2="96.52" width="0.1524" layer="91"/>
+<label x="-81.28" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -14603,7 +14615,8 @@ using single, isolated via.</text>
 <text x="-12.7" y="-38.1" size="1.778" layer="97">DAC_SPI MAPPING
 1. DAC_SCLK (DAC_SPI0)
 2. DAC_CS (DAC_SPI1)
-3. DAC_SDI (DAC_SPI2)</text>
+3. DAC_SDI (DAC_SPI2)
+4. DAC_SDO (DAC_SPI3)</text>
 </plain>
 <instances>
 <instance part="C31" gate="G$1" x="53.34" y="-81.28"/>
@@ -14661,7 +14674,7 @@ using single, isolated via.</text>
 <instance part="SUPPLY2" gate="G$1" x="-20.32" y="-22.86"/>
 </instances>
 <busses>
-<bus name="DAC_SPI[0..2]">
+<bus name="DAC_SPI[0..3]">
 <segment>
 <wire x1="-25.4" y1="22.86" x2="-7.62" y2="22.86" width="0.762" layer="92"/>
 <wire x1="-25.4" y1="22.86" x2="-27.94" y2="20.32" width="0.762" layer="92"/>
@@ -15166,6 +15179,13 @@ using single, isolated via.</text>
 <pinref part="U10" gate="G$1" pin="SYNC*"/>
 <wire x1="-27.94" y1="-2.54" x2="-17.78" y2="-2.54" width="0.1524" layer="91"/>
 <label x="-27.94" y="-2.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DAC_SPI3" class="0">
+<segment>
+<pinref part="U10" gate="G$1" pin="SDO"/>
+<wire x1="-17.78" y1="12.7" x2="-27.94" y2="12.7" width="0.1524" layer="91"/>
+<label x="-27.94" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
