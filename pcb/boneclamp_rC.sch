@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -13984,6 +13984,9 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <segment>
 <pinref part="BB1" gate="G$1" pin="GPIO1_12"/>
 <wire x1="-7.62" y1="96.52" x2="10.16" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="96.52" x2="10.16" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="96.52" x2="10.16" y2="96.52" width="0.1524" layer="91"/>
+<label x="-2.54" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="~RST" class="0">
