@@ -14015,6 +14015,13 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <wire x1="-71.12" y1="43.18" x2="-63.5" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="DAC_SPI3" class="0">
+<segment>
+<pinref part="BB1" gate="G$1" pin="GPIO1_13"/>
+<wire x1="-63.5" y1="96.52" x2="-81.28" y2="96.52" width="0.1524" layer="91"/>
+<label x="-81.28" y="96.52" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
