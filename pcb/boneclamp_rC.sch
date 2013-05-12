@@ -658,9 +658,9 @@
 <rectangle x1="28.575" y1="69.215" x2="43.815" y2="86.36" layer="43"/>
 <rectangle x1="40.005" y1="0" x2="50.165" y2="11.43" layer="43"/>
 <rectangle x1="15.875" y1="0" x2="33.655" y2="20.32" layer="39"/>
-<wire x1="15.875" y1="5.8928" x2="15.875" y2="20.32" width="0.127" layer="21"/>
-<wire x1="15.875" y1="20.32" x2="33.655" y2="20.32" width="0.127" layer="21"/>
-<wire x1="33.655" y1="20.32" x2="33.655" y2="0" width="0.127" layer="21"/>
+<wire x1="15.875" y1="5.8928" x2="15.875" y2="20.32" width="0.127" layer="20"/>
+<wire x1="15.875" y1="20.32" x2="33.655" y2="20.32" width="0.127" layer="20"/>
+<wire x1="33.655" y1="20.32" x2="33.655" y2="0" width="0.127" layer="20"/>
 <wire x1="33.655" y1="0" x2="48.26" y2="0" width="0.127" layer="20"/>
 <wire x1="48.26" y1="0" x2="54.61" y2="6.35" width="0.127" layer="20" curve="90"/>
 <wire x1="38.735" y1="5.715" x2="39.37" y2="6.35" width="0.1524" layer="21"/>
@@ -1346,7 +1346,6 @@ at 30/07/2012 17:45:58</description>
 <wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0.1524" layer="21"/>
 <wire x1="-0.3048" y1="1.524" x2="-0.508" y2="1.524" width="0.1524" layer="21"/>
 <wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0.1524" layer="21" curve="-180"/>
-<text x="-2.1336" y="1.3716" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <wire x1="-0.8636" y1="-1.524" x2="0.8636" y2="-1.524" width="0" layer="51"/>
 <wire x1="0.8636" y1="-1.524" x2="0.8636" y2="-1.1938" width="0" layer="51"/>
 <wire x1="0.8636" y1="-1.1938" x2="0.8636" y2="-0.7112" width="0" layer="51"/>
@@ -1379,7 +1378,6 @@ at 30/07/2012 17:45:58</description>
 <wire x1="1.524" y1="0.7112" x2="1.524" y2="1.1938" width="0" layer="51"/>
 <wire x1="1.524" y1="1.1938" x2="0.8636" y2="1.1938" width="0" layer="51"/>
 <wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0" layer="51" curve="-180"/>
-<text x="-2.1336" y="1.3716" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <text x="-3.4544" y="2.54" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-3.4544" y="-4.445" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
@@ -1413,13 +1411,6 @@ at 30/07/2012 17:45:58</description>
 <wire x1="0.3048" y1="3.9624" x2="-0.3048" y2="3.9624" width="0.1524" layer="21"/>
 <wire x1="-0.3048" y1="3.9624" x2="-1.9304" y2="3.9624" width="0.1524" layer="21"/>
 <wire x1="0.3048" y1="3.9624" x2="-0.3048" y2="3.9624" width="0" layer="21" curve="-180"/>
-<wire x1="-4.1656" y1="-2.0828" x2="-4.1656" y2="-2.4638" width="0.1524" layer="21"/>
-<wire x1="-4.1656" y1="-2.4638" x2="-3.9116" y2="-2.4638" width="0.1524" layer="21"/>
-<wire x1="-3.9116" y1="-2.4638" x2="-3.9116" y2="-2.0828" width="0.1524" layer="21"/>
-<wire x1="4.1656" y1="1.1684" x2="4.1656" y2="0.7874" width="0.1524" layer="21"/>
-<wire x1="4.1656" y1="0.7874" x2="3.9116" y2="0.7874" width="0.1524" layer="21"/>
-<wire x1="3.9116" y1="0.7874" x2="3.9116" y2="1.1684" width="0.1524" layer="21"/>
-<text x="-3.7592" y="3.81" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <wire x1="-2.2606" y1="3.429" x2="-2.2606" y2="3.7338" width="0.1524" layer="51"/>
 <wire x1="-2.2606" y1="3.7338" x2="-3.302" y2="3.7338" width="0.1524" layer="51"/>
 <wire x1="-3.302" y1="3.7338" x2="-3.302" y2="3.429" width="0.1524" layer="51"/>
@@ -1522,8 +1513,7 @@ at 30/07/2012 17:45:58</description>
 <wire x1="0.3048" y1="3.9624" x2="-0.3048" y2="3.9624" width="0.1524" layer="51"/>
 <wire x1="-0.3048" y1="3.9624" x2="-2.2606" y2="3.9624" width="0.1524" layer="51"/>
 <wire x1="-2.2606" y1="3.9624" x2="-2.2606" y2="-3.9624" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="3.9624" x2="-0.3048" y2="3.9624" width="0" layer="51" curve="-180"/>
-<text x="-3.7592" y="3.81" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
+<wire x1="0.3048" y1="3.9624" x2="-0.3048" y2="3.9624" width="0.1524" layer="21" curve="-180"/>
 <text x="-4.699" y="4.9022" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-5.6642" y="-6.6802" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
@@ -1622,13 +1612,11 @@ at 30/07/2012 17:45:58</description>
 <wire x1="-0.3048" y1="2.4892" x2="-2.0066" y2="2.4892" width="0.1524" layer="51"/>
 <wire x1="-2.0066" y1="2.4892" x2="-2.0066" y2="-2.4892" width="0.1524" layer="51"/>
 <wire x1="0.3048" y1="2.4892" x2="-0.3048" y2="2.4892" width="0" layer="51" curve="-180"/>
-<text x="-3.302" y="2.3368" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <wire x1="-1.3716" y1="-2.4892" x2="1.3716" y2="-2.4892" width="0.1524" layer="21"/>
 <wire x1="1.3716" y1="2.4892" x2="0.3048" y2="2.4892" width="0.1524" layer="21"/>
 <wire x1="0.3048" y1="2.4892" x2="-0.3048" y2="2.4892" width="0.1524" layer="21"/>
 <wire x1="-0.3048" y1="2.4892" x2="-1.3716" y2="2.4892" width="0.1524" layer="21"/>
-<wire x1="0.3048" y1="2.4892" x2="-0.3048" y2="2.4892" width="0" layer="21" curve="-180"/>
-<text x="-3.302" y="2.3368" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
+<wire x1="0.3048" y1="2.4892" x2="-0.3048" y2="2.4892" width="0.1524" layer="21" curve="-180"/>
 <text x="-4.6736" y="3.3782" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-5.7404" y="-5.2324" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
@@ -11450,13 +11438,11 @@ at 30/07/2012 14:34:29</description>
 <wire x1="2.9" y1="3.9" x2="2.9" y2="-3.9" width="0.1998" layer="39"/>
 <wire x1="2.9" y1="-3.9" x2="-2.9" y2="-3.9" width="0.1998" layer="39"/>
 <wire x1="-2.9" y1="-3.9" x2="-2.9" y2="3.9" width="0.1998" layer="39"/>
-<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.9" width="0.1524" layer="21"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.1524" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="1.9" width="0.1524" layer="21"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.1524" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.1524" layer="51"/>
 <smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
@@ -11478,6 +11464,7 @@ at 30/07/2012 14:34:29</description>
 <rectangle x1="-0.8801" y1="2" x2="-0.3899" y2="3.1001" layer="51"/>
 <rectangle x1="-2.1501" y1="2" x2="-1.6599" y2="3.1001" layer="51"/>
 <rectangle x1="-1" y1="-1" x2="1" y2="1" layer="35"/>
+<wire x1="-2.413" y1="0.381" x2="-2.413" y2="-0.381" width="0.1524" layer="21" curve="-180"/>
 </package>
 </packages>
 <symbols>
@@ -11764,15 +11751,14 @@ at 08/10/2012 14:57:29</description>
 <wire x1="-0.3048" y1="2.54" x2="-2.2606" y2="2.54" width="0.1524" layer="51"/>
 <wire x1="-2.2606" y1="2.54" x2="-2.2606" y2="-2.54" width="0.1524" layer="51"/>
 <wire x1="0.3048" y1="2.54" x2="-0.3048" y2="2.54" width="0" layer="51" curve="-180"/>
-<text x="-2.1576" y="0.9892" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <wire x1="-1.778" y1="-2.54" x2="1.778" y2="-2.54" width="0.1524" layer="21"/>
 <wire x1="1.778" y1="2.54" x2="0.3048" y2="2.54" width="0.1524" layer="21"/>
 <wire x1="0.3048" y1="2.54" x2="-0.3048" y2="2.54" width="0.1524" layer="21"/>
 <wire x1="-0.3048" y1="2.54" x2="-1.778" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="0.3048" y1="2.54" x2="-0.3048" y2="2.54" width="0" layer="21" curve="-180"/>
+<wire x1="0.3048" y1="2.54" x2="-0.3048" y2="2.54" width="0.1524" layer="21" curve="-180"/>
 <text x="-3.4544" y="4.445" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-3.4544" y="-5.715" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
-<text x="1" y="2.5" size="0.4064" layer="21" rot="R270">JEDEC MO-153-AD</text>
+<text x="1" y="2.5" size="0.4064" layer="51" rot="R270">JEDEC MO-153-AD</text>
 </package>
 <package name="SOIC127P600X175-8N">
 <smd name="1" x="-2.4638" y="1.905" dx="1.9812" dy="0.5588" layer="1"/>
@@ -11822,13 +11808,11 @@ at 08/10/2012 14:57:29</description>
 <wire x1="-0.3048" y1="2.4892" x2="-2.0066" y2="2.4892" width="0.1524" layer="51"/>
 <wire x1="-2.0066" y1="2.4892" x2="-2.0066" y2="-2.4892" width="0.1524" layer="51"/>
 <wire x1="0.3048" y1="2.4892" x2="-0.3048" y2="2.4892" width="0" layer="51" curve="-180"/>
-<text x="-3.302" y="2.3368" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <wire x1="-1.3716" y1="-2.4892" x2="1.3716" y2="-2.4892" width="0.1524" layer="21"/>
 <wire x1="1.3716" y1="2.4892" x2="0.3048" y2="2.4892" width="0.1524" layer="21"/>
 <wire x1="0.3048" y1="2.4892" x2="-0.3048" y2="2.4892" width="0.1524" layer="21"/>
 <wire x1="-0.3048" y1="2.4892" x2="-1.3716" y2="2.4892" width="0.1524" layer="21"/>
-<wire x1="0.3048" y1="2.4892" x2="-0.3048" y2="2.4892" width="0" layer="21" curve="-180"/>
-<text x="-3.302" y="2.3368" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
+<wire x1="0.3048" y1="2.4892" x2="-0.3048" y2="2.4892" width="0.1524" layer="21" curve="-180"/>
 <text x="-3.4544" y="4.445" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-3.4544" y="-5.715" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
@@ -11954,7 +11938,6 @@ at 30/07/2012 11:04:18</description>
 <wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0.1524" layer="21"/>
 <wire x1="-0.3048" y1="1.4986" x2="-0.4318" y2="1.4986" width="0.1524" layer="21"/>
 <wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0.1524" layer="21" curve="-180"/>
-<text x="-2.1082" y="1.3716" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <wire x1="-0.8636" y1="-1.4986" x2="0.8636" y2="-1.4986" width="0" layer="51"/>
 <wire x1="0.8636" y1="-1.4986" x2="0.8636" y2="-1.1938" width="0" layer="51"/>
 <wire x1="0.8636" y1="-1.1938" x2="0.8636" y2="-0.7112" width="0" layer="51"/>
@@ -11987,7 +11970,6 @@ at 30/07/2012 11:04:18</description>
 <wire x1="1.4986" y1="0.7112" x2="1.4986" y2="1.1938" width="0" layer="51"/>
 <wire x1="1.4986" y1="1.1938" x2="0.8636" y2="1.1938" width="0" layer="51"/>
 <wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0" layer="51" curve="-180"/>
-<text x="-2.1082" y="1.3716" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <text x="-3.4544" y="2.54" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-3.4544" y="-4.445" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
@@ -13569,7 +13551,7 @@ Source: www.kingbright.com</description>
 <part name="DAC_C+" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="DAC_B+" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="DAC_A+" library="testpad" deviceset="TP" device="B1,27"/>
-<part name="SJ1" library="jumper" deviceset="SJ" device=""/>
+<part name="SJ_A/DGND2" library="jumper" deviceset="SJ" device=""/>
 <part name="DGND3" library="supply2" deviceset="PE" device="" value="DGND"/>
 <part name="SUPPLY17" library="supply2" deviceset="AGND" device=""/>
 <part name="U16" library="on-semiconductor-01" deviceset="24C*" device=""/>
@@ -13728,7 +13710,7 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY34" library="supply2" deviceset="AGND" device=""/>
 <part name="R14" library="rcl" deviceset="R-US_" device="R0603" value="10"/>
 <part name="C38" library="rcl" deviceset="C-US" device="C1206" value="4.7uF"/>
-<part name="SJ2" library="jumper" deviceset="SJ" device=""/>
+<part name="SJ_A/DGND1" library="jumper" deviceset="SJ" device=""/>
 <part name="C46" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
 <part name="SUPPLY38" library="supply2" deviceset="AGND" device=""/>
 <part name="SUPPLY16" library="supply2" deviceset="AGND" device=""/>
@@ -13756,13 +13738,13 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 </plain>
 <instances>
 <instance part="BB1" gate="G$1" x="-35.56" y="48.26"/>
-<instance part="DGND2" gate="PE" x="17.78" y="38.1"/>
-<instance part="SUPPLY8" gate="G$1" x="-88.9" y="38.1"/>
+<instance part="DGND2" gate="PE" x="-91.44" y="38.1"/>
+<instance part="SUPPLY8" gate="G$1" x="20.32" y="38.1"/>
 <instance part="A_I/O" gate="G$1" x="53.34" y="30.48"/>
 <instance part="PWR_EXT" gate="A" x="53.34" y="7.62"/>
 <instance part="RESET" gate="G$1" x="81.28" y="7.62" rot="R270"/>
 <instance part="DGND10" gate="PE" x="93.98" y="0"/>
-<instance part="SJ2" gate="1" x="10.16" y="43.18"/>
+<instance part="SJ_A/DGND1" gate="1" x="-76.2" y="43.18" rot="R180"/>
 </instances>
 <busses>
 <bus name="ADC_SPI[0..4]">
@@ -13804,9 +13786,9 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 </segment>
 <segment>
 <pinref part="DGND2" gate="PE" pin="PE"/>
-<wire x1="17.78" y1="43.18" x2="17.78" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="SJ2" gate="1" pin="2"/>
-<wire x1="15.24" y1="43.18" x2="17.78" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="SJ_A/DGND1" gate="1" pin="2"/>
+<wire x1="-91.44" y1="40.64" x2="-91.44" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-91.44" y1="43.18" x2="-81.28" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="AGND" class="0">
@@ -13826,10 +13808,10 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <label x="66.04" y="33.02" size="1.778" layer="95"/>
 </segment>
 <segment>
+<pinref part="BB1" gate="G$1" pin="GND@2"/>
+<wire x1="-7.62" y1="43.18" x2="20.32" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="SUPPLY8" gate="G$1" pin="AGND"/>
-<wire x1="-88.9" y1="40.64" x2="-88.9" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="BB1" gate="G$1" pin="GND@1"/>
-<wire x1="-88.9" y1="43.18" x2="-63.5" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="43.18" x2="20.32" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VDD_5V" class="0">
@@ -14025,9 +14007,9 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="SJ2" gate="1" pin="1"/>
-<pinref part="BB1" gate="G$1" pin="GND@2"/>
-<wire x1="5.08" y1="43.18" x2="-7.62" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="SJ_A/DGND1" gate="1" pin="1"/>
+<pinref part="BB1" gate="G$1" pin="GND@1"/>
+<wire x1="-71.12" y1="43.18" x2="-63.5" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -15195,7 +15177,7 @@ using single, isolated via.</text>
 = -4.5V</text>
 </plain>
 <instances>
-<instance part="SJ1" gate="1" x="88.9" y="-10.16"/>
+<instance part="SJ_A/DGND2" gate="1" x="88.9" y="-10.16"/>
 <instance part="DGND3" gate="PE" x="99.06" y="-12.7"/>
 <instance part="SUPPLY17" gate="G$1" x="78.74" y="-12.7"/>
 <instance part="U13" gate="A" x="2.54" y="-58.42"/>
@@ -15245,7 +15227,7 @@ using single, isolated via.</text>
 <net name="AGND" class="0">
 <segment>
 <pinref part="SUPPLY17" gate="G$1" pin="AGND"/>
-<pinref part="SJ1" gate="1" pin="1"/>
+<pinref part="SJ_A/DGND2" gate="1" pin="1"/>
 <wire x1="78.74" y1="-10.16" x2="83.82" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -15328,7 +15310,7 @@ using single, isolated via.</text>
 </net>
 <net name="DGND" class="0">
 <segment>
-<pinref part="SJ1" gate="1" pin="2"/>
+<pinref part="SJ_A/DGND2" gate="1" pin="2"/>
 <wire x1="93.98" y1="-10.16" x2="99.06" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="DGND3" gate="PE" pin="PE"/>
 </segment>
