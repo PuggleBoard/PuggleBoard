@@ -26,7 +26,7 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
@@ -9976,14 +9976,14 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="DAC_SPI3">
 <contactref element="U10" pad="8"/>
 <contactref element="BB1" pad="11"/>
-<wire x1="4.445" y1="31.75" x2="6.49211875" y2="31.75" width="0.254" layer="1"/>
-<wire x1="6.49211875" y1="31.75" x2="8.200728125" y2="32.457728125" width="0.254" layer="1" curve="45"/>
-<wire x1="8.200728125" y1="32.457728125" x2="9.558171875" y2="33.02" width="0.254" layer="1" curve="-45"/>
-<wire x1="9.558171875" y1="33.02" x2="16.124346875" y2="33.02" width="0.254" layer="1"/>
+<wire x1="16.124346875" y1="33.02" x2="10.235803125" y2="33.02" width="0.254" layer="1"/>
+<wire x1="10.235803125" y1="33.02" x2="8.900521875" y2="32.856653125" width="0.254" layer="1" curve="13.948731"/>
+<wire x1="8.900521875" y1="32.856653125" x2="6.6476875" y2="32.00620625" width="0.254" layer="1"/>
+<wire x1="6.6476875" y1="32.00620625" x2="5.2435625" y2="31.75" width="0.254" layer="1" curve="-20.68158"/>
+<wire x1="5.2435625" y1="31.75" x2="4.445" y2="31.75" width="0.254" layer="1"/>
 <wire x1="16.124346875" y1="33.02" x2="16.82695" y2="32.755984375" width="0.254" layer="1" curve="-41.189241"/>
-<wire x1="16.82695" y1="32.755984375" x2="17.341809375" y2="32.305428125" width="0.254" layer="1"/>
-<wire x1="17.341809375" y1="32.305428125" x2="18.48194375" y2="31.877" width="0.254" layer="1" curve="41.189359"/>
-<wire x1="18.48194375" y1="31.877" x2="24.762546875" y2="31.877" width="0.254" layer="1"/>
+<wire x1="16.82695" y1="32.755984375" x2="19.166109375" y2="31.877" width="0.254" layer="1" curve="41.189377"/>
+<wire x1="19.166109375" y1="31.877" x2="24.762546875" y2="31.877" width="0.254" layer="1"/>
 <wire x1="24.762546875" y1="31.877" x2="27.368365625" y2="32.956365625" width="0.254" layer="1" curve="44.999966"/>
 <wire x1="27.368365625" y1="32.956365625" x2="28.448" y2="34.036" width="0.254" layer="1"/>
 <via x="28.448" y="34.036" extent="1-16" drill="0.381"/>
