@@ -7259,7 +7259,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="11.557" y="41.7322" size="0.6096" layer="25" font="vector" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="10.0838" y="46.0248" size="0.6096" layer="27" font="vector" ratio="10" rot="SR0"/>
 </element>
-<element name="U1" library="ti-extended" package="SOT95P280X145-5N" value="OPA365AIDBVR" x="10.414" y="62.484" smashed="yes" rot="R180">
+<element name="U1" library="ti-extended" package="SOT95P280X145-5N" value="OPA365" x="10.414" y="62.484" smashed="yes" rot="R180">
 <attribute name="PACKAGE" value="SOT-23-5" x="10.414" y="62.484" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="03M9400" x="10.414" y="62.484" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="OPA365AIDBVR" x="10.414" y="62.484" size="1.778" layer="27" rot="R180" display="off"/>
@@ -7348,7 +7348,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="38.1" y="66.167" size="0.6096" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="40.767" y="63.5" size="0.6096" layer="27" font="vector" rot="R90"/>
 </element>
-<element name="U3" library="ti-extended" package="SOT95P280X145-5N" value="OPA365AIDBVR" x="20.701" y="62.484" smashed="yes" rot="R180">
+<element name="U3" library="ti-extended" package="SOT95P280X145-5N" value="OPA365" x="20.701" y="62.484" smashed="yes" rot="R180">
 <attribute name="PACKAGE" value="SOT-23-5" x="20.701" y="62.484" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="03M9400" x="20.701" y="62.484" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="OPA365AIDBVR" x="20.701" y="62.484" size="1.778" layer="27" rot="R180" display="off"/>
@@ -7372,7 +7372,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="21.844" y="58.42" size="0.6096" layer="25" font="vector"/>
 <attribute name="VALUE" x="19.05" y="59.055" size="0.6096" layer="27" font="vector" rot="R180"/>
 </element>
-<element name="U2" library="ti-extended" package="SOT95P280X145-5N" value="OPA365AIDBVR" x="30.988" y="71.755" smashed="yes" rot="R180">
+<element name="U2" library="ti-extended" package="SOT95P280X145-5N" value="OPA365" x="30.988" y="71.755" smashed="yes" rot="R180">
 <attribute name="PACKAGE" value="SOT-23-5" x="30.988" y="71.755" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="03M9400" x="30.988" y="71.755" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="OPA365AIDBVR" x="30.988" y="71.755" size="1.778" layer="27" rot="R180" display="off"/>
@@ -7396,7 +7396,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="32.004" y="67.691" size="0.6096" layer="25" font="vector"/>
 <attribute name="VALUE" x="29.083" y="68.326" size="0.6096" layer="27" font="vector" rot="R180"/>
 </element>
-<element name="U4" library="ti-extended" package="SOT95P280X145-5N" value="OPA365AIDBVR" x="41.275" y="71.755" smashed="yes" rot="R180">
+<element name="U4" library="ti-extended" package="SOT95P280X145-5N" value="OPA365" x="41.275" y="71.755" smashed="yes" rot="R180">
 <attribute name="PACKAGE" value="SOT-23-5" x="41.275" y="71.755" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="03M9400" x="41.275" y="71.755" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="OPA365AIDBVR" x="41.275" y="71.755" size="1.778" layer="27" rot="R180" display="off"/>
@@ -7481,7 +7481,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="31.242" y="46.355" size="0.6096" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="31.623" y="43.18" size="0.6096" layer="27" font="vector"/>
 </element>
-<element name="U6" library="ti-extended" package="SOT95P280X145-5N" value="OPA365AIDBVR" x="10.414" y="71.755" smashed="yes" rot="R180">
+<element name="U6" library="ti-extended" package="SOT95P280X145-5N" value="OPA365" x="10.414" y="71.755" smashed="yes" rot="R180">
 <attribute name="PACKAGE" value="SOT-23-5" x="10.414" y="71.755" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="03M9400" x="10.414" y="71.755" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="OPA365AIDBVR" x="10.414" y="71.755" size="1.778" layer="27" rot="R180" display="off"/>
@@ -7525,7 +7525,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C18" library="rcl" package="C0603" value="0.1uF" x="30.607" y="78.359" smashed="yes">
 <attribute name="NAME" x="32.004" y="77.089" size="0.6096" layer="25" font="vector"/>
 </element>
-<element name="U8" library="ti-extended" package="SOT95P280X145-5N" value="OPA365AIDBVR" x="20.701" y="71.755" smashed="yes" rot="R180">
+<element name="U8" library="ti-extended" package="SOT95P280X145-5N" value="OPA365" x="20.701" y="71.755" smashed="yes" rot="R180">
 <attribute name="PACKAGE" value="SOT-23-5" x="20.701" y="71.755" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="03M9400" x="20.701" y="71.755" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="OPA365AIDBVR" x="20.701" y="71.755" size="1.778" layer="27" rot="R180" display="off"/>
@@ -7549,7 +7549,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="21.717" y="67.691" size="0.6096" layer="25" font="vector"/>
 <attribute name="VALUE" x="18.796" y="68.326" size="0.6096" layer="27" font="vector" rot="R180"/>
 </element>
-<element name="U9" library="ti-extended" package="SOT95P280X145-5N" value="OPA365AIDBVR" x="41.275" y="81.026" smashed="yes" rot="R180">
+<element name="U9" library="ti-extended" package="SOT95P280X145-5N" value="OPA365" x="41.275" y="81.026" smashed="yes" rot="R180">
 <attribute name="PACKAGE" value="SOT-23-5" x="41.275" y="81.026" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="03M9400" x="41.275" y="81.026" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="OPA365AIDBVR" x="41.275" y="81.026" size="1.778" layer="27" rot="R180" display="off"/>

@@ -4,3 +4,7 @@
 *.s\#*
 *.b\#*
 *.l\#*
+
+# Ignore archives
+*.zip
+*.tgz

@@ -13587,7 +13587,7 @@ Source: www.kingbright.com</description>
 <part name="R24" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="R25" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="U5" library="ti-extended" deviceset="ADS8331IBPW" device="" value="ADS8331"/>
-<part name="U1" library="ti-extended" deviceset="OPA365AIDBVR" device=""/>
+<part name="U1" library="ti-extended" deviceset="OPA365AIDBVR" device="" value="OPA365"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="R0603" value="20k"/>
 <part name="R3" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="U14" library="ti-extended" deviceset="REF5040MDREP" device="" value="REF5040"/>
@@ -13611,19 +13611,19 @@ Source: www.kingbright.com</description>
 <part name="C13" library="rcl" deviceset="C-EU" device="C0603" value="1nF"/>
 <part name="C14" library="rcl" deviceset="C-EU" device="C0603" value="1nF"/>
 <part name="SUPPLY18" library="supply2" deviceset="AGND" device=""/>
-<part name="U3" library="ti-extended" deviceset="OPA365AIDBVR" device=""/>
+<part name="U3" library="ti-extended" deviceset="OPA365AIDBVR" device="" value="OPA365"/>
 <part name="R5" library="rcl" deviceset="R-US_" device="R0603" value="20k"/>
 <part name="R7" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="C6" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="SUPPLY19" library="supply2" deviceset="AGND" device=""/>
-<part name="U2" library="ti-extended" deviceset="OPA365AIDBVR" device=""/>
+<part name="U2" library="ti-extended" deviceset="OPA365AIDBVR" device="" value="OPA365"/>
 <part name="R2" library="rcl" deviceset="R-US_" device="R0603" value="20k"/>
 <part name="R4" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="SUPPLY35" library="supply2" deviceset="AGND" device=""/>
-<part name="U4" library="ti-extended" deviceset="OPA365AIDBVR" device=""/>
+<part name="U4" library="ti-extended" deviceset="OPA365AIDBVR" device="" value="OPA365"/>
 <part name="R6" library="rcl" deviceset="R-US_" device="R0603" value="20k"/>
 <part name="R8" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="C8" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
@@ -13647,7 +13647,7 @@ Source: www.kingbright.com</description>
 <part name="C35" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
 <part name="R30" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
 <part name="R31" library="rcl" deviceset="R-US_" device="R0603" value="261k"/>
-<part name="U6" library="ti-extended" deviceset="OPA365AIDBVR" device=""/>
+<part name="U6" library="ti-extended" deviceset="OPA365AIDBVR" device="" value="OPA365"/>
 <part name="R15" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="R17" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="C17" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
@@ -13659,13 +13659,13 @@ Source: www.kingbright.com</description>
 <part name="C19" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="C18" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="SUPPLY9" library="supply2" deviceset="AGND" device=""/>
-<part name="U8" library="ti-extended" deviceset="OPA365AIDBVR" device=""/>
+<part name="U8" library="ti-extended" deviceset="OPA365AIDBVR" device="" value="OPA365"/>
 <part name="R19" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="R21" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="C21" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="C20" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="SUPPLY20" library="supply2" deviceset="AGND" device=""/>
-<part name="U9" library="ti-extended" deviceset="OPA365AIDBVR" device=""/>
+<part name="U9" library="ti-extended" deviceset="OPA365AIDBVR" device="" value="OPA365"/>
 <part name="R20" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="R22" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="C23" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
