@@ -451,6 +451,7 @@ In this library the device names are the same as the pin names of the symbols, t
 </parts>
 <sheets>
 <sheet>
+<description>PuggleBOB</description>
 <plain>
 </plain>
 <instances>
