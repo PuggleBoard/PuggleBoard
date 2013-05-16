@@ -1,6 +1,6 @@
 [Eagle]
 Version="06 04 00"
-Platform="Windows"
+Platform="Linux"
 Serial="6E23A2A2B2-LSR-WLM-1EP"
 Globals="Globals"
 Desktop="Desktop"
@@ -10,10 +10,10 @@ AutoSaveProject=1
 
 [Win_1]
 Type="Control Panel"
-Loc="532 306 1131 705"
+Loc="322 199 1273 598"
 State=1
 Number=0
 
 [Desktop]
-Screen="3360 1050"
+Screen="1280 800"
 Window="Win_1"
