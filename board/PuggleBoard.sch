@@ -13908,7 +13908,7 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 </segment>
 <segment>
 <pinref part="BB1" gate="G$1" pin="GPIO1_4"/>
-<wire x1="-63.5" y1="81.28" x2="-81.28" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="81.28" x2="-91.44" y2="81.28" width="0.1524" layer="91"/>
 <label x="-81.28" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -13919,8 +13919,7 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 </segment>
 <segment>
 <pinref part="BB1" gate="G$1" pin="GPIO1_1"/>
-<wire x1="-7.62" y1="81.28" x2="10.16" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="81.28" x2="10.16" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="81.28" x2="17.78" y2="81.28" width="0.1524" layer="91"/>
 <label x="-2.54" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -13953,7 +13952,7 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 </segment>
 <segment>
 <pinref part="BB1" gate="G$1" pin="GPIO1_5"/>
-<wire x1="-7.62" y1="83.82" x2="10.16" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="83.82" x2="17.78" y2="83.82" width="0.1524" layer="91"/>
 <label x="-2.54" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -14023,8 +14022,32 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 </segment>
 <segment>
 <pinref part="BB1" gate="G$1" pin="GPIO1_13"/>
-<wire x1="-63.5" y1="96.52" x2="-81.28" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="96.52" x2="-91.44" y2="96.52" width="0.1524" layer="91"/>
 <label x="-81.28" y="96.52" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="BB1" gate="G$1" pin="GPIO2_22"/>
+<wire x1="-63.5" y1="76.2" x2="-81.28" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="BB1" gate="G$1" pin="GPIO2_23"/>
+<wire x1="-63.5" y1="73.66" x2="-81.28" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="BB1" gate="G$1" pin="GPIO2_25"/>
+<wire x1="-7.62" y1="73.66" x2="10.16" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="BB1" gate="G$1" pin="GPIO2_24"/>
+<wire x1="-7.62" y1="76.2" x2="10.16" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

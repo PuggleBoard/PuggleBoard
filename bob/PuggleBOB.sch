@@ -429,7 +429,7 @@ In this library the device names are the same as the pin names of the symbols, t
 </class>
 </classes>
 <parts>
-<part name="A_I/O" library="adafruit" deviceset="PINHD-2X5" device="/90"/>
+<part name="A_I/O" library="adafruit" deviceset="PINHD-2X5" device="" value="PINHD-2X5"/>
 <part name="AI_0" library="con-coax" deviceset="BN35N61" device="" value="5-1634503-1"/>
 <part name="AI_1" library="con-coax" deviceset="BN35N61" device="" value="5-1634503-1"/>
 <part name="AI_2" library="con-coax" deviceset="BN35N61" device="" value="5-1634503-1"/>

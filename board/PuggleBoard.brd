@@ -10002,6 +10002,18 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="22.733" y1="44.45" x2="22.943109375" y2="44.45" width="0.254" layer="1"/>
 <wire x1="22.943109375" y1="44.45" x2="23.495" y2="44.2214" width="0.254" layer="1" curve="-45"/>
 </signal>
+<signal name="N$17">
+<contactref element="BB1" pad="27"/>
+</signal>
+<signal name="N$25">
+<contactref element="BB1" pad="29"/>
+</signal>
+<signal name="N$26">
+<contactref element="BB1" pad="30"/>
+</signal>
+<signal name="N$27">
+<contactref element="BB1" pad="28"/>
+</signal>
 </signals>
 </board>
 </drawing>
