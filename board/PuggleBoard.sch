@@ -13573,7 +13573,7 @@ Source: www.kingbright.com</description>
 <part name="C36" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
 <part name="C37" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
 <part name="SUPPLY10" library="supply2" deviceset="AGND" device=""/>
-<part name="~W" library="jumper" deviceset="JP1E" device=""/>
+<part name="J_~W" library="jumper" deviceset="JP1E" device=""/>
 <part name="ADDRESS" library="smd-special" deviceset="SWS003" device=""/>
 <part name="I2C2_SDA" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="DGND1" library="supply2" deviceset="PE" device="" value="DGND"/>
@@ -13684,8 +13684,8 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY26" library="supply2" deviceset="AGND" device=""/>
 <part name="SUPPLY27" library="supply2" deviceset="AGND" device=""/>
 <part name="SUPPLY28" library="supply2" deviceset="AGND" device=""/>
-<part name="JP1" library="jumper" deviceset="JP2E" device=""/>
-<part name="JP2" library="jumper" deviceset="JP2E" device=""/>
+<part name="J_V-" library="jumper" deviceset="JP2E" device=""/>
+<part name="J_V+" library="jumper" deviceset="JP2E" device=""/>
 <part name="SUPPLY30" library="supply2" deviceset="AGND" device=""/>
 <part name="R29" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="-4.5V" library="testpad" deviceset="TP" device="B1,27"/>
@@ -13907,9 +13907,9 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <label x="27.94" y="73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="BB1" gate="G$1" pin="GPIO1_4"/>
-<wire x1="-63.5" y1="81.28" x2="-91.44" y2="81.28" width="0.1524" layer="91"/>
-<label x="-81.28" y="81.28" size="1.778" layer="95"/>
+<pinref part="BB1" gate="G$1" pin="GPIO2_23"/>
+<wire x1="-63.5" y1="73.66" x2="-81.28" y2="73.66" width="0.1524" layer="91"/>
+<label x="-81.28" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADC_SPI1" class="0">
@@ -13918,9 +13918,9 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <label x="27.94" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="BB1" gate="G$1" pin="GPIO1_1"/>
-<wire x1="-7.62" y1="81.28" x2="17.78" y2="81.28" width="0.1524" layer="91"/>
-<label x="-2.54" y="81.28" size="1.778" layer="95"/>
+<pinref part="BB1" gate="G$1" pin="GPIO2_22"/>
+<wire x1="-63.5" y1="76.2" x2="-81.28" y2="76.2" width="0.1524" layer="91"/>
+<label x="-81.28" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADC_SPI2" class="0">
@@ -13929,9 +13929,9 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <label x="27.94" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="BB1" gate="G$1" pin="GPIO1_30"/>
-<wire x1="-63.5" y1="83.82" x2="-81.28" y2="83.82" width="0.1524" layer="91"/>
-<label x="-81.28" y="83.82" size="1.778" layer="95"/>
+<pinref part="BB1" gate="G$1" pin="GPIO2_25"/>
+<wire x1="-7.62" y1="73.66" x2="10.16" y2="73.66" width="0.1524" layer="91"/>
+<label x="-2.54" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADC_SPI3" class="0">
@@ -13940,9 +13940,9 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <label x="27.94" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="BB1" gate="G$1" pin="GPIO1_31"/>
-<wire x1="-7.62" y1="86.36" x2="10.16" y2="86.36" width="0.1524" layer="91"/>
-<label x="-2.54" y="86.36" size="1.778" layer="95"/>
+<pinref part="BB1" gate="G$1" pin="GPIO2_24"/>
+<wire x1="-7.62" y1="76.2" x2="10.16" y2="76.2" width="0.1524" layer="91"/>
+<label x="-2.54" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADC_SPI4" class="0">
@@ -13951,9 +13951,9 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <label x="27.94" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="BB1" gate="G$1" pin="GPIO1_5"/>
-<wire x1="-7.62" y1="83.82" x2="17.78" y2="83.82" width="0.1524" layer="91"/>
-<label x="-2.54" y="83.82" size="1.778" layer="95"/>
+<pinref part="BB1" gate="G$1" pin="GPIO1_30"/>
+<wire x1="-63.5" y1="83.82" x2="-81.28" y2="83.82" width="0.1524" layer="91"/>
+<label x="-81.28" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DAC_SPI0" class="0">
@@ -13973,9 +13973,9 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <label x="76.2" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="BB1" gate="G$1" pin="GPIO1_14"/>
-<wire x1="-7.62" y1="91.44" x2="10.16" y2="91.44" width="0.1524" layer="91"/>
-<label x="-2.54" y="91.44" size="1.778" layer="95"/>
+<pinref part="BB1" gate="G$1" pin="GPIO1_31"/>
+<wire x1="-7.62" y1="86.36" x2="10.16" y2="86.36" width="0.1524" layer="91"/>
+<label x="-2.54" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DAC_SPI2" class="0">
@@ -13984,9 +13984,9 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <label x="76.2" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="BB1" gate="G$1" pin="GPIO1_12"/>
-<wire x1="-7.62" y1="96.52" x2="10.16" y2="96.52" width="0.1524" layer="91"/>
-<label x="-2.54" y="96.52" size="1.778" layer="95"/>
+<pinref part="BB1" gate="G$1" pin="GPIO1_14"/>
+<wire x1="-7.62" y1="91.44" x2="10.16" y2="91.44" width="0.1524" layer="91"/>
+<label x="-2.54" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="~RST" class="0">
@@ -14021,33 +14021,9 @@ SUPPORT ADC/DAC DATA BUSES?</text>
 <label x="76.2" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="BB1" gate="G$1" pin="GPIO1_13"/>
-<wire x1="-63.5" y1="96.52" x2="-91.44" y2="96.52" width="0.1524" layer="91"/>
-<label x="-81.28" y="96.52" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="BB1" gate="G$1" pin="GPIO2_22"/>
-<wire x1="-63.5" y1="76.2" x2="-81.28" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$25" class="0">
-<segment>
-<pinref part="BB1" gate="G$1" pin="GPIO2_23"/>
-<wire x1="-63.5" y1="73.66" x2="-81.28" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="BB1" gate="G$1" pin="GPIO2_25"/>
-<wire x1="-7.62" y1="73.66" x2="10.16" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$27" class="0">
-<segment>
-<pinref part="BB1" gate="G$1" pin="GPIO2_24"/>
-<wire x1="-7.62" y1="76.2" x2="10.16" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="BB1" gate="G$1" pin="GPIO1_12"/>
+<wire x1="-7.62" y1="96.52" x2="10.16" y2="96.52" width="0.1524" layer="91"/>
+<label x="-2.54" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -15246,8 +15222,8 @@ using single, isolated via.</text>
 <instance part="SUPPLY26" gate="G$1" x="30.48" y="-86.36"/>
 <instance part="SUPPLY27" gate="G$1" x="27.94" y="5.08"/>
 <instance part="SUPPLY28" gate="G$1" x="-25.4" y="5.08"/>
-<instance part="JP1" gate="1" x="-93.98" y="-10.16" rot="R90"/>
-<instance part="JP2" gate="1" x="-93.98" y="-55.88" rot="R90"/>
+<instance part="J_V-" gate="1" x="-93.98" y="-10.16" rot="R90"/>
+<instance part="J_V+" gate="1" x="-93.98" y="-55.88" rot="R90"/>
 <instance part="SUPPLY30" gate="G$1" x="-55.88" y="5.08"/>
 <instance part="R29" gate="G$1" x="-55.88" y="20.32" rot="R270"/>
 <instance part="-4.5V" gate="G$1" x="30.48" y="-7.62"/>
@@ -15373,7 +15349,7 @@ using single, isolated via.</text>
 <label x="43.18" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="1" pin="3"/>
+<pinref part="J_V+" gate="1" pin="3"/>
 <wire x1="-91.44" y1="-53.34" x2="-83.82" y2="-53.34" width="0.1524" layer="91"/>
 <label x="-91.44" y="-53.34" size="1.778" layer="95"/>
 </segment>
@@ -15390,7 +15366,7 @@ using single, isolated via.</text>
 <label x="43.18" y="27.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="1" pin="1"/>
+<pinref part="J_V-" gate="1" pin="1"/>
 <wire x1="-91.44" y1="-12.7" x2="-83.82" y2="-12.7" width="0.1524" layer="91"/>
 <label x="-88.9" y="-12.7" size="1.778" layer="95"/>
 </segment>
@@ -15487,7 +15463,7 @@ using single, isolated via.</text>
 <wire x1="81.28" y1="-68.58" x2="68.58" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="1" pin="1"/>
+<pinref part="J_V+" gate="1" pin="1"/>
 <wire x1="-91.44" y1="-58.42" x2="-83.82" y2="-58.42" width="0.1524" layer="91"/>
 <label x="-91.44" y="-58.42" size="1.778" layer="95"/>
 </segment>
@@ -15516,7 +15492,7 @@ using single, isolated via.</text>
 <wire x1="-15.24" y1="-55.88" x2="-20.32" y2="-55.88" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="-55.88" x2="-48.26" y2="-55.88" width="0.1524" layer="91"/>
 <wire x1="-48.26" y1="-55.88" x2="-48.26" y2="-58.42" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="1" pin="2"/>
+<pinref part="J_V+" gate="1" pin="2"/>
 <wire x1="-48.26" y1="-55.88" x2="-91.44" y2="-55.88" width="0.1524" layer="91"/>
 <junction x="-48.26" y="-55.88"/>
 <junction x="-20.32" y="-55.88"/>
@@ -15531,7 +15507,7 @@ using single, isolated via.</text>
 <wire x1="-12.7" y1="-10.16" x2="-22.86" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="-10.16" x2="-48.26" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="-48.26" y1="-10.16" x2="-48.26" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="1" pin="2"/>
+<pinref part="J_V-" gate="1" pin="2"/>
 <wire x1="-48.26" y1="-10.16" x2="-91.44" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="-48.26" y="-10.16"/>
 <junction x="-22.86" y="-10.16"/>
@@ -15539,7 +15515,7 @@ using single, isolated via.</text>
 </net>
 <net name="VSS_EXT" class="0">
 <segment>
-<pinref part="JP1" gate="1" pin="3"/>
+<pinref part="J_V-" gate="1" pin="3"/>
 <wire x1="-83.82" y1="-7.62" x2="-91.44" y2="-7.62" width="0.1524" layer="91"/>
 <label x="-88.9" y="-7.62" size="1.778" layer="95"/>
 </segment>
@@ -15763,7 +15739,7 @@ using single, isolated via.</text>
 <instance part="R40" gate="G$1" x="-50.8" y="50.8" rot="R90"/>
 <instance part="I2C2_SCLK" gate="G$1" x="-25.4" y="33.02"/>
 <instance part="VDRIVE" gate="G$1" x="-81.28" y="63.5"/>
-<instance part="~W" gate="A" x="-48.26" y="40.64" rot="R270"/>
+<instance part="J_~W" gate="A" x="-48.26" y="40.64" rot="R270"/>
 <instance part="ADDRESS" gate="G$1" x="-86.36" y="20.32" rot="MR90"/>
 <instance part="I2C2_SDA" gate="G$1" x="15.24" y="25.4"/>
 <instance part="DGND6" gate="PE" x="50.8" y="5.08"/>
@@ -15900,7 +15876,7 @@ using single, isolated via.</text>
 <net name="N$22" class="0">
 <segment>
 <pinref part="R40" gate="G$1" pin="1"/>
-<pinref part="~W" gate="A" pin="1"/>
+<pinref part="J_~W" gate="A" pin="1"/>
 <wire x1="-50.8" y1="40.64" x2="-50.8" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -15908,7 +15884,7 @@ using single, isolated via.</text>
 <segment>
 <pinref part="U16" gate="G$1" pin="WP"/>
 <wire x1="-50.8" y1="27.94" x2="-15.24" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="~W" gate="A" pin="2"/>
+<pinref part="J_~W" gate="A" pin="2"/>
 <wire x1="-50.8" y1="27.94" x2="-50.8" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
