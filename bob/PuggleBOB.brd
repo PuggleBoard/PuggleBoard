@@ -4383,10 +4383,10 @@ v1.0</text>
 <text x="24.765" y="77.1525" size="0.8128" layer="22" font="vector" rot="MR0">AGND</text>
 <text x="8.255" y="77.1525" size="0.8128" layer="22" font="vector" rot="MR0">ADC</text>
 <text x="8.255" y="74.6125" size="0.8128" layer="22" font="vector" rot="MR0">DAC</text>
-<text x="10.4775" y="72.39" size="0.8128" layer="22" font="vector" rot="MR0">3</text>
-<text x="13.0175" y="72.39" size="0.8128" layer="22" font="vector" rot="MR0">2</text>
-<text x="15.5575" y="72.39" size="0.8128" layer="22" font="vector" rot="MR0">1</text>
-<text x="18.0975" y="72.39" size="0.8128" layer="22" font="vector" rot="MR0">0</text>
+<text x="10.4775" y="72.39" size="0.8128" layer="22" font="vector" rot="MR0">D</text>
+<text x="13.0175" y="72.39" size="0.8128" layer="22" font="vector" rot="MR0">C</text>
+<text x="15.5575" y="72.39" size="0.8128" layer="22" font="vector" rot="MR0">B</text>
+<text x="18.0975" y="72.39" size="0.8128" layer="22" font="vector" rot="MR0">A</text>
 <wire x1="6.35" y1="76.2" x2="19.05" y2="76.2" width="0.1524" layer="22"/>
 <wire x1="11.43" y1="74.295" x2="11.43" y2="72.39" width="0.1524" layer="22"/>
 <wire x1="13.97" y1="74.295" x2="13.97" y2="72.39" width="0.1524" layer="22"/>
@@ -4680,99 +4680,99 @@ Please make sure your boards conform to these design rules.</description>
 <element name="A_I/O" library="adafruit" package="2X05" value="PINHD-2X5" x="15.24" y="76.2" smashed="yes" rot="MR0">
 <attribute name="NAME" x="12.3825" y="80.9625" size="1.27" layer="26" font="vector" ratio="10" rot="MR180"/>
 </element>
-<element name="AI_0" library="con-coax" package="B35N61" value="5-1634503-1" x="24.13" y="10.16" smashed="yes">
+<element name="AI_A" library="con-coax" package="B35N61" value="5-1634503-1" x="24.13" y="10.16" smashed="yes">
 <attribute name="OC_NEWARK" value="unknown" x="24.13" y="10.16" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="24.13" y="10.16" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="24.13" y="10.16" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="24.13" y="10.16" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="21.59" y="16.51" size="1.27" layer="25" font="vector"/>
 </element>
-<element name="AI_1" library="con-coax" package="B35N61" value="5-1634503-1" x="24.13" y="27.94" smashed="yes">
+<element name="AI_B" library="con-coax" package="B35N61" value="5-1634503-1" x="24.13" y="27.94" smashed="yes">
 <attribute name="OC_NEWARK" value="unknown" x="24.13" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="24.13" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="24.13" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="24.13" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="21.59" y="34.29" size="1.27" layer="25" font="vector"/>
 </element>
-<element name="AI_2" library="con-coax" package="B35N61" value="5-1634503-1" x="24.13" y="45.72" smashed="yes">
+<element name="AI_C" library="con-coax" package="B35N61" value="5-1634503-1" x="24.13" y="45.72" smashed="yes">
 <attribute name="OC_NEWARK" value="unknown" x="24.13" y="45.72" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="24.13" y="45.72" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="24.13" y="45.72" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="24.13" y="45.72" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="21.59" y="52.07" size="1.27" layer="25" font="vector"/>
 </element>
-<element name="AI_3" library="con-coax" package="B35N61" value="5-1634503-1" x="24.13" y="63.5" smashed="yes">
+<element name="AI_D" library="con-coax" package="B35N61" value="5-1634503-1" x="24.13" y="63.5" smashed="yes">
 <attribute name="OC_NEWARK" value="unknown" x="24.13" y="63.5" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="24.13" y="63.5" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="24.13" y="63.5" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="24.13" y="63.5" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="21.59" y="69.85" size="1.27" layer="25" font="vector"/>
 </element>
-<element name="AO_0" library="con-coax" package="B35N61" value="5-1634503-1" x="6.35" y="10.16" smashed="yes">
+<element name="AO_A" library="con-coax" package="B35N61" value="5-1634503-1" x="6.35" y="10.16" smashed="yes">
 <attribute name="OC_NEWARK" value="unknown" x="6.35" y="10.16" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="6.35" y="10.16" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="6.35" y="10.16" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="6.35" y="10.16" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="3.81" y="16.51" size="1.27" layer="25" font="vector"/>
 </element>
-<element name="AO_1" library="con-coax" package="B35N61" value="5-1634503-1" x="6.35" y="27.94" smashed="yes">
+<element name="AO_B" library="con-coax" package="B35N61" value="5-1634503-1" x="6.35" y="27.94" smashed="yes">
 <attribute name="OC_NEWARK" value="unknown" x="6.35" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="6.35" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="6.35" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="6.35" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="3.81" y="34.29" size="1.27" layer="25" font="vector"/>
 </element>
-<element name="AO_2" library="con-coax" package="B35N61" value="5-1634503-1" x="6.35" y="45.72" smashed="yes">
+<element name="AO_C" library="con-coax" package="B35N61" value="5-1634503-1" x="6.35" y="45.72" smashed="yes">
 <attribute name="OC_NEWARK" value="unknown" x="6.35" y="45.72" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="6.35" y="45.72" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="6.35" y="45.72" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="6.35" y="45.72" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="3.81" y="52.07" size="1.27" layer="25" font="vector"/>
 </element>
-<element name="AO_3" library="con-coax" package="B35N61" value="5-1634503-1" x="6.35" y="63.5" smashed="yes">
+<element name="AO_D" library="con-coax" package="B35N61" value="5-1634503-1" x="6.35" y="63.5" smashed="yes">
 <attribute name="OC_NEWARK" value="unknown" x="6.35" y="63.5" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="6.35" y="63.5" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="6.35" y="63.5" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="6.35" y="63.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="3.81" y="69.215" size="1.27" layer="25" font="vector"/>
+<attribute name="NAME" x="3.81" y="69.85" size="1.27" layer="25" font="vector"/>
 </element>
 </elements>
 <signals>
 <signal name="AGND">
-<contactref element="AI_3" pad="4"/>
-<contactref element="AI_3" pad="3"/>
-<contactref element="AI_3" pad="2"/>
-<contactref element="AI_3" pad="5"/>
-<contactref element="AI_2" pad="4"/>
-<contactref element="AI_2" pad="3"/>
-<contactref element="AI_2" pad="2"/>
-<contactref element="AI_2" pad="5"/>
-<contactref element="AI_1" pad="4"/>
-<contactref element="AI_1" pad="3"/>
-<contactref element="AI_1" pad="2"/>
-<contactref element="AI_1" pad="5"/>
-<contactref element="AI_0" pad="4"/>
-<contactref element="AI_0" pad="3"/>
-<contactref element="AI_0" pad="2"/>
-<contactref element="AI_0" pad="5"/>
+<contactref element="AI_D" pad="4"/>
+<contactref element="AI_D" pad="3"/>
+<contactref element="AI_D" pad="2"/>
+<contactref element="AI_D" pad="5"/>
+<contactref element="AI_C" pad="4"/>
+<contactref element="AI_C" pad="3"/>
+<contactref element="AI_C" pad="2"/>
+<contactref element="AI_C" pad="5"/>
+<contactref element="AI_B" pad="4"/>
+<contactref element="AI_B" pad="3"/>
+<contactref element="AI_B" pad="2"/>
+<contactref element="AI_B" pad="5"/>
+<contactref element="AI_A" pad="4"/>
+<contactref element="AI_A" pad="3"/>
+<contactref element="AI_A" pad="2"/>
+<contactref element="AI_A" pad="5"/>
 <contactref element="A_I/O" pad="1"/>
 <contactref element="A_I/O" pad="2"/>
-<contactref element="AO_0" pad="4"/>
-<contactref element="AO_0" pad="3"/>
-<contactref element="AO_0" pad="2"/>
-<contactref element="AO_0" pad="5"/>
-<contactref element="AO_1" pad="4"/>
-<contactref element="AO_1" pad="3"/>
-<contactref element="AO_1" pad="2"/>
-<contactref element="AO_1" pad="5"/>
-<contactref element="AO_2" pad="4"/>
-<contactref element="AO_2" pad="3"/>
-<contactref element="AO_2" pad="2"/>
-<contactref element="AO_2" pad="5"/>
-<contactref element="AO_3" pad="4"/>
-<contactref element="AO_3" pad="3"/>
-<contactref element="AO_3" pad="2"/>
-<contactref element="AO_3" pad="5"/>
+<contactref element="AO_A" pad="4"/>
+<contactref element="AO_A" pad="3"/>
+<contactref element="AO_A" pad="2"/>
+<contactref element="AO_A" pad="5"/>
+<contactref element="AO_B" pad="4"/>
+<contactref element="AO_B" pad="3"/>
+<contactref element="AO_B" pad="2"/>
+<contactref element="AO_B" pad="5"/>
+<contactref element="AO_C" pad="4"/>
+<contactref element="AO_C" pad="3"/>
+<contactref element="AO_C" pad="2"/>
+<contactref element="AO_C" pad="5"/>
+<contactref element="AO_D" pad="4"/>
+<contactref element="AO_D" pad="3"/>
+<contactref element="AO_D" pad="2"/>
+<contactref element="AO_D" pad="5"/>
 <polygon width="0.254" layer="16">
 <vertex x="0" y="82.55"/>
 <vertex x="30.48" y="82.55"/>
@@ -4786,7 +4786,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="DAC_A">
 <contactref element="A_I/O" pad="3"/>
-<contactref element="AO_0" pad="1"/>
+<contactref element="AO_A" pad="1"/>
 <wire x1="14.605" y1="22.86" x2="6.35" y2="14.605" width="0.3048" layer="1"/>
 <wire x1="6.35" y1="14.605" x2="6.35" y2="10.16" width="0.3048" layer="1"/>
 <wire x1="17.78" y1="74.93" x2="14.605" y2="71.755" width="0.3048" layer="1"/>
@@ -4794,7 +4794,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="DAC_B">
 <contactref element="A_I/O" pad="5"/>
-<contactref element="AO_1" pad="1"/>
+<contactref element="AO_B" pad="1"/>
 <wire x1="13.335" y1="39.37" x2="6.35" y2="32.385" width="0.3048" layer="1"/>
 <wire x1="6.35" y1="32.385" x2="6.35" y2="27.94" width="0.3048" layer="1"/>
 <wire x1="15.24" y1="74.93" x2="13.335" y2="73.025" width="0.3048" layer="1"/>
@@ -4802,7 +4802,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="DAC_C">
 <contactref element="A_I/O" pad="7"/>
-<contactref element="AO_2" pad="1"/>
+<contactref element="AO_C" pad="1"/>
 <wire x1="12.065" y1="55.88" x2="6.35" y2="50.165" width="0.3048" layer="1"/>
 <wire x1="6.35" y1="50.165" x2="6.35" y2="45.72" width="0.3048" layer="1"/>
 <wire x1="12.7" y1="74.93" x2="12.065" y2="74.295" width="0.3048" layer="1"/>
@@ -4810,14 +4810,14 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="DAC_D">
 <contactref element="A_I/O" pad="9"/>
-<contactref element="AO_3" pad="1"/>
+<contactref element="AO_D" pad="1"/>
 <wire x1="10.16" y1="74.93" x2="10.16" y2="71.755" width="0.3048" layer="1"/>
 <wire x1="10.16" y1="71.755" x2="6.35" y2="67.945" width="0.3048" layer="1"/>
 <wire x1="6.35" y1="67.945" x2="6.35" y2="63.5" width="0.3048" layer="1"/>
 </signal>
 <signal name="ADC_A">
 <contactref element="A_I/O" pad="4"/>
-<contactref element="AI_0" pad="1"/>
+<contactref element="AI_A" pad="1"/>
 <wire x1="15.875" y1="22.86" x2="24.13" y2="14.605" width="0.3048" layer="1"/>
 <wire x1="24.13" y1="14.605" x2="24.13" y2="10.16" width="0.3048" layer="1"/>
 <wire x1="15.875" y1="71.12" x2="15.875" y2="22.86" width="0.3048" layer="1"/>
@@ -4827,7 +4827,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="ADC_B">
 <contactref element="A_I/O" pad="6"/>
-<contactref element="AI_1" pad="1"/>
+<contactref element="AI_B" pad="1"/>
 <wire x1="15.24" y1="77.47" x2="15.24" y2="78.4225" width="0.3048" layer="1"/>
 <wire x1="15.24" y1="78.4225" x2="16.1925" y2="79.375" width="0.3048" layer="1"/>
 <wire x1="20.955" y1="71.755" x2="18.7325" y2="71.755" width="0.3048" layer="1"/>
@@ -4842,7 +4842,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="ADC_C">
 <contactref element="A_I/O" pad="8"/>
-<contactref element="AI_2" pad="1"/>
+<contactref element="AI_C" pad="1"/>
 <wire x1="12.7" y1="77.47" x2="12.7" y2="78.4225" width="0.3048" layer="1"/>
 <wire x1="12.7" y1="78.4225" x2="14.605" y2="80.3275" width="0.3048" layer="1"/>
 <wire x1="21.9075" y1="70.8025" x2="20.0025" y2="70.8025" width="0.3048" layer="1"/>
@@ -4857,7 +4857,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="ADC_D">
 <contactref element="A_I/O" pad="10"/>
-<contactref element="AI_3" pad="1"/>
+<contactref element="AI_D" pad="1"/>
 <wire x1="10.16" y1="77.47" x2="10.16" y2="78.4225" width="0.3048" layer="1"/>
 <wire x1="10.16" y1="78.4225" x2="13.0175" y2="81.28" width="0.3048" layer="1"/>
 <wire x1="24.13" y1="71.12" x2="24.13" y2="63.5" width="0.3048" layer="1"/>

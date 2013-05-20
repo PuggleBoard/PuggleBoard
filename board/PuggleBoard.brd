@@ -9,7 +9,7 @@
 <grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -22,13 +22,13 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -4352,6 +4352,19 @@
 <rectangle x1="50.56378125" y1="13.96238125" x2="50.56885625" y2="13.96745625" layer="21"/>
 <text x="50.292" y="6.858" size="0.6096" layer="21" font="vector" align="center">Jon Newman
 v1.0</text>
+<text x="10.541" y="80.01" size="0.6096" layer="21" font="vector">AGND</text>
+<text x="10.541" y="77.47" size="0.6096" layer="21" font="vector">AGND</text>
+<text x="25.146" y="80.01" size="0.6096" layer="21" font="vector">ADC</text>
+<text x="25.146" y="77.47" size="0.6096" layer="21" font="vector">DAC</text>
+<text x="23.749" y="76.2" size="0.6096" layer="21" font="vector">D</text>
+<text x="21.209" y="76.2" size="0.6096" layer="21" font="vector">C</text>
+<text x="18.669" y="76.2" size="0.6096" layer="21" font="vector">B</text>
+<text x="16.129" y="76.2" size="0.6096" layer="21" font="vector">A</text>
+<wire x1="14.986" y1="78.994" x2="26.797" y2="78.994" width="0.1524" layer="21"/>
+<wire x1="17.526" y1="81.026" x2="17.526" y2="76.2" width="0.1524" layer="21"/>
+<wire x1="20.066" y1="81.026" x2="20.066" y2="76.2" width="0.1524" layer="21"/>
+<wire x1="22.606" y1="81.026" x2="22.606" y2="76.2" width="0.1524" layer="21"/>
+<wire x1="14.986" y1="81.026" x2="14.986" y2="76.2" width="0.1524" layer="21"/>
 </plain>
 <libraries>
 <library name="adafruit">
