@@ -13723,7 +13723,7 @@ Source: www.kingbright.com</description>
 </parts>
 <sheets>
 <sheet>
-<description>Beaglebone interface</description>
+<description>BEAGLEBONE PINOUT</description>
 <plain>
 <text x="27.94" y="86.36" size="1.778" layer="97">ADC_SPI MAPPING
 1. ADC_SCLK (ADC_SPI0)
@@ -13736,8 +13736,6 @@ Source: www.kingbright.com</description>
 2. DAC_CS (DAC_SPI1)
 3. DAC_SDI (DAC_SPI2)
 4. DAC_SDO (DAC_SPI3)</text>
-<text x="48.26" y="106.68" size="1.778" layer="97">WHICH GPIO PINS WILL 
-SUPPORT ADC/DAC DATA BUSES?</text>
 </plain>
 <instances>
 <instance part="BB1" gate="G$1" x="-35.56" y="48.26"/>
