@@ -65,7 +65,7 @@
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -14887,6 +14887,7 @@ using single, isolated via.</text>
 <junction x="35.56" y="-7.62"/>
 <pinref part="U10" gate="G$1" pin="VOUTD"/>
 <label x="73.66" y="-7.62" size="1.778" layer="95"/>
+<junction x="48.26" y="-10.16"/>
 </segment>
 <segment>
 <pinref part="U9" gate="A" pin="+IN"/>
@@ -14911,6 +14912,7 @@ using single, isolated via.</text>
 <junction x="35.56" y="-53.34"/>
 <pinref part="U10" gate="G$1" pin="VOUTB"/>
 <label x="73.66" y="-53.34" size="1.778" layer="95"/>
+<junction x="48.26" y="-55.88"/>
 </segment>
 <segment>
 <pinref part="U8" gate="A" pin="+IN"/>
@@ -14935,6 +14937,7 @@ using single, isolated via.</text>
 <junction x="35.56" y="-76.2"/>
 <pinref part="U10" gate="G$1" pin="VOUTA"/>
 <label x="73.66" y="-76.2" size="1.778" layer="95"/>
+<junction x="48.26" y="-78.74"/>
 </segment>
 <segment>
 <pinref part="U6" gate="A" pin="+IN"/>
@@ -15152,6 +15155,7 @@ using single, isolated via.</text>
 <junction x="48.26" y="-30.48"/>
 <pinref part="U10" gate="G$1" pin="VOUTC"/>
 <label x="73.66" y="-30.48" size="1.778" layer="95"/>
+<junction x="48.26" y="-33.02"/>
 </segment>
 <segment>
 <pinref part="U7" gate="A" pin="+IN"/>
@@ -15502,12 +15506,13 @@ using single, isolated via.</text>
 <wire x1="-15.24" y1="-17.78" x2="-22.86" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="-17.78" x2="-22.86" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="C34" gate="G$1" pin="1"/>
-<wire x1="-12.7" y1="-10.16" x2="-22.86" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="-10.16" x2="-48.26" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="-48.26" y1="-10.16" x2="-48.26" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="J_V-" gate="1" pin="2"/>
 <wire x1="-48.26" y1="-10.16" x2="-91.44" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="-48.26" y="-10.16"/>
+<pinref part="U12" gate="A" pin="IN"/>
+<wire x1="-22.86" y1="-10.16" x2="-15.24" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="-22.86" y="-10.16"/>
 </segment>
 </net>
