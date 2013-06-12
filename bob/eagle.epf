@@ -346,7 +346,7 @@ UsedLibrary="C:/Users/jon/Documents/GitHub/Cyclops-LED-Driver/pcb/eagle-lbr/cycl
 [Win_1]
 Type="Control Panel"
 Loc="728 0 1679 399"
-State=1
+State=3
 Number=0
 
 [Desktop]
