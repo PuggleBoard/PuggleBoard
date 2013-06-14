@@ -2,32 +2,18 @@
   "puggleboard-cape.eeprom": {
     "type": "cape",
     "header": "aa5533ee",
-    "formatRev": "A1",
+    "formatRev": "A0",
     "boardName": "PuggleBoard",
     "version": "01v0",
     "manufacturer": "PuggleInc",
     "partNumber": "PuggleBoard-01v0",
-    "numPins": 13,
+    "numPins": 9,
     "serialNumber": "2313PB010001",
     "currentVDD_3V3EXP": 7,
     "currentVDD_5V": 150,
     "currentSYS_5V": 0,
     "DCSupplied": 0,
     "mux": {
-      "P9_19": {
-        "used": "used",
-        "direction": "in",
-        "pullup": "pullup",
-        "mode": 3,
-        "function": "eeprom_clk"
-      },
-      "P9_19": {
-        "used": "used",
-        "direction": "bidir",
-        "pullup": "pullup",
-        "mode": 3,
-        "function": "eeprom_sda"
-      },
       "P8_21": {
         "used": "used",
         "direction": "out",
