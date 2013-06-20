@@ -1,0 +1,7 @@
+Jon Newman
+2013.06
+Notes on PuggleBoard v1.0 board assembly
+
+1. The M84 trimpot is a side adjust. I think I wanted a top adjust. Also, the pads could be extended out a bit to improve solderability.
+
+2. The polygon shapes used for low impedance paths to bypass capacitors are often wider than the solder pads for chips, and make the pads all misshapen. It would be better if I just used standard wires of increasing length to get to bypass caps.
