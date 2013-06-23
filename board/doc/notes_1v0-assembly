@@ -5,3 +5,30 @@ Notes on PuggleBoard v1.0 board assembly
 1. The M84 trimpot is a side adjust. I think I wanted a top adjust. Also, the pads could be extended out a bit to improve solderability.
 
 2. The polygon shapes used for low impedance paths to bypass capacitors are often wider than the solder pads for chips, and make the pads all misshapen. It would be better if I just used standard wires of increasing length to get to bypass caps.
+
+3. The 2X3 jumper header does not fit. Need to get 2 1X3 headers
+
+4. The 3 pin external power header is a right angle, but the current design needs a vertical 1X3 header.
+
+5. BOM seems to be missing 1X2 jumper header
+
+6. All jumper headers are too high - prevents putting a second cape on top of the puggleboard.
+
+7. 5X2 right angle header needs to be moved closer to the edge of the board.
+
+8. Ethernet cutout can be made a bit tighter on the top part.
+
+9. There is a miswiring in the VREF/VBIAS circuit. Here is the explanation and fix
+
+ - The AD8032 buffers VREF_PRE
+ - The output of the ADA8032 is passed through an RC LPF to smooth the voltage reference (VREF)
+ - VREF is then split to feed to DACs and pushed through the trimpot to get VBIAS = 0.5 VREF
+ - VREF's LFP and the trimpot form a voltage divider, which reduces VREF. The input to the trimpot must instead come directly from the output of the AD8032.
+
+10. The negative LDO (MAX1795) is unstable
+  
+ - Using the recommended values for in and out caps, still I see osscillation, which is coupled into ground plane and +4.5 V rail
+ - Seems that adding 10 uF ceramic (X5R) cap in parrallel with input cap (c34) gets rid of osscilation.
+ - For the in/out caps on the regulator cicuitry, use a larger SMD pad. This will ensure you can get a cap with the capacitance and ESR you want even if you have to make it quite high capacitance. 0805 or larger. The keepout areas in eagle are overly aggressive so they can overlay a bit.
+
+11. In general, the LDOs on the board are not low noise enough for our application. They should be switched for a lower noise solution
