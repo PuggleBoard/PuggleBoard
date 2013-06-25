@@ -32,3 +32,5 @@ Notes on PuggleBoard v1.0 board assembly
  - For the in/out caps on the regulator cicuitry, use a larger SMD pad. This will ensure you can get a cap with the capacitance and ESR you want even if you have to make it quite high capacitance. 0805 or larger. The keepout areas in eagle are overly aggressive so they can overlay a bit.
 
 11. In general, the LDOs on the board are not low noise enough for our application. They should be switched for a lower noise solution
+
+12. Both the DAC and ADC can share a single clock line, instead of having their own. Thats the whole point of CS!
