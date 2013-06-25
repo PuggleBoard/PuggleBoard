@@ -6,5 +6,10 @@ x = textread(fid,'%s','delimiter',',');
 x = x(7:7:end);
 
 [y  n] = unique(sort(x));
-d = [n(1); diff(n)]
-l = [y num2cell(d,2)]
+d = [n(1); diff(n)];
+b = (~strcmp(y,'') & ~strcmp(y,'NA') &  ~strcmp(y,'DKPN'));
+d_cell = num2cell(d,2);
+list = [y(b) d_cell(b)];
+
+
+
