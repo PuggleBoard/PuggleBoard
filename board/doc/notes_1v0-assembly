@@ -34,3 +34,8 @@ Notes on PuggleBoard v1.0 board assembly
 11. In general, the LDOs on the board are not low noise enough for our application. They should be switched for a lower noise solution
 
 12. Both the DAC and ADC can share a single clock line, instead of having their own. Thats the whole point of CS!
+
+13. It looks like the DAC's LDAC line is held high with no digital manipulation allowed. This seems to imply a conversion can never be loaded into the output register. Why is this line
+ 
+  - Not pulled down (instead of up)
+  - Not on the SPI bus instead of SDO which seems useless
