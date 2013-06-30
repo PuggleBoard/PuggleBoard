@@ -33,9 +33,12 @@ Notes on PuggleBoard v1.0 board assembly
 
 11. In general, the LDOs on the board are not low noise enough for our application. They should be switched for a lower noise solution
 
+ - While we are at it, if the LDOs are tunable, try to bring their regulated voltage as close to 5V as possible. E.g. 4.7 V. This will make sure the ADC/DAC's remain linear within the 4.096 V ref range.
+
 12. Both the DAC and ADC can share a single clock line, instead of having their own. Thats the whole point of CS!
 
 13. It looks like the DAC's LDAC line is held high with no digital manipulation allowed. This seems to imply a conversion can never be loaded into the output register. Why is this line
  
   - Not pulled down (instead of up)
   - Not on the SPI bus instead of SDO which seems useless
+  
