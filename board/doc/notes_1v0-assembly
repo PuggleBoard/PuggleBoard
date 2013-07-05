@@ -42,3 +42,5 @@ Notes on PuggleBoard v1.0 board assembly
   - Not pulled down (instead of up)
   - Not on the SPI bus instead of SDO which seems useless
   
+14. It looks like the RESETSEL pin on the DAC is set incorrectly. You want the outputs to reset to midscale, not zero (which would be pulled to the negative rail). This requires that RESETSEL is high.
+  
