@@ -44,3 +44,10 @@ Notes on PuggleBoard v1.0 board assembly
   
 14. It looks like the RESETSEL pin on the DAC is set incorrectly. You want the outputs to reset to midscale, not zero (which would be pulled to the negative rail). This requires that RESETSEL is high.
   
+15. Replace 8XOPA365 with 2XOPA209. Replace 10 k resistors with 680 ohms. 
+
+16. Replace ADC input filters with R = 100 Ohm and C = 1 nF.
+
+17. We only need a single SPI bus. By having two, we are ignoring the CS functionality. With 4 channels, there is no need for two. When using the intan chip, two busses may be nessesary.
+
+17. Can we pipe out some bits of GPIO now that we have freed and SPI bus?

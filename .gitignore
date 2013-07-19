@@ -8,3 +8,6 @@
 # Ignore archives
 *.zip
 *.tgz
+
+# Ignore temp files
+*.asv
