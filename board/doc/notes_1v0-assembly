@@ -37,6 +37,10 @@ Notes on PuggleBoard v1.0 board assembly
 
 12. Both the DAC and ADC can share a single clock line, instead of having their own. Thats the whole point of CS!
 
+13. Some of the caps (e.g. c18,c19) are missing silkscreen values on the board.
+
+14. In general silkscreen text is too thin/small. Try to make bigger if possible, and at least, thicker.
+
 13. It looks like the DAC's LDAC line is held high with no digital manipulation allowed. This seems to imply a conversion can never be loaded into the output register. Why is this line
  
   - Not pulled down (instead of up)
