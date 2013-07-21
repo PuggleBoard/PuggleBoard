@@ -2038,9 +2038,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <rectangle x1="0.55" y1="0.6" x2="1.55" y2="0.85" layer="21"/>
 </package>
 <package name="M84W-TRIMMER">
-<smd name="2" x="0" y="2.54" dx="1.016" dy="2.794" layer="1"/>
-<smd name="1" x="-2.54" y="-2.54" dx="1.016" dy="2.794" layer="1"/>
-<smd name="3" x="2.54" y="-2.54" dx="1.016" dy="2.794" layer="1"/>
+<smd name="2" x="0" y="2.667" dx="1.016" dy="3.048" layer="1"/>
+<smd name="1" x="-2.54" y="-2.667" dx="1.016" dy="3.048" layer="1"/>
+<smd name="3" x="2.54" y="-2.667" dx="1.016" dy="3.048" layer="1"/>
 <rectangle x1="-3.175" y1="-2.159" x2="3.175" y2="2.159" layer="39"/>
 <wire x1="-3.175" y1="2.2225" x2="-3.175" y2="-2.2225" width="0.127" layer="21"/>
 <wire x1="-3.175" y1="-2.2225" x2="3.175" y2="-2.2225" width="0.127" layer="21"/>

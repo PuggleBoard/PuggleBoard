@@ -2,11 +2,11 @@ Jon Newman
 2013.06
 Notes on PuggleBoard v1.0 board assembly
 
-1. The M84 trimpot is a side adjust. I think I wanted a top adjust. Also, the pads could be extended out a bit to improve solderability.
+X1. The M84 trimpot is a side adjust. I think I wanted a top adjust. Also, the pads could be extended out a bit to improve solderability.
 
 2. The polygon shapes used for low impedance paths to bypass capacitors are often wider than the solder pads for chips, and make the pads all misshapen. It would be better if I just used standard wires of increasing length to get to bypass caps.
 
-3. The 2X3 jumper header does not fit. Need to get 2 1X3 headers
+X3. The 2X3 jumper header does not fit. Need to get 2 1X3 headers
 
 4. The 3 pin external power header is a right angle, but the current design needs a vertical 1X3 header.
 
@@ -25,7 +25,7 @@ Notes on PuggleBoard v1.0 board assembly
  - VREF is then split to feed to DACs and pushed through the trimpot to get VBIAS = 0.5 VREF
  - VREF's LFP and the trimpot form a voltage divider, which reduces VREF. The input to the trimpot must instead come directly from the output of the AD8032.
 
-10. The negative LDO (MAX1795) is unstable
+X10. The negative LDO (MAX1795) is unstable
   
  - Using the recommended values for in and out caps, still I see osscillation, which is coupled into ground plane and +4.5 V rail
  - Seems that adding 10 uF ceramic (X5R) cap in parrallel with input cap (c34) gets rid of osscilation.
@@ -46,11 +46,11 @@ Notes on PuggleBoard v1.0 board assembly
   - Not pulled down (instead of up)
   - Not on the SPI bus instead of SDO which seems useless
   
-14. It looks like the RESETSEL pin on the DAC is set incorrectly. You want the outputs to reset to midscale, not zero (which would be pulled to the negative rail). This requires that RESETSEL is high.
+X14. It looks like the RESETSEL pin on the DAC is set incorrectly. You want the outputs to reset to midscale, not zero (which would be pulled to the negative rail). This requires that RESETSEL is high.
   
 15. Replace 8XOPA365 with 2XOPA209. Replace 10 k resistors with 680 ohms. 
 
-16. Replace ADC input filters with R = 100 Ohm and C = 1 nF.
+X16. Replace ADC input filters with R = 100 Ohm and C = 1 nF.
 
 17. We only need a single SPI bus. By having two, we are ignoring the CS functionality. With 4 channels, there is no need for two. When using the intan chip, two busses may be nessesary.
 
