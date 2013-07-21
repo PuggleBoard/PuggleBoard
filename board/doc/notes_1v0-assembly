@@ -54,4 +54,9 @@ X16. Replace ADC input filters with R = 100 Ohm and C = 1 nF.
 
 17. We only need a single SPI bus. By having two, we are ignoring the CS functionality. With 4 channels, there is no need for two. When using the intan chip, two busses may be nessesary.
 
-17. Can we pipe out some bits of GPIO now that we have freed and SPI bus?
+18. Can we pipe out some bits of GPIO now that we have freed and SPI bus?
+
+X19. The EEPROM circuit has to many available addresses. Changed the DIP to 2X and tie A2 high. Also, use a groundable test-point for the WP pin instead of a bulky jumper.
+
+20. The switching power supply is leaking into the analog I/O of the system. Resulting in +-50 mV transients. Is there any way to reduce this? Can the power circuit have its own ground plane, for instance, to isolate the switching component from the LDOs? Also, are the LDOs working properly?
+
