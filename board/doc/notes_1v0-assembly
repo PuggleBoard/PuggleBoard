@@ -60,3 +60,8 @@ X19. The EEPROM circuit has to many available addresses. Changed the DIP to 2X a
 
 20. The switching power supply is leaking into the analog I/O of the system. Resulting in +-50 mV transients. Is there any way to reduce this? Can the power circuit have its own ground plane, for instance, to isolate the switching component from the LDOs? Also, are the LDOs working properly?
 
+21. The ground plane under the switching regulator should likely be removed and replaced with traces that mirror its supply paths. This will divert currents injected into analog ground plane. Also, a EMI filter solution should be placed between the output of the swithcing supply and the ldo?
+
+22. The DGND connection on the ADC and DAC does note nessesary go to DGND for the board. This depends on the size of the internal currents for these ICs. Look at the pdf on AGND/DGND and the data sheets to confirm that you are doing this right.
+
+
