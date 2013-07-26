@@ -64,4 +64,10 @@ X19. The EEPROM circuit has to many available addresses. Changed the DIP to 2X a
 
 22. The DGND connection on the ADC and DAC does note nessesary go to DGND for the board. This depends on the size of the internal currents for these ICs. Look at the pdf on AGND/DGND and the data sheets to confirm that you are doing this right.
 
+23. Do we need to buffer the voltage reference. I think it includes an internal buffer and the buffer amp we are using is expensive.
+
+24. Low profile jumpers are available and would solved the problem with the jumpers being to high.
+
+25. Could we pipe the AI0 and AO0 pair out though a card-edge, low-profile BNC pair. This would allow single loop use (SISO) without the breakout board.
+
 

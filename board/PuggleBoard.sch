@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -13574,6 +13574,39 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="supply1">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+ GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+ Please keep in mind, that these devices are necessary for the
+ automatic wiring of the supply signals.&lt;p&gt;
+ The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+ In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+ &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="GND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -13644,7 +13677,6 @@ Source: www.kingbright.com</description>
 <part name="C10" library="rcl" deviceset="C-EU" device="C0805" value="4.7uF"/>
 <part name="C15" library="rcl" deviceset="C-EU" device="C0603" value="22uF"/>
 <part name="C9" library="rcl" deviceset="C-EU" device="C0805" value="4.7uF"/>
-<part name="DGND5" library="supply2" deviceset="PE" device="" value="DGND"/>
 <part name="SUPPLY11" library="supply2" deviceset="AGND" device=""/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
@@ -13665,7 +13697,6 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY1" library="supply2" deviceset="AGND" device=""/>
 <part name="U11" library="ti-extended" deviceset="LM2663" device=""/>
 <part name="C33" library="rcl" deviceset="C-US" device="C1206" value="47uF"/>
-<part name="SUPPLY37" library="supply2" deviceset="AGND" device=""/>
 <part name="C32" library="rcl" deviceset="C-US" device="C1206" value="47uF"/>
 <part name="C43" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="A_I/O" library="adafruit" deviceset="PINHD-2X5" device="/90"/>
@@ -13686,9 +13717,6 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY24" library="supply2" deviceset="AGND" device=""/>
 <part name="SUPPLY25" library="supply2" deviceset="AGND" device=""/>
 <part name="SUPPLY26" library="supply2" deviceset="AGND" device=""/>
-<part name="SUPPLY27" library="supply2" deviceset="AGND" device=""/>
-<part name="SUPPLY28" library="supply2" deviceset="AGND" device=""/>
-<part name="SUPPLY30" library="supply2" deviceset="AGND" device=""/>
 <part name="R29" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="-4.5V" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="+4.5V" library="testpad" deviceset="TP" device="PAD1-17" value="TPPAD1-17"/>
@@ -13755,6 +13783,11 @@ Source: www.kingbright.com</description>
 <part name="R20" library="rcl" deviceset="R-US_" device="R0603" value="680"/>
 <part name="S1" library="smd-special" deviceset="SWS002" device=""/>
 <part name="EEPROM_WP" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="SUPPLY9" library="supply2" deviceset="AGND" device=""/>
+<part name="GND1" library="supply1" deviceset="GND" device="" value="PGND"/>
+<part name="GND2" library="supply1" deviceset="GND" device="" value="PGND"/>
+<part name="GND3" library="supply1" deviceset="GND" device="" value="PGND"/>
+<part name="GND4" library="supply1" deviceset="GND" device="" value="PGND"/>
 </parts>
 <sheets>
 <sheet>
@@ -14054,7 +14087,6 @@ using single, isolated via.</text>
 <instance part="C10" gate="G$1" x="-88.9" y="78.74" rot="R180"/>
 <instance part="C15" gate="G$1" x="38.1" y="48.26" rot="R180"/>
 <instance part="C9" gate="G$1" x="-116.84" y="81.28"/>
-<instance part="DGND5" gate="PE" x="-116.84" y="22.86"/>
 <instance part="SUPPLY11" gate="G$1" x="-88.9" y="30.48"/>
 <instance part="C2" gate="G$1" x="12.7" y="147.32"/>
 <instance part="C1" gate="G$1" x="12.7" y="175.26"/>
@@ -14085,6 +14117,7 @@ using single, isolated via.</text>
 <instance part="R6" gate="G$1" x="-38.1" y="177.8" rot="R90"/>
 <instance part="R7" gate="G$1" x="-48.26" y="149.86" rot="R180"/>
 <instance part="R8" gate="G$1" x="-38.1" y="139.7" rot="R90"/>
+<instance part="SUPPLY9" gate="G$1" x="-116.84" y="17.78"/>
 </instances>
 <busses>
 <bus name="SPI[0..5]">
@@ -14161,18 +14194,6 @@ using single, isolated via.</text>
 <wire x1="2.54" y1="177.8" x2="2.54" y2="180.34" width="0.1524" layer="91"/>
 <junction x="2.54" y="180.34"/>
 <pinref part="U17" gate="A" pin="V+"/>
-</segment>
-</net>
-<net name="DGND" class="0">
-<segment>
-<pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="-116.84" y1="76.2" x2="-116.84" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="U5" gate="A" pin="DGND"/>
-<wire x1="50.8" y1="33.02" x2="10.16" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="33.02" x2="10.16" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="25.4" x2="-116.84" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="DGND5" gate="PE" pin="PE"/>
-<junction x="-116.84" y="25.4"/>
 </segment>
 </net>
 <net name="VDRIVE" class="0">
@@ -14314,6 +14335,17 @@ using single, isolated via.</text>
 <pinref part="SUPPLY42" gate="G$1" pin="AGND"/>
 <pinref part="C47" gate="G$1" pin="2"/>
 <wire x1="2.54" y1="139.7" x2="2.54" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C9" gate="G$1" pin="2"/>
+<wire x1="-116.84" y1="76.2" x2="-116.84" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="U5" gate="A" pin="DGND"/>
+<wire x1="50.8" y1="33.02" x2="10.16" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="33.02" x2="10.16" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="25.4" x2="-116.84" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="SUPPLY9" gate="G$1" pin="AGND"/>
+<wire x1="-116.84" y1="20.32" x2="-116.84" y2="25.4" width="0.1524" layer="91"/>
+<junction x="-116.84" y="25.4"/>
 </segment>
 </net>
 <net name="VREF" class="0">
@@ -15144,7 +15176,6 @@ using single, isolated via.</text>
 <instance part="SUPPLY10" gate="G$1" x="-48.26" y="-86.36"/>
 <instance part="U11" gate="G$1" x="2.54" y="35.56"/>
 <instance part="C33" gate="G$1" x="40.64" y="15.24" rot="R180"/>
-<instance part="SUPPLY37" gate="G$1" x="40.64" y="5.08"/>
 <instance part="C32" gate="G$1" x="-35.56" y="35.56"/>
 <instance part="U12" gate="A" x="2.54" y="-12.7"/>
 <instance part="C34" gate="G$1" x="-48.26" y="-25.4"/>
@@ -15156,9 +15187,6 @@ using single, isolated via.</text>
 <instance part="SUPPLY24" gate="G$1" x="-35.56" y="-40.64"/>
 <instance part="SUPPLY25" gate="G$1" x="-17.78" y="-30.48"/>
 <instance part="SUPPLY26" gate="G$1" x="30.48" y="-86.36"/>
-<instance part="SUPPLY27" gate="G$1" x="27.94" y="5.08"/>
-<instance part="SUPPLY28" gate="G$1" x="-25.4" y="5.08"/>
-<instance part="SUPPLY30" gate="G$1" x="-55.88" y="5.08"/>
 <instance part="R29" gate="G$1" x="-55.88" y="20.32" rot="R270"/>
 <instance part="-4.5V" gate="G$1" x="30.48" y="-7.62"/>
 <instance part="+4.5V" gate="G$1" x="30.48" y="-53.34"/>
@@ -15177,6 +15205,10 @@ using single, isolated via.</text>
 <instance part="AGND2" gate="G$1" x="68.58" y="-27.94"/>
 <instance part="SUPPLY39" gate="G$1" x="68.58" y="-38.1"/>
 <instance part="JP_POW" gate="B" x="-88.9" y="-33.02" rot="R90"/>
+<instance part="GND1" gate="1" x="-55.88" y="5.08"/>
+<instance part="GND2" gate="1" x="-25.4" y="5.08"/>
+<instance part="GND3" gate="1" x="27.94" y="5.08"/>
+<instance part="GND4" gate="1" x="40.64" y="5.08"/>
 </instances>
 <busses>
 </busses>
@@ -15186,11 +15218,6 @@ using single, isolated via.</text>
 <pinref part="SUPPLY17" gate="G$1" pin="AGND"/>
 <pinref part="SJ_A/DGND2" gate="1" pin="1"/>
 <wire x1="78.74" y1="-10.16" x2="83.82" y2="-10.16" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C33" gate="G$1" pin="1"/>
-<pinref part="SUPPLY37" gate="G$1" pin="AGND"/>
-<wire x1="40.64" y1="7.62" x2="40.64" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY3" gate="G$1" pin="AGND"/>
@@ -15226,23 +15253,6 @@ using single, isolated via.</text>
 <pinref part="C37" gate="G$1" pin="2"/>
 <wire x1="30.48" y1="-66.04" x2="30.48" y2="-83.82" width="0.1524" layer="91"/>
 <pinref part="SUPPLY26" gate="G$1" pin="AGND"/>
-</segment>
-<segment>
-<pinref part="U11" gate="G$1" pin="LV"/>
-<wire x1="20.32" y1="33.02" x2="27.94" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="33.02" x2="27.94" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="SUPPLY27" gate="G$1" pin="AGND"/>
-</segment>
-<segment>
-<pinref part="U11" gate="G$1" pin="GND"/>
-<wire x1="-15.24" y1="33.02" x2="-25.4" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="33.02" x2="-25.4" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="SUPPLY28" gate="G$1" pin="AGND"/>
-</segment>
-<segment>
-<pinref part="R29" gate="G$1" pin="2"/>
-<pinref part="SUPPLY30" gate="G$1" pin="AGND"/>
-<wire x1="-55.88" y1="15.24" x2="-55.88" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="PWR" gate="G$1" pin="C"/>
@@ -15464,6 +15474,30 @@ using single, isolated via.</text>
 <junction x="-48.26" y="-55.88"/>
 <junction x="-20.32" y="-55.88"/>
 <label x="-68.58" y="-55.88" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PGND" class="0">
+<segment>
+<pinref part="R29" gate="G$1" pin="2"/>
+<wire x1="-55.88" y1="15.24" x2="-55.88" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U11" gate="G$1" pin="GND"/>
+<wire x1="-15.24" y1="33.02" x2="-25.4" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="33.02" x2="-25.4" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U11" gate="G$1" pin="LV"/>
+<wire x1="20.32" y1="33.02" x2="27.94" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="33.02" x2="27.94" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C33" gate="G$1" pin="1"/>
+<wire x1="40.64" y1="7.62" x2="40.64" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 </net>
 </nets>
