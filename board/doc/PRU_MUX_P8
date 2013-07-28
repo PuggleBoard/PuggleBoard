@@ -1,0 +1,22 @@
+    P8 Header  ARM Pin	MODE 5		MODE 6		PIN NAME	Puggle Name
+                
+    12         T12                      pru0_r31_14	gpio1[12]	
+    13         T10                      pru0_r31_15     gpio0[23]     
+    15         U13                      pru0_r30_15     gpio1[15]     
+    16         V13                      pru0_r30_14     gpio1[14]     
+    20         V9       pru1_r30_13     pru1_r31_13     gpio1[31]     
+    21         U9       pru1_r30_12     pru1_r31_12     gpio1[30]     
+    27         U5       pru1_r30_8      pru1_r31_8      gpio2[22]     
+    28         V5       pru1_r30_10     pru1_r31_10     gpio2[24]     
+    29         R5       pru1_r30_9      pru1_r31_9      gpio2[23]     
+    30         R6    	pru1_r30_11     pru1_r31_11     gpio2[25]     
+bp  39         T3       pru1_r30_6      pru1_r31_6      gpio2[12]     
+bp  40         T4       pru1_r30_7      pru1_r31_7      gpio2[13]     
+bp  41         T1       pru1_r30_4      pru1_r31_4      gpio2[10]     
+bp  42         T2       pru1_r30_5      pru1_r31_5      gpio2[11]     
+bp  43         R3       pru1_r30_2      pru1_r31_2      gpio2[8]      
+bp  44         R4       pru1_r30_3      pru1_r31_3      gpio2[9]      
+bp  45         R1       pru1_r30_0      pru1_r31_0      gpio2[6]      
+bp  46         R2       pru1_r30_1      pru1_r31_1      gpio2[7]
+
+* bp == boot pin, do not drive while in reset
