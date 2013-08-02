@@ -18,7 +18,7 @@ X3. The 2X3 jumper header does not fit. Need to get 2 1X3 headers
 
 8. Ethernet cutout can be made a bit tighter on the top part.
 
-9. There is a miswiring in the VREF/VBIAS circuit. Here is the explanation and fix
+X9. There is a miswiring in the VREF/VBIAS circuit. Here is the explanation and fix
 
  - The AD8032 buffers VREF_PRE
  - The output of the ADA8032 is passed through an RC LPF to smooth the voltage reference (VREF)
@@ -31,30 +31,31 @@ X10. The negative LDO (MAX1795) is unstable
  - Seems that adding 10 uF ceramic (X5R) cap in parrallel with input cap (c34) gets rid of osscilation.
  - For the in/out caps on the regulator cicuitry, use a larger SMD pad. This will ensure you can get a cap with the capacitance and ESR you want even if you have to make it quite high capacitance. 0805 or larger. The keepout areas in eagle are overly aggressive so they can overlay a bit.
 
-11. In general, the LDOs on the board are not low noise enough for our application. They should be switched for a lower noise solution
+X11. In general, the LDOs on the board are not low noise enough for our application. They should be switched for a lower noise solution
 
  - While we are at it, if the LDOs are tunable, try to bring their regulated voltage as close to 5V as possible. E.g. 4.7 V. This will make sure the ADC/DAC's remain linear within the 4.096 V ref range.
 
-12. Both the DAC and ADC can share a single clock line, instead of having their own. Thats the whole point of CS!
+X12. Both the DAC and ADC can share a single clock line, instead of having their own. Thats the whole point of CS!
 
 13. Some of the caps (e.g. c18,c19) are missing silkscreen values on the board.
 
 14. In general silkscreen text is too thin/small. Try to make bigger if possible, and at least, thicker.
 
-13. It looks like the DAC's LDAC line is held high with no digital manipulation allowed. This seems to imply a conversion can never be loaded into the output register. Why is this line
+X13. It looks like the DAC's LDAC line is held high with no digital manipulation allowed. This seems to imply a conversion can never be loaded into the output register. Why is this line
  
   - Not pulled down (instead of up)
   - Not on the SPI bus instead of SDO which seems useless
+  - EDIT: its because the input register is skipped and we load data directly into the output register.
   
 X14. It looks like the RESETSEL pin on the DAC is set incorrectly. You want the outputs to reset to midscale, not zero (which would be pulled to the negative rail). This requires that RESETSEL is high.
   
-15. Replace 8XOPA365 with 2XOPA209. Replace 10 k resistors with 680 ohms. 
+X15. Replace 8XOPA365 with 2XOPA209. Replace 10 k resistors with 680 ohms. 
 
 X16. Replace ADC input filters with R = 100 Ohm and C = 1 nF.
 
-17. We only need a single SPI bus. By having two, we are ignoring the CS functionality. With 4 channels, there is no need for two. When using the intan chip, two busses may be nessesary.
+X17. We only need a single SPI bus. By having two, we are ignoring the CS functionality. With 4 channels, there is no need for two. When using the intan chip, two busses may be nessesary.
 
-18. Can we pipe out some bits of GPIO now that we have freed and SPI bus?
+X18. Can we pipe out some bits of GPIO now that we have freed and SPI bus?
 
 X19. The EEPROM circuit has to many available addresses. Changed the DIP to 2X and tie A2 high. Also, use a groundable test-point for the WP pin instead of a bulky jumper.
 
@@ -69,5 +70,13 @@ X19. The EEPROM circuit has to many available addresses. Changed the DIP to 2X a
 24. Low profile jumpers are available and would solved the problem with the jumpers being to high.
 
 25. Could we pipe the AI0 and AO0 pair out though a card-edge, low-profile BNC pair. This would allow single loop use (SISO) without the breakout board.
+
+26. Change all ceramic capacitors to X5R.
+
+27. Here is how to deal with the power input to the system
+
+  - Copy the EVMs for the LM2663 and the LDOs. This includes the spit planes on top, having ground planes on two layers, etc.
+  - After the final regulation stage, that is when you start your normal layering scheme. 
+  - This will have several benefits: (1) you get the EVM performance and (2) the problems you were have routing VDRIVE through the +4.5V power plane will go away since, around the BB power entry pins, this plane will not exist.
 
 
