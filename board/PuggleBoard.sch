@@ -16979,7 +16979,7 @@ Metric Code Size 5664</description>
 <part name="R21" library="rcl" deviceset="R-US_" device="R0603" value="680"/>
 <part name="R24" library="rcl" deviceset="R-US_" device="R0603" value="680"/>
 <part name="S1" library="smd-special" deviceset="SWS002" device=""/>
-<part name="EEPROM_WP" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="EEPROM_WP" library="testpad" deviceset="TP" device="TP14SQ" value="TPTP14SQ"/>
 <part name="SUPPLY9" library="supply2" deviceset="AGND" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device="" value="PGND"/>
 <part name="GND2" library="supply1" deviceset="GND" device="" value="PGND"/>
@@ -17118,7 +17118,7 @@ Metric Code Size 5664</description>
 <label x="0" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="DAC_A" class="0">
 <segment>
 <pinref part="A_I/O" gate="G$1" pin="3"/>
 <wire x1="35.56" y1="50.8" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
@@ -17139,7 +17139,7 @@ Metric Code Size 5664</description>
 <label x="35.56" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="DAC_D" class="0">
 <segment>
 <pinref part="A_I/O" gate="G$1" pin="9"/>
 <wire x1="35.56" y1="43.18" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
@@ -17402,7 +17402,7 @@ using single, isolated via.</text>
 <instance part="C10" gate="G$1" x="12.7" y="73.66" rot="R180"/>
 <instance part="SUPPLY18" gate="G$1" x="12.7" y="165.1"/>
 <instance part="R14" gate="G$1" x="35.56" y="91.44" rot="R180"/>
-<instance part="ADC_A+" gate="G$1" x="101.6" y="182.88"/>
+<instance part="ADC_A+" gate="G$1" x="-17.78" y="91.44"/>
 <instance part="R13" gate="G$1" x="17.78" y="55.88" rot="R180"/>
 <instance part="U1" gate="A" x="71.12" y="170.18"/>
 <instance part="SUPPLY40" gate="G$1" x="12.7" y="137.16"/>
@@ -17410,9 +17410,9 @@ using single, isolated via.</text>
 <instance part="C5" gate="G$1" x="2.54" y="175.26"/>
 <instance part="SUPPLY41" gate="G$1" x="2.54" y="165.1"/>
 <instance part="SUPPLY42" gate="G$1" x="2.54" y="137.16"/>
-<instance part="ADC_B+" gate="G$1" x="106.68" y="180.34"/>
-<instance part="ADC_C+" gate="G$1" x="111.76" y="177.8"/>
-<instance part="ADC_D+" gate="G$1" x="116.84" y="175.26"/>
+<instance part="ADC_B+" gate="G$1" x="-7.62" y="88.9"/>
+<instance part="ADC_C+" gate="G$1" x="2.54" y="86.36"/>
+<instance part="ADC_D+" gate="G$1" x="12.7" y="83.82"/>
 <instance part="R1" gate="G$1" x="-106.68" y="149.86" rot="R180"/>
 <instance part="R3" gate="G$1" x="-96.52" y="139.7" rot="R90"/>
 <instance part="R9" gate="G$1" x="-48.26" y="187.96" rot="R180"/>
@@ -17448,9 +17448,8 @@ using single, isolated via.</text>
 </segment>
 <segment>
 <pinref part="U1" gate="A" pin="OUT_B"/>
-<wire x1="88.9" y1="177.8" x2="106.68" y2="177.8" width="0.1524" layer="91"/>
 <label x="88.9" y="177.8" size="1.778" layer="95"/>
-<pinref part="ADC_B+" gate="G$1" pin="TP"/>
+<wire x1="88.9" y1="177.8" x2="104.14" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
@@ -17548,6 +17547,7 @@ using single, isolated via.</text>
 <wire x1="-17.78" y1="88.9" x2="50.8" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="78.74" x2="-17.78" y2="88.9" width="0.1524" layer="91"/>
 <junction x="-17.78" y="88.9"/>
+<pinref part="ADC_A+" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="N$41" class="0">
@@ -17561,6 +17561,7 @@ using single, isolated via.</text>
 <wire x1="-38.1" y1="81.28" x2="-48.26" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="78.74" x2="-7.62" y2="86.36" width="0.1524" layer="91"/>
 <junction x="-7.62" y="86.36"/>
+<pinref part="ADC_B+" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="N$42" class="0">
@@ -17574,6 +17575,7 @@ using single, isolated via.</text>
 <wire x1="2.54" y1="83.82" x2="50.8" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="78.74" x2="2.54" y2="83.82" width="0.1524" layer="91"/>
 <junction x="2.54" y="83.82"/>
+<pinref part="ADC_C+" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="N$43" class="0">
@@ -17587,6 +17589,7 @@ using single, isolated via.</text>
 <wire x1="-27.94" y1="66.04" x2="-48.26" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="78.74" x2="12.7" y2="81.28" width="0.1524" layer="91"/>
 <junction x="12.7" y="81.28"/>
+<pinref part="ADC_D+" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="AGND" class="0">
@@ -17727,9 +17730,8 @@ using single, isolated via.</text>
 </segment>
 <segment>
 <pinref part="U1" gate="A" pin="OUT_A"/>
-<wire x1="88.9" y1="180.34" x2="101.6" y2="180.34" width="0.1524" layer="91"/>
-<pinref part="ADC_A+" gate="G$1" pin="TP"/>
 <label x="88.9" y="180.34" size="1.778" layer="95"/>
+<wire x1="88.9" y1="180.34" x2="104.14" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC_C+" class="0">
@@ -17740,9 +17742,8 @@ using single, isolated via.</text>
 </segment>
 <segment>
 <pinref part="U1" gate="A" pin="OUT_C"/>
-<wire x1="88.9" y1="175.26" x2="111.76" y2="175.26" width="0.1524" layer="91"/>
 <label x="88.9" y="175.26" size="1.778" layer="95"/>
-<pinref part="ADC_C+" gate="G$1" pin="TP"/>
+<wire x1="88.9" y1="175.26" x2="104.14" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R11" gate="G$1" pin="1"/>
@@ -17760,8 +17761,7 @@ using single, isolated via.</text>
 <segment>
 <pinref part="U1" gate="A" pin="OUT_D"/>
 <label x="88.9" y="172.72" size="1.778" layer="95"/>
-<pinref part="ADC_D+" gate="G$1" pin="TP"/>
-<wire x1="88.9" y1="172.72" x2="116.84" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="172.72" x2="104.14" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R12" gate="G$1" pin="1"/>
