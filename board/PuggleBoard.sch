@@ -17118,7 +17118,7 @@ Metric Code Size 5664</description>
 <label x="0" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DAC_A" class="0">
+<net name="N$6" class="0">
 <segment>
 <pinref part="A_I/O" gate="G$1" pin="3"/>
 <wire x1="35.56" y1="50.8" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
@@ -17139,7 +17139,7 @@ Metric Code Size 5664</description>
 <label x="35.56" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DAC_D" class="0">
+<net name="N$8" class="0">
 <segment>
 <pinref part="A_I/O" gate="G$1" pin="9"/>
 <wire x1="35.56" y1="43.18" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
@@ -18133,64 +18133,6 @@ using single, isolated via.</text>
 <label x="-88.9" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DAC_D+" class="0">
-<segment>
-<wire x1="17.78" y1="-7.62" x2="35.56" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="R26" gate="G$1" pin="2"/>
-<pinref part="C20" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="-10.16" x2="53.34" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="-10.16" x2="48.26" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="-10.16" x2="48.26" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="-7.62" x2="48.26" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="-7.62" x2="81.28" y2="-7.62" width="0.1524" layer="91"/>
-<junction x="48.26" y="-7.62"/>
-<pinref part="DAC_D+" gate="G$1" pin="TP"/>
-<junction x="35.56" y="-7.62"/>
-<pinref part="U3" gate="G$1" pin="VOUTD"/>
-<label x="73.66" y="-7.62" size="1.778" layer="95"/>
-<junction x="48.26" y="-10.16"/>
-</segment>
-</net>
-<net name="DAC_B+" class="0">
-<segment>
-<pinref part="R28" gate="G$1" pin="2"/>
-<pinref part="C22" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="-55.88" x2="53.34" y2="-55.88" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="-55.88" x2="48.26" y2="-55.88" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="-55.88" x2="48.26" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="-12.7" x2="25.4" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="-12.7" x2="25.4" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="-53.34" x2="35.56" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="-53.34" x2="48.26" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="-53.34" x2="81.28" y2="-53.34" width="0.1524" layer="91"/>
-<junction x="48.26" y="-53.34"/>
-<pinref part="DAC_B+" gate="G$1" pin="TP"/>
-<junction x="35.56" y="-53.34"/>
-<pinref part="U3" gate="G$1" pin="VOUTB"/>
-<label x="73.66" y="-53.34" size="1.778" layer="95"/>
-<junction x="48.26" y="-55.88"/>
-</segment>
-</net>
-<net name="DAC_A+" class="0">
-<segment>
-<wire x1="17.78" y1="-15.24" x2="22.86" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="-15.24" x2="22.86" y2="-76.2" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="-76.2" x2="35.56" y2="-76.2" width="0.1524" layer="91"/>
-<pinref part="R29" gate="G$1" pin="2"/>
-<pinref part="C23" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="-76.2" x2="48.26" y2="-76.2" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="-76.2" x2="81.28" y2="-76.2" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="-78.74" x2="53.34" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="-78.74" x2="48.26" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="-78.74" x2="48.26" y2="-76.2" width="0.1524" layer="91"/>
-<junction x="48.26" y="-76.2"/>
-<pinref part="DAC_A+" gate="G$1" pin="TP"/>
-<junction x="35.56" y="-76.2"/>
-<pinref part="U3" gate="G$1" pin="VOUTA"/>
-<label x="73.66" y="-76.2" size="1.778" layer="95"/>
-<junction x="48.26" y="-78.74"/>
-</segment>
-</net>
 <net name="DGND" class="0">
 <segment>
 <pinref part="C14" gate="G$1" pin="2"/>
@@ -18261,19 +18203,6 @@ using single, isolated via.</text>
 <pinref part="U4" gate="A" pin="V-"/>
 </segment>
 </net>
-<net name="DAC_A" class="0">
-<segment>
-<pinref part="U4" gate="A" pin="OUT_A"/>
-<wire x1="86.36" y1="96.52" x2="99.06" y2="96.52" width="0.1524" layer="91"/>
-<label x="88.9" y="96.52" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="-96.52" y1="88.9" x2="-96.52" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="-96.52" y1="83.82" x2="-83.82" y2="83.82" width="0.1524" layer="91"/>
-<label x="-91.44" y="83.82" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="DAC_B" class="0">
 <segment>
 <pinref part="U4" gate="A" pin="OUT_B"/>
@@ -18287,19 +18216,6 @@ using single, isolated via.</text>
 <label x="-91.44" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DAC_D" class="0">
-<segment>
-<pinref part="U4" gate="A" pin="OUT_D"/>
-<label x="88.9" y="88.9" size="1.778" layer="95"/>
-<wire x1="86.36" y1="88.9" x2="99.06" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R24" gate="G$1" pin="1"/>
-<wire x1="-45.72" y1="55.88" x2="-45.72" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="-45.72" y1="50.8" x2="-33.02" y2="50.8" width="0.1524" layer="91"/>
-<label x="-40.64" y="50.8" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="DAC_C" class="0">
 <segment>
 <pinref part="U4" gate="A" pin="OUT_C"/>
@@ -18311,26 +18227,6 @@ using single, isolated via.</text>
 <wire x1="-45.72" y1="88.9" x2="-45.72" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="83.82" x2="-33.02" y2="83.82" width="0.1524" layer="91"/>
 <label x="-40.64" y="83.82" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="DAC_C+" class="0">
-<segment>
-<wire x1="27.94" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="-10.16" x2="27.94" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="-30.48" x2="35.56" y2="-30.48" width="0.1524" layer="91"/>
-<pinref part="DAC_C+" gate="G$1" pin="TP"/>
-<wire x1="35.56" y1="-30.48" x2="48.26" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="35.56" y="-30.48"/>
-<pinref part="R27" gate="G$1" pin="2"/>
-<pinref part="C21" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="-30.48" x2="81.28" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="-33.02" x2="53.34" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="-33.02" x2="48.26" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="-33.02" x2="48.26" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="48.26" y="-30.48"/>
-<pinref part="U3" gate="G$1" pin="VOUTC"/>
-<label x="73.66" y="-30.48" size="1.778" layer="95"/>
-<junction x="48.26" y="-33.02"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -18395,6 +18291,24 @@ using single, isolated via.</text>
 <wire x1="-83.82" y1="109.22" x2="-124.46" y2="109.22" width="0.1524" layer="91"/>
 <label x="-124.46" y="109.22" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="17.78" y1="-15.24" x2="22.86" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="-15.24" x2="22.86" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="-76.2" x2="35.56" y2="-76.2" width="0.1524" layer="91"/>
+<pinref part="R29" gate="G$1" pin="2"/>
+<pinref part="C23" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="-76.2" x2="48.26" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="-76.2" x2="81.28" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="-78.74" x2="53.34" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-78.74" x2="48.26" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="-78.74" x2="48.26" y2="-76.2" width="0.1524" layer="91"/>
+<junction x="48.26" y="-76.2"/>
+<pinref part="DAC_A+" gate="G$1" pin="TP"/>
+<junction x="35.56" y="-76.2"/>
+<pinref part="U3" gate="G$1" pin="VOUTA"/>
+<label x="73.66" y="-76.2" size="1.778" layer="95"/>
+<junction x="48.26" y="-78.74"/>
+</segment>
 </net>
 <net name="DAC_+IN_B" class="0">
 <segment>
@@ -18405,6 +18319,24 @@ using single, isolated via.</text>
 <segment>
 <wire x1="-83.82" y1="76.2" x2="-124.46" y2="76.2" width="0.1524" layer="91"/>
 <label x="-124.46" y="76.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R28" gate="G$1" pin="2"/>
+<pinref part="C22" gate="G$1" pin="1"/>
+<wire x1="48.26" y1="-55.88" x2="53.34" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-55.88" x2="48.26" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="-55.88" x2="48.26" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-12.7" x2="25.4" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="-12.7" x2="25.4" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="-53.34" x2="35.56" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="-53.34" x2="48.26" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="-53.34" x2="81.28" y2="-53.34" width="0.1524" layer="91"/>
+<junction x="48.26" y="-53.34"/>
+<pinref part="DAC_B+" gate="G$1" pin="TP"/>
+<junction x="35.56" y="-53.34"/>
+<pinref part="U3" gate="G$1" pin="VOUTB"/>
+<label x="73.66" y="-53.34" size="1.778" layer="95"/>
+<junction x="48.26" y="-55.88"/>
 </segment>
 </net>
 <net name="DAC_-IN_B" class="0">
@@ -18449,6 +18381,24 @@ using single, isolated via.</text>
 <wire x1="-33.02" y1="109.22" x2="-73.66" y2="109.22" width="0.1524" layer="91"/>
 <label x="-73.66" y="109.22" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="27.94" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-10.16" x2="27.94" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-30.48" x2="35.56" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="DAC_C+" gate="G$1" pin="TP"/>
+<wire x1="35.56" y1="-30.48" x2="48.26" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="35.56" y="-30.48"/>
+<pinref part="R27" gate="G$1" pin="2"/>
+<pinref part="C21" gate="G$1" pin="1"/>
+<wire x1="48.26" y1="-30.48" x2="81.28" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="-33.02" x2="53.34" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-33.02" x2="48.26" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="-33.02" x2="48.26" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="48.26" y="-30.48"/>
+<pinref part="U3" gate="G$1" pin="VOUTC"/>
+<label x="73.66" y="-30.48" size="1.778" layer="95"/>
+<junction x="48.26" y="-33.02"/>
+</segment>
 </net>
 <net name="DAC_+IN_D" class="0">
 <segment>
@@ -18459,6 +18409,22 @@ using single, isolated via.</text>
 <segment>
 <wire x1="-33.02" y1="76.2" x2="-73.66" y2="76.2" width="0.1524" layer="91"/>
 <label x="-73.66" y="76.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="17.78" y1="-7.62" x2="35.56" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="R26" gate="G$1" pin="2"/>
+<pinref part="C20" gate="G$1" pin="1"/>
+<wire x1="48.26" y1="-10.16" x2="53.34" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-10.16" x2="48.26" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="-10.16" x2="48.26" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="-7.62" x2="48.26" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="-7.62" x2="81.28" y2="-7.62" width="0.1524" layer="91"/>
+<junction x="48.26" y="-7.62"/>
+<pinref part="DAC_D+" gate="G$1" pin="TP"/>
+<junction x="35.56" y="-7.62"/>
+<pinref part="U3" gate="G$1" pin="VOUTD"/>
+<label x="73.66" y="-7.62" size="1.778" layer="95"/>
+<junction x="48.26" y="-10.16"/>
 </segment>
 </net>
 <net name="DAC_-IN_D" class="0">
@@ -18475,6 +18441,32 @@ using single, isolated via.</text>
 <wire x1="-45.72" y1="66.04" x2="-45.72" y2="71.12" width="0.1524" layer="91"/>
 <junction x="-45.72" y="71.12"/>
 <label x="-43.18" y="71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DAC_A" class="0">
+<segment>
+<pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="-96.52" y1="88.9" x2="-96.52" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="-96.52" y1="83.82" x2="-83.82" y2="83.82" width="0.1524" layer="91"/>
+<label x="-91.44" y="83.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U4" gate="A" pin="OUT_A"/>
+<wire x1="86.36" y1="96.52" x2="99.06" y2="96.52" width="0.1524" layer="91"/>
+<label x="88.9" y="96.52" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DAC_D" class="0">
+<segment>
+<pinref part="R24" gate="G$1" pin="1"/>
+<wire x1="-45.72" y1="55.88" x2="-45.72" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="50.8" x2="-33.02" y2="50.8" width="0.1524" layer="91"/>
+<label x="-40.64" y="50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U4" gate="A" pin="OUT_D"/>
+<label x="88.9" y="88.9" size="1.778" layer="95"/>
+<wire x1="86.36" y1="88.9" x2="99.06" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
