@@ -17010,6 +17010,7 @@ Metric Code Size 5664</description>
 <part name="SUPPLY27" library="supply2" deviceset="AGND" device=""/>
 <part name="C43" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="C44" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
+<part name="DGND3" library="supply2" deviceset="PE" device="" value="DGND"/>
 </parts>
 <sheets>
 <sheet>
@@ -17026,12 +17027,13 @@ Metric Code Size 5664</description>
 </plain>
 <instances>
 <instance part="BB1" gate="G$1" x="-35.56" y="48.26"/>
-<instance part="DGND2" gate="PE" x="-91.44" y="38.1"/>
+<instance part="DGND2" gate="PE" x="-91.44" y="99.06"/>
 <instance part="A_I/O" gate="G$1" x="53.34" y="50.8"/>
 <instance part="PWR_EXT" gate="A" x="53.34" y="0"/>
 <instance part="RESET" gate="G$1" x="48.26" y="-20.32" rot="R270"/>
 <instance part="DGND10" gate="PE" x="60.96" y="-27.94"/>
 <instance part="A_I/O1" gate="G$1" x="53.34" y="27.94"/>
+<instance part="DGND3" gate="PE" x="12.7" y="101.6"/>
 </instances>
 <busses>
 <bus name="SPI[0..5]">
@@ -17065,9 +17067,9 @@ Metric Code Size 5664</description>
 </segment>
 <segment>
 <pinref part="DGND2" gate="PE" pin="PE"/>
-<wire x1="-91.44" y1="40.64" x2="-91.44" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="BB1" gate="G$1" pin="GND@1"/>
-<wire x1="-91.44" y1="43.18" x2="-63.5" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-91.44" y1="101.6" x2="-91.44" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="BB1" gate="G$1" pin="GND@7"/>
+<wire x1="-91.44" y1="109.22" x2="-63.5" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="A_I/O1" gate="G$1" pin="1"/>
@@ -17078,6 +17080,12 @@ Metric Code Size 5664</description>
 <pinref part="A_I/O1" gate="G$1" pin="2"/>
 <wire x1="58.42" y1="30.48" x2="73.66" y2="30.48" width="0.1524" layer="91"/>
 <label x="66.04" y="30.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="BB1" gate="G$1" pin="GND@8"/>
+<wire x1="-7.62" y1="109.22" x2="12.7" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="109.22" x2="12.7" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="DGND3" gate="PE" pin="PE"/>
 </segment>
 </net>
 <net name="AGND" class="0">
@@ -18626,6 +18634,7 @@ using single, isolated via.</text>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="111.76" y1="-33.02" x2="129.54" y2="-33.02" width="0.1524" layer="91"/>
 <junction x="111.76" y="-33.02"/>
+<junction x="129.54" y="-33.02"/>
 </segment>
 </net>
 <net name="VDD_5V" class="0">
