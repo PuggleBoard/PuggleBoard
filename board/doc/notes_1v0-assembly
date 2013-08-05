@@ -79,4 +79,6 @@ X19. The EEPROM circuit has to many available addresses. Changed the DIP to 2X a
   - After the final regulation stage, that is when you start your normal layering scheme. 
   - This will have several benefits: (1) you get the EVM performance and (2) the problems you were have routing VDRIVE through the +4.5V power plane will go away since, around the BB power entry pins, this plane will not exist.
 
+28. Add ferrite bead to output of LM2663 to prevent switching noise from getting to LD0s?
 
+29. Add an HDMI connector (same as openephys) to the DI/O part of the board.
