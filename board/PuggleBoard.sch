@@ -3813,6 +3813,95 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="3.81" y1="0.9525" x2="3.175" y2="0.9525" width="0.127" layer="21"/>
 <text x="-3.175" y="-5.715" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="40-BBGA">
+<smd name="E3" x="0.635" y="0" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="D3" x="-0.635" y="0" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="C3" x="-1.905" y="0" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="B3" x="-3.175" y="0" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="A3" x="-4.445" y="0" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="F3" x="1.905" y="0" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="G3" x="3.175" y="0" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="H3" x="4.445" y="0" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="E4" x="0.635" y="1.27" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="D4" x="-0.635" y="1.27" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="C4" x="-1.905" y="1.27" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="B4" x="-3.175" y="1.27" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="A4" x="-4.445" y="1.27" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="F4" x="1.905" y="1.27" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="G4" x="3.175" y="1.27" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="H4" x="4.445" y="1.27" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="E5" x="0.635" y="2.54" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="D5" x="-0.635" y="2.54" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="C5" x="-1.905" y="2.54" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="B5" x="-3.175" y="2.54" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="A5" x="-4.445" y="2.54" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="F5" x="1.905" y="2.54" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="G5" x="3.175" y="2.54" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="H5" x="4.445" y="2.54" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="E2" x="0.635" y="-1.27" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="D2" x="-0.635" y="-1.27" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="C2" x="-1.905" y="-1.27" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="B2" x="-3.175" y="-1.27" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="A2" x="-4.445" y="-1.27" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="F2" x="1.905" y="-1.27" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="G2" x="3.175" y="-1.27" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="H2" x="4.445" y="-1.27" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="E1" x="0.635" y="-2.54" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="D1" x="-0.635" y="-2.54" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="C1" x="-1.905" y="-2.54" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="B1" x="-3.175" y="-2.54" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="A1" x="-4.445" y="-2.54" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="F1" x="1.905" y="-2.54" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="G1" x="3.175" y="-2.54" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<smd name="H1" x="4.445" y="-2.54" dx="0.635" dy="0.635" layer="1" roundness="100"/>
+<wire x1="-5.625" y1="-3.125" x2="-5.625" y2="3.125" width="0.127" layer="21"/>
+<wire x1="-5.625" y1="3.125" x2="5.625" y2="3.125" width="0.127" layer="21"/>
+<wire x1="5.625" y1="3.125" x2="5.625" y2="-3.125" width="0.127" layer="21"/>
+<wire x1="5.625" y1="-3.125" x2="-5.625" y2="-3.125" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-5.375" y="-2.875"/>
+<vertex x="-5" y="-2.875"/>
+<vertex x="-5.375" y="-2.5"/>
+</polygon>
+<text x="-4.125" y="-3.625" size="0.6096" layer="21" font="vector" rot="R90">A</text>
+<text x="-2.875" y="-3.625" size="0.6096" layer="21" font="vector" rot="R90">B</text>
+<text x="-1.625" y="-3.625" size="0.6096" layer="21" font="vector" rot="R90">C</text>
+<text x="-0.375" y="-3.625" size="0.6096" layer="21" font="vector" rot="R90">D</text>
+<text x="0.875" y="-3.625" size="0.6096" layer="21" font="vector" rot="R90">E</text>
+<text x="2.125" y="-3.625" size="0.6096" layer="21" font="vector" rot="R90">F</text>
+<text x="3.375" y="-3.625" size="0.6096" layer="21" font="vector" rot="R90">G</text>
+<text x="4.75" y="-3.625" size="0.6096" layer="21" font="vector" rot="R90">H</text>
+<text x="5.5" y="-2.75" size="0.6096" layer="21" font="vector" rot="R90">1</text>
+<text x="5.5" y="-1.5" size="0.6096" layer="21" font="vector" rot="R90">2</text>
+<text x="5.5" y="-0.25" size="0.6096" layer="21" font="vector" rot="R90">3</text>
+<text x="5.5" y="1" size="0.6096" layer="21" font="vector" rot="R90">4</text>
+<text x="5.5" y="2.25" size="0.6096" layer="21" font="vector" rot="R90">5</text>
+<wire x1="-5.75" y1="-3.25" x2="-5.75" y2="3.25" width="0.127" layer="39"/>
+<wire x1="-5.75" y1="3.25" x2="5.75" y2="3.25" width="0.127" layer="39"/>
+<wire x1="5.75" y1="3.25" x2="5.75" y2="-3.25" width="0.127" layer="39"/>
+<wire x1="5.75" y1="-3.25" x2="-5.75" y2="-3.25" width="0.127" layer="39"/>
+<text x="-6" y="-3.125" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="0.635" x2="-3.81" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="0.635" x2="-2.54" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-0.635" x2="-3.81" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-0.635" x2="-2.54" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-0.635" x2="-3.81" y2="0.635" width="0.127" layer="21"/>
+<wire x1="0" y1="-2.69875" x2="0" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="0" y1="-1.905" x2="3.81" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-1.905" x2="3.81" y2="-2.69875" width="0.127" layer="21"/>
+<wire x1="2.54" y1="2.69875" x2="2.54" y2="0.635" width="0.127" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="3.81" y2="0.635" width="0.127" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="5.08" y2="0.635" width="0.127" layer="21"/>
+<wire x1="5.08" y1="0.635" x2="5.08" y2="0.9525" width="0.127" layer="21"/>
+<wire x1="5.08" y1="1.42875" x2="5.08" y2="2.06375" width="0.127" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="3.81" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.81" y2="0.635" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="POT_US-">
@@ -3838,6 +3927,23 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pin name="A" x="0" y="-7.62" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="E" x="0" y="7.62" visible="off" length="short" direction="pas" rot="R270"/>
 <pin name="S" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="LTM8045">
+<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<pin name="VIN" x="-15.24" y="10.16" length="middle" direction="pwr"/>
+<pin name="RUN" x="-15.24" y="5.08" length="middle" direction="in"/>
+<pin name="SS" x="-15.24" y="0" length="middle" direction="out"/>
+<pin name="RT" x="-15.24" y="-5.08" length="middle"/>
+<pin name="VOUT-" x="15.24" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="FB" x="15.24" y="5.08" length="middle" direction="in" rot="R180"/>
+<pin name="VOUT+" x="15.24" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="SYNC" x="-15.24" y="-10.16" length="middle"/>
+<text x="-3.81" y="13.97" size="1.27" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-15.24" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="GND" x="15.24" y="-10.16" length="middle" direction="pwr" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4352,6 +4458,29 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <connect gate="G$1" pin="A" pad="3"/>
 <connect gate="G$1" pin="E" pad="1"/>
 <connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTM8045">
+<gates>
+<gate name="G$1" symbol="LTM8045" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="40-BBGA">
+<connects>
+<connect gate="G$1" pin="FB" pad="A3"/>
+<connect gate="G$1" pin="GND" pad="B3 C1 C2 C3 C4 C5 D1 D2 D3 D4 D5 E2 E3 E4 E5 F2 F3 F4 F5 G2 H1 H2 H3"/>
+<connect gate="G$1" pin="RT" pad="G1"/>
+<connect gate="G$1" pin="RUN" pad="G3"/>
+<connect gate="G$1" pin="SS" pad="F1"/>
+<connect gate="G$1" pin="SYNC" pad="E1"/>
+<connect gate="G$1" pin="VIN" pad="G4 G5 H4 H5"/>
+<connect gate="G$1" pin="VOUT+" pad="A1 A2 B1 B2"/>
+<connect gate="G$1" pin="VOUT-" pad="A4 A5 B4 B5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -17253,6 +17382,7 @@ Metric Code Size 5664</description>
 <part name="R59" library="rcl" deviceset="R-US_" device="R0603" value="33"/>
 <part name="R60" library="rcl" deviceset="R-US_" device="R0603" value="33"/>
 <part name="R61" library="rcl" deviceset="R-US_" device="R0603" value="33"/>
+<part name="U$2" library="boneclamp" deviceset="LTM8045" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -18907,6 +19037,7 @@ using single, isolated via.</text>
 <instance part="SUPPLY25" gate="G$1" x="-22.86" y="-43.18"/>
 <instance part="C27" gate="G$1" x="-33.02" y="-22.86"/>
 <instance part="SUPPLY27" gate="G$1" x="-33.02" y="-43.18"/>
+<instance part="U$2" gate="G$1" x="2.54" y="71.12"/>
 </instances>
 <busses>
 </busses>
