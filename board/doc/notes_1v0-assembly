@@ -4,17 +4,17 @@ Notes on PuggleBoard v1.0 board assembly
 
 X1. The M84 trimpot is a side adjust. I think I wanted a top adjust. Also, the pads could be extended out a bit to improve solderability.
 
-2. The polygon shapes used for low impedance paths to bypass capacitors are often wider than the solder pads for chips, and make the pads all misshapen. It would be better if I just used standard wires of increasing length to get to bypass caps.
+X2. The polygon shapes used for low impedance paths to bypass capacitors are often wider than the solder pads for chips, and make the pads all misshapen. It would be better if I just used standard wires of increasing length to get to bypass caps.
 
 X3. The 2X3 jumper header does not fit. Need to get 2 1X3 headers
 
-4. The 3 pin external power header is a right angle, but the current design needs a vertical 1X3 header.
+X4. The 3 pin external power header is a right angle, but the current design needs a vertical 1X3 header.
 
-5. BOM seems to be missing 1X2 jumper header
+X5. BOM seems to be missing 1X2 jumper header
 
-6. All jumper headers are too high - prevents putting a second cape on top of the puggleboard.
+X6. All jumper headers are too high - prevents putting a second cape on top of the puggleboard.
 
-7. 5X2 right angle header needs to be moved closer to the edge of the board.
+X7. 5X2 right angle header needs to be moved closer to the edge of the board.
 
 8. Ethernet cutout can be made a bit tighter on the top part.
 
@@ -59,26 +59,32 @@ X18. Can we pipe out some bits of GPIO now that we have freed and SPI bus?
 
 X19. The EEPROM circuit has to many available addresses. Changed the DIP to 2X and tie A2 high. Also, use a groundable test-point for the WP pin instead of a bulky jumper.
 
-20. The switching power supply is leaking into the analog I/O of the system. Resulting in +-50 mV transients. Is there any way to reduce this? Can the power circuit have its own ground plane, for instance, to isolate the switching component from the LDOs? Also, are the LDOs working properly?
+X20. The switching power supply is leaking into the analog I/O of the system. Resulting in +-50 mV transients. Is there any way to reduce this? Can the power circuit have its own ground plane, for instance, to isolate the switching component from the LDOs? Also, are the LDOs working properly?
 
-21. The ground plane under the switching regulator should likely be removed and replaced with traces that mirror its supply paths. This will divert currents injected into analog ground plane. Also, a EMI filter solution should be placed between the output of the swithcing supply and the ldo?
+X21. The ground plane under the switching regulator should likely be removed and replaced with traces that mirror its supply paths. This will divert currents injected into analog ground plane. Also, a EMI filter solution should be placed between the output of the swithcing supply and the ldo?
 
-22. The DGND connection on the ADC and DAC does note nessesary go to DGND for the board. This depends on the size of the internal currents for these ICs. Look at the pdf on AGND/DGND and the data sheets to confirm that you are doing this right.
+   - EDIT: This was not the problem. These voltage spikes are a flaw of virtually any switching power supply. They are outside of an LDO's PSRR range and must be stopped using passive filtering (e.g inductors or ferrite beads). To address this, I swiched out the switching inverter for a more turn-key solution and added a Ferrite bead in series with the output.
 
-23. Do we need to buffer the voltage reference. I think it includes an internal buffer and the buffer amp we are using is expensive.
+X22. The DGND connection on the ADC and DAC does not nessesary go to DGND for the board. This depends on the size of the internal currents for these ICs. Look at the pdf on AGND/DGND and the data sheets to confirm that you are doing this right.
 
-24. Low profile jumpers are available and would solved the problem with the jumpers being to high.
+X23. Do we need to buffer the voltage reference. I think it includes an internal buffer and the buffer amp we are using is expensive.
 
-25. Could we pipe the AI0 and AO0 pair out though a card-edge, low-profile BNC pair. This would allow single loop use (SISO) without the breakout board.
+   - EDIT: Needed to create VBias.
+
+X24. Low profile jumpers are available and would solved the problem with the jumpers being to high.
+
+X25. Could we pipe the AI0 and AO0 pair out though a card-edge, low-profile BNC pair. This would allow single loop use (SISO) without the breakout board.
+
+   - EDIT: Why? This just reduces modularity.
 
 26. Change all ceramic capacitors to X5R.
 
-27. Here is how to deal with the power input to the system
+X27. Here is how to deal with the power input to the system
 
   - Copy the EVMs for the LM2663 and the LDOs. This includes the spit planes on top, having ground planes on two layers, etc.
   - After the final regulation stage, that is when you start your normal layering scheme. 
   - This will have several benefits: (1) you get the EVM performance and (2) the problems you were have routing VDRIVE through the +4.5V power plane will go away since, around the BB power entry pins, this plane will not exist.
 
-28. Add ferrite bead to output of LM2663 to prevent switching noise from getting to LD0s?
+X28. Add ferrite bead to output of LM2663 to prevent switching noise from getting to LD0s?
 
-29. Add an HDMI connector (same as openephys) to the DI/O part of the board.
+X29. Add an HDMI connector (same as openephys) to the DI/O part of the board.

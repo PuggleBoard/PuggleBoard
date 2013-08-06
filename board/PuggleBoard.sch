@@ -25033,7 +25033,7 @@ chip</description>
 <part name="SUPPLY26" library="supply2" deviceset="AGND" device=""/>
 <part name="+4.5V" library="testpad" deviceset="TP" device="PAD1-17" value="TPPAD1-17"/>
 <part name="DGND6" library="supply2" deviceset="PE" device="" value="DGND"/>
-<part name="R35" library="rcl" deviceset="R-US_" device="R0603" value="2k"/>
+<part name="R35" library="rcl" deviceset="R-US_" device="R0603" value="1k"/>
 <part name="PWR" library="led" deviceset="LED" device="CHIPLED_0805"/>
 <part name="SUPPLY32" library="supply2" deviceset="AGND" device=""/>
 <part name="AGND2" library="testpad" deviceset="TP" device="PAD1-17"/>
