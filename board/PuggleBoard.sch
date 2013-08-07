@@ -19487,14 +19487,15 @@ chip</description>
 5. MISO       (SPI4)
 6. CONVST  (SPI5)
 </text>
-<text x="157.48" y="-86.36" size="3.81" layer="97" align="bottom-center">2.0</text>
+<text x="157.48" y="-86.36" size="3.81" layer="94" align="bottom-center">2.0</text>
+<text x="76.2" y="-66.04" size="5.08" layer="94">www.puggleboard.com</text>
 </plain>
 <instances>
 <instance part="BB1" gate="G$1" x="-35.56" y="48.26"/>
 <instance part="DGND2" gate="PE" x="-91.44" y="99.06"/>
 <instance part="A_I/O" gate="G$1" x="53.34" y="50.8"/>
-<instance part="RESET" gate="G$1" x="50.8" y="-40.64" rot="R270"/>
-<instance part="DGND10" gate="PE" x="63.5" y="-48.26"/>
+<instance part="RESET" gate="G$1" x="127" y="-2.54" rot="R270"/>
+<instance part="DGND10" gate="PE" x="139.7" y="-10.16"/>
 <instance part="DGND3" gate="PE" x="12.7" y="101.6"/>
 <instance part="D_I/O" gate="G$1" x="55.88" y="2.54" rot="R180"/>
 <instance part="DGND5" gate="PE" x="22.86" y="10.16"/>
@@ -19514,7 +19515,7 @@ chip</description>
 <instance part="R15" gate="G$1" x="2.54" y="55.88" rot="R180"/>
 <instance part="R12" gate="G$1" x="2.54" y="73.66" rot="R180"/>
 <instance part="R9" gate="G$1" x="0" y="20.32" rot="R180"/>
-<instance part="R17" gate="G$1" x="35.56" y="-33.02" rot="MR90"/>
+<instance part="R17" gate="G$1" x="111.76" y="5.08" rot="MR90"/>
 <instance part="FRAME2" gate="G$1" x="-109.22" y="-91.44"/>
 <instance part="FRAME2" gate="G$2" x="63.5" y="-91.44"/>
 </instances>
@@ -19542,9 +19543,9 @@ chip</description>
 </segment>
 <segment>
 <pinref part="R17" gate="G$1" pin="2"/>
-<wire x1="35.56" y1="-27.94" x2="35.56" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="-25.4" x2="22.86" y2="-25.4" width="0.1524" layer="91"/>
-<label x="22.86" y="-25.4" size="1.778" layer="95"/>
+<wire x1="111.76" y1="10.16" x2="111.76" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="12.7" x2="99.06" y2="12.7" width="0.1524" layer="91"/>
+<label x="99.06" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -19560,14 +19561,14 @@ chip</description>
 </segment>
 <segment>
 <pinref part="RESET" gate="G$1" pin="S1"/>
-<wire x1="55.88" y1="-43.18" x2="58.42" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="-5.08" x2="134.62" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="DGND10" gate="PE" pin="PE"/>
-<wire x1="58.42" y1="-43.18" x2="63.5" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="-45.72" x2="63.5" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="-5.08" x2="139.7" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="-7.62" x2="139.7" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="RESET" gate="G$1" pin="S"/>
-<wire x1="55.88" y1="-40.64" x2="58.42" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="-40.64" x2="58.42" y2="-43.18" width="0.1524" layer="91"/>
-<junction x="58.42" y="-43.18"/>
+<wire x1="132.08" y1="-2.54" x2="134.62" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="-2.54" x2="134.62" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="134.62" y="-5.08"/>
 </segment>
 <segment>
 <pinref part="DGND2" gate="PE" pin="PE"/>
@@ -19680,17 +19681,17 @@ chip</description>
 <net name="~RST" class="0">
 <segment>
 <pinref part="RESET" gate="G$1" pin="P1"/>
-<wire x1="45.72" y1="-43.18" x2="43.18" y2="-43.18" width="0.1524" layer="91"/>
-<label x="22.86" y="-43.18" size="1.778" layer="95"/>
+<wire x1="121.92" y1="-5.08" x2="119.38" y2="-5.08" width="0.1524" layer="91"/>
+<label x="99.06" y="-5.08" size="1.778" layer="95"/>
 <pinref part="RESET" gate="G$1" pin="P"/>
-<wire x1="43.18" y1="-43.18" x2="35.56" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="-43.18" x2="22.86" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="-40.64" x2="43.18" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="-40.64" x2="43.18" y2="-43.18" width="0.1524" layer="91"/>
-<junction x="43.18" y="-43.18"/>
+<wire x1="119.38" y1="-5.08" x2="111.76" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="-5.08" x2="99.06" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="-2.54" x2="119.38" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="-2.54" x2="119.38" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="119.38" y="-5.08"/>
 <pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="-38.1" x2="35.56" y2="-43.18" width="0.1524" layer="91"/>
-<junction x="35.56" y="-43.18"/>
+<wire x1="111.76" y1="0" x2="111.76" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="111.76" y="-5.08"/>
 </segment>
 </net>
 <net name="SPI0" class="0">
@@ -19986,7 +19987,8 @@ using single, isolated via.</text>
 <text x="-96.52" y="33.02" size="1.778" layer="97">Vin= +-4.096/2 +2.048</text>
 <text x="-38.1" y="71.12" size="1.778" layer="97">Vin= +-4.096/2 +2.048</text>
 <text x="-38.1" y="33.02" size="1.778" layer="97">Vin= +-4.096/2 +2.048</text>
-<text x="142.24" y="-124.46" size="3.81" layer="97" align="bottom-center">2.0</text>
+<text x="142.24" y="-124.46" size="3.81" layer="94" align="bottom-center">2.0</text>
+<text x="66.04" y="-104.14" size="5.08" layer="94">www.puggleboard.com</text>
 </plain>
 <instances>
 <instance part="U2" gate="A" x="88.9" y="-35.56"/>
@@ -20523,7 +20525,8 @@ using single, isolated via.</text>
 5. MISO       (SPI4)
 6. CONVST  (SPI5)
 </text>
-<text x="127" y="-101.6" size="3.81" layer="97" align="bottom-center">2.0</text>
+<text x="127" y="-101.6" size="3.81" layer="94" align="bottom-center">2.0</text>
+<text x="50.8" y="-81.28" size="5.08" layer="94">www.puggleboard.com</text>
 </plain>
 <instances>
 <instance part="C25" gate="G$1" x="71.12" y="-53.34"/>
@@ -21064,7 +21067,8 @@ using single, isolated via.</text>
 <description>POWER</description>
 <plain>
 <text x="104.14" y="-30.48" size="1.778" layer="97">Ground Link</text>
-<text x="157.48" y="-137.16" size="3.81" layer="97" align="bottom-center">2.0</text>
+<text x="157.48" y="-137.16" size="3.81" layer="94" align="bottom-center">2.0</text>
+<text x="78.74" y="-116.84" size="5.08" layer="94">www.puggleboard.com</text>
 </plain>
 <instances>
 <instance part="SUPPLY17" gate="G$1" x="111.76" y="-38.1"/>
@@ -21456,7 +21460,8 @@ using single, isolated via.</text>
 <text x="35.56" y="-5.08" size="1.778" layer="97">Output capacitor:
  C &gt;= 1.0uF 
 1.0&lt;= ESR &lt;= 1.5 Ohms.</text>
-<text x="139.7" y="-149.86" size="3.81" layer="97" align="bottom-center">2.0</text>
+<text x="139.7" y="-149.86" size="3.81" layer="94" align="bottom-center">2.0</text>
+<text x="60.96" y="-129.54" size="5.08" layer="94">www.puggleboard.com</text>
 </plain>
 <instances>
 <instance part="U8" gate="A" x="0" y="0"/>
@@ -21659,7 +21664,8 @@ using single, isolated via.</text>
 <sheet>
 <description>BOARD ID</description>
 <plain>
-<text x="111.76" y="-81.28" size="3.81" layer="97" align="bottom-center">2.0</text>
+<text x="111.76" y="-81.28" size="3.81" layer="94" align="bottom-center">2.0</text>
+<text x="35.56" y="-60.96" size="5.08" layer="94">www.puggleboard.com</text>
 </plain>
 <instances>
 <instance part="U10" gate="G$1" x="-2.54" y="22.86"/>
