@@ -10462,9 +10462,12 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="GPIO_1">
 <contactref element="D_I/O" pad="P$1"/>
 <contactref element="R16" pad="1"/>
-<wire x1="4.406" y1="77.47" x2="5.461" y2="77.47" width="0.254" layer="1"/>
-<wire x1="5.461" y1="77.47" x2="5.664" y2="77.673" width="0.254" layer="1"/>
-<wire x1="5.664" y1="77.673" x2="5.664" y2="78.6" width="0.254" layer="1"/>
+<wire x1="4.406" y1="77.47" x2="4.406" y2="77.255" width="0.254" layer="1"/>
+<wire x1="4.406" y1="77.255" x2="5.08" y2="76.581" width="0.254" layer="1"/>
+<wire x1="5.461" y1="76.581" x2="5.08" y2="76.581" width="0.254" layer="1"/>
+<wire x1="5.461" y1="76.581" x2="5.715" y2="76.835" width="0.254" layer="1"/>
+<wire x1="5.715" y1="78.549" x2="5.715" y2="76.835" width="0.254" layer="1"/>
+<wire x1="5.715" y1="78.549" x2="5.664" y2="78.6" width="0.254" layer="1"/>
 </signal>
 <signal name="GPIO_3">
 <contactref element="D_I/O" pad="P$4"/>

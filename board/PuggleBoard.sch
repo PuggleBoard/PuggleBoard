@@ -19264,6 +19264,7 @@ chip</description>
 </library>
 </libraries>
 <attributes>
+<attribute name="DATABASE" value="./bom/puggleboard_BOM.txt"/>
 </attributes>
 <variantdefs>
 </variantdefs>
