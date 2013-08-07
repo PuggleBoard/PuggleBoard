@@ -342,11 +342,13 @@ UsedLibrary="C:/Program Files (x86)/EAGLE-6.4.0/lbr/zetex.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.4.0/lbr/zilog.lbr"
 UsedLibrary="C:/Users/jon/Documents/GitHub/PuggleBoard/lbr/adafruit-lbr/adafruit.lbr"
 UsedLibrary="C:/Users/jon/Documents/GitHub/Cyclops-LED-Driver/pcb/eagle-lbr/cyclops.lbr"
+UsedLibrary="C:/Users/jon/Documents/GitHub/PuggleBoard/lbr/ti-lbr/ti-extended.lbr"
+UsedLibrary="C:/Users/jon/Documents/GitHub/PuggleBoard/lbr/open-ephys-lbr/open-ephys.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="728 0 1679 399"
-State=1
+Loc="304 222 1255 621"
+State=3
 Number=0
 
 [Desktop]

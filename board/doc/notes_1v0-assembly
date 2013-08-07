@@ -37,15 +37,15 @@ X11. In general, the LDOs on the board are not low noise enough for our applicat
 
 X12. Both the DAC and ADC can share a single clock line, instead of having their own. Thats the whole point of CS!
 
-13. Some of the caps (e.g. c18,c19) are missing silkscreen values on the board.
+X13. Some of the caps (e.g. c18,c19) are missing silkscreen values on the board.
 
-14. In general silkscreen text is too thin/small. Try to make bigger if possible, and at least, thicker.
+X14. In general silkscreen text is too thin/small. Try to make bigger if possible, and at least, thicker.
 
 X13. It looks like the DAC's LDAC line is held high with no digital manipulation allowed. This seems to imply a conversion can never be loaded into the output register. Why is this line
  
   - Not pulled down (instead of up)
   - Not on the SPI bus instead of SDO which seems useless
-  - EDIT: its because the input register is skipped and we load data directly into the output register.
+  - EDIT: its because the input register is skipped and we load data directly into the output register. However, I did tie this pin to ground in case the user decides not to skip the input register.
   
 X14. It looks like the RESETSEL pin on the DAC is set incorrectly. You want the outputs to reset to midscale, not zero (which would be pulled to the negative rail). This requires that RESETSEL is high.
   
