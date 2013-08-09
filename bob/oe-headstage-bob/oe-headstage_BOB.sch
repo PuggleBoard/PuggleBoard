@@ -1666,42 +1666,42 @@ at 30/07/2012 17:45:58</description>
 <wire x1="167.64" y1="-93.98" x2="142.24" y2="-93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="1">
+<net name="N$2" class="0">
 <segment>
 <pinref part="R4" gate="R" pin="1"/>
 <pinref part="U2" gate="A" pin="D"/>
 <wire x1="20.32" y1="33.02" x2="22.86" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="1">
+<net name="N$3" class="0">
 <segment>
 <pinref part="R5" gate="R" pin="1"/>
 <pinref part="U3" gate="A" pin="D"/>
 <wire x1="20.32" y1="-2.54" x2="22.86" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="1">
+<net name="N$4" class="0">
 <segment>
 <pinref part="R6" gate="R" pin="1"/>
 <pinref part="U4" gate="A" pin="D"/>
 <wire x1="20.32" y1="-38.1" x2="22.86" y2="-38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="1">
+<net name="N$5" class="0">
 <segment>
 <pinref part="R7" gate="R" pin="1"/>
 <pinref part="U5" gate="A" pin="D"/>
 <wire x1="20.32" y1="-73.66" x2="22.86" y2="-73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="1">
+<net name="N$6" class="0">
 <segment>
 <pinref part="R8" gate="R" pin="1"/>
 <pinref part="U6" gate="A" pin="D"/>
 <wire x1="20.32" y1="-109.22" x2="22.86" y2="-109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$7" class="1">
+<net name="N$7" class="0">
 <segment>
 <pinref part="R3" gate="R" pin="1"/>
 <pinref part="U1" gate="A" pin="D"/>
