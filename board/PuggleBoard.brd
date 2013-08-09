@@ -6963,7 +6963,11 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.254" drill="0">
+</class>
+<class number="1" name="Supply" width="0.6096" drill="0">
+</class>
+<class number="2" name="GND" width="0.6096" drill="0">
 </class>
 </classes>
 <designrules name="LaenPCBOrder *">
@@ -9294,13 +9298,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="28.8036" y1="77.724" x2="30.148" y2="79.082" width="0.3048" layer="1"/>
 <wire x1="30.148" y1="79.082" x2="30.734" y2="79.0956" width="0.3048" layer="1"/>
 </signal>
-<signal name="GPIO_0">
-<contactref element="R7" pad="2"/>
-<wire x1="5.207" y1="83.566" x2="5.207" y2="80.772" width="0.254" layer="1"/>
-<wire x1="5.207" y1="80.772" x2="3.937" y2="79.502" width="0.254" layer="1"/>
-<wire x1="3.937" y1="79.502" x2="3.937" y2="79.4766" width="0.254" layer="1"/>
-</signal>
-<signal name="DIO_0">
+<signal name="DIO0">
 <contactref element="R16" pad="1"/>
 <wire x1="1.397" y1="79.4766" x2="1.397" y2="79.502" width="0.254" layer="1"/>
 <wire x1="1.397" y1="79.502" x2="2.667" y2="80.772" width="0.254" layer="1"/>
@@ -9308,41 +9306,45 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="D_I/O" pad="2"/>
 <wire x1="2.667" y1="83.566" x2="1.397" y2="84.836" width="0.254" layer="1"/>
 </signal>
-<signal name="GPIO_3">
-<contactref element="R15" pad="1"/>
-<wire x1="7.747" y1="83.566" x2="7.747" y2="80.772" width="0.254" layer="1"/>
-<wire x1="7.747" y1="80.772" x2="6.477" y2="79.502" width="0.254" layer="1"/>
-<wire x1="6.477" y1="79.502" x2="6.477" y2="79.4766" width="0.254" layer="1"/>
-</signal>
-<signal name="GPIO_4">
+<signal name="DIO5">
 <contactref element="R5" pad="2"/>
 <wire x1="15.367" y1="83.566" x2="15.367" y2="80.772" width="0.254" layer="1"/>
 <wire x1="15.367" y1="80.772" x2="14.097" y2="79.502" width="0.254" layer="1"/>
 <wire x1="14.097" y1="79.502" x2="14.097" y2="79.4766" width="0.254" layer="1"/>
+<contactref element="D_I/O" pad="12"/>
+<wire x1="15.367" y1="83.566" x2="14.097" y2="84.836" width="0.254" layer="1"/>
 </signal>
-<signal name="GPIO_5">
+<signal name="DIO4">
 <contactref element="R14" pad="1"/>
 <wire x1="12.827" y1="83.566" x2="12.827" y2="80.772" width="0.254" layer="1"/>
 <wire x1="12.827" y1="80.772" x2="11.557" y2="79.502" width="0.254" layer="1"/>
 <wire x1="11.557" y1="79.502" x2="11.557" y2="79.4766" width="0.254" layer="1"/>
+<contactref element="D_I/O" pad="10"/>
+<wire x1="12.827" y1="83.566" x2="11.557" y2="84.836" width="0.254" layer="1"/>
 </signal>
-<signal name="GPIO_6">
+<signal name="DIO7">
 <contactref element="R4" pad="2"/>
 <wire x1="20.32" y1="80.772" x2="19.011" y2="79.463" width="0.254" layer="1"/>
 <wire x1="19.011" y1="79.463" x2="18.542" y2="79.4766" width="0.254" layer="1"/>
 <wire x1="20.32" y1="83.693" x2="20.32" y2="80.772" width="0.254" layer="1"/>
+<contactref element="D_I/O" pad="16"/>
+<wire x1="20.32" y1="83.693" x2="19.177" y2="84.836" width="0.254" layer="1"/>
 </signal>
-<signal name="GPIO_7">
+<signal name="DIO6">
 <contactref element="R13" pad="1"/>
 <wire x1="17.907" y1="83.566" x2="17.907" y2="80.772" width="0.254" layer="1"/>
 <wire x1="17.907" y1="80.772" x2="16.637" y2="79.502" width="0.254" layer="1"/>
 <wire x1="16.637" y1="79.502" x2="16.637" y2="79.4766" width="0.254" layer="1"/>
+<contactref element="D_I/O" pad="14"/>
+<wire x1="17.907" y1="83.566" x2="16.637" y2="84.836" width="0.254" layer="1"/>
 </signal>
-<signal name="GPIO_2">
+<signal name="DIO3">
 <contactref element="R6" pad="2"/>
 <wire x1="10.287" y1="83.566" x2="10.287" y2="80.645" width="0.254" layer="1"/>
 <wire x1="10.287" y1="80.645" x2="9.105" y2="79.463" width="0.254" layer="1"/>
 <wire x1="9.105" y1="79.463" x2="9.017" y2="79.4766" width="0.254" layer="1"/>
+<contactref element="D_I/O" pad="8"/>
+<wire x1="10.287" y1="83.566" x2="9.017" y2="84.836" width="0.254" layer="1"/>
 </signal>
 <signal name="AGND1">
 <contactref element="C33" pad="2"/>
@@ -9686,36 +9688,31 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="10.033" y1="48.514" x2="10.033" y2="49.403" width="0.254" layer="1"/>
 <wire x1="10.033" y1="49.403" x2="10.668" y2="50.038" width="0.254" layer="1"/>
 </signal>
-<signal name="DIO_1">
+<signal name="DIO1">
 <contactref element="D_I/O" pad="4"/>
+<contactref element="R7" pad="2"/>
+<wire x1="5.207" y1="83.566" x2="5.207" y2="80.772" width="0.254" layer="1"/>
+<wire x1="5.207" y1="80.772" x2="3.937" y2="79.502" width="0.254" layer="1"/>
+<wire x1="3.937" y1="79.502" x2="3.937" y2="79.4766" width="0.254" layer="1"/>
+<wire x1="5.207" y1="83.566" x2="3.937" y2="84.836" width="0.254" layer="1"/>
 </signal>
-<signal name="DIO_2">
+<signal name="DIO2">
 <contactref element="D_I/O" pad="6"/>
-</signal>
-<signal name="DIO_3">
-<contactref element="D_I/O" pad="8"/>
-</signal>
-<signal name="DIO_4">
-<contactref element="D_I/O" pad="10"/>
-</signal>
-<signal name="DIO_5">
-<contactref element="D_I/O" pad="12"/>
-</signal>
-<signal name="DIO_6">
-<contactref element="D_I/O" pad="14"/>
-</signal>
-<signal name="DIO_7">
-<contactref element="D_I/O" pad="16"/>
+<contactref element="R15" pad="1"/>
+<wire x1="7.747" y1="83.566" x2="7.747" y2="80.772" width="0.254" layer="1"/>
+<wire x1="7.747" y1="80.772" x2="6.477" y2="79.502" width="0.254" layer="1"/>
+<wire x1="6.477" y1="79.502" x2="6.477" y2="79.4766" width="0.254" layer="1"/>
+<wire x1="7.747" y1="83.566" x2="6.477" y2="84.836" width="0.254" layer="1"/>
 </signal>
 </signals>
 <errors>
-<approved hash="19,1,7a6170d6954273fa"/>
-<approved hash="19,1,8734a41e40538e9e"/>
-<approved hash="19,1,82a8ae124f3381f6"/>
 <approved hash="19,1,7add70d2aa4e7266"/>
+<approved hash="19,1,7a6170d6954273fa"/>
+<approved hash="19,1,82a8ae124f3381f6"/>
+<approved hash="19,1,8734a41e40538e9e"/>
 <approved hash="19,1,b4f454c05405b431"/>
-<approved hash="19,1,d736a56203daa38d"/>
 <approved hash="19,1,5463fe879c3beaac"/>
+<approved hash="19,1,d736a56203daa38d"/>
 <approved hash="19,1,c81c28282f85cfb1"/>
 <approved hash="19,1,d78aa4fe3cd6a389"/>
 <approved hash="19,1,5b03f48b99a7e5c4"/>

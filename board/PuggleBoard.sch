@@ -11663,7 +11663,11 @@ Source: www.kingbright.com</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.254" drill="0">
+</class>
+<class number="1" name="Supply" width="0.6096" drill="0">
+</class>
+<class number="2" name="GND" width="0.6096" drill="0">
 </class>
 </classes>
 <parts>
@@ -12172,14 +12176,7 @@ Source: www.kingbright.com</description>
 <label x="12.7" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIO_0" class="0">
-<segment>
-<wire x1="-91.44" y1="53.34" x2="-78.74" y2="53.34" width="0.1524" layer="91"/>
-<label x="-91.44" y="53.34" size="1.778" layer="95"/>
-<pinref part="R7" gate="R" pin="2"/>
-</segment>
-</net>
-<net name="DIO_0" class="0">
+<net name="DIO0" class="0">
 <segment>
 <label x="12.7" y="53.34" size="1.778" layer="95"/>
 <wire x1="7.62" y1="53.34" x2="20.32" y2="53.34" width="0.1524" layer="91"/>
@@ -12191,46 +12188,64 @@ Source: www.kingbright.com</description>
 <label x="68.58" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIO_3" class="0">
-<segment>
-<label x="12.7" y="55.88" size="1.778" layer="95"/>
-<wire x1="7.62" y1="55.88" x2="20.32" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="R15" gate="R" pin="1"/>
-</segment>
-</net>
-<net name="GPIO_4" class="0">
+<net name="DIO5" class="0">
 <segment>
 <wire x1="-91.44" y1="58.42" x2="-78.74" y2="58.42" width="0.1524" layer="91"/>
 <label x="-91.44" y="58.42" size="1.778" layer="95"/>
 <pinref part="R5" gate="R" pin="2"/>
 </segment>
+<segment>
+<pinref part="D_I/O" gate="G$1" pin="12"/>
+<wire x1="58.42" y1="10.16" x2="76.2" y2="10.16" width="0.1524" layer="91"/>
+<label x="68.58" y="10.16" size="1.778" layer="95"/>
+</segment>
 </net>
-<net name="GPIO_5" class="0">
+<net name="DIO4" class="0">
 <segment>
 <label x="12.7" y="58.42" size="1.778" layer="95"/>
 <wire x1="7.62" y1="58.42" x2="20.32" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="R14" gate="R" pin="1"/>
 </segment>
+<segment>
+<pinref part="D_I/O" gate="G$1" pin="10"/>
+<wire x1="58.42" y1="12.7" x2="76.2" y2="12.7" width="0.1524" layer="91"/>
+<label x="68.58" y="12.7" size="1.778" layer="95"/>
+</segment>
 </net>
-<net name="GPIO_6" class="0">
+<net name="DIO7" class="0">
 <segment>
 <label x="-91.44" y="60.96" size="1.778" layer="95"/>
 <wire x1="-78.74" y1="60.96" x2="-91.44" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="R4" gate="R" pin="2"/>
 </segment>
+<segment>
+<pinref part="D_I/O" gate="G$1" pin="16"/>
+<wire x1="58.42" y1="5.08" x2="76.2" y2="5.08" width="0.1524" layer="91"/>
+<label x="68.58" y="5.08" size="1.778" layer="95"/>
+</segment>
 </net>
-<net name="GPIO_7" class="0">
+<net name="DIO6" class="0">
 <segment>
 <label x="12.7" y="60.96" size="1.778" layer="95"/>
 <wire x1="7.62" y1="60.96" x2="20.32" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="R13" gate="R" pin="1"/>
 </segment>
+<segment>
+<pinref part="D_I/O" gate="G$1" pin="14"/>
+<wire x1="58.42" y1="7.62" x2="76.2" y2="7.62" width="0.1524" layer="91"/>
+<label x="68.58" y="7.62" size="1.778" layer="95"/>
+</segment>
 </net>
-<net name="GPIO_2" class="0">
+<net name="DIO3" class="0">
 <segment>
 <label x="-91.44" y="55.88" size="1.778" layer="95"/>
 <wire x1="-78.74" y1="55.88" x2="-91.44" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="R6" gate="R" pin="2"/>
+</segment>
+<segment>
+<pinref part="D_I/O" gate="G$1" pin="8"/>
+<wire x1="58.42" y1="15.24" x2="76.2" y2="15.24" width="0.1524" layer="91"/>
+<label x="68.58" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -12345,53 +12360,28 @@ Source: www.kingbright.com</description>
 <wire x1="-7.62" y1="20.32" x2="-5.08" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="DIO_1" class="0">
+<net name="DIO1" class="0">
 <segment>
 <pinref part="D_I/O" gate="G$1" pin="4"/>
 <wire x1="58.42" y1="20.32" x2="76.2" y2="20.32" width="0.1524" layer="91"/>
 <label x="68.58" y="20.32" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="-91.44" y1="53.34" x2="-78.74" y2="53.34" width="0.1524" layer="91"/>
+<label x="-91.44" y="53.34" size="1.778" layer="95"/>
+<pinref part="R7" gate="R" pin="2"/>
+</segment>
 </net>
-<net name="DIO_2" class="0">
+<net name="DIO2" class="0">
 <segment>
 <pinref part="D_I/O" gate="G$1" pin="6"/>
 <wire x1="58.42" y1="17.78" x2="76.2" y2="17.78" width="0.1524" layer="91"/>
 <label x="68.58" y="17.78" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="DIO_3" class="0">
 <segment>
-<pinref part="D_I/O" gate="G$1" pin="8"/>
-<wire x1="58.42" y1="15.24" x2="76.2" y2="15.24" width="0.1524" layer="91"/>
-<label x="68.58" y="15.24" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="DIO_4" class="0">
-<segment>
-<pinref part="D_I/O" gate="G$1" pin="10"/>
-<wire x1="58.42" y1="12.7" x2="76.2" y2="12.7" width="0.1524" layer="91"/>
-<label x="68.58" y="12.7" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="DIO_5" class="0">
-<segment>
-<pinref part="D_I/O" gate="G$1" pin="12"/>
-<wire x1="58.42" y1="10.16" x2="76.2" y2="10.16" width="0.1524" layer="91"/>
-<label x="68.58" y="10.16" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="DIO_6" class="0">
-<segment>
-<pinref part="D_I/O" gate="G$1" pin="14"/>
-<wire x1="58.42" y1="7.62" x2="76.2" y2="7.62" width="0.1524" layer="91"/>
-<label x="68.58" y="7.62" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="DIO_7" class="0">
-<segment>
-<pinref part="D_I/O" gate="G$1" pin="16"/>
-<wire x1="58.42" y1="5.08" x2="76.2" y2="5.08" width="0.1524" layer="91"/>
-<label x="68.58" y="5.08" size="1.778" layer="95"/>
+<label x="12.7" y="55.88" size="1.778" layer="95"/>
+<wire x1="7.62" y1="55.88" x2="20.32" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="R15" gate="R" pin="1"/>
 </segment>
 </net>
 </nets>
