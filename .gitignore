@@ -9,5 +9,5 @@
 *.zip
 *.tgz
 
-# Ignore temp files
+# Ignore temp matlab files
 *.asv

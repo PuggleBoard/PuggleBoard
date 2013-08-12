@@ -16,7 +16,7 @@
    version="1.1"
    inkscape:version="0.48.4 r9939"
    sodipodi:docname="yin-yang-silk-screen.svg"
-   inkscape:export-filename="C:\Users\jon\Documents\GitHub\BoneClamp\logo\yin-yang-silk-screen.png"
+   inkscape:export-filename="/home/jon/github/PuggleBoard/logo/yin-yang-silk-screen.png"
    inkscape:export-xdpi="250.00999"
    inkscape:export-ydpi="250.00999">
   <defs
@@ -135,11 +135,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="267.28323"
-     inkscape:cy="21.501629"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="229.83544"
+     inkscape:cy="286.01318"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g3786"
      showgrid="false"
      inkscape:window-width="1280"
      inkscape:window-height="750"
@@ -149,7 +149,9 @@
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     showguides="true"
+     inkscape:guide-bbox="true" />
   <metadata
      id="metadata3085">
     <rdf:RDF>
@@ -158,7 +160,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -232,7 +234,7 @@
            x="516.77045"
            id="tspan3394"
            sodipodi:role="line"
-           style="font-size:168.75px;font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-10px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Lato;-inkscape-font-specification:Lato Heavy">board.com</tspan>
+           style="font-size:168.74999794px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-10px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Lato;-inkscape-font-specification:Lato Bold">board.com</tspan>
       </text>
       <g
          style="fill:#000000"
@@ -253,7 +255,7 @@
          id="rect3014"
          style="fill:#ffffff;stroke:none" />
       <text
-         sodipodi:linespacing="89.999998%"
+         sodipodi:linespacing="90%"
          style="font-size:15px;line-height:89.99999762%"
          y="-30.137857"
          x="59.335529"
@@ -263,7 +265,7 @@
            x="59.335529"
            id="tspan3408"
            sodipodi:role="line"
-           style="font-size:170px;font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;text-align:start;line-height:89.99999762%;letter-spacing:-10px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Lato;-inkscape-font-specification:Lato Heavy">puggle</tspan>
+           style="font-size:170.0000083px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:90%;letter-spacing:-10px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Lato;-inkscape-font-specification:Lato Bold">puggle</tspan>
       </text>
     </g>
   </g>
