@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="12" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="12" fill="3" visible="yes" active="yes"/>
@@ -31,11 +31,11 @@
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -143,7 +143,7 @@ Aug. 2013</text>
 <text x="37.846" y="83.312" size="0.6096" layer="21" font="vector">C</text>
 <text x="35.306" y="83.312" size="0.6096" layer="21" font="vector">B</text>
 <text x="32.766" y="83.312" size="0.6096" layer="21" font="vector">A</text>
-<text x="52.832" y="3.683" size="0.7112" layer="22" font="vector" rot="MR0">S/N:</text>
+<text x="33.782" y="21.463" size="0.7112" layer="22" font="vector" rot="MR0">S/N:</text>
 <text x="1.905" y="83.312" size="0.6096" layer="21" font="vector">0</text>
 <text x="4.445" y="83.312" size="0.6096" layer="21" font="vector">1</text>
 <text x="6.985" y="83.312" size="0.6096" layer="21" font="vector">2</text>
@@ -152,7 +152,7 @@ Aug. 2013</text>
 <text x="14.605" y="83.312" size="0.6096" layer="21" font="vector">5</text>
 <text x="17.145" y="83.312" size="0.6096" layer="21" font="vector">6</text>
 <text x="19.685" y="83.312" size="0.6096" layer="21" font="vector">7</text>
-<rectangle x1="34.798" y1="2.667" x2="50.292" y2="5.207" layer="22"/>
+<rectangle x1="16.002" y1="20.701" x2="31.242" y2="23.241" layer="22"/>
 </plain>
 <libraries>
 <library name="adafruit">
@@ -7108,6 +7108,86 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 </package>
 </packages>
 </library>
+<library name="ohw-logo">
+<packages>
+<package name="OSHW_FILLX500_NOTEXT">
+<wire x1="6.0452" y1="3.5814" x2="4.8514" y2="0.6858" width="0.2032" layer="21"/>
+<wire x1="4.8514" y1="0.6858" x2="4.191" y2="1.0668" width="0.2032" layer="21"/>
+<wire x1="4.191" y1="1.0668" x2="2.667" y2="0.0254" width="0.2032" layer="21"/>
+<wire x1="2.667" y1="0.0254" x2="1.4986" y2="1.1938" width="0.2032" layer="21"/>
+<wire x1="1.4986" y1="1.1938" x2="2.5654" y2="2.7686" width="0.2032" layer="21"/>
+<wire x1="2.5654" y1="2.7686" x2="1.905" y2="4.4196" width="0.2032" layer="21" curve="-19.514051"/>
+<wire x1="1.905" y1="4.4196" x2="0" y2="4.7752" width="0.2032" layer="21"/>
+<wire x1="0" y1="4.7752" x2="0" y2="6.4262" width="0.2032" layer="21"/>
+<wire x1="0" y1="6.4262" x2="1.9304" y2="6.8072" width="0.2032" layer="21"/>
+<wire x1="1.9304" y1="6.8072" x2="2.6162" y2="8.382" width="0.2032" layer="21" curve="-18.62956"/>
+<wire x1="2.6162" y1="8.382" x2="1.4986" y2="10.0076" width="0.2032" layer="21"/>
+<wire x1="1.4986" y1="10.0076" x2="2.667" y2="11.176" width="0.2032" layer="21"/>
+<wire x1="2.667" y1="11.176" x2="4.3434" y2="10.0584" width="0.2032" layer="21"/>
+<wire x1="4.3434" y1="10.0584" x2="5.8674" y2="10.668" width="0.2032" layer="21" curve="-17.898916"/>
+<wire x1="5.8674" y1="10.6934" x2="6.2484" y2="12.6746" width="0.2032" layer="21"/>
+<wire x1="6.2484" y1="12.6746" x2="7.8994" y2="12.6746" width="0.2032" layer="21"/>
+<wire x1="7.8994" y1="12.6746" x2="8.2804" y2="10.6934" width="0.2032" layer="21"/>
+<wire x1="8.2804" y1="10.6934" x2="9.8298" y2="10.0584" width="0.2032" layer="21" curve="-18.098861"/>
+<wire x1="9.8298" y1="10.0584" x2="11.5062" y2="11.2014" width="0.2032" layer="21"/>
+<wire x1="11.5062" y1="11.2014" x2="12.6746" y2="10.0076" width="0.2032" layer="21"/>
+<wire x1="12.6746" y1="10.0076" x2="11.557" y2="8.382" width="0.2032" layer="21"/>
+<wire x1="11.557" y1="8.382" x2="12.2428" y2="6.8072" width="0.2032" layer="21" curve="-18.775953"/>
+<wire x1="12.2428" y1="6.8072" x2="14.1732" y2="6.4262" width="0.2032" layer="21"/>
+<wire x1="14.1732" y1="6.4262" x2="14.1732" y2="4.7752" width="0.2032" layer="21"/>
+<wire x1="14.1732" y1="4.7752" x2="12.2682" y2="4.4196" width="0.2032" layer="21"/>
+<wire x1="12.2682" y1="4.4196" x2="11.6078" y2="2.7432" width="0.2032" layer="21" curve="-19.70616"/>
+<wire x1="11.6078" y1="2.7432" x2="12.6746" y2="1.1684" width="0.2032" layer="21"/>
+<wire x1="12.6746" y1="1.1684" x2="11.5062" y2="0.0254" width="0.2032" layer="21"/>
+<wire x1="11.5062" y1="0.0254" x2="9.9822" y2="1.0668" width="0.2032" layer="21"/>
+<wire x1="9.9822" y1="1.0668" x2="9.3218" y2="0.6858" width="0.2032" layer="21"/>
+<wire x1="9.3218" y1="0.6858" x2="8.1026" y2="3.5814" width="0.2032" layer="21"/>
+<wire x1="6.0452" y1="3.5814" x2="8.1026" y2="3.6068" width="0.2032" layer="21" curve="-305.419449"/>
+<polygon width="0.1524" layer="21">
+<vertex x="4.826" y="0.7874"/>
+<vertex x="4.191" y="1.2192"/>
+<vertex x="2.6416" y="0.127"/>
+<vertex x="1.5748" y="1.1938"/>
+<vertex x="2.667" y="2.7686"/>
+<vertex x="1.905" y="4.5212"/>
+<vertex x="-0.0254" y="4.8514"/>
+<vertex x="0.0508" y="6.4262"/>
+<vertex x="1.9812" y="6.731"/>
+<vertex x="2.667" y="8.4328"/>
+<vertex x="1.6256" y="10.033"/>
+<vertex x="2.667" y="11.0744"/>
+<vertex x="4.3688" y="9.9822"/>
+<vertex x="5.9182" y="10.6426"/>
+<vertex x="6.2992" y="12.5984"/>
+<vertex x="7.874" y="12.573"/>
+<vertex x="8.2296" y="10.6172"/>
+<vertex x="9.8552" y="9.9822"/>
+<vertex x="11.5316" y="11.1252"/>
+<vertex x="12.5984" y="9.9822"/>
+<vertex x="11.5062" y="8.382"/>
+<vertex x="12.2428" y="6.7056"/>
+<vertex x="14.1732" y="6.35"/>
+<vertex x="14.1224" y="4.826"/>
+<vertex x="12.1158" y="4.4704"/>
+<vertex x="11.5824" y="2.5908"/>
+<vertex x="12.573" y="1.1938"/>
+<vertex x="11.5062" y="0.127"/>
+<vertex x="9.9568" y="1.1684"/>
+<vertex x="9.3726" y="0.8128"/>
+<vertex x="8.2042" y="3.6068"/>
+<vertex x="9.1948" y="4.5466"/>
+<vertex x="9.3726" y="5.9944"/>
+<vertex x="8.6868" y="7.366"/>
+<vertex x="7.1374" y="7.9502"/>
+<vertex x="5.6642" y="7.5438"/>
+<vertex x="4.826" y="6.4516"/>
+<vertex x="4.7244" y="5.1816"/>
+<vertex x="5.2832" y="3.9624"/>
+<vertex x="5.9436" y="3.5052"/>
+</polygon>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7840,6 +7920,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="8.89" y="80.264" size="0.7366" layer="25" font="vector" ratio="10"/>
 </element>
 <element name="U$1" library="puggleboard" package="PB-LOGO" value="" x="41.529" y="6.985"/>
+<element name="U$2" library="ohw-logo" package="OSHW_FILLX500_NOTEXT" value="" x="31.242" y="24.638" rot="MR0"/>
 </elements>
 <signals>
 <signal name="AIN0">
@@ -9879,18 +9960,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="41.148" y1="56.388" x2="38.862" y2="56.388" width="0.3048" layer="16"/>
 </signal>
 </signals>
-<errors>
-<approved hash="19,1,82a8ae124f3381f6"/>
-<approved hash="19,1,8734a41e40538e9e"/>
-<approved hash="19,1,7a6170d6954273fa"/>
-<approved hash="19,1,7add70d2aa4e7266"/>
-<approved hash="19,1,c81c28282f85cfb1"/>
-<approved hash="19,1,d78aa4fe3cd6a389"/>
-<approved hash="19,1,5b03f48b99a7e5c4"/>
-<approved hash="19,1,b4f454c05405b431"/>
-<approved hash="19,1,d736a56203daa38d"/>
-<approved hash="19,1,5463fe879c3beaac"/>
-</errors>
 </board>
 </drawing>
 <compatibility>
