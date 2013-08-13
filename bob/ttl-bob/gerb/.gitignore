@@ -1,3 +1,6 @@
 # Ignore the processing files produced by the EAGLE CAM tool
 *.gpi
 *.dri
+
+# Allow gerber archives since they are commonly accepted by the fab (archives are ignored at highest directory level.)
+!*.zip
