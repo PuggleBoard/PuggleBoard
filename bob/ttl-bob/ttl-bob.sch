@@ -676,7 +676,12 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 <connect gate="C" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DK" value="" constant="no"/>
+<attribute name="MN" value="TDK Corp." constant="no"/>
+<attribute name="PARTNO" value="C2012X5R1Cxxxxxxx" constant="no"/>
+<attribute name="VID" value="DK" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="_1206" package="1206">
@@ -771,6 +776,11 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 <technology name="RED">
 <attribute name="DK" value="350-2038-1-ND" constant="no"/>
 <attribute name="MN" value="598-8110-107F" constant="no"/>
+<attribute name="MPN" value="Dialight" constant="no"/>
+</technology>
+<technology name="YELLOW">
+<attribute name="DK" value="350-2041-1-ND" constant="no"/>
+<attribute name="MN" value="598-8140-107F" constant="no"/>
 <attribute name="MPN" value="Dialight" constant="no"/>
 </technology>
 </technologies>
@@ -970,7 +980,7 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 </library>
 </libraries>
 <attributes>
-<attribute name="DATABASE" value="./bom/PARTS-DB.TXT"/>
+<attribute name="DATABASE" value="../../lbr/part-db/PARTS-DB.TXT"/>
 </attributes>
 <variantdefs>
 </variantdefs>

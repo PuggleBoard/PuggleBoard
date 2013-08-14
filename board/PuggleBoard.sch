@@ -6705,7 +6705,11 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 <connect gate="R" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DK" value="PxxxxHTR-ND" constant="no"/>
+<attribute name="MN" value="Panasonic" constant="no"/>
+<attribute name="MPN" value="ERJ-3EKFxxxxV" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="_0805" package="0805">
@@ -6767,7 +6771,11 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 <connect gate="C" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DK" value="" constant="no"/>
+<attribute name="MN" value="TDK Corp." constant="no"/>
+<attribute name="MPN" value="C2012X5R1Cxxxxxxx" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="_1206" package="1206">
@@ -6845,7 +6853,26 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DK" value="" constant="no"/>
+<attribute name="MN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="GREEN">
+<attribute name="DK" value="350-2044-1-ND" constant="no"/>
+<attribute name="MN" value="598-8170-107F" constant="no"/>
+<attribute name="MPN" value="Dialight" constant="no"/>
+</technology>
+<technology name="RED">
+<attribute name="DK" value="350-2038-1-ND" constant="no"/>
+<attribute name="MN" value="598-8110-107F" constant="no"/>
+<attribute name="MPN" value="Dialight" constant="no"/>
+</technology>
+<technology name="YELLOW">
+<attribute name="DK" value="350-2041-1-ND" constant="no"/>
+<attribute name="MN" value="598-8140-107F" constant="no"/>
+<attribute name="MPN" value="Dialight" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -6919,7 +6946,11 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 <part name="SUPPLY22" library="supply2" deviceset="AGND" device=""/>
 <part name="VREF_PRE" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="C3" library="puggleboard" deviceset="C" device="_0805" value="4.7uF"/>
-<part name="C13" library="puggleboard" deviceset="C" device="_0805" value="22uF"/>
+<part name="C13" library="puggleboard" deviceset="C" device="_0805" value="22uF">
+<attribute name="DK" value="445-6797-1-ND"/>
+<attribute name="MN" value="TDK Corp."/>
+<attribute name="MPN" value="C2012X5R1C226K125AC"/>
+</part>
 <part name="C1" library="puggleboard" deviceset="C" device="_0805" value="4.7uF"/>
 <part name="SUPPLY11" library="supply2" deviceset="AGND" device=""/>
 <part name="C11" library="puggleboard" deviceset="C" device="_0603" value="0.1uF"/>
@@ -7614,7 +7645,11 @@ using single, isolated via.</text>
 <instance part="R19" gate="R" x="-91.44" y="66.04" rot="R180"/>
 <instance part="R21" gate="R" x="-81.28" y="55.88" rot="R90"/>
 <instance part="C3" gate="C" x="-81.28" y="-25.4" rot="R180"/>
-<instance part="C13" gate="C" x="50.8" y="-55.88" rot="R180"/>
+<instance part="C13" gate="C" x="50.8" y="-55.88" rot="R180">
+<attribute name="DK" x="50.8" y="-55.88" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MN" x="50.8" y="-55.88" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="50.8" y="-55.88" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="C1" gate="C" x="-104.14" y="-48.26"/>
 <instance part="SUPPLY11" gate="G$1" x="-81.28" y="-73.66"/>
 <instance part="C11" gate="C" x="25.4" y="25.4"/>

@@ -10949,7 +10949,8 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <technology name="">
 <attribute name="DK" value="" constant="no"/>
 <attribute name="MN" value="TDK Corp." constant="no"/>
-<attribute name="MPN" value="C2012X5R1Cxxxxxxx" constant="no"/>
+<attribute name="PARTNO" value="C2012X5R1Cxxxxxxx" constant="no"/>
+<attribute name="VID" value="DK" constant="no"/>
 </technology>
 </technologies>
 </device>

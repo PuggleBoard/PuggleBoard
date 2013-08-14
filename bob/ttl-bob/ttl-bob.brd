@@ -6080,9 +6080,11 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C1" library="puggleboard" package="0805" value="10uF" x="3.048" y="22.606" smashed="yes">
 <attribute name="NAME" x="1.778" y="24.638" size="0.7366" layer="25" font="vector"/>
 <attribute name="VALUE" x="1.778" y="23.876" size="0.7366" layer="27" font="vector"/>
-<attribute name="DK" value="445-6797-1-ND" x="3.048" y="22.606" size="1.778" layer="27" display="off"/>
+<attribute name="DK" value="" x="3.048" y="22.606" size="1.778" layer="27" display="off"/>
 <attribute name="MN" value="TDK Corp." x="3.048" y="22.606" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="445-7644-1-ND" x="3.048" y="22.606" size="1.778" layer="27" display="off"/>
+<attribute name="PARTNO" value="C2012X5R1Cxxxxxxx" x="3.048" y="22.606" size="1.778" layer="27" display="off"/>
+<attribute name="VID" value="DK" x="3.048" y="22.606" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U$1" library="puggleboard" package="PB-LOGO" value="" x="19.812" y="10.16" rot="MR0"/>
 <element name="ON" library="puggleboard" package="CHIP-LED0805" value="LEDGREEN-CHIP0805" x="9.017" y="22.098" smashed="yes" rot="R90">
