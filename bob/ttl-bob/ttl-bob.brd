@@ -6094,6 +6094,9 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R1" library="puggleboard" package="0603" value="1k" x="9.017" y="24.13" smashed="yes">
 <attribute name="NAME" x="6.096" y="24.765" size="0.7366" layer="25" font="vector" ratio="10" rot="R180" align="center-right"/>
 <attribute name="VALUE" x="6.096" y="23.876" size="0.7366" layer="27" font="vector" ratio="10" align="center-left"/>
+<attribute name="MN" value="Panasonic" x="9.017" y="24.13" size="1.778" layer="27" display="off"/>
+<attribute name="DK" value="P1.00KHCT-ND" x="9.017" y="24.13" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="ERJ-3EKF1001V" x="9.017" y="24.13" size="1.778" layer="27" display="off"/>
 </element>
 <element name="D_I/O5V0" library="puggleboard" package="2X08" value="PINHD-2X8FEMALEVERT" x="22.098" y="11.176" smashed="yes" rot="R270">
 <attribute name="NAME" x="18.923" y="8.636" size="0.7366" layer="25" font="vector" ratio="10" rot="R90"/>
@@ -6111,14 +6114,23 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C2" library="puggleboard" package="0603" value="0.1uF" x="9.7155" y="15.367" smashed="yes" rot="R180">
 <attribute name="NAME" x="8.382" y="17.78" size="0.7366" layer="25" font="vector" ratio="10" rot="R180" align="center-right"/>
 <attribute name="VALUE" x="8.382" y="16.764" size="0.7366" layer="27" font="vector" ratio="10" align="center-left"/>
+<attribute name="DK" value="445-7318-2-ND" x="9.7155" y="15.367" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MN" value="TDK Corp." x="9.7155" y="15.367" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="C0603X5R1A104K030BC" x="9.7155" y="15.367" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C3" library="puggleboard" package="0603" value="0.1uF" x="15.5575" y="15.367" smashed="yes">
 <attribute name="NAME" x="14.224" y="17.78" size="0.7366" layer="25" font="vector" ratio="10" rot="R180" align="center-right"/>
 <attribute name="VALUE" x="14.224" y="16.764" size="0.7366" layer="27" font="vector" ratio="10" align="center-left"/>
+<attribute name="DK" value="445-7318-2-ND" x="15.5575" y="15.367" size="1.778" layer="27" display="off"/>
+<attribute name="MN" value="TDK Corp." x="15.5575" y="15.367" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0603X5R1A104K030BC" x="15.5575" y="15.367" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R2" library="puggleboard" package="0603" value="10k" x="9.7155" y="5.715" smashed="yes" rot="R90">
 <attribute name="NAME" x="7.112" y="6.35" size="0.7366" layer="25" font="vector" ratio="10" rot="R180" align="center-right"/>
 <attribute name="VALUE" x="7.112" y="5.334" size="0.7366" layer="27" font="vector" ratio="10" align="center-left"/>
+<attribute name="MN" value="Panasonic" x="9.7155" y="5.715" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DK" value="P10.0KHCT-ND" x="9.7155" y="5.715" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="ERJ-3EKF1002V" x="9.7155" y="5.715" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U$2" library="ohw-logo" package="OSHW_FILLX200_NOTEXT" value="" x="11.176" y="10.16" rot="MR0"/>
 </elements>

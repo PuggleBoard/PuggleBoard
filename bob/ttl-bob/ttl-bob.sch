@@ -720,7 +720,11 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 <connect gate="R" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DK" value="PxxxxHTR-ND" constant="no"/>
+<attribute name="MN" value="Panasonic" constant="no"/>
+<attribute name="MPN" value="ERJ-3EKFxxxxV" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="_0805" package="0805">
@@ -966,6 +970,7 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 </library>
 </libraries>
 <attributes>
+<attribute name="DATABASE" value="./bom/PARTS-DB.TXT"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -985,7 +990,10 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 <part name="C1" library="puggleboard" deviceset="C" device="_0805" value="10uF"/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="ON" library="puggleboard" deviceset="LED" device="-CHIP0805" technology="GREEN" value="LEDGREEN-CHIP0805"/>
-<part name="R1" library="puggleboard" deviceset="R" device="_0603" value="1k"/>
+<part name="R1" library="puggleboard" deviceset="R" device="_0603" value="1k">
+<attribute name="DK" value="P1.00KHCT-ND"/>
+<attribute name="MPN" value="ERJ-3EKF1001V"/>
+</part>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
 <part name="FRAME1" library="frames" deviceset="FRAME_B_L" device=""/>
 <part name="D_I/O5V0" library="puggleboard" deviceset="PINHD-2X8" device="VERT" technology="FEMALE" value="PINHD-2X8FEMALEVERT"/>
@@ -996,7 +1004,10 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 <part name="C3" library="puggleboard" deviceset="C" device="_0603" value="0.1uF"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="R2" library="puggleboard" deviceset="R" device="_0603" value="10k"/>
+<part name="R2" library="puggleboard" deviceset="R" device="_0603" value="10k">
+<attribute name="DK" value="P10.0KHCT-ND"/>
+<attribute name="MPN" value="ERJ-3EKF1002V"/>
+</part>
 </parts>
 <sheets>
 <sheet>
