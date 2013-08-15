@@ -980,7 +980,7 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 </library>
 </libraries>
 <attributes>
-<attribute name="DATABASE" value="../../lbr/part-db/PARTS-DB.TXT"/>
+<attribute name="DATABASE" value="../../lbr/part-db/parts-db.txt"/>
 </attributes>
 <variantdefs>
 </variantdefs>

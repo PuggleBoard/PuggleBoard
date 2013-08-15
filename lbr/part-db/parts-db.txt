@@ -1,0 +1,11 @@
+Mfg Part Num	Mfg Name	VID	Vendor Part Num	Description
+TXB0108PWR	Texas Instruments	DK	296-21527-1-ND	Logic-level converter with auto direction detect.
+ERJ-3EKF1001V	Panasonic	DK	P1.00KHCT-ND	0603 SMD chip resistor, 1/10 W, 1k, 1%.
+ERJ-3EKF1002V	Panasonic	DK	P10.0KHCT-ND	0603 SMD chip resistor, 1/10 W, 10k, 1%.
+ERJ-3EKF680V	Panasonic	DK	P680HCT-ND	0603 SMD chip resistor, 1/10 W, 680, 1%.
+C0603X5R1A104K30BC	TDK Corp.	DK	445-7318-2-ND	0603 SMD X5R ceramic cap., 0.1uF, 1%.
+C2012X5R1C104K30BC	TDK Corp.	DK	445-7644-1-ND	0805 SMD X5R ceramic cap., 10uF, 1%.
+589-8170-107F	Dialight	DK	350-2044-1-ND	0805 SMD chip LED, 20 mA, green.
+PPPC082LFBN-RC	Sullins	DK	S7111-ND	2X08 female 0.1" Pitch header, no key.
+
+
