@@ -11177,7 +11177,7 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-CHIP0805" package="CHIP-LED0805">
+<device name="_0805" package="CHIP-LED0805">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>

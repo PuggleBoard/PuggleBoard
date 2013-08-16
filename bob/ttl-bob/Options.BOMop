@@ -1,0 +1,11 @@
+ScreenWidth=700
+ScreenHeight=600
+AutoOpen=Y
+AutoDatabase=/home/jon/github/PuggleBoard/parts/puggle-parts.BOMdb
+Database=/home/jon/github/PuggleBoard/parts/puggle-parts.BOMdb
+Database=/home/jon/github/PuggleBoard/bob/ttl-bob/bom/ttl-bob.BOMdb
+AutoOpenSetup=Y
+AutoSetup=/home/jon/github/PuggleBoard/parts/puggle-parts.BOMsu
+Setup=/home/jon/github/PuggleBoard/parts/puggle-parts.BOMsu
+Setup=/home/jon/github/PuggleBoard/parts/\.BOMsu
+CsvSeparator=,
