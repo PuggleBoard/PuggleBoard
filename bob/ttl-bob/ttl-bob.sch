@@ -757,7 +757,7 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-CHIP0805" package="CHIP-LED0805">
+<device name="_0805" package="CHIP-LED0805">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
@@ -999,7 +999,7 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="puggleboard" deviceset="C" device="_0805" value="10uF"/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
-<part name="ON" library="puggleboard" deviceset="LED" device="-CHIP0805" technology="GREEN" value="LEDGREEN-CHIP0805"/>
+<part name="ON" library="puggleboard" deviceset="LED" device="_0805" technology="GREEN" value="LEDGREEN_0805"/>
 <part name="R1" library="puggleboard" deviceset="R" device="_0603" value="1k">
 <attribute name="DK" value="P1.00KHCT-ND"/>
 <attribute name="MPN" value="ERJ-3EKF1001V"/>

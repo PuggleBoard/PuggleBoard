@@ -6088,7 +6088,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VID" value="DK" x="3.048" y="22.606" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U$1" library="puggleboard" package="PB-LOGO" value="" x="19.812" y="10.16" rot="MR0"/>
-<element name="ON" library="puggleboard" package="CHIP-LED0805" value="LEDGREEN-CHIP0805" x="9.017" y="22.098" smashed="yes" rot="R90">
+<element name="ON" library="puggleboard" package="CHIP-LED0805" value="LEDGREEN_0805" x="9.017" y="22.098" smashed="yes" rot="R90">
 <attribute name="NAME" x="11.938" y="21.59" size="0.7366" layer="25" font="vector" rot="R90"/>
 <attribute name="MN" value="598-8170-107F" x="9.017" y="22.098" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DK" value="350-2044-1-ND" x="9.017" y="22.098" size="1.778" layer="27" rot="R90" display="off"/>
