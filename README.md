@@ -1,7 +1,7 @@
 PuggleBoard
 ===
 
-The [PuggleBoard] (http://puggleboard.com/) is an I/O interface that plugs into the BeagleBone Black's expansion headers.
+The [PuggleBoard] (http://puggleboard.com/) is an I/O interface that plugs into the BeagleBone Black's expansion headers and is controlled by <a href="https://github.com/PuggleBoard/PuggleDriver">PuggleDriver</a>.
 
 To get started, please refer to the <a href="https://github.com/PuggleBoard/PuggleBoard/wiki">wiki</a>. If you encounter any trouble or have any questions, post them to the <a href="https://github.com/PuggleBoard/PuggleBoard/issues">issues section</a> and we'll help get you started.
 
