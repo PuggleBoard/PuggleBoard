@@ -1,12 +1,8 @@
--------------------------------------------------------------------------
+PuggleBoard
+===
 
-This file is part of the Puggle Data Conversion and Processing System
-Copyright (C) 2013 Puggle
+The [PuggleBoard] (http://puggleboard.com/) is an I/O interface that plugs into the BeagleBone Black's expansion headers and is controlled by <a href="https://github.com/PuggleBoard/PuggleDriver">PuggleDriver</a>.
 
--------------------------------------------------------------------------
+To get started, please refer to the <a href="https://github.com/PuggleBoard/PuggleBoard/wiki">wiki</a>. If you encounter any trouble or have any questions, post them to the <a href="https://github.com/PuggleBoard/PuggleBoard/issues">issues section</a> and we'll help get you started.
 
-## Puggle
-[Puggle] (http://puggleboard.com/) is an effort to create a fully programable, real-time, low-cost, data conversion and processing system for the [BeagleBone] (http://beagleboard.org/Products/BeagleBone).
-
-## PuggleBoard
-The [PuggleBoard] (https://potterlab.gatech.edu/main/newman/wiki/index.php?title=BoneClamp) is a four channel 16-bit analog I/O interface that plugs into the BeagleBone's expansion headers and is driven using the PuggleDriver set.
+Visit visit the <a href="http://puggleboard.com">Puggleboard</a> site for more information on Puggle and it's hardware/software components.
