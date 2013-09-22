@@ -1,0 +1,7 @@
+Jon Newman
+2013.10
+Notes on PuggleBoard v2.0 board assembly
+
+1. It looks like r45,46,47,48 are mislabeled on pcb (i.e. values are reversed and not updated to current value of 13.7k)
+
+2. The TPS7A4901 and TPS7A3001 name labels are reversed on the board, causing me to install the chips in the incorrect positions. Lovely.
