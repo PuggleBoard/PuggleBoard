@@ -16,7 +16,9 @@ X6. All jumper headers are too high - prevents putting a second cape on top of t
 
 X7. 5X2 right angle header needs to be moved closer to the edge of the board.
 
-8. Ethernet cutout can be made a bit tighter on the top part.
+X8. Ethernet cutout can be made a bit tighter on the top part.
+
+ - EDIT: Why? This just reduces board's footprint.
 
 X9. There is a miswiring in the VREF/VBIAS circuit. Here is the explanation and fix
 
@@ -77,7 +79,7 @@ X25. Could we pipe the AI0 and AO0 pair out though a card-edge, low-profile BNC 
 
    - EDIT: Why? This just reduces modularity.
 
-26. Change all ceramic capacitors to X5R.
+X26. Change all ceramic capacitors to X5R.
 
 X27. Here is how to deal with the power input to the system
 
