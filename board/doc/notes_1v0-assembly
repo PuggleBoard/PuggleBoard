@@ -18,7 +18,7 @@ X7. 5X2 right angle header needs to be moved closer to the edge of the board.
 
 X8. Ethernet cutout can be made a bit tighter on the top part.
 
- - EDIT: Why? This just reduces board's footprint.
+ - EDIT: Why? i.e. who cares.
 
 X9. There is a miswiring in the VREF/VBIAS circuit. Here is the explanation and fix
 
