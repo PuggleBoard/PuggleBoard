@@ -4961,14 +4961,12 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="1.5494" y1="0.7874" x2="2.5146" y2="0.7874" width="0" layer="51"/>
 <wire x1="2.5146" y1="0.7874" x2="2.5146" y2="1.1684" width="0" layer="51"/>
 <wire x1="2.5146" y1="1.1684" x2="1.5494" y2="1.1684" width="0" layer="51"/>
-<text x="-2.9972" y="1.27" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <wire x1="-1.5494" y1="-1.5494" x2="1.5494" y2="-1.5494" width="0.1524" layer="21"/>
 <wire x1="1.5494" y1="1.5494" x2="0.3302" y2="1.5494" width="0.1524" layer="21"/>
 <wire x1="0.3302" y1="1.5494" x2="0.3048" y2="1.5494" width="0.1524" layer="21"/>
 <wire x1="0.3048" y1="1.5494" x2="-0.3048" y2="1.5494" width="0.1524" layer="21"/>
 <wire x1="-0.3048" y1="1.5494" x2="-0.3302" y2="1.5494" width="0.1524" layer="21"/>
 <wire x1="-0.3302" y1="1.5494" x2="-1.5494" y2="1.5494" width="0.1524" layer="21"/>
-<text x="-2.9972" y="1.27" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <text x="-3.4544" y="2.54" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-3.4544" y="-4.445" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 <wire x1="0.3302" y1="1.5494" x2="-0.3302" y2="1.5494" width="0.1524" layer="21" curve="-180"/>
@@ -6994,7 +6992,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </plain>
 <instances>
 <instance part="BB1" gate="G$1" x="-35.56" y="48.26"/>
-<instance part="DGND2" gate="PE" x="-91.44" y="99.06"/>
+<instance part="DGND2" gate="PE" x="-83.82" y="99.06"/>
 <instance part="A_I/O" gate="G$1" x="53.34" y="50.8"/>
 <instance part="RESET" gate="G$1" x="58.42" y="-30.48" rot="R270"/>
 <instance part="DGND10" gate="PE" x="71.12" y="-38.1"/>
@@ -7074,9 +7072,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </segment>
 <segment>
 <pinref part="DGND2" gate="PE" pin="PE"/>
-<wire x1="-91.44" y1="101.6" x2="-91.44" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="101.6" x2="-83.82" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="BB1" gate="G$1" pin="GND@7"/>
-<wire x1="-91.44" y1="109.22" x2="-63.5" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="109.22" x2="-63.5" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="BB1" gate="G$1" pin="GND@8"/>

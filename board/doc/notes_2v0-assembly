@@ -2,6 +2,17 @@ Jon Newman
 2013.10
 Notes on PuggleBoard v2.0 board assembly
 
-1. It looks like r45,46,47,48 are mislabeled on pcb (i.e. values are reversed and not updated to current value of 13.7k)
+X1. It looks like r45,46,47,48 are mislabeled on pcb (i.e. values are reversed and not updated to current value of 13.7k)
 
-2. The TPS7A4901 and TPS7A3001 name labels are reversed on the board, causing me to install the chips in the incorrect positions. Lovely.
+X2. The TPS7A4901 and TPS7A3001 name labels are reversed on the board, causing me to install the chips in the incorrect positions. Lovely.
+
+3. There is something very odd going on with the reference voltage after it has been passed through the buffer (U9; AD8032)
+
+	- VREF ~ 1.5 volts after R52 and at the (correct) 4.096V before it, indicating that r52, along with some other component, is acting as a voltage divider
+	- Inspection of circuit reveals nothing obvious to me though
+	- Replacing R52 with 0 ohms solves problem (but gets rid of the VREF's LPF).
+	- Quick fix would be to pipe VREF_PRE to where VREF_NOFILT is (connect them) and then put the LFP right before entrance into U10, instead of after its output. This is how it is done in the eval boards for these chips.
+
+	- EDIT: Here is what is happening (doh!). The DAC amps are in an inverting configuration. This means that thier vin- pin form a virtual ground. That means that R52=10k and R31,32,35,36=680 (680 || 680 || 680 || 680 )= 680 to virtual ground forms an R1 = 10k R2 = 680, so Vout = 4.096*(680/(680 + 10k))= 0/25 volts, which is what I was seeing. 
+	- So, that means my last suggestion above is correct, and in the meantime, just forget the filter and use a 0R resistor 
+
