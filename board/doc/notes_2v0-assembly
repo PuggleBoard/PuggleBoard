@@ -22,3 +22,9 @@ X2. The TPS7A4901 and TPS7A3001 name labels are reversed on the board, causing m
 	- Meausre digital signals on the other side of 33 Ohms and seeing attenuation and apparent capacitive path to ground.
 	- Got rid of 33 Ohms and it made the situation worse. 
 	- I see no path to ground on the schematic - could this be done to a solder joint?
+	
+5. The commom-mode input voltage range for the OPA4209's is not wide enough.
+
+	- the INTPUT must be within V_SS + 1.5 to V_CC - 1.5 volts
+	- The OUTPUT swings rail-to-rail.
+	- Other options: OP484 (Analog devices) but may be too slow for 16 bits.
