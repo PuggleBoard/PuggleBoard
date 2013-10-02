@@ -9008,11 +9008,11 @@ using single, isolated via.</text>
 <instance part="C44" gate="C" x="73.66" y="-55.88"/>
 <instance part="VBIAS" gate="G$1" x="73.66" y="-43.18"/>
 <instance part="R51" gate="G$1" x="-45.72" y="-68.58" rot="R90"/>
-<instance part="C43" gate="C" x="50.8" y="-55.88"/>
-<instance part="SUPPLY13" gate="G$1" x="50.8" y="-71.12"/>
-<instance part="R52" gate="R" x="40.64" y="-30.48" rot="R180"/>
+<instance part="C43" gate="C" x="-76.2" y="-58.42"/>
+<instance part="SUPPLY13" gate="G$1" x="-76.2" y="-71.12"/>
+<instance part="R52" gate="R" x="-86.36" y="-48.26" rot="R180"/>
 <instance part="R53" gate="R" x="60.96" y="-45.72" rot="R180"/>
-<instance part="VREF" gate="G$1" x="73.66" y="-27.94"/>
+<instance part="VREF" gate="G$1" x="73.66" y="-35.56"/>
 <instance part="C42" gate="C" x="25.4" y="2.54"/>
 <instance part="SUPPLY38" gate="G$1" x="-25.4" y="-22.86"/>
 <instance part="FRAME5" gate="G$1" x="-127" y="-154.94"/>
@@ -9050,7 +9050,7 @@ using single, isolated via.</text>
 </segment>
 <segment>
 <pinref part="C43" gate="C" pin="2"/>
-<wire x1="50.8" y1="-60.96" x2="50.8" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="-76.2" y1="-63.5" x2="-76.2" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="SUPPLY13" gate="G$1" pin="AGND"/>
 </segment>
 <segment>
@@ -9082,10 +9082,10 @@ using single, isolated via.</text>
 <wire x1="-38.1" y1="-43.18" x2="-38.1" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="-25.4" x2="-53.34" y2="-25.4" width="0.1524" layer="91"/>
 <pinref part="C38" gate="C" pin="1"/>
-<wire x1="-53.34" y1="-25.4" x2="-71.12" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="-25.4" x2="-106.68" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="-27.94" x2="-53.34" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="-53.34" y="-25.4"/>
-<label x="-71.12" y="-25.4" size="1.778" layer="95"/>
+<label x="-106.68" y="-25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$32" class="0">
@@ -9097,16 +9097,35 @@ using single, isolated via.</text>
 </net>
 <net name="VREF" class="0">
 <segment>
-<wire x1="45.72" y1="-30.48" x2="50.8" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="-81.28" y1="-48.26" x2="-76.2" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="C43" gate="C" pin="1"/>
-<wire x1="50.8" y1="-30.48" x2="73.66" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="-30.48" x2="50.8" y2="-53.34" width="0.1524" layer="91"/>
-<junction x="50.8" y="-30.48"/>
+<wire x1="-76.2" y1="-48.26" x2="-76.2" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="R52" gate="R" pin="1"/>
+<pinref part="U9" gate="A" pin="+IN1"/>
+<wire x1="-76.2" y1="-48.26" x2="-17.78" y2="-48.26" width="0.1524" layer="91"/>
+<junction x="-76.2" y="-48.26"/>
+</segment>
+<segment>
+<wire x1="-66.04" y1="-68.58" x2="-53.34" y2="-68.58" width="0.1524" layer="91"/>
+<pinref part="R51" gate="G$1" pin="E"/>
+<label x="-66.04" y="-68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="17.78" y1="-43.18" x2="30.48" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="0" y1="-40.64" x2="17.78" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-40.64" x2="17.78" y2="-43.18" width="0.1524" layer="91"/>
+<pinref part="U9" gate="A" pin="OUT1"/>
+<junction x="17.78" y="-43.18"/>
+<pinref part="U9" gate="A" pin="-IN1"/>
+<wire x1="-17.78" y1="-50.8" x2="-17.78" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="-53.34" x2="0" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="0" y1="-53.34" x2="0" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-43.18" x2="30.48" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="VREF" gate="G$1" pin="TP"/>
-<junction x="73.66" y="-30.48"/>
-<wire x1="73.66" y1="-30.48" x2="86.36" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="-38.1" x2="86.36" y2="-38.1" width="0.1524" layer="91"/>
 <label x="78.74" y="-30.48" size="1.778" layer="95"/>
+<wire x1="30.48" y1="-38.1" x2="73.66" y2="-38.1" width="0.1524" layer="91"/>
+<junction x="73.66" y="-38.1"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -9160,33 +9179,9 @@ using single, isolated via.</text>
 <pinref part="C42" gate="C" pin="1"/>
 </segment>
 <segment>
-<pinref part="U9" gate="A" pin="+IN1"/>
-<wire x1="-71.12" y1="-48.26" x2="-17.78" y2="-48.26" width="0.1524" layer="91"/>
-<label x="-71.12" y="-48.26" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="VREF_NOFILT" class="0">
-<segment>
-<wire x1="17.78" y1="-43.18" x2="30.48" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="0" y1="-40.64" x2="17.78" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="-40.64" x2="17.78" y2="-43.18" width="0.1524" layer="91"/>
-<pinref part="U9" gate="A" pin="OUT1"/>
-<junction x="17.78" y="-43.18"/>
-<pinref part="U9" gate="A" pin="-IN1"/>
-<wire x1="-17.78" y1="-50.8" x2="-17.78" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="-17.78" y1="-53.34" x2="0" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="0" y1="-53.34" x2="0" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="R52" gate="R" pin="2"/>
-<wire x1="30.48" y1="-30.48" x2="35.56" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="-43.18" x2="30.48" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="-43.18" x2="48.26" y2="-43.18" width="0.1524" layer="91"/>
-<junction x="30.48" y="-43.18"/>
-<label x="33.02" y="-43.18" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="-71.12" y1="-68.58" x2="-53.34" y2="-68.58" width="0.1524" layer="91"/>
-<pinref part="R51" gate="G$1" pin="E"/>
-<label x="-71.12" y="-68.58" size="1.778" layer="95"/>
+<wire x1="-91.44" y1="-48.26" x2="-106.68" y2="-48.26" width="0.1524" layer="91"/>
+<label x="-106.68" y="-48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BOARD_TEMP" class="0">
