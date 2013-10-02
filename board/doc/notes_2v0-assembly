@@ -16,3 +16,9 @@ X2. The TPS7A4901 and TPS7A3001 name labels are reversed on the board, causing m
 	- EDIT: Here is what is happening (doh!). The DAC amps are in an inverting configuration. This means that thier vin- pin form a virtual ground. That means that R52=10k and R31,32,35,36=680 (680 || 680 || 680 || 680 )= 680 to virtual ground forms an R1 = 10k R2 = 680, so Vout = 4.096*(680/(680 + 10k))= 0/25 volts, which is what I was seeing. 
 	- So, that means my last suggestion above is correct, and in the meantime, just forget the filter and use a 0R resistor 
 
+4. The digital terminations for the onboard DAC and ADC are behaving very strangely
+
+	- Measure digital signals running into 33 Ohm termination resistors from BeagleBone and those look good
+	- Meausre digital signals on the other side of 33 Ohms and seeing attenuation and apparent capacitive path to ground.
+	- Got rid of 33 Ohms and it made the situation worse. 
+	- I see no path to ground on the schematic - could this be done to a solder joint?
