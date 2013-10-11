@@ -8353,7 +8353,23 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="12.192" y1="66.255" x2="12.2936" y2="66.167" width="0.6096" layer="1"/>
 <wire x1="13.335" y1="67.056" x2="12.446" y2="66.167" width="0.6096" layer="1"/>
 <contactref element="D_I/O" pad="1"/>
+<contactref element="BB1" pad="49"/>
+<wire x1="12.192" y1="67.31" x2="1.397" y2="82.296" width="0" layer="19" extent="1-1"/>
+<wire x1="12.446" y1="66.167" x2="12.2936" y2="66.167" width="0" layer="19" extent="1-1"/>
+<wire x1="6.5024" y1="59.69" x2="9.1948" y2="63.7032" width="0" layer="19" extent="1-1"/>
+<wire x1="11.5824" y1="47.371" x2="6.35" y2="58.42" width="0" layer="19" extent="1-1"/>
+<wire x1="10.16" y1="36.83" x2="9.144" y2="40.64" width="0" layer="19" extent="1-1"/>
+<wire x1="12.192" y1="36.83" x2="10.16" y2="36.83" width="0" layer="19" extent="1-1"/>
+<wire x1="14.224" y1="36.83" x2="12.192" y2="36.83" width="0" layer="19" extent="1-1"/>
+<wire x1="16.256" y1="36.83" x2="14.224" y2="36.83" width="0" layer="19" extent="1-1"/>
+<wire x1="18.288" y1="36.83" x2="16.256" y2="36.83" width="0" layer="19" extent="1-1"/>
+<wire x1="8.128" y1="35.6616" x2="10.16" y2="35.6616" width="0" layer="19" extent="1-1"/>
+<wire x1="8.382" y1="26.3144" x2="8.128" y2="35.6616" width="0" layer="19" extent="1-1"/>
 <wire x1="8.382" y1="26.162" x2="8.382" y2="26.3144" width="0" layer="19" extent="1-1"/>
+<wire x1="4.826" y1="16.51" x2="8.382" y2="25.146" width="0" layer="19" extent="1-1"/>
+<wire x1="13.97" y1="7.62" x2="4.826" y2="16.51" width="0" layer="19" extent="1-1"/>
+<wire x1="50.165" y1="21.59" x2="18.288" y2="35.6616" width="0" layer="19" extent="1-1"/>
+<wire x1="52.705" y1="21.59" x2="50.165" y2="21.59" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VDD_5V">
 <contactref element="BB1" pad="52"/>
@@ -8394,12 +8410,20 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="48.514" y1="30.734" x2="48.514" y2="48.768" width="1.016" layer="1"/>
 <wire x1="48.514" y1="30.734" x2="48.006" y2="30.226" width="0.6096" layer="1"/>
 <wire x1="48.006" y1="30.226" x2="46.101" y2="30.226" width="0.6096" layer="1"/>
-<wire x1="52.705" y1="24.13" x2="53.848" y2="22.987" width="0.254" layer="1"/>
 <wire x1="53.848" y1="22.987" x2="53.848" y2="17.272" width="0.254" layer="1"/>
 <wire x1="53.848" y1="17.272" x2="53.086" y2="16.51" width="0.254" layer="1"/>
 <wire x1="53.086" y1="16.51" x2="53.086" y2="11.7856" width="0.254" layer="1"/>
 <contactref element="BB1" pad="51"/>
-<wire x1="50.165" y1="24.13" x2="52.705" y2="24.13" width="0" layer="19" extent="1-1"/>
+<wire x1="41.91" y1="48.006" x2="42.418" y2="48.387" width="0" layer="19" extent="1-1"/>
+<wire x1="40.894" y1="48.006" x2="41.6052" y2="47.7012" width="0" layer="19" extent="1-16"/>
+<wire x1="40.0304" y1="47.7012" x2="40.132" y2="47.244" width="0" layer="19" extent="1-16"/>
+<wire x1="48.514" y1="48.768" x2="44.958" y2="48.006" width="0" layer="19" extent="1-1"/>
+<wire x1="46.101" y1="31.496" x2="46.101" y2="30.226" width="0" layer="19" extent="1-1"/>
+<wire x1="44.831" y1="31.496" x2="46.101" y2="31.496" width="0" layer="19" extent="1-1"/>
+<wire x1="44.831" y1="30.226" x2="46.101" y2="30.226" width="0" layer="19" extent="1-1"/>
+<wire x1="45.4914" y1="33.782" x2="46.101" y2="31.496" width="0" layer="19" extent="1-1"/>
+<wire x1="52.705" y1="24.13" x2="50.165" y2="24.13" width="0" layer="19" extent="1-1"/>
+<wire x1="53.848" y1="22.987" x2="52.705" y2="24.13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="I2C2_SCL">
 <contactref element="R58" pad="1"/>
@@ -9390,9 +9414,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="53.086" y1="10.0584" x2="53.086" y2="5.08" width="0.254" layer="1"/>
 <wire x1="53.086" y1="5.08" x2="49.53" y2="1.524" width="0.254" layer="1"/>
 <wire x1="49.53" y1="1.524" x2="46.643" y2="1.524" width="0.254" layer="1"/>
-</signal>
-<signal name="VDD_3V3EXP">
-<contactref element="BB1" pad="49"/>
 </signal>
 <signal name="N$16">
 <contactref element="R30" pad="1"/>

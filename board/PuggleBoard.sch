@@ -7047,6 +7047,10 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="D_I/O" gate="G$1" pin="1"/>
 <label x="33.02" y="22.86" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="BB1" gate="G$1" pin="VDD_3V3EXP@1"/>
+<wire x1="-63.5" y1="40.64" x2="-83.82" y2="40.64" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -7118,6 +7122,10 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="BB1" gate="G$1" pin="VDD_5V@2"/>
 <wire x1="-7.62" y1="38.1" x2="10.16" y2="38.1" width="0.1524" layer="91"/>
 <label x="0" y="38.1" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="BB1" gate="G$1" pin="VDD_5V@1"/>
+<wire x1="-63.5" y1="38.1" x2="-83.82" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="I2C2_SCL" class="0">
