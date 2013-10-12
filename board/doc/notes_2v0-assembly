@@ -6,7 +6,7 @@ X1. It looks like r45,46,47,48 are mislabeled on pcb (i.e. values are reversed a
 
 X2. The TPS7A4901 and TPS7A3001 name labels are reversed on the board, causing me to install the chips in the incorrect positions. Lovely.
 
-3. There is something very odd going on with the reference voltage after it has been passed through the buffer (U9; AD8032)
+X3. There is something very odd going on with the reference voltage after it has been passed through the buffer (U9; AD8032)
 
 	- VREF ~ 1.5 volts after R52 and at the (correct) 4.096V before it, indicating that r52, along with some other component, is acting as a voltage divider
 	- Inspection of circuit reveals nothing obvious to me though
@@ -16,17 +16,19 @@ X2. The TPS7A4901 and TPS7A3001 name labels are reversed on the board, causing m
 	- EDIT: Here is what is happening (doh!). The DAC amps are in an inverting configuration. This means that thier vin- pin form a virtual ground. That means that R52=10k and R31,32,35,36=680 (680 || 680 || 680 || 680 )= 680 to virtual ground forms an R1 = 10k R2 = 680, so Vout = 4.096*(680/(680 + 10k))= 0/25 volts, which is what I was seeing. 
 	- So, that means my last suggestion above is correct, and in the meantime, just forget the filter and use a 0R resistor 
 
-4. The digital terminations for the onboard DAC and ADC are behaving very strangely
+X4. The digital terminations for the onboard DAC and ADC are behaving very strangely
 
 	- Measure digital signals running into 33 Ohm termination resistors from BeagleBone and those look good
 	- Meausre digital signals on the other side of 33 Ohms and seeing attenuation and apparent capacitive path to ground.
 	- Got rid of 33 Ohms and it made the situation worse. 
 	- I see no path to ground on the schematic - could this be done to a solder joint?
 	
+	- EDIT: This was a very stupid mistake. The 3.3V digital supply on the BB comes from two pins on P9. Only one of those pins on the PB is connected to VDRIVE. I had jumpered the incorrect one from the BB because I was testing the board without actually mounting it on the BB. So, there is no problem here.
+	
 5. The commom-mode input voltage range for the OPA4209's is not wide enough for the DAC to operate properly.
 
 	- the INTPUT must be within V_SS + 1.5 to V_CC - 1.5 volts
 	- The OUTPUT swings rail-to-rail.
 	- Voltage at the input pins of the DAC swings from 0 to VREF=4.096 volts, which is too close to positive rail.
-	- The device is fine for the ADC because the input voltage is divided down to +/-2.048V and then biased, so output as to go rail-to-rail, but input does not.
+	- The device is fine for the ADC because the input voltage is divided down to +/-2.048V and then biased, so the output must go rail-to-rail, but input does not have to.
 	- Other options: OP484 (Analog devices) but may be too slow for 16 bits. LMP7704 (TI). LMV8844 (TI).
