@@ -30,5 +30,5 @@ X4. The digital terminations for the onboard DAC and ADC are behaving very stran
 	- the INTPUT must be within V_SS + 1.5 to V_CC - 1.5 volts
 	- The OUTPUT swings rail-to-rail.
 	- Voltage at the input pins of the DAC swings from 0 to VREF=4.096 volts, which is too close to positive rail.
-	- The device is fine for the ADC because the input voltage is divided down to +/-2.048V and then biased, so the output must go rail-to-rail, but input does not have to.
+	- The device is fine for the ADC because the input voltage is divided down to +/-2.048V and then biased, so the output must go rail-to-rail, but input does not .
 	- Other options: OP484 (Analog devices) but may be too slow for 16 bits. LMP7704 (TI). LMV8844 (TI).
