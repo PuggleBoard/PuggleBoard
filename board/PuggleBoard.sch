@@ -8284,6 +8284,12 @@ using single, isolated via.</text>
 <label x="91.44" y="-48.26" size="1.778" layer="95"/>
 <junction x="66.04" y="-50.8"/>
 </segment>
+<segment>
+<wire x1="-30.48" y1="99.06" x2="-71.12" y2="99.06" width="0.1524" layer="91"/>
+<label x="-71.12" y="99.06" size="1.778" layer="95"/>
+<wire x1="-81.28" y1="99.06" x2="-121.92" y2="99.06" width="0.1524" layer="91"/>
+<label x="-121.92" y="99.06" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="DAC_+IN_B" class="0">
 <segment>
@@ -8351,10 +8357,6 @@ using single, isolated via.</text>
 <pinref part="U4" gate="A" pin="+IN_C"/>
 <wire x1="40.64" y1="76.2" x2="25.4" y2="76.2" width="0.1524" layer="91"/>
 <label x="25.4" y="76.2" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="-30.48" y1="99.06" x2="-71.12" y2="99.06" width="0.1524" layer="91"/>
-<label x="-71.12" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="43.18" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="91"/>
