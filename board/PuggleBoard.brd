@@ -9,7 +9,7 @@
 <grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="12" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="12" fill="3" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="12" fill="3" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -22,7 +22,7 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="1" fill="6" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -9970,18 +9970,6 @@ Please make sure your boards conform to these design rules.</description>
 <via x="28.194" y="24.384" extent="1-16" drill="0.8"/>
 </signal>
 </signals>
-<errors>
-<approved hash="19,1,7a6170d6954273fa"/>
-<approved hash="19,1,7add70d2aa4e7266"/>
-<approved hash="19,1,82a8ae124f3381f6"/>
-<approved hash="19,1,8734a41e40538e9e"/>
-<approved hash="19,1,b4f454c05405b431"/>
-<approved hash="19,1,5463fe879c3beaac"/>
-<approved hash="19,1,d736a56203daa38d"/>
-<approved hash="19,1,c81c28282f85cfb1"/>
-<approved hash="19,1,d78aa4fe3cd6a389"/>
-<approved hash="19,1,5b03f48b99a7e5c4"/>
-</errors>
 </board>
 </drawing>
 <compatibility>
