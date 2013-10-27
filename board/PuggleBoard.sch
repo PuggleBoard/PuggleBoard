@@ -7020,6 +7020,12 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="-55.88" y1="43.18" x2="-93.98" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="-93.98" y1="43.18" x2="-93.98" y2="35.56" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="BB1" gate="G$1" pin="GND@2"/>
+<wire x1="0" y1="43.18" x2="35.56" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="43.18" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="DGND5" gate="PE" pin="PE"/>
+</segment>
 </net>
 <net name="VDD_5V" class="0">
 <segment>
@@ -7368,14 +7374,6 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="-60.96" y1="60.96" x2="-55.88" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="DGND" class="0">
-<segment>
-<pinref part="BB1" gate="G$1" pin="GND@2"/>
-<wire x1="0" y1="43.18" x2="35.56" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="43.18" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="DGND5" gate="PE" pin="PE"/>
-</segment>
-</net>
 </nets>
 </sheet>
 <sheet>
@@ -7495,7 +7493,7 @@ using single, isolated via.</text>
 <wire x1="33.02" y1="-40.64" x2="63.5" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+4.5V" class="0">
+<net name="N$27" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="VA"/>
 <wire x1="63.5" y1="-7.62" x2="-68.58" y2="-7.62" width="0.1524" layer="91"/>
@@ -8013,7 +8011,7 @@ using single, isolated via.</text>
 </bus>
 </busses>
 <nets>
-<net name="+4.5V" class="0">
+<net name="N$27" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="VDD"/>
 <pinref part="C14" gate="C" pin="1"/>
@@ -8602,7 +8600,7 @@ using single, isolated via.</text>
 <label x="96.52" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="+4.5V" class="0">
+<net name="N$27" class="0">
 <segment>
 <pinref part="C35" gate="C" pin="1"/>
 <wire x1="38.1" y1="-55.88" x2="45.72" y2="-55.88" width="0.1524" layer="91"/>
@@ -8951,7 +8949,7 @@ using single, isolated via.</text>
 <wire x1="-25.4" y1="-15.24" x2="-25.4" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+4.5V" class="0">
+<net name="N$27" class="0">
 <segment>
 <pinref part="U8" gate="A" pin="VIN"/>
 <wire x1="-71.12" y1="7.62" x2="-40.64" y2="7.62" width="0.1524" layer="91"/>
