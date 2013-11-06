@@ -32,3 +32,5 @@ X4. The digital terminations for the onboard DAC and ADC are behaving very stran
 	- Voltage at the input pins of the DAC swings from 0 to VREF=4.096 volts, which is too close to positive rail.
 	- The device is fine for the ADC because the input voltage is divided down to +/-2.048V and then biased, so the output must go rail-to-rail, but input does not .
 	- Other options: OP484 (Analog devices) but may be too slow for 16 bits. LMP7704 (TI). LMV8844 (TI).
+
+6. The REF capacitor on the DAC is very likely too small. It should have ~10 uF or so according to analog applicaiton note AN-931. I could not find a recommend value on the AD85686 data sheet (at least on the plane), which is very surprising. AN-931 says to use something like 4.7-22 uF. I am currently using 0.1 uF, which might explain some of the DACs non- 16-bit performance.
