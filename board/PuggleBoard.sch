@@ -6722,7 +6722,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="C14" library="puggleboard" deviceset="C" device="_0805" value="10uF"/>
 <part name="SUPPLY5" library="supply2" deviceset="AGND" device=""/>
 <part name="SUPPLY6" library="supply2" deviceset="AGND" device=""/>
-<part name="C21" library="puggleboard" deviceset="C" device="_0603" value="0.1uF"/>
+<part name="C21" library="puggleboard" deviceset="C" device="_0805" value="10uF"/>
 <part name="SUPPLY7" library="supply2" deviceset="AGND" device=""/>
 <part name="U2" library="puggleboard" deviceset="ADS8331IBPW" device="" value="ADS8331"/>
 <part name="R19" library="puggleboard" deviceset="R" device="_0603" value="680"/>
