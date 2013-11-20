@@ -397,13 +397,13 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=91
-Views=" 2: -14.7006 -49.6718 58.1535 6.67233 3: 16.8881 -26.8376 89.7421 29.5065"
+Views=" 1: 16.8881 -26.8376 89.7421 29.5065 2: -14.7006 -49.6718 58.1535 6.67233 3: 16.8881 -26.8376 89.7421 29.5065"
 Sheet=3
 
 [Win_3]
 Type="Board Editor"
-Loc="629 -8 1262 739"
-State=0
+Loc="629 0 1262 747"
+State=1
 Number=1
 File="/home/jon/github/PuggleBoard/board/PuggleBoard.brd"
 View="-11.7071 -2.9716 56.0398 98.7199"

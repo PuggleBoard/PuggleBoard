@@ -12728,6 +12728,8 @@ distributor Farnell 149-452</description>
 </connects>
 <technologies>
 <technology name=""/>
+<technology name="FEMALE"/>
+<technology name="MALE"/>
 </technologies>
 </device>
 <device name="/90" package="2X06/90">
