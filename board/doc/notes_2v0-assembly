@@ -25,12 +25,15 @@ X4. The digital terminations for the onboard DAC and ADC are behaving very stran
 	
 	- EDIT: This was a very stupid mistake. The 3.3V digital supply on the BB comes from two pins on P9. Only one of those pins on the PB is connected to VDRIVE. I had jumpered the incorrect one from the BB because I was testing the board without actually mounting it on the BB. So, there is no problem here.
 	
-5. The commom-mode input voltage range for the OPA4209's is not wide enough for the DAC to operate properly.
+X5. The commom-mode input voltage range for the OPA4209's is not wide enough for the DAC to operate properly.
 
 	- the INTPUT must be within V_SS + 1.5 to V_CC - 1.5 volts
 	- The OUTPUT swings rail-to-rail.
 	- Voltage at the input pins of the DAC swings from 0 to VREF=4.096 volts, which is too close to positive rail.
 	- The device is fine for the ADC because the input voltage is divided down to +/-2.048V and then biased, so the output must go rail-to-rail, but input does not .
-	- Other options: OP484 (Analog devices) but may be too slow for 16 bits. LMP7704 (TI). LMV8844 (TI).
+	- Other options: OP484 (Analog devices) but may be too slow for 16 bits. Edit:X that last comment, this is for the DAC. 
+	- LMP7704 (TI). LMV8844 (TI).
+	
+	- EDIT: The LMP7704 is a drop in replacement with good performance, so I switched to that.
 
 X6. The REF capacitor on the DAC is very likely too small. It should have ~10 uF or so according to analog applicaiton note AN-931. I could not find a recommend value on the AD85686 data sheet (at least on the plane), which is very surprising. AN-931 says to use something like 4.7-22 uF. I am currently using 0.1 uF, which might explain some of the DACs non- 16-bit performance.
