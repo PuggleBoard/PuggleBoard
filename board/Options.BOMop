@@ -5,5 +5,6 @@ AutoDatabase=/home/jon/github/PuggleBoard/parts/puggle-parts.BOMdb
 Database=/home/jon/github/PuggleBoard/parts/puggle-parts.BOMdb
 AutoOpenSetup=Y
 AutoSetup=/home/jon/github/PuggleBoard/parts/puggle-parts.BOMsu
+Setup=/home/jon/github/PuggleBoard/parts/puggle-parts-full.BOMsu
 Setup=/home/jon/github/PuggleBoard/parts/puggle-parts.BOMsu
 CsvSeparator=,

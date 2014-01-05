@@ -63,6 +63,7 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -97,8 +98,12 @@
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
+<layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
+<layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
@@ -958,61 +963,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
 </connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="frames">
-<description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="FRAME_A_L">
-<frame x1="0" y1="0" x2="279.4" y2="215.9" columns="6" rows="5" layer="94" border-bottom="no"/>
-</symbol>
-<symbol name="DOCFIELD">
-<wire x1="0" y1="0" x2="71.12" y2="0" width="0.1016" layer="94"/>
-<wire x1="101.6" y1="15.24" x2="87.63" y2="15.24" width="0.1016" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="0" y1="5.08" x2="71.12" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="0" y1="5.08" x2="0" y2="15.24" width="0.1016" layer="94"/>
-<wire x1="101.6" y1="15.24" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="71.12" y1="5.08" x2="71.12" y2="0" width="0.1016" layer="94"/>
-<wire x1="71.12" y1="5.08" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="71.12" y1="0" x2="101.6" y2="0" width="0.1016" layer="94"/>
-<wire x1="87.63" y1="15.24" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="87.63" y1="15.24" x2="0" y2="15.24" width="0.1016" layer="94"/>
-<wire x1="87.63" y1="5.08" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="101.6" y1="5.08" x2="101.6" y2="0" width="0.1016" layer="94"/>
-<wire x1="0" y1="15.24" x2="0" y2="22.86" width="0.1016" layer="94"/>
-<wire x1="101.6" y1="35.56" x2="0" y2="35.56" width="0.1016" layer="94"/>
-<wire x1="101.6" y1="35.56" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
-<wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
-<wire x1="0" y1="22.86" x2="0" y2="35.56" width="0.1016" layer="94"/>
-<wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.1016" layer="94"/>
-<text x="1.27" y="1.27" size="2.54" layer="94" font="vector">Date:</text>
-<text x="12.7" y="1.27" size="2.54" layer="94" font="vector">&gt;LAST_DATE_TIME</text>
-<text x="72.39" y="1.27" size="2.54" layer="94" font="vector">Sheet:</text>
-<text x="86.36" y="1.27" size="2.54" layer="94" font="vector">&gt;SHEET</text>
-<text x="88.9" y="11.43" size="2.54" layer="94" font="vector">REV:</text>
-<text x="1.27" y="19.05" size="2.54" layer="94" font="vector">TITLE:</text>
-<text x="1.27" y="11.43" size="2.54" layer="94" font="vector">Document Number:</text>
-<text x="17.78" y="19.05" size="2.54" layer="94" font="vector">&gt;DRAWING_NAME</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="FRAME_A_L" prefix="FRAME" uservalue="yes">
-<description>&lt;b&gt;FRAME&lt;/b&gt; A Size , 8 1/2 x 11 INCH, Landscape&lt;p&gt;</description>
-<gates>
-<gate name="G$1" symbol="FRAME_A_L" x="0" y="0" addlevel="always"/>
-<gate name="G$2" symbol="DOCFIELD" x="172.72" y="0" addlevel="always"/>
-</gates>
-<devices>
-<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -5291,10 +5241,45 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pin name="9" x="-2.54" y="-7.62" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="10" x="5.08" y="-7.62" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
 </symbol>
+<symbol name="FRAME_A_L">
+<frame x1="0" y1="0" x2="279.4" y2="215.9" columns="6" rows="5" layer="94" border-bottom="no"/>
+</symbol>
+<symbol name="DOCFIELD">
+<wire x1="0" y1="0" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="77.47" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="71.12" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="77.47" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="0" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="77.47" y1="15.24" x2="77.47" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="77.47" y1="15.24" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="77.47" y1="5.08" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="5.08" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="0" y1="15.24" x2="0" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.1016" layer="94"/>
+<text x="1.27" y="1.27" size="2.54" layer="94" font="vector">Date:</text>
+<text x="12.7" y="1.27" size="2.54" layer="94" font="vector">&gt;LAST_DATE_TIME</text>
+<text x="72.39" y="1.27" size="2.54" layer="94" font="vector">Sheet:</text>
+<text x="86.36" y="1.27" size="2.54" layer="94" font="vector">&gt;SHEET</text>
+<text x="78.74" y="11.43" size="2.54" layer="94" font="vector">REV:</text>
+<text x="1.27" y="17.78" size="2.54" layer="94" font="vector">TITLE:</text>
+<text x="1.27" y="11.43" size="2.54" layer="94" font="vector">Document Number:</text>
+<text x="15.24" y="17.78" size="2.54" layer="94" font="vector">&gt;DRAWING_NAME</text>
+<text x="1.27" y="6.35" size="2.54" layer="94" font="vector">&gt;DOC_NUMBER</text>
+<text x="78.74" y="6.35" size="2.54" layer="94" font="vector">&gt;REVISION</text>
+<text x="5.08" y="26.67" size="5.842" layer="94" font="vector">www.puggleboard.com</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BEAGLEBONE_OUTLINE">
-<description>Should match A3 pinout - but not completely tested</description>
+<description>BeagleBone Pinout</description>
 <gates>
 <gate name="G$1" symbol="BEAGLEBONE-1" x="0" y="0"/>
 </gates>
@@ -6650,6 +6635,8 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </connects>
 <technologies>
 <technology name=""/>
+<technology name="FEMALE"/>
+<technology name="MALE"/>
 </technologies>
 </device>
 <device name="/90" package="2X06/90">
@@ -6735,11 +6722,26 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="FRAME_A_L" prefix="FRAME" uservalue="yes">
+<description>&lt;b&gt;FRAME&lt;/b&gt; A Size , 8 1/2 x 11 INCH, Landscape&lt;p&gt;</description>
+<gates>
+<gate name="G$1" symbol="FRAME_A_L" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="172.72" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
 <attributes>
 <attribute name="DATABASE" value="./bom/puggleboard_BOM.txt"/>
+<attribute name="REVISION" value="2.2"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -6765,10 +6767,10 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="SUPPLY12" library="supply2" deviceset="AGND" device=""/>
 <part name="SUPPLY14" library="supply2" deviceset="AGND" device=""/>
 <part name="SUPPLY15" library="supply2" deviceset="AGND" device=""/>
-<part name="DAC_D+" library="testpad" deviceset="TP" device="B1,27"/>
-<part name="DAC_C+" library="testpad" deviceset="TP" device="B1,27"/>
-<part name="DAC_B+" library="testpad" deviceset="TP" device="B1,27"/>
-<part name="DAC_A+" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="AOD+" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="AOC+" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="AOB+" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="AOA+" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="SUPPLY17" library="supply2" deviceset="AGND" device=""/>
 <part name="U10" library="puggleboard" deviceset="24C*" device=""/>
 <part name="C45" library="puggleboard" deviceset="C" device="_0603" value="0.1uF"/>
@@ -6846,7 +6848,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="DGND7" library="supply2" deviceset="PE" device="" value="DGND"/>
 <part name="RESET" library="puggleboard" deviceset="SPST_TACT" device="" value="SPST_TACT"/>
 <part name="DGND10" library="supply2" deviceset="PE" device="" value="DGND"/>
-<part name="ADC_A+" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="AIA+" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="R30" library="puggleboard" deviceset="R" device="_0603" value="10"/>
 <part name="C42" library="puggleboard" deviceset="C" device="_1206" value="4.7uF"/>
 <part name="SUPPLY38" library="supply2" deviceset="AGND" device=""/>
@@ -6862,9 +6864,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="C7" library="puggleboard" deviceset="C" device="_0603" value="1uF"/>
 <part name="SUPPLY41" library="supply2" deviceset="AGND" device=""/>
 <part name="SUPPLY42" library="supply2" deviceset="AGND" device=""/>
-<part name="ADC_B+" library="testpad" deviceset="TP" device="B1,27"/>
-<part name="ADC_C+" library="testpad" deviceset="TP" device="B1,27"/>
-<part name="ADC_D+" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="AIB+" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="AIC+" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="AID+" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="R18" library="puggleboard" deviceset="R" device="_0603" value="680"/>
 <part name="R20" library="puggleboard" deviceset="R" device="_0603" value="340"/>
 <part name="R26" library="puggleboard" deviceset="R" device="_0603" value="680"/>
@@ -6946,18 +6948,18 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="SUPPLY47" library="supply2" deviceset="AGND" device=""/>
 <part name="SUPPLY48" library="supply2" deviceset="AGND" device=""/>
 <part name="R17" library="puggleboard" deviceset="R" device="_0603" value="10k"/>
-<part name="FRAME1" library="frames" deviceset="FRAME_A_L" device=""/>
-<part name="FRAME2" library="frames" deviceset="FRAME_A_L" device=""/>
-<part name="FRAME3" library="frames" deviceset="FRAME_A_L" device=""/>
-<part name="FRAME4" library="frames" deviceset="FRAME_A_L" device=""/>
-<part name="FRAME5" library="frames" deviceset="FRAME_A_L" device=""/>
-<part name="FRAME6" library="frames" deviceset="FRAME_A_L" device=""/>
 <part name="D_I/O" library="puggleboard" deviceset="PINHD-2X6" device="" value="PINHD-2X6"/>
 <part name="DGND12" library="supply2" deviceset="PE" device="" value="DGND"/>
 <part name="DGND5" library="supply2" deviceset="PE" device="" value="DGND"/>
 <part name="SUPPLY28" library="supply2" deviceset="AGND" device=""/>
 <part name="DGND11" library="supply2" deviceset="PE" device="" value="DGND"/>
 <part name="C46" library="puggleboard" deviceset="C" device="_1206" value="22uF"/>
+<part name="FRAME2" library="puggleboard" deviceset="FRAME_A_L" device=""/>
+<part name="FRAME1" library="puggleboard" deviceset="FRAME_A_L" device=""/>
+<part name="FRAME3" library="puggleboard" deviceset="FRAME_A_L" device=""/>
+<part name="FRAME4" library="puggleboard" deviceset="FRAME_A_L" device=""/>
+<part name="FRAME5" library="puggleboard" deviceset="FRAME_A_L" device=""/>
+<part name="FRAME6" library="puggleboard" deviceset="FRAME_A_L" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6971,8 +6973,6 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 5. MISO       (SPI4)
 6. CONVST  (SPI5)
 </text>
-<text x="157.48" y="-86.36" size="3.81" layer="94" align="bottom-center">2.1</text>
-<text x="76.2" y="-66.04" size="5.08" layer="94">www.puggleboard.com</text>
 </plain>
 <instances>
 <instance part="BB1" gate="G$1" x="-27.94" y="48.26"/>
@@ -6996,12 +6996,12 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <instance part="R12" gate="R" x="-66.04" y="60.96"/>
 <instance part="R9" gate="R" x="7.62" y="20.32" rot="R180"/>
 <instance part="R17" gate="R" x="71.12" y="-22.86" rot="MR90"/>
-<instance part="FRAME2" gate="G$1" x="-109.22" y="-91.44"/>
-<instance part="FRAME2" gate="G$2" x="63.5" y="-91.44"/>
 <instance part="D_I/O" gate="G$1" x="81.28" y="17.78"/>
 <instance part="DGND12" gate="PE" x="60.96" y="-2.54" rot="MR0"/>
 <instance part="DGND5" gate="PE" x="35.56" y="35.56"/>
 <instance part="SUPPLY28" gate="G$1" x="-93.98" y="33.02"/>
+<instance part="FRAME2" gate="G$1" x="-124.46" y="-88.9"/>
+<instance part="FRAME2" gate="G$2" x="48.26" y="-88.9"/>
 </instances>
 <busses>
 <bus name="SPI[0..5]">
@@ -7466,8 +7466,6 @@ using single, isolated via.</text>
 <text x="-96.52" y="33.02" size="1.778" layer="97">Vin= +-4.096/2 +2.048</text>
 <text x="-38.1" y="71.12" size="1.778" layer="97">Vin= +-4.096/2 +2.048</text>
 <text x="-38.1" y="33.02" size="1.778" layer="97">Vin= +-4.096/2 +2.048</text>
-<text x="142.24" y="-124.46" size="3.81" layer="94" align="bottom-center">2.1</text>
-<text x="66.04" y="-104.14" size="5.08" layer="94">www.puggleboard.com</text>
 </plain>
 <instances>
 <instance part="U2" gate="A" x="88.9" y="-35.56"/>
@@ -7491,17 +7489,17 @@ using single, isolated via.</text>
 <instance part="C9" gate="C" x="15.24" y="-30.48" rot="R180"/>
 <instance part="C12" gate="C" x="25.4" y="-30.48" rot="R180"/>
 <instance part="SUPPLY18" gate="G$1" x="25.4" y="43.18"/>
-<instance part="ADC_A+" gate="G$1" x="-5.08" y="-12.7"/>
+<instance part="AIA+" gate="G$1" x="-5.08" y="-12.7"/>
 <instance part="R30" gate="R" x="30.48" y="-48.26" rot="R180"/>
-<instance part="U1" gate="G$1" x="83.82" y="48.26"/>
+<instance part="U1" gate="G$1" x="83.82" y="45.72"/>
 <instance part="SUPPLY40" gate="G$1" x="25.4" y="15.24"/>
 <instance part="C8" gate="C" x="15.24" y="25.4"/>
 <instance part="C7" gate="C" x="15.24" y="53.34"/>
 <instance part="SUPPLY41" gate="G$1" x="15.24" y="43.18"/>
 <instance part="SUPPLY42" gate="G$1" x="15.24" y="15.24"/>
-<instance part="ADC_B+" gate="G$1" x="5.08" y="-15.24"/>
-<instance part="ADC_C+" gate="G$1" x="15.24" y="-17.78"/>
-<instance part="ADC_D+" gate="G$1" x="25.4" y="-20.32"/>
+<instance part="AIB+" gate="G$1" x="5.08" y="-15.24"/>
+<instance part="AIC+" gate="G$1" x="15.24" y="-17.78"/>
+<instance part="AID+" gate="G$1" x="25.4" y="-20.32"/>
 <instance part="R18" gate="R" x="-93.98" y="27.94" rot="R180"/>
 <instance part="R20" gate="R" x="-83.82" y="17.78" rot="R90"/>
 <instance part="R26" gate="R" x="-35.56" y="66.04" rot="R180"/>
@@ -7540,7 +7538,7 @@ using single, isolated via.</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="OUT_B"/>
 <label x="101.6" y="55.88" size="1.778" layer="95"/>
-<wire x1="101.6" y1="58.42" x2="116.84" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="55.88" x2="116.84" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R20" gate="R" pin="1"/>
@@ -7566,7 +7564,7 @@ using single, isolated via.</text>
 <wire x1="33.02" y1="-40.64" x2="63.5" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="+4.5V" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="VA"/>
 <wire x1="63.5" y1="-7.62" x2="-68.58" y2="-7.62" width="0.1524" layer="91"/>
@@ -7583,7 +7581,7 @@ using single, isolated via.</text>
 <segment>
 <pinref part="C10" gate="C" pin="1"/>
 <wire x1="25.4" y1="55.88" x2="25.4" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="58.42" x2="66.04" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="58.42" x2="66.04" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="58.42" x2="15.24" y2="58.42" width="0.1524" layer="91"/>
 <junction x="25.4" y="58.42"/>
 <label x="10.16" y="58.42" size="1.778" layer="95"/>
@@ -7613,7 +7611,7 @@ using single, isolated via.</text>
 <segment>
 <pinref part="C11" gate="C" pin="1"/>
 <wire x1="25.4" y1="27.94" x2="25.4" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="30.48" x2="66.04" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="30.48" x2="66.04" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="30.48" x2="15.24" y2="30.48" width="0.1524" layer="91"/>
 <junction x="25.4" y="30.48"/>
 <label x="10.16" y="30.48" size="1.778" layer="95"/>
@@ -7637,7 +7635,7 @@ using single, isolated via.</text>
 <wire x1="45.72" y1="-15.24" x2="63.5" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="-25.4" x2="-5.08" y2="-15.24" width="0.1524" layer="91"/>
 <junction x="-5.08" y="-15.24"/>
-<pinref part="ADC_A+" gate="G$1" pin="TP"/>
+<pinref part="AIA+" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="N$41" class="0">
@@ -7655,7 +7653,7 @@ using single, isolated via.</text>
 <wire x1="-25.4" y1="-22.86" x2="-35.56" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="-25.4" x2="5.08" y2="-17.78" width="0.1524" layer="91"/>
 <junction x="5.08" y="-17.78"/>
-<pinref part="ADC_B+" gate="G$1" pin="TP"/>
+<pinref part="AIB+" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="N$42" class="0">
@@ -7673,7 +7671,7 @@ using single, isolated via.</text>
 <wire x1="40.64" y1="-20.32" x2="63.5" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="-25.4" x2="15.24" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="15.24" y="-20.32"/>
-<pinref part="ADC_C+" gate="G$1" pin="TP"/>
+<pinref part="AIC+" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="N$43" class="0">
@@ -7687,7 +7685,7 @@ using single, isolated via.</text>
 <wire x1="-15.24" y1="-38.1" x2="-35.56" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="-25.4" x2="25.4" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="25.4" y="-22.86"/>
-<pinref part="ADC_D+" gate="G$1" pin="TP"/>
+<pinref part="AID+" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -7783,22 +7781,22 @@ using single, isolated via.</text>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="+IN_A"/>
-<wire x1="66.04" y1="53.34" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="50.8" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
 <label x="50.8" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="+IN_B"/>
-<wire x1="66.04" y1="50.8" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="48.26" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
 <label x="50.8" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="+IN_C"/>
-<wire x1="66.04" y1="43.18" x2="50.8" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="40.64" x2="50.8" y2="40.64" width="0.1524" layer="91"/>
 <label x="50.8" y="40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="+IN_D"/>
-<wire x1="66.04" y1="40.64" x2="50.8" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="38.1" x2="50.8" y2="38.1" width="0.1524" layer="91"/>
 <label x="50.8" y="38.1" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -7829,7 +7827,7 @@ using single, isolated via.</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="OUT_A"/>
 <label x="101.6" y="58.42" size="1.778" layer="95"/>
-<wire x1="101.6" y1="60.96" x2="116.84" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="58.42" x2="116.84" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC_C+" class="0">
@@ -7841,7 +7839,7 @@ using single, isolated via.</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="OUT_C"/>
 <label x="101.6" y="53.34" size="1.778" layer="95"/>
-<wire x1="101.6" y1="55.88" x2="116.84" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="53.34" x2="116.84" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R28" gate="R" pin="1"/>
@@ -7859,7 +7857,7 @@ using single, isolated via.</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="OUT_D"/>
 <label x="101.6" y="50.8" size="1.778" layer="95"/>
-<wire x1="101.6" y1="53.34" x2="116.84" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="50.8" x2="116.84" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R29" gate="R" pin="1"/>
@@ -7899,14 +7897,14 @@ using single, isolated via.</text>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="-IN_A"/>
-<wire x1="66.04" y1="55.88" x2="50.8" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="53.34" x2="50.8" y2="53.34" width="0.1524" layer="91"/>
 <label x="50.8" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADC_-IN_B" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="-IN_B"/>
-<wire x1="66.04" y1="48.26" x2="50.8" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="45.72" x2="50.8" y2="45.72" width="0.1524" layer="91"/>
 <label x="50.8" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -7922,7 +7920,7 @@ using single, isolated via.</text>
 <net name="ADC_-IN_C" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="-IN_C"/>
-<wire x1="66.04" y1="45.72" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="43.18" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
 <label x="50.8" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -7938,7 +7936,7 @@ using single, isolated via.</text>
 <net name="ADC_-IN_D" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="-IN_D"/>
-<wire x1="66.04" y1="38.1" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="35.56" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
 <label x="50.8" y="35.56" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -8021,8 +8019,6 @@ using single, isolated via.</text>
 5. MISO       (SPI4)
 6. CONVST  (SPI5)
 </text>
-<text x="127" y="-101.6" size="3.81" layer="94" align="bottom-center">2.1</text>
-<text x="50.8" y="-81.28" size="5.08" layer="94">www.puggleboard.com</text>
 </plain>
 <instances>
 <instance part="C25" gate="C" x="71.12" y="-53.34"/>
@@ -8036,10 +8032,10 @@ using single, isolated via.</text>
 <instance part="SUPPLY12" gate="G$1" x="66.04" y="5.08"/>
 <instance part="SUPPLY14" gate="G$1" x="66.04" y="-17.78"/>
 <instance part="SUPPLY15" gate="G$1" x="66.04" y="-40.64"/>
-<instance part="DAC_D+" gate="G$1" x="53.34" y="22.86"/>
-<instance part="DAC_C+" gate="G$1" x="53.34" y="0"/>
-<instance part="DAC_B+" gate="G$1" x="53.34" y="-22.86"/>
-<instance part="DAC_A+" gate="G$1" x="53.34" y="-45.72"/>
+<instance part="AOD+" gate="G$1" x="53.34" y="22.86"/>
+<instance part="AOC+" gate="G$1" x="53.34" y="0"/>
+<instance part="AOB+" gate="G$1" x="53.34" y="-22.86"/>
+<instance part="AOA+" gate="G$1" x="53.34" y="-45.72"/>
 <instance part="U3" gate="G$1" x="0" y="0"/>
 <instance part="DGND1" gate="PE" x="-76.2" y="-30.48"/>
 <instance part="C16" gate="C" x="-76.2" y="-17.78"/>
@@ -8070,8 +8066,8 @@ using single, isolated via.</text>
 <instance part="R38" gate="R" x="-43.18" y="83.82" rot="R90"/>
 <instance part="R36" gate="R" x="-53.34" y="60.96" rot="R180"/>
 <instance part="R39" gate="R" x="-43.18" y="50.8" rot="R90"/>
-<instance part="FRAME3" gate="G$1" x="-139.7" y="-106.68"/>
-<instance part="FRAME3" gate="G$2" x="33.02" y="-106.68"/>
+<instance part="FRAME3" gate="G$1" x="-142.24" y="-104.14"/>
+<instance part="FRAME3" gate="G$2" x="30.48" y="-104.14"/>
 </instances>
 <busses>
 <bus name="SPI[0..5]">
@@ -8084,7 +8080,7 @@ using single, isolated via.</text>
 </bus>
 </busses>
 <nets>
-<net name="N$27" class="0">
+<net name="+4.5V" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="VDD"/>
 <pinref part="C14" gate="C" pin="1"/>
@@ -8349,7 +8345,7 @@ using single, isolated via.</text>
 <wire x1="60.96" y1="-50.8" x2="66.04" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="-50.8" x2="66.04" y2="-48.26" width="0.1524" layer="91"/>
 <junction x="66.04" y="-48.26"/>
-<pinref part="DAC_A+" gate="G$1" pin="TP"/>
+<pinref part="AOA+" gate="G$1" pin="TP"/>
 <junction x="53.34" y="-48.26"/>
 <pinref part="U3" gate="G$1" pin="VOUTA"/>
 <label x="91.44" y="-48.26" size="1.778" layer="95"/>
@@ -8384,7 +8380,7 @@ using single, isolated via.</text>
 <wire x1="53.34" y1="-25.4" x2="66.04" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="-25.4" x2="99.06" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="66.04" y="-25.4"/>
-<pinref part="DAC_B+" gate="G$1" pin="TP"/>
+<pinref part="AOB+" gate="G$1" pin="TP"/>
 <junction x="53.34" y="-25.4"/>
 <pinref part="U3" gate="G$1" pin="VOUTB"/>
 <label x="91.44" y="-25.4" size="1.778" layer="95"/>
@@ -8433,7 +8429,7 @@ using single, isolated via.</text>
 <wire x1="43.18" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="-10.16" x2="43.18" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="-2.54" x2="53.34" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="DAC_C+" gate="G$1" pin="TP"/>
+<pinref part="AOC+" gate="G$1" pin="TP"/>
 <wire x1="53.34" y1="-2.54" x2="66.04" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="53.34" y="-2.54"/>
 <pinref part="R41" gate="R" pin="2"/>
@@ -8470,7 +8466,7 @@ using single, isolated via.</text>
 <wire x1="53.34" y1="20.32" x2="66.04" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="20.32" x2="99.06" y2="20.32" width="0.1524" layer="91"/>
 <junction x="66.04" y="20.32"/>
-<pinref part="DAC_D+" gate="G$1" pin="TP"/>
+<pinref part="AOD+" gate="G$1" pin="TP"/>
 <junction x="53.34" y="20.32"/>
 <pinref part="U3" gate="G$1" pin="VOUTD"/>
 <label x="91.44" y="20.32" size="1.778" layer="95"/>
@@ -8553,8 +8549,6 @@ using single, isolated via.</text>
 <description>POWER</description>
 <plain>
 <text x="104.14" y="-30.48" size="1.778" layer="97">Ground Link</text>
-<text x="157.48" y="-137.16" size="3.81" layer="94" align="bottom-center">2.1</text>
-<text x="78.74" y="-116.84" size="5.08" layer="94">www.puggleboard.com</text>
 </plain>
 <instances>
 <instance part="SUPPLY17" gate="G$1" x="111.76" y="-38.1"/>
@@ -8607,10 +8601,10 @@ using single, isolated via.</text>
 <instance part="SUPPLY46" gate="G$1" x="38.1" y="12.7"/>
 <instance part="SUPPLY47" gate="G$1" x="63.5" y="12.7"/>
 <instance part="SUPPLY48" gate="G$1" x="93.98" y="12.7"/>
-<instance part="FRAME4" gate="G$1" x="-109.22" y="-142.24"/>
-<instance part="FRAME4" gate="G$2" x="63.5" y="-142.24"/>
 <instance part="DGND11" gate="PE" x="106.68" y="-86.36"/>
 <instance part="C46" gate="C" x="106.68" y="-78.74" rot="R180"/>
+<instance part="FRAME4" gate="G$1" x="-109.22" y="-142.24"/>
+<instance part="FRAME4" gate="G$2" x="63.5" y="-142.24"/>
 </instances>
 <busses>
 </busses>
@@ -8675,7 +8669,7 @@ using single, isolated via.</text>
 <label x="96.52" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="+4.5V" class="0">
 <segment>
 <pinref part="C35" gate="C" pin="1"/>
 <wire x1="38.1" y1="-55.88" x2="45.72" y2="-55.88" width="0.1524" layer="91"/>
@@ -8961,8 +8955,6 @@ using single, isolated via.</text>
 <text x="35.56" y="-5.08" size="1.778" layer="97">Output capacitor:
  C &gt;= 1.0uF 
 1.0&lt;= ESR &lt;= 1.5 Ohms.</text>
-<text x="139.7" y="-149.86" size="3.81" layer="94" align="bottom-center">2.1</text>
-<text x="60.96" y="-129.54" size="5.08" layer="94">www.puggleboard.com</text>
 </plain>
 <instances>
 <instance part="U8" gate="A" x="0" y="0"/>
@@ -8986,8 +8978,8 @@ using single, isolated via.</text>
 <instance part="VREF" gate="G$1" x="73.66" y="-35.56"/>
 <instance part="C42" gate="C" x="25.4" y="2.54"/>
 <instance part="SUPPLY38" gate="G$1" x="-25.4" y="-22.86"/>
-<instance part="FRAME5" gate="G$1" x="-127" y="-154.94"/>
-<instance part="FRAME5" gate="G$2" x="45.72" y="-154.94"/>
+<instance part="FRAME5" gate="G$1" x="-134.62" y="-154.94"/>
+<instance part="FRAME5" gate="G$2" x="38.1" y="-154.94"/>
 </instances>
 <busses>
 </busses>
@@ -9037,15 +9029,15 @@ using single, isolated via.</text>
 <wire x1="-25.4" y1="-15.24" x2="-25.4" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="+4.5V" class="0">
 <segment>
 <pinref part="U8" gate="A" pin="VIN"/>
-<wire x1="-71.12" y1="7.62" x2="-40.64" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="7.62" x2="-40.64" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="C39" gate="C" pin="2"/>
 <wire x1="-40.64" y1="7.62" x2="-17.78" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="0" x2="-40.64" y2="7.62" width="0.1524" layer="91"/>
 <junction x="-40.64" y="7.62"/>
-<label x="-71.12" y="7.62" size="1.778" layer="95"/>
+<label x="-106.68" y="7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="-17.78" y1="-43.18" x2="-38.1" y2="-43.18" width="0.1524" layer="91"/>
@@ -9067,15 +9059,6 @@ using single, isolated via.</text>
 </segment>
 </net>
 <net name="VREF" class="0">
-<segment>
-<wire x1="-81.28" y1="-48.26" x2="-76.2" y2="-48.26" width="0.1524" layer="91"/>
-<pinref part="C43" gate="C" pin="1"/>
-<wire x1="-76.2" y1="-48.26" x2="-76.2" y2="-55.88" width="0.1524" layer="91"/>
-<pinref part="R52" gate="R" pin="1"/>
-<pinref part="U9" gate="A" pin="+IN1"/>
-<wire x1="-76.2" y1="-48.26" x2="-17.78" y2="-48.26" width="0.1524" layer="91"/>
-<junction x="-76.2" y="-48.26"/>
-</segment>
 <segment>
 <wire x1="-66.04" y1="-68.58" x2="-53.34" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="R51" gate="G$1" pin="E"/>
@@ -9162,13 +9145,22 @@ using single, isolated via.</text>
 <label x="-35.56" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="R52" gate="R" pin="1"/>
+<pinref part="C43" gate="C" pin="1"/>
+<wire x1="-81.28" y1="-48.26" x2="-76.2" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="-76.2" y1="-48.26" x2="-76.2" y2="-55.88" width="0.1524" layer="91"/>
+<pinref part="U9" gate="A" pin="+IN1"/>
+<wire x1="-76.2" y1="-48.26" x2="-17.78" y2="-48.26" width="0.1524" layer="91"/>
+<junction x="-76.2" y="-48.26"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
 <description>BOARD ID</description>
 <plain>
-<text x="111.76" y="-81.28" size="3.81" layer="94" align="bottom-center">2.1</text>
-<text x="35.56" y="-60.96" size="5.08" layer="94">www.puggleboard.com</text>
 </plain>
 <instances>
 <instance part="U10" gate="G$1" x="-2.54" y="22.86"/>
