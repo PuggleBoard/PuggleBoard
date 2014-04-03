@@ -1,5 +1,5 @@
 [Eagle]
-Version="06 04 00"
+Version="06 05 00"
 Platform="Windows"
 Serial="6E23A2A2B2-LSR-WLM-1EP"
 Globals="Globals"
@@ -9,17 +9,12 @@ Desktop="Desktop"
 AutoSaveProject=1
 
 [Win_1]
-Loc="532 306 1131 705"
-State=3
-Number=3
-
-[Win_2]
 Type="Schematic Editor"
 Loc="532 306 1131 705"
 State=1
 Number=2
 File="PuggleBoard.sch"
-View="-115.332 -96.2822 176.084 129.094"
+View="-130.572 -134.382 160.844 90.9942"
 WireWidths=" 0 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064 0.1524"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
@@ -58,15 +53,16 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=91
-Sheet=1
+Views=" 1: -115.332 -96.2822 176.084 129.094"
+Sheet=2
 
-[Win_3]
+[Win_2]
 Type="Board Editor"
 Loc="532 306 1131 705"
 State=1
 Number=1
 File="PuggleBoard.brd"
-View="23.1019 13.1854 71.4898 91.8831"
+View="-8.52408 -0.117259 49.5414 94.32"
 WireWidths=" 0 0.254 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
@@ -106,15 +102,14 @@ AddLevel=2
 PadsSameType=0
 Layer=16
 
-[Win_4]
+[Win_3]
 Type="Control Panel"
-Loc="1672 -8 2623 391"
+Loc="1912 -8 2511 391"
 State=1
 Number=0
 
 [Desktop]
-Screen="3360 1050"
+Screen="3840 1080"
 Window="Win_1"
 Window="Win_2"
 Window="Win_3"
-Window="Win_4"

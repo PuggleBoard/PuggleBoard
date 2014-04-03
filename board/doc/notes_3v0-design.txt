@@ -1,0 +1,36 @@
+I spoke with Edgar Brown about revision 2.1 and he gave a lot of helpful advice. Here is the summary of his comments.
+
+1. Use matched resistor arrays instead of discrete components
+
+	> This is especially true for the onboard analog input/output stages.
+	> Save space
+	> Individual resistors will introduce large mismatches unless you use relatively high tolerances. 
+	> You can get 2% resistor arrays that have matched resistors down to 0.1% (these circuits are sensitive to matching, not to specific resistor values). 
+	> Note that a 1% mismatch in that circuit can introduce a 300+ count mismatch on the output, more than twice the offset of the DAC itself. Not necessarily a problem, but something to keep in mind when using 16-bit DACs.
+
+2. I am not sure of the specifics of the AD5686 or of the application, but in many bio-applications it is desirable to have simultaneously sampling ADCs and DACs (it considerably simplifies signal processing). I believe the LDAC line can serve this purpose, which here you have disabled.
+
+	> Yes, that is the purpose of LDAC. We should dedicate an extra PRU pin to control LDAC. 
+	> The ADS8331, however, does not allow simultaneous sampling
+
+3. The schematics are harder to read than necessary as you used generic boxes for common items such as operational amplifiers. What is normally a quick pattern recognition task becomes a bit mental puzzle. It took me a minute to recognize a simple analog level shifter.
+
+	> Replace strange boxes with standard opamp symbols
+	
+X4. Regarding the reset button. Why a reset button at all? it takes space and you would probably do it programmatically anyway. I am guessing that both the ADC and the DA can be reset via the SPI bus. If not a connection to a free I/O pin takes less space.
+
+	> This is important to have for the sake of biologists. For instance, say they start inadvertantly electrolesioning an animal because they put a DC offset on a stimulating electrode. They panic. I want their to be a real button they can hit to make the bad things stop.
+	
+?5. I see no connection to the End of Conversion in the ADC. I am not sure if you need it, but it is normally required to drive the ADC at maximum speed.
+
+	> My understanding is that this is used to signal an interupt indicating a conversion has taken place and the host processor can begin pulling data.
+	> We have a fixed delay for conversions, so I'm not sure this will be helpful for us.
+	
+6. What is the purpose of S1? wouldn’t it make more sense to select the address either programmatically or have it fixed for the board? That switch seems to take a lot of space for very little functionality. If the purpose is to be able to connect multiple boards together, I am not sure that your configuration of IO lines allows for that. A set of jumpers (resistor locations with 0-ohm resistors) could achieve the same thing with less space. (Also note that the parallel of R59 and R58 in multiple boards would quickly drive the I2C lines out of spec).
+
+	> This is a requirement to produce a BeagleBoard 'cape' that conforms to BeagleBoard design requirments. Each BB is allowed up to four capes, defined by the position of the DIP switch.
+	> In regard to R59/58 -- yes, but this again is what is recommended by BeagleBoard.org. Only 4 capes are allowed so I don't think that will be enough to load down the I2C line to the point where it no longer works.
+	> Although our boards are not daisy-chainable, we want our board to conform to these requirments so it can be used with completely unrelated projects that use nonoverlapping GPIO pins
+	> Jumpers are a reasonable idea, but how much space will it really save?
+
+7. 
