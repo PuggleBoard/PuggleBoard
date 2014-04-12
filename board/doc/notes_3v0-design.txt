@@ -1,36 +1,72 @@
 I spoke with Edgar Brown about revision 2.1 and he gave a lot of helpful advice. Here is the summary of his comments.
 
-1. Use matched resistor arrays instead of discrete components
+1. [E] Use matched resistor arrays instead of discrete components
 
 	> This is especially true for the onboard analog input/output stages.
-	> Save space
+	> Saves space
 	> Individual resistors will introduce large mismatches unless you use relatively high tolerances. 
 	> You can get 2% resistor arrays that have matched resistors down to 0.1% (these circuits are sensitive to matching, not to specific resistor values). 
 	> Note that a 1% mismatch in that circuit can introduce a 300+ count mismatch on the output, more than twice the offset of the DAC itself. Not necessarily a problem, but something to keep in mind when using 16-bit DACs.
+    > I see that the space is rather restricted, some resistor arrays (such as this one: http://www.digikey.com/product-detail/en/EXB-38V330JV/Y9330TR-ND/256513 ) could be used to open up some space around the connectors. One of those takes half the space than four 0603’s and are not that hard to solder.
 
-2. I am not sure of the specifics of the AD5686 or of the application, but in many bio-applications it is desirable to have simultaneously sampling ADCs and DACs (it considerably simplifies signal processing). I believe the LDAC line can serve this purpose, which here you have disabled.
+2. [E] I am not sure of the specifics of the AD5686 or of the application, but in many bio-applications it is desirable to have simultaneously sampling ADCs and DACs (it considerably simplifies signal processing). I believe the LDAC line can serve this purpose, which here you have disabled.
 
 	> Yes, that is the purpose of LDAC. We should dedicate an extra PRU pin to control LDAC. 
-	> The ADS8331, however, does not allow simultaneous sampling
+	> The ADS8331, however, does not allow simultaneous sampling. I'm not quite sure how this would simplify signal processing. 
 
-3. The schematics are harder to read than necessary as you used generic boxes for common items such as operational amplifiers. What is normally a quick pattern recognition task becomes a bit mental puzzle. It took me a minute to recognize a simple analog level shifter.
+3. [E] The schematics are harder to read than necessary as you used generic boxes for common items such as operational amplifiers. What is normally a quick pattern recognition task becomes a bit mental puzzle. It took me a minute to recognize a simple analog level shifter.
 
-	> Replace strange boxes with standard opamp symbols
+	> I will replace strange boxes with standard opamp symbols
 	
-X4. Regarding the reset button. Why a reset button at all? it takes space and you would probably do it programmatically anyway. I am guessing that both the ADC and the DA can be reset via the SPI bus. If not a connection to a free I/O pin takes less space.
+X4. [E] Regarding the reset button. Why a reset button at all? it takes space and you would probably do it programmatically anyway. I am guessing that both the ADC and the DA can be reset via the SPI bus. If not a connection to a free I/O pin takes less space.
 
-	> This is important to have for the sake of biologists. For instance, say they start inadvertantly electrolesioning an animal because they put a DC offset on a stimulating electrode. They panic. I want their to be a real button they can hit to make the bad things stop.
+	> This is important to have for the sake of biologists. For instance, say they start inadvertantly electrolesioning an animal because they put a DC offset on a stimulating electrode. They panic. I want there to be a real button they can hit to make bad things stop. I actually use the reset switch quite a lot on Arduino boards, for instance.
 	
-?5. I see no connection to the End of Conversion in the ADC. I am not sure if you need it, but it is normally required to drive the ADC at maximum speed.
+?5. [E] I see no connection to the End of Conversion in the ADC. I am not sure if you need it, but it is normally required to drive the ADC at maximum speed.
 
 	> My understanding is that this is used to signal an interupt indicating a conversion has taken place and the host processor can begin pulling data.
-	> We have a fixed delay for conversions, so I'm not sure this will be helpful for us.
+	> We have a fixed delay for conversions, so I'm not sure this will be helpful for us. Could be wrong here.
 	
-6. What is the purpose of S1? wouldn’t it make more sense to select the address either programmatically or have it fixed for the board? That switch seems to take a lot of space for very little functionality. If the purpose is to be able to connect multiple boards together, I am not sure that your configuration of IO lines allows for that. A set of jumpers (resistor locations with 0-ohm resistors) could achieve the same thing with less space. (Also note that the parallel of R59 and R58 in multiple boards would quickly drive the I2C lines out of spec).
+6. [E] What is the purpose of S1? wouldn’t it make more sense to select the address either programmatically or have it fixed for the board? That switch seems to take a lot of space for very little functionality. If the purpose is to be able to connect multiple boards together, I am not sure that your configuration of IO lines allows for that. A set of jumpers (resistor locations with 0-ohm resistors) could achieve the same thing with less space. (Also note that the parallel of R59 and R58 in multiple boards would quickly drive the I2C lines out of spec).
 
-	> This is a requirement to produce a BeagleBoard 'cape' that conforms to BeagleBoard design requirments. Each BB is allowed up to four capes, defined by the position of the DIP switch.
+	> This is a requirement to produce a BeagleBoard 'cape' that conforms to BeagleBoard design requirments. Each BB is allowed up to four capes, defined by the position of the DIP switch, which must be selectable by the user. You are right that this could be done with solder joints or jumpers, but this is not the standard for other capes. Jumpers are a reasonable idea, but how much space will it really save?
 	> In regard to R59/58 -- yes, but this again is what is recommended by BeagleBoard.org. Only 4 capes are allowed so I don't think that will be enough to load down the I2C line to the point where it no longer works.
-	> Although our boards are not daisy-chainable, we want our board to conform to these requirments so it can be used with completely unrelated projects that use nonoverlapping GPIO pins
-	> Jumpers are a reasonable idea, but how much space will it really save?
+	> Although our boards are not daisy-chainable, we want our board to conform to these requirments so it can be used with unrelated projects that use nonoverlapping GPIO pins -- e.g. a Wirless module or video capture.
 
-7. 
+7. [E]  Avoid connecting two pads directly, like pins 21 & 22 in U2. It makes it harder to spot soldering errors. Even when an outside company solders it, I have had to thoroughly inspect very carefully professionally soldered boards pin by pin to find soldering mistakes.
+
+    > Good idea, will do.
+
+8. [E] - Did you draw the INTAN wires by hand? Or is there some Eagle tool to match trace lengths now?
+    
+    > There is a tool. Its called the 'meander' tool.
+
+9. [E] U7 is a major source of noise on top of AGND.I have to look at that IC more carefully, but I have a hunch that that is your main noise source on the whole board. The way AGND is organized around that IC guarantees that the noise it generates will find its way into all of the circuity.
+
+    > [J] agree the U7 is certainly the most difficult to deal with from a design point. We need it to produce a negative power rail because we don't want the board to rely on a benchtop supply or batteries. I was really careful on the layout for that component (i.e. following the datasheet and eval board), and we actually do not see its switching transients leaking into the rest of the circuit in the current config. Of course, it could be producing less obviously correlated noise. I would really like to understand why this AGND pattern is no good. I am honestly at a loss sometimes with grounding patterns
+
+
+10. [J] Our biggest, most obvious problem is definitely interference from the digital buses onto analog lines. 
+
+    > [E] The connection of AGND to pin one on the right-side beaglebone connector might be the source of much of your digital noise. That creates a ground path for beaglebone digital signals through the AGND of your board. That is part of having just a single ‘point’ of connection between grounds. For space sake, and to reduce the adverse effects that simply disconnecting that ground might have on the switching noise from U7, It would be ok to have U7 in a separate GND domain directly connected to the beagle bone, with only L1 and C37 bridging the gap.
+
+11. [E] I noticed that you have no anti-aliasing filters in place. You basically put a single pole at 1.6MHz for DACs that, I assume, will be sampling at a maximum of 125kS/s (this is already higher than the 1.25MHz bandwidth coming out of the op-amps). I know you are probably going for some flexibility, but this actually goes against your noise performance. You should at the very least move those filters down to 60kHz or so which should remove most of the problematic bandwidth. It might be advisable to change the amplifier architecture to incorporate 2-nd or 3-rd order filters there.
+
+    > [J] Yeah, this is almost certainly true. At least the pole of the output filter should be below the opamp bandwidth...
+    > One reason I don't want to put the pole all the way down at 60 kHz is that this prevents the user from generating fast square waves with the DAC. I suppose this is what the extra digital lines are for though?
+
+12. Your switching frequency for the voltage converter is in the 700kHz range, which is already outside of the bandwidth of interest, but it can be easily aliased inside by lack of filtering (thus making it unrecognizable in a digital trace).
+
+    > [J] Certainly true. I think this, and point 11, indicate that we need a lower frequency cutoff for the AA filtering
+
+13. [E] I noticed that your ADC/DAC connector has no intervening grounds in it. Not much of a problem for the low-impedance DAC lines, but it can be an issue for the ADCs. The most common way to wire those is to have a row of grounds and a row of ‘active’ signals. That way the flat cable has a ground wire separating every signal from each other. As you have it, any noise in the DAC lines will capacitively and inductively couple back into the ADC lines. Add that to the lack of filtering and that is a clear path for noise.
+
+    > [J] This is an easy change and we will certainly implement it. 
+
+14. [E] Place the capacitors C5, C6, C9, C12 close to the ADC itself. That way any injected noise in those traces will have a direct path to the common node of the ADC itself. Alternatively connect the “COM” line from the ADC close to those capacitor's gnd, with a trace that closely follows those inputs.
+
+    > [J] Thank you. This is the type of thing I never would have figured out on my own. Will certainly implement.
+
+
+
+
