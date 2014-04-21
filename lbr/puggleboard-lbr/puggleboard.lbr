@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -10232,6 +10232,139 @@ distributor Farnell 149-452</description>
 <rectangle x1="1.025" y1="2" x2="1.515" y2="3.1" layer="51"/>
 <wire x1="-4.318" y1="0.508" x2="-4.318" y2="-0.508" width="0.1524" layer="21" curve="-180"/>
 </package>
+<package name="2X07">
+<wire x1="-8.89" y1="-1.905" x2="-8.255" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-6.985" y1="-2.54" x2="-6.35" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="-1.905" x2="-5.715" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="-2.54" x2="-3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-1.905" x2="-3.175" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-2.54" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="-1.905" x2="-8.89" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="1.905" x2="-8.255" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-8.255" y1="2.54" x2="-6.985" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-6.985" y1="2.54" x2="-6.35" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="1.905" x2="-5.715" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="2.54" x2="-4.445" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="2.54" x2="-3.81" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="1.905" x2="-3.175" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="2.54" x2="-1.905" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="2.54" x2="-1.27" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="1.905" x2="-6.35" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="1.905" x2="-3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="1.905" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="-2.54" x2="-1.905" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="-2.54" x2="-4.445" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-8.255" y1="-2.54" x2="-6.985" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="-0.635" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-2.54" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="1.905" x2="-0.635" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="2.54" x2="0.635" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="2.54" x2="1.27" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="1.905" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-2.54" x2="0.635" y2="-2.54" width="0.1524" layer="21"/>
+<pad name="1" x="-7.62" y="-1.27" drill="1.016" diameter="1.6764" shape="octagon"/>
+<pad name="2" x="-7.62" y="1.27" drill="1.016" diameter="1.6764" shape="octagon"/>
+<pad name="3" x="-5.08" y="-1.27" drill="1.016" diameter="1.6764" shape="octagon"/>
+<pad name="4" x="-5.08" y="1.27" drill="1.016" diameter="1.6764" shape="octagon"/>
+<pad name="5" x="-2.54" y="-1.27" drill="1.016" diameter="1.6764" shape="octagon"/>
+<pad name="6" x="-2.54" y="1.27" drill="1.016" diameter="1.6764" shape="octagon"/>
+<pad name="7" x="0" y="-1.27" drill="1.016" diameter="1.6764" shape="octagon"/>
+<pad name="8" x="0" y="1.27" drill="1.016" diameter="1.6764" shape="octagon"/>
+<text x="-8.89" y="3.175" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-8.89" y="-4.445" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-7.874" y1="-1.524" x2="-7.366" y2="-1.016" layer="51"/>
+<rectangle x1="-7.874" y1="1.016" x2="-7.366" y2="1.524" layer="51"/>
+<rectangle x1="-5.334" y1="1.016" x2="-4.826" y2="1.524" layer="51"/>
+<rectangle x1="-5.334" y1="-1.524" x2="-4.826" y2="-1.016" layer="51"/>
+<rectangle x1="-2.794" y1="1.016" x2="-2.286" y2="1.524" layer="51"/>
+<rectangle x1="-2.794" y1="-1.524" x2="-2.286" y2="-1.016" layer="51"/>
+<rectangle x1="-0.254" y1="1.016" x2="0.254" y2="1.524" layer="51"/>
+<pad name="9" x="2.54" y="-1.27" drill="1.016" diameter="1.6764" shape="octagon"/>
+<rectangle x1="-0.254" y1="-1.524" x2="0.254" y2="-1.016" layer="51"/>
+<rectangle x1="2.286" y1="-1.524" x2="2.794" y2="-1.016" layer="51"/>
+<rectangle x1="2.286" y1="1.016" x2="2.794" y2="1.524" layer="51"/>
+<wire x1="3.81" y1="1.905" x2="3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="2.54" x2="3.81" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="-2.54" x2="3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-1.905" x2="1.905" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-2.54" x2="3.175" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="2.54" x2="3.175" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="1.905" x2="1.905" y2="2.54" width="0.1524" layer="21"/>
+<pad name="10" x="2.54" y="1.27" drill="1.016" diameter="1.6764" shape="octagon"/>
+<pad name="11" x="5.08" y="-1.27" drill="1.016" diameter="1.6764" shape="octagon"/>
+<rectangle x1="4.826" y1="-1.524" x2="5.334" y2="-1.016" layer="51"/>
+<rectangle x1="4.826" y1="1.016" x2="5.334" y2="1.524" layer="51"/>
+<wire x1="6.35" y1="1.905" x2="6.35" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="2.54" x2="6.35" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="-2.54" x2="6.35" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="-1.905" x2="4.445" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="-2.54" x2="5.715" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="2.54" x2="5.715" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="1.905" x2="4.445" y2="2.54" width="0.1524" layer="21"/>
+<pad name="12" x="5.08" y="1.27" drill="1.016" diameter="1.6764" shape="octagon"/>
+<pad name="13" x="7.62" y="-1.27" drill="1.016" diameter="1.6764" shape="octagon"/>
+<rectangle x1="7.366" y1="-1.524" x2="7.874" y2="-1.016" layer="51"/>
+<rectangle x1="7.366" y1="1.016" x2="7.874" y2="1.524" layer="51"/>
+<wire x1="8.89" y1="1.905" x2="8.89" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="8.255" y1="2.54" x2="8.89" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="8.255" y1="-2.54" x2="8.89" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="6.985" y1="-2.54" x2="8.255" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="6.985" y1="2.54" x2="8.255" y2="2.54" width="0.1524" layer="21"/>
+<pad name="14" x="7.62" y="1.27" drill="1.016" diameter="1.6764" shape="octagon"/>
+<wire x1="6.35" y1="1.905" x2="6.985" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="-1.905" x2="6.985" y2="-2.54" width="0.1524" layer="21"/>
+</package>
+<package name="2X07/90">
+<wire x1="-8.89" y1="3.175" x2="-8.89" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="8.89" y1="3.175" x2="-8.89" y2="3.175" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="0.635" x2="8.89" y2="0.635" width="0.1524" layer="21"/>
+<pad name="2" x="-7.62" y="-1.27" drill="1.016" shape="octagon"/>
+<pad name="4" x="-5.08" y="-1.27" drill="1.016" shape="octagon"/>
+<pad name="6" x="-2.54" y="-1.27" drill="1.016" shape="octagon"/>
+<pad name="8" x="0" y="-1.27" drill="1.016" shape="octagon"/>
+<pad name="1" x="-7.62" y="-3.81" drill="1.016" shape="octagon"/>
+<pad name="3" x="-5.08" y="-3.81" drill="1.016" shape="octagon"/>
+<pad name="5" x="-2.54" y="-3.81" drill="1.016" shape="octagon"/>
+<pad name="7" x="0" y="-3.81" drill="1.016" shape="octagon"/>
+<text x="-9.525" y="-1.27" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="10.795" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-8.001" y1="3.175" x2="-7.239" y2="3.683" layer="21"/>
+<rectangle x1="-5.461" y1="3.175" x2="-4.699" y2="3.683" layer="21"/>
+<rectangle x1="-2.921" y1="3.175" x2="-2.159" y2="3.683" layer="21"/>
+<rectangle x1="-0.381" y1="3.175" x2="0.381" y2="3.683" layer="21"/>
+<rectangle x1="-8.001" y1="-0.381" x2="-7.239" y2="0.635" layer="21"/>
+<rectangle x1="-5.461" y1="-0.381" x2="-4.699" y2="0.635" layer="21"/>
+<rectangle x1="-8.001" y1="-2.921" x2="-7.239" y2="-2.159" layer="21"/>
+<rectangle x1="-8.001" y1="-2.159" x2="-7.239" y2="-0.381" layer="51"/>
+<rectangle x1="-5.461" y1="-2.159" x2="-4.699" y2="-0.381" layer="51"/>
+<rectangle x1="-5.461" y1="-2.921" x2="-4.699" y2="-2.159" layer="21"/>
+<rectangle x1="-2.921" y1="-0.381" x2="-2.159" y2="0.635" layer="21"/>
+<rectangle x1="-0.381" y1="-0.381" x2="0.381" y2="0.635" layer="21"/>
+<rectangle x1="-2.921" y1="-2.921" x2="-2.159" y2="-2.159" layer="21"/>
+<rectangle x1="-2.921" y1="-2.159" x2="-2.159" y2="-0.381" layer="51"/>
+<rectangle x1="-0.381" y1="-2.159" x2="0.381" y2="-0.381" layer="51"/>
+<rectangle x1="-0.381" y1="-2.921" x2="0.381" y2="-2.159" layer="21"/>
+<pad name="10" x="2.54" y="-1.27" drill="1.016" shape="octagon"/>
+<pad name="9" x="2.54" y="-3.81" drill="1.016" shape="octagon"/>
+<rectangle x1="2.159" y1="3.175" x2="2.921" y2="3.683" layer="21"/>
+<rectangle x1="2.159" y1="-0.381" x2="2.921" y2="0.635" layer="21"/>
+<rectangle x1="2.159" y1="-2.159" x2="2.921" y2="-0.381" layer="51"/>
+<rectangle x1="2.159" y1="-2.921" x2="2.921" y2="-2.159" layer="21"/>
+<pad name="11" x="5.08" y="-3.81" drill="1.016" shape="octagon"/>
+<pad name="12" x="5.08" y="-1.27" drill="1.016" shape="octagon"/>
+<rectangle x1="4.699" y1="-2.921" x2="5.461" y2="-2.159" layer="21"/>
+<rectangle x1="4.699" y1="-0.381" x2="5.461" y2="0.635" layer="21"/>
+<rectangle x1="4.699" y1="-2.159" x2="5.461" y2="-0.381" layer="51"/>
+<rectangle x1="4.699" y1="3.175" x2="5.461" y2="3.683" layer="21"/>
+<pad name="13" x="7.62" y="-3.81" drill="1.016" shape="octagon"/>
+<pad name="14" x="7.62" y="-1.27" drill="1.016" shape="octagon"/>
+<rectangle x1="7.239" y1="-2.159" x2="8.001" y2="-0.381" layer="51"/>
+<rectangle x1="7.239" y1="-2.921" x2="8.001" y2="-2.159" layer="21"/>
+<rectangle x1="7.239" y1="-0.381" x2="8.001" y2="0.635" layer="21"/>
+<wire x1="8.89" y1="0.635" x2="8.89" y2="3.175" width="0.1524" layer="21"/>
+<rectangle x1="4.699" y1="3.175" x2="5.461" y2="3.683" layer="21"/>
+<rectangle x1="7.239" y1="3.175" x2="8.001" y2="3.683" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="V_SIG">
@@ -10715,16 +10848,16 @@ distributor Farnell 149-452</description>
 <symbol name="ADS8331IBPW">
 <pin name="VA" x="-25.4" y="27.94" length="middle" direction="pwr"/>
 <pin name="VBD" x="-25.4" y="25.4" length="middle" direction="pwr"/>
-<pin name="IN0" x="-25.4" y="20.32" length="middle" direction="in"/>
-<pin name="IN1" x="-25.4" y="17.78" length="middle" direction="in"/>
-<pin name="IN2" x="-25.4" y="15.24" length="middle" direction="in"/>
-<pin name="IN3" x="-25.4" y="12.7" length="middle" direction="in"/>
-<pin name="~RESET" x="-25.4" y="7.62" length="middle" direction="in"/>
+<pin name="IN0" x="-25.4" y="17.78" length="middle" direction="in"/>
+<pin name="IN1" x="-25.4" y="15.24" length="middle" direction="in"/>
+<pin name="IN2" x="-25.4" y="12.7" length="middle" direction="in"/>
+<pin name="IN3" x="-25.4" y="10.16" length="middle" direction="in"/>
+<pin name="~RESET" x="-25.4" y="22.86" length="middle" direction="in"/>
 <pin name="SCLK" x="-25.4" y="5.08" length="middle" direction="in"/>
 <pin name="SDI" x="-25.4" y="2.54" length="middle" direction="in"/>
 <pin name="FS/~CS" x="-25.4" y="0" length="middle" direction="in"/>
 <pin name="~CONVST" x="-25.4" y="-2.54" length="middle" direction="in"/>
-<pin name="ADCIN" x="-25.4" y="-5.08" length="middle" direction="in"/>
+<pin name="ADCIN" x="25.4" y="27.94" length="middle" direction="in" rot="R180"/>
 <pin name="COM" x="-25.4" y="-7.62" length="middle" direction="in"/>
 <pin name="REF+" x="-25.4" y="-12.7" length="middle" direction="in"/>
 <pin name="REF-" x="-25.4" y="-15.24" length="middle" direction="in"/>
@@ -10734,9 +10867,9 @@ distributor Farnell 149-452</description>
 <pin name="NC" x="-25.4" y="-27.94" length="middle" direction="nc"/>
 <pin name="AGND" x="-25.4" y="-33.02" length="middle" direction="pas"/>
 <pin name="DGND" x="-25.4" y="-35.56" length="middle" direction="pas"/>
-<pin name="MUXOUT" x="25.4" y="27.94" length="middle" direction="out" rot="R180"/>
-<pin name="SDO" x="25.4" y="25.4" length="middle" direction="out" rot="R180"/>
-<pin name="EOC/~INT/CDI" x="25.4" y="22.86" length="middle" rot="R180"/>
+<pin name="MUXOUT" x="25.4" y="25.4" length="middle" direction="out" rot="R180"/>
+<pin name="SDO" x="25.4" y="22.86" length="middle" direction="out" rot="R180"/>
+<pin name="EOC/~INT/CDI" x="25.4" y="20.32" length="middle" rot="R180"/>
 <wire x1="-20.32" y1="33.02" x2="-20.32" y2="-40.64" width="0.4064" layer="94"/>
 <wire x1="-20.32" y1="-40.64" x2="20.32" y2="-40.64" width="0.4064" layer="94"/>
 <wire x1="20.32" y1="-40.64" x2="20.32" y2="33.02" width="0.4064" layer="94"/>
@@ -11027,6 +11160,28 @@ distributor Farnell 149-452</description>
 <text x="1.27" y="-4.445" size="0.8128" layer="93" rot="R90">V-</text>
 <pin name="V+" x="0" y="7.62" visible="pad" length="middle" direction="in" rot="R270"/>
 <pin name="V-" x="0" y="-7.62" visible="pad" length="middle" direction="in" rot="R90"/>
+</symbol>
+<symbol name="PINH2X7">
+<wire x1="-6.35" y1="-10.16" x2="8.89" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="8.89" y1="-10.16" x2="8.89" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="8.89" y1="10.16" x2="-6.35" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="10.16" x2="-6.35" y2="-10.16" width="0.4064" layer="94"/>
+<text x="-6.35" y="10.795" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="7.62" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="5.08" y="7.62" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="3" x="-2.54" y="5.08" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="4" x="5.08" y="5.08" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="5" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="6" x="5.08" y="2.54" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="7" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="8" x="5.08" y="0" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="9" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="10" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="11" x="-2.54" y="-5.08" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="12" x="5.08" y="-5.08" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="13" x="-2.54" y="-7.62" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="14" x="5.08" y="-7.62" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -12800,25 +12955,29 @@ distributor Farnell 149-452</description>
 <deviceset name="OPA4209AIPW" prefix="U">
 <description>OPERATIONAL AMPLIFIER</description>
 <gates>
-<gate name="A" symbol="OPA4209AIPW" x="0" y="0"/>
+<gate name="G$1" symbol="OPAMP" x="-12.7" y="7.62"/>
+<gate name="G$2" symbol="OPAMP" x="15.24" y="7.62"/>
+<gate name="G$3" symbol="OPAMP" x="-12.7" y="-12.7"/>
+<gate name="G$4" symbol="OPAMP" x="15.24" y="-12.7"/>
+<gate name="G$5" symbol="PWR+-" x="-12.7" y="7.62"/>
 </gates>
 <devices>
 <device name="" package="SOP65P640X120-14N">
 <connects>
-<connect gate="A" pin="+IN_A" pad="3"/>
-<connect gate="A" pin="+IN_B" pad="5"/>
-<connect gate="A" pin="+IN_C" pad="10"/>
-<connect gate="A" pin="+IN_D" pad="12"/>
-<connect gate="A" pin="-IN_A" pad="2"/>
-<connect gate="A" pin="-IN_B" pad="6"/>
-<connect gate="A" pin="-IN_C" pad="9"/>
-<connect gate="A" pin="-IN_D" pad="13"/>
-<connect gate="A" pin="OUT_A" pad="1"/>
-<connect gate="A" pin="OUT_B" pad="7"/>
-<connect gate="A" pin="OUT_C" pad="8"/>
-<connect gate="A" pin="OUT_D" pad="14"/>
-<connect gate="A" pin="V+" pad="4"/>
-<connect gate="A" pin="V-" pad="11"/>
+<connect gate="G$1" pin="+IN" pad="3"/>
+<connect gate="G$1" pin="-IN" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
+<connect gate="G$2" pin="+IN" pad="5"/>
+<connect gate="G$2" pin="-IN" pad="6"/>
+<connect gate="G$2" pin="OUT" pad="7"/>
+<connect gate="G$3" pin="+IN" pad="10"/>
+<connect gate="G$3" pin="-IN" pad="9"/>
+<connect gate="G$3" pin="OUT" pad="8"/>
+<connect gate="G$4" pin="+IN" pad="12"/>
+<connect gate="G$4" pin="-IN" pad="13"/>
+<connect gate="G$4" pin="OUT" pad="14"/>
+<connect gate="G$5" pin="V+" pad="4"/>
+<connect gate="G$5" pin="V-" pad="11"/>
 </connects>
 <technologies>
 <technology name="">
@@ -12832,20 +12991,20 @@ distributor Farnell 149-452</description>
 </device>
 <device name="MOD" package="SOP65P640X120-14N-MOD">
 <connects>
-<connect gate="A" pin="+IN_A" pad="3"/>
-<connect gate="A" pin="+IN_B" pad="5"/>
-<connect gate="A" pin="+IN_C" pad="10"/>
-<connect gate="A" pin="+IN_D" pad="12"/>
-<connect gate="A" pin="-IN_A" pad="2"/>
-<connect gate="A" pin="-IN_B" pad="6"/>
-<connect gate="A" pin="-IN_C" pad="9"/>
-<connect gate="A" pin="-IN_D" pad="13"/>
-<connect gate="A" pin="OUT_A" pad="1"/>
-<connect gate="A" pin="OUT_B" pad="7"/>
-<connect gate="A" pin="OUT_C" pad="8"/>
-<connect gate="A" pin="OUT_D" pad="14"/>
-<connect gate="A" pin="V+" pad="4"/>
-<connect gate="A" pin="V-" pad="11"/>
+<connect gate="G$1" pin="+IN" pad="3"/>
+<connect gate="G$1" pin="-IN" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
+<connect gate="G$2" pin="+IN" pad="5"/>
+<connect gate="G$2" pin="-IN" pad="6"/>
+<connect gate="G$2" pin="OUT" pad="7"/>
+<connect gate="G$3" pin="+IN" pad="10"/>
+<connect gate="G$3" pin="-IN" pad="9"/>
+<connect gate="G$3" pin="OUT" pad="8"/>
+<connect gate="G$4" pin="+IN" pad="12"/>
+<connect gate="G$4" pin="-IN" pad="13"/>
+<connect gate="G$4" pin="OUT" pad="14"/>
+<connect gate="G$5" pin="V+" pad="4"/>
+<connect gate="G$5" pin="V-" pad="11"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -13035,6 +13194,55 @@ distributor Farnell 149-452</description>
 <connect gate="D" pin="OUT" pad="14"/>
 <connect gate="P" pin="V+" pad="4"/>
 <connect gate="P" pin="V-" pad="11"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PINHD-2X7">
+<gates>
+<gate name="G$1" symbol="PINH2X7" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2X07">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="90DEG" package="2X07/90">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
