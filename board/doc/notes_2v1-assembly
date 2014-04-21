@@ -6,5 +6,5 @@ X1. I screwed up the voltage reference filter again. By moving the first order R
 
 EDIT: 
 + That was not the problem. The real problem was that in the schamatic the VREF_PRE signal was renamed VREF as it entered the input of the AD8302, which caused a bunch of miswirings. Gah.
-+ I think that I did not pay enought attention to the ERC check on the schematic. This may have listed the fact that all three pins (IN-,+ and OUT) were connected on an opamp, and the problem could have been avoided.
++ I think that I did not pay enough attention to the ERC check on the schematic. This may have listed the fact that all three pins (IN-,+ and OUT) were connected on an opamp, and the problem could have been avoided.
 + In the meantime, i will pay for my sins by cutting traces with a blade and jumper wiring the correct circuit into these boards for testing purposes.
