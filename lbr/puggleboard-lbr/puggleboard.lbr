@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -10412,6 +10412,86 @@ distributor Farnell 149-452</description>
 <text x="-3.4544" y="2.54" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-3.4544" y="-4.445" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
+<package name="RX4_0612">
+<smd name="P6" x="0.4" y="0.7" dx="0.5" dy="0.7" layer="1" rot="R180"/>
+<smd name="P4" x="-0.4" y="0.7" dx="0.5" dy="0.7" layer="1" rot="R180"/>
+<smd name="P3" x="-0.4" y="-0.7" dx="0.5" dy="0.7" layer="1" rot="R180"/>
+<smd name="P5" x="0.4" y="-0.7" dx="0.5" dy="0.7" layer="1" rot="R180"/>
+<smd name="P8" x="1.27" y="0.7" dx="0.64" dy="0.7" layer="1" rot="R180"/>
+<smd name="P7" x="1.27" y="-0.7" dx="0.64" dy="0.7" layer="1" rot="R180"/>
+<smd name="P1" x="-1.27" y="-0.7" dx="0.64" dy="0.7" layer="1" rot="R180"/>
+<smd name="P2" x="-1.27" y="0.7" dx="0.64" dy="0.7" layer="1" rot="R180"/>
+<wire x1="-1.9" y1="-1.35" x2="-1.9" y2="1.35" width="0.127" layer="21"/>
+<wire x1="-1.9" y1="1.35" x2="1.9" y2="1.35" width="0.127" layer="21"/>
+<wire x1="1.9" y1="1.35" x2="1.9" y2="-1.35" width="0.127" layer="21"/>
+<wire x1="1.9" y1="-1.35" x2="-1.9" y2="-1.35" width="0.127" layer="21"/>
+<text x="-2" y="2" size="0.762" layer="25" font="vector" ratio="10" rot="R180" align="center-right">&gt;NAME</text>
+<text x="-2" y="-2" size="0.762" layer="27" font="vector" ratio="10" align="center-left">&gt;VALUE</text>
+<rectangle x1="-1.5" y1="0.5" x2="-1.05" y2="0.7" layer="51"/>
+<rectangle x1="-0.55" y1="0.5" x2="-0.25" y2="0.7" layer="51"/>
+<rectangle x1="0.25" y1="0.5" x2="0.55" y2="0.7" layer="51"/>
+<rectangle x1="1.05" y1="0.5" x2="1.5" y2="0.7" layer="51"/>
+<rectangle x1="-1.5" y1="-0.7" x2="-1.05" y2="-0.5" layer="51"/>
+<rectangle x1="-0.55" y1="-0.7" x2="-0.25" y2="-0.5" layer="51"/>
+<rectangle x1="0.25" y1="-0.7" x2="0.55" y2="-0.5" layer="51"/>
+<rectangle x1="1.05" y1="-0.7" x2="1.5" y2="-0.5" layer="51"/>
+<wire x1="-1.5" y1="0.7" x2="-1.5" y2="-0.7" width="0.05" layer="51"/>
+<wire x1="-1.5" y1="-0.7" x2="-1.05" y2="-0.7" width="0.05" layer="51"/>
+<wire x1="-1.05" y1="-0.7" x2="-1.05" y2="0.7" width="0.05" layer="51"/>
+<wire x1="-1.05" y1="0.7" x2="-1.5" y2="0.7" width="0.05" layer="51"/>
+<wire x1="-0.55" y1="-0.7" x2="-0.55" y2="0.7" width="0.05" layer="51"/>
+<wire x1="-0.55" y1="0.7" x2="-0.25" y2="0.7" width="0.05" layer="51"/>
+<wire x1="-0.25" y1="0.7" x2="-0.25" y2="-0.7" width="0.05" layer="51"/>
+<wire x1="-0.25" y1="-0.7" x2="-0.55" y2="-0.7" width="0.05" layer="51"/>
+<wire x1="0.25" y1="-0.7" x2="0.25" y2="0.7" width="0.05" layer="51"/>
+<wire x1="0.25" y1="0.7" x2="0.55" y2="0.7" width="0.05" layer="51"/>
+<wire x1="0.55" y1="0.7" x2="0.55" y2="-0.7" width="0.05" layer="51"/>
+<wire x1="0.55" y1="-0.7" x2="0.25" y2="-0.7" width="0.05" layer="51"/>
+<wire x1="1.05" y1="-0.7" x2="1.05" y2="0.7" width="0.05" layer="51"/>
+<wire x1="1.05" y1="0.7" x2="1.5" y2="0.7" width="0.05" layer="51"/>
+<wire x1="1.5" y1="0.7" x2="1.5" y2="-0.7" width="0.05" layer="51"/>
+<wire x1="1.05" y1="-0.7" x2="1.5" y2="-0.7" width="0.05" layer="51"/>
+</package>
+<package name="RX4_0603">
+<text x="-1.84" y="1.75" size="0.762" layer="25" font="vector" ratio="10" rot="R180" align="center-right">&gt;NAME</text>
+<text x="-1.9" y="-1.8" size="0.762" layer="27" font="vector" ratio="10" align="center-left">&gt;VALUE</text>
+<rectangle x1="-1.54" y1="0.45" x2="-1.09" y2="0.65" layer="51"/>
+<rectangle x1="-0.59" y1="0.45" x2="-0.29" y2="0.65" layer="51"/>
+<rectangle x1="0.31" y1="0.45" x2="0.61" y2="0.65" layer="51"/>
+<rectangle x1="1.11" y1="0.45" x2="1.56" y2="0.65" layer="51"/>
+<rectangle x1="-1.54" y1="-0.75" x2="-1.09" y2="-0.55" layer="51"/>
+<rectangle x1="-0.59" y1="-0.75" x2="-0.29" y2="-0.55" layer="51"/>
+<rectangle x1="0.31" y1="-0.75" x2="0.61" y2="-0.55" layer="51"/>
+<rectangle x1="1.11" y1="-0.75" x2="1.56" y2="-0.55" layer="51"/>
+<wire x1="-1.54" y1="0.65" x2="-1.54" y2="-0.75" width="0.05" layer="51"/>
+<wire x1="-1.54" y1="-0.75" x2="-1.09" y2="-0.75" width="0.05" layer="51"/>
+<wire x1="-1.09" y1="-0.75" x2="-1.09" y2="0.65" width="0.05" layer="51"/>
+<wire x1="-1.09" y1="0.65" x2="-1.54" y2="0.65" width="0.05" layer="51"/>
+<wire x1="-0.59" y1="-0.75" x2="-0.59" y2="0.65" width="0.05" layer="51"/>
+<wire x1="-0.59" y1="0.65" x2="-0.29" y2="0.65" width="0.05" layer="51"/>
+<wire x1="-0.29" y1="0.65" x2="-0.29" y2="-0.75" width="0.05" layer="51"/>
+<wire x1="-0.29" y1="-0.75" x2="-0.59" y2="-0.75" width="0.05" layer="51"/>
+<wire x1="0.31" y1="-0.75" x2="0.31" y2="0.65" width="0.05" layer="51"/>
+<wire x1="0.31" y1="0.65" x2="0.61" y2="0.65" width="0.05" layer="51"/>
+<wire x1="0.61" y1="0.65" x2="0.61" y2="-0.75" width="0.05" layer="51"/>
+<wire x1="0.61" y1="-0.75" x2="0.31" y2="-0.75" width="0.05" layer="51"/>
+<wire x1="1.11" y1="-0.75" x2="1.11" y2="0.65" width="0.05" layer="51"/>
+<wire x1="1.11" y1="0.65" x2="1.56" y2="0.65" width="0.05" layer="51"/>
+<wire x1="1.56" y1="0.65" x2="1.56" y2="-0.75" width="0.05" layer="51"/>
+<wire x1="1.11" y1="-0.75" x2="1.56" y2="-0.75" width="0.05" layer="51"/>
+<smd name="P6" x="0.4" y="0.625" dx="0.5" dy="0.65" layer="1" rot="R180"/>
+<smd name="P4" x="-0.4" y="0.625" dx="0.5" dy="0.65" layer="1" rot="R180"/>
+<smd name="P5" x="0.4" y="-0.625" dx="0.5" dy="0.65" layer="1" rot="R180"/>
+<smd name="P3" x="-0.4" y="-0.625" dx="0.5" dy="0.65" layer="1" rot="R180"/>
+<smd name="P8" x="1.3" y="0.625" dx="0.7" dy="0.65" layer="1" rot="R180"/>
+<smd name="P2" x="-1.3" y="0.625" dx="0.7" dy="0.65" layer="1" rot="R180"/>
+<smd name="P1" x="-1.3" y="-0.625" dx="0.7" dy="0.65" layer="1" rot="R180"/>
+<smd name="P7" x="1.3" y="-0.625" dx="0.7" dy="0.65" layer="1" rot="R180"/>
+<wire x1="-1.9" y1="1.2" x2="-1.9" y2="-1.2" width="0.127" layer="21"/>
+<wire x1="-1.9" y1="-1.2" x2="1.9" y2="-1.2" width="0.127" layer="21"/>
+<wire x1="1.9" y1="-1.2" x2="1.9" y2="1.2" width="0.127" layer="21"/>
+<wire x1="1.9" y1="1.2" x2="-1.9" y2="1.2" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="V_SIG">
@@ -13373,6 +13453,46 @@ distributor Farnell 149-452</description>
 <attribute name="PACKAGE" value="SOT-23-5" constant="no"/>
 <attribute name="SUPPLIER" value="Texas Instruments" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RX4" uservalue="yes">
+<gates>
+<gate name="G1" symbol="R" x="0" y="12.7"/>
+<gate name="G2" symbol="R" x="0" y="2.54"/>
+<gate name="G3" symbol="R" x="0" y="-7.62"/>
+<gate name="G4" symbol="R" x="0" y="-17.78"/>
+</gates>
+<devices>
+<device name="_0612" package="RX4_0612">
+<connects>
+<connect gate="G1" pin="1" pad="P1"/>
+<connect gate="G1" pin="2" pad="P2"/>
+<connect gate="G2" pin="1" pad="P3"/>
+<connect gate="G2" pin="2" pad="P4"/>
+<connect gate="G3" pin="1" pad="P5"/>
+<connect gate="G3" pin="2" pad="P6"/>
+<connect gate="G4" pin="1" pad="P7"/>
+<connect gate="G4" pin="2" pad="P8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0603" package="RX4_0603">
+<connects>
+<connect gate="G1" pin="1" pad="P1"/>
+<connect gate="G1" pin="2" pad="P2"/>
+<connect gate="G2" pin="1" pad="P3"/>
+<connect gate="G2" pin="2" pad="P4"/>
+<connect gate="G3" pin="1" pad="P5"/>
+<connect gate="G3" pin="2" pad="P6"/>
+<connect gate="G4" pin="1" pad="P7"/>
+<connect gate="G4" pin="2" pad="P8"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
