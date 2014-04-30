@@ -5223,8 +5223,8 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pin name="VCC" x="-17.78" y="2.54" length="middle" direction="pwr"/>
 <pin name="D" x="-17.78" y="-2.54" length="middle" direction="in"/>
 <pin name="GND" x="-17.78" y="-7.62" length="middle" direction="pas"/>
-<pin name="Z" x="17.78" y="-2.54" length="middle" direction="out" rot="R180"/>
-<pin name="Y" x="17.78" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="B" x="17.78" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="A" x="17.78" y="2.54" length="middle" direction="out" rot="R180"/>
 <wire x1="-12.7" y1="7.62" x2="-12.7" y2="-12.7" width="0.4064" layer="94"/>
 <wire x1="-12.7" y1="-12.7" x2="12.7" y2="-12.7" width="0.4064" layer="94"/>
 <wire x1="12.7" y1="-12.7" x2="12.7" y2="7.62" width="0.4064" layer="94"/>
@@ -6658,11 +6658,11 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <devices>
 <device name="" package="SOT95P280X145-5N">
 <connects>
+<connect gate="A" pin="A" pad="3"/>
+<connect gate="A" pin="B" pad="4"/>
 <connect gate="A" pin="D" pad="5"/>
 <connect gate="A" pin="GND" pad="2"/>
 <connect gate="A" pin="VCC" pad="1"/>
-<connect gate="A" pin="Y" pad="4"/>
-<connect gate="A" pin="Z" pad="3"/>
 </connects>
 <technologies>
 <technology name="">
@@ -7282,20 +7282,21 @@ SPI10 - INTAN_MISO</text>
 <sheet>
 <description>ADC</description>
 <plain>
-<text x="80.01" y="-60.96" size="1.778" layer="97">Connect REF- to AGND 
+<text x="49.53" y="-60.96" size="1.778" layer="97" rot="R180">Connect REF- to AGND 
 using single, isolated via.</text>
 <text x="-93.98" y="71.12" size="1.778" layer="97">Vin= +-4.096/2 +2.048</text>
-<text x="83.82" y="-55.88" size="1.778" layer="97">SPI BUS MAPPING
-1. ADC_CS   (SPI0)
-2. DAC_CS   (SPI1)
-3. SCLK       (SPI2)
-4. MOSI       (SPI3)
-5. MISO       (SPI4)
-6. CONVST  (SPI5)
-</text>
 <text x="-93.98" y="33.02" size="1.778" layer="97">Vin= +-4.096/2 +2.048</text>
 <text x="-2.54" y="71.12" size="1.778" layer="97">Vin= +-4.096/2 +2.048</text>
 <text x="-2.54" y="33.02" size="1.778" layer="97">Vin= +-4.096/2 +2.048</text>
+<text x="114.3" y="-55.88" size="1.6764" layer="97">SPI BUS MAPPING
+
+SPI00 - ADC_CS
+SPI01 - DAC_CS
+SPI02 - SCLK
+SPI03 - MOSI
+SPI04 - MISO
+SPI05 - CONVST
+SPI06 - EOC</text>
 </plain>
 <instances>
 <instance part="U2" gate="A" x="88.9" y="-35.56"/>
@@ -7808,13 +7809,13 @@ using single, isolated via.</text>
 <description>DAC</description>
 <plain>
 <text x="58.42" y="45.72" size="1.778" layer="97">Vout = (2*4.096*D)/65536 -4.096</text>
-<text x="-66.04" y="-63.5" size="1.778" layer="97">SPI BUS MAPPING
-1. ADC_CS   (SPI0)
-2. DAC_CS   (SPI1)
-3. SCLK       (SPI2)
-4. MOSI       (SPI3)
-5. MISO       (SPI4)
-6. CONVST  (SPI5)
+<text x="-60.96" y="-60.96" size="1.6764" layer="97">SPI BUS MAPPING
+
+SPI00 - ADC_CS
+SPI01 - DAC_CS
+SPI02 - SCLK
+SPI03 - MOSI
+SPI04 - MISO
 </text>
 </plain>
 <instances>
@@ -8972,19 +8973,6 @@ using single, isolated via.</text>
 </bus>
 </busses>
 <nets>
-<net name="MISO1_N" class="2">
-<segment>
-<pinref part="U10" gate="A" pin="Z"/>
-<wire x1="22.86" y1="30.48" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="R26" gate="R" pin="2"/>
-<wire x1="48.26" y1="30.48" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
-<label x="76.2" y="7.62" size="1.778" layer="95"/>
-<pinref part="HS_A" gate="G$1" pin="MISO1-"/>
-<wire x1="43.18" y1="30.48" x2="43.18" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="7.62" x2="96.52" y2="7.62" width="0.1524" layer="91"/>
-<junction x="43.18" y="30.48"/>
-</segment>
-</net>
 <net name="CS1_P" class="2">
 <segment>
 <pinref part="U13" gate="A" pin="Y"/>
@@ -9052,20 +9040,6 @@ using single, isolated via.</text>
 <wire x1="-40.64" y1="33.02" x2="-40.64" y2="35.56" width="0.1524" layer="91"/>
 <junction x="-40.64" y="35.56"/>
 <label x="-66.04" y="35.56" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="MISO1_P" class="2">
-<segment>
-<pinref part="U10" gate="A" pin="Y"/>
-<wire x1="22.86" y1="35.56" x2="60.96" y2="35.56" width="0.1524" layer="91"/>
-<label x="76.2" y="10.16" size="1.778" layer="95"/>
-<pinref part="HS_A" gate="G$1" pin="MISO1+"/>
-<wire x1="60.96" y1="35.56" x2="60.96" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="30.48" x2="60.96" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="10.16" x2="96.52" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="R26" gate="R" pin="1"/>
-<wire x1="58.42" y1="30.48" x2="60.96" y2="30.48" width="0.1524" layer="91"/>
-<junction x="60.96" y="30.48"/>
 </segment>
 </net>
 <net name="MOSI_P" class="2">
@@ -9214,6 +9188,33 @@ using single, isolated via.</text>
 <label x="-25.4" y="-68.58" size="1.778" layer="95"/>
 <pinref part="U13" gate="A" pin="D"/>
 <wire x1="-30.48" y1="-68.58" x2="-12.7" y2="-68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="MISO1_P" class="2">
+<segment>
+<pinref part="U10" gate="A" pin="A"/>
+<wire x1="22.86" y1="35.56" x2="60.96" y2="35.56" width="0.1524" layer="91"/>
+<label x="76.2" y="10.16" size="1.778" layer="95"/>
+<pinref part="HS_A" gate="G$1" pin="MISO1+"/>
+<wire x1="60.96" y1="35.56" x2="60.96" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="30.48" x2="60.96" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="10.16" x2="96.52" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="R26" gate="R" pin="1"/>
+<wire x1="58.42" y1="30.48" x2="60.96" y2="30.48" width="0.1524" layer="91"/>
+<junction x="60.96" y="30.48"/>
+</segment>
+</net>
+<net name="MISO1_N" class="2">
+<segment>
+<pinref part="U10" gate="A" pin="B"/>
+<wire x1="22.86" y1="30.48" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="R26" gate="R" pin="2"/>
+<wire x1="48.26" y1="30.48" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
+<label x="76.2" y="7.62" size="1.778" layer="95"/>
+<pinref part="HS_A" gate="G$1" pin="MISO1-"/>
+<wire x1="43.18" y1="30.48" x2="43.18" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="7.62" x2="96.52" y2="7.62" width="0.1524" layer="91"/>
+<junction x="43.18" y="30.48"/>
 </segment>
 </net>
 </nets>

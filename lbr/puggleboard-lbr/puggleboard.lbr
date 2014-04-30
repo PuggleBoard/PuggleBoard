@@ -11327,8 +11327,8 @@ distributor Farnell 149-452</description>
 <pin name="VCC" x="-17.78" y="2.54" length="middle" direction="pwr"/>
 <pin name="D" x="-17.78" y="-2.54" length="middle" direction="in"/>
 <pin name="GND" x="-17.78" y="-7.62" length="middle" direction="pas"/>
-<pin name="Z" x="17.78" y="-2.54" length="middle" direction="out" rot="R180"/>
-<pin name="Y" x="17.78" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="B" x="17.78" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="A" x="17.78" y="2.54" length="middle" direction="out" rot="R180"/>
 <wire x1="-12.7" y1="7.62" x2="-12.7" y2="-12.7" width="0.4064" layer="94"/>
 <wire x1="-12.7" y1="-12.7" x2="12.7" y2="-12.7" width="0.4064" layer="94"/>
 <wire x1="12.7" y1="-12.7" x2="12.7" y2="7.62" width="0.4064" layer="94"/>
@@ -13439,11 +13439,11 @@ distributor Farnell 149-452</description>
 <devices>
 <device name="" package="SOT95P280X145-5N">
 <connects>
+<connect gate="A" pin="A" pad="3"/>
+<connect gate="A" pin="B" pad="4"/>
 <connect gate="A" pin="D" pad="5"/>
 <connect gate="A" pin="GND" pad="2"/>
 <connect gate="A" pin="VCC" pad="1"/>
-<connect gate="A" pin="Y" pad="4"/>
-<connect gate="A" pin="Z" pad="3"/>
 </connects>
 <technologies>
 <technology name="">

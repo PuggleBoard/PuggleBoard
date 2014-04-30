@@ -9615,24 +9615,10 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U9" pad="3"/>
 <wire x1="-6.4008" y1="-84.963" x2="38.1" y2="53.594" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="MISO1_N" class="2">
-<contactref element="U10" pad="3"/>
-<contactref element="R26" pad="2"/>
-<contactref element="HS_A" pad="T4"/>
-<wire x1="16.1925" y1="-44.577" x2="10.6426" y2="-60.452" width="0" layer="19" extent="1-1"/>
-<wire x1="10.6426" y1="-23.5458" x2="16.1925" y2="-44.577" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="CS1_P" class="2">
 <contactref element="U13" pad="4"/>
 <contactref element="HS_A" pad="B1"/>
 <wire x1="18.0975" y1="-43.434" x2="-4.9276" y2="-23.5458" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="MISO1_P" class="2">
-<contactref element="HS_A" pad="B4"/>
-<contactref element="U10" pad="4"/>
-<contactref element="R26" pad="1"/>
-<wire x1="16.1925" y1="-43.434" x2="8.9154" y2="-60.452" width="0" layer="19" extent="1-1"/>
-<wire x1="13.2334" y1="-23.5458" x2="16.1925" y2="-43.434" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MOSI_P" class="2">
 <contactref element="U11" pad="4"/>
@@ -9709,6 +9695,20 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="89.154" y1="49.276" x2="90.678" y2="49.657" width="0" layer="19" extent="1-16"/>
 <wire x1="88.2904" y1="48.9712" x2="88.392" y2="48.514" width="0" layer="19" extent="1-16"/>
 <wire x1="-15.2146" y1="-92.329" x2="88.392" y2="45.974" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="MISO1_P" class="2">
+<contactref element="HS_A" pad="B4"/>
+<contactref element="U10" pad="3"/>
+<contactref element="R26" pad="1"/>
+<wire x1="16.1925" y1="-43.434" x2="8.9154" y2="-60.452" width="0" layer="19" extent="1-1"/>
+<wire x1="10.6426" y1="-23.5458" x2="16.1925" y2="-43.434" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="MISO1_N" class="2">
+<contactref element="U10" pad="4"/>
+<contactref element="R26" pad="2"/>
+<contactref element="HS_A" pad="T4"/>
+<wire x1="16.1925" y1="-44.577" x2="10.6426" y2="-60.452" width="0" layer="19" extent="1-1"/>
+<wire x1="13.2334" y1="-23.5458" x2="16.1925" y2="-44.577" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
