@@ -6805,7 +6805,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="C44" library="puggleboard" deviceset="C" device="_0603" value="0.1uF"/>
 <part name="A_I/O" library="puggleboard" deviceset="PINHD-2X7" device="" value="PINHD-2X7"/>
 <part name="VBIAS" library="testpad" deviceset="TP" device="B1,27"/>
-<part name="R24" library="puggleboard" deviceset="TRIM_US-" device="M84W" value="10k"/>
+<part name="R24" library="puggleboard" deviceset="TRIM_US-" device="M84W" value="1k"/>
 <part name="C40" library="puggleboard" deviceset="C" device="_0603" value="0.1uF"/>
 <part name="SUPPLY13" library="supply2" deviceset="AGND" device=""/>
 <part name="R23" library="puggleboard" deviceset="R" device="_0603" value="10k"/>
@@ -6949,6 +6949,8 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="R5" library="puggleboard" deviceset="RX4" device="_0603" value="1k"/>
 <part name="R15" library="puggleboard" deviceset="RX4" device="_0603"/>
 <part name="L1" library="puggleboard" deviceset="L" device="_0603" value="MPZ1608"/>
+<part name="R33" library="puggleboard" deviceset="R" device="_0603" value="5k"/>
+<part name="R34" library="puggleboard" deviceset="R" device="_0603" value="5k"/>
 </parts>
 <sheets>
 <sheet>
@@ -8736,8 +8738,10 @@ SPI04 - MISO
 <instance part="U9" gate="G$1" x="5.08" y="-33.02"/>
 <instance part="U9" gate="G$2" x="5.08" y="-76.2"/>
 <instance part="U9" gate="G$3" x="5.08" y="-76.2"/>
-<instance part="SUPPLY33" gate="G$1" x="-43.18" y="-96.52"/>
+<instance part="SUPPLY33" gate="G$1" x="-43.18" y="-99.06"/>
 <instance part="SUPPLY34" gate="G$1" x="5.08" y="-96.52"/>
+<instance part="R33" gate="R" x="-43.18" y="-58.42" rot="R270"/>
+<instance part="R34" gate="R" x="-43.18" y="-88.9" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -8774,11 +8778,6 @@ SPI04 - MISO
 <wire x1="-22.86" y1="0" x2="-22.86" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="SUPPLY38" gate="G$1" pin="AGND"/>
 <wire x1="-22.86" y1="-7.62" x2="-22.86" y2="-12.7" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="-43.18" y1="-93.98" x2="-43.18" y2="-81.28" width="0.1524" layer="91"/>
-<pinref part="R24" gate="G$1" pin="A"/>
-<pinref part="SUPPLY33" gate="G$1" pin="AGND"/>
 </segment>
 <segment>
 <pinref part="SUPPLY1" gate="G$1" pin="AGND"/>
@@ -8819,10 +8818,11 @@ SPI04 - MISO
 </net>
 <net name="VREF" class="0">
 <segment>
-<wire x1="-66.04" y1="-66.04" x2="-43.18" y2="-66.04" width="0.1524" layer="91"/>
-<pinref part="R24" gate="G$1" pin="E"/>
+<wire x1="-66.04" y1="-50.8" x2="-43.18" y2="-50.8" width="0.1524" layer="91"/>
 <label x="-35.56" y="-60.96" size="1.778" layer="95"/>
-<label x="-66.04" y="-66.04" size="1.778" layer="95"/>
+<label x="-66.04" y="-50.8" size="1.778" layer="95"/>
+<pinref part="R33" gate="R" pin="1"/>
+<wire x1="-43.18" y1="-53.34" x2="-43.18" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="20.32" y1="-33.02" x2="45.72" y2="-33.02" width="0.1524" layer="91"/>
@@ -8915,6 +8915,27 @@ SPI04 - MISO
 <wire x1="20.32" y1="-101.6" x2="20.32" y2="-76.2" width="0.1524" layer="91"/>
 <pinref part="U9" gate="G$2" pin="OUT"/>
 <wire x1="20.32" y1="-76.2" x2="12.7" y2="-76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="AGND" class="0">
+<segment>
+<pinref part="SUPPLY33" gate="G$1" pin="AGND"/>
+<pinref part="R34" gate="R" pin="2"/>
+<wire x1="-43.18" y1="-96.52" x2="-43.18" y2="-93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="R34" gate="R" pin="1"/>
+<pinref part="R24" gate="G$1" pin="A"/>
+<wire x1="-43.18" y1="-83.82" x2="-43.18" y2="-81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="R24" gate="G$1" pin="E"/>
+<pinref part="R33" gate="R" pin="2"/>
+<wire x1="-43.18" y1="-66.04" x2="-43.18" y2="-63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
