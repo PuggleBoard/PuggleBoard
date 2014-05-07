@@ -10544,6 +10544,57 @@ http://www.bccomponents.com/</description>
 <smd name="-" x="2.47" y="0" dx="2.37" dy="2.23" layer="1"/>
 <rectangle x1="-4.4878" y1="-1.3128" x2="-3.7258" y2="1.3128" layer="21"/>
 </package>
+<package name="SOP65P490X110-8N">
+<smd name="1" x="-2.1844" y="0.9652" dx="1.4224" dy="0.4318" layer="1"/>
+<smd name="2" x="-2.1844" y="0.3302" dx="1.4224" dy="0.4318" layer="1"/>
+<smd name="3" x="-2.1844" y="-0.3302" dx="1.4224" dy="0.4318" layer="1"/>
+<smd name="4" x="-2.1844" y="-0.9652" dx="1.4224" dy="0.4318" layer="1"/>
+<smd name="5" x="2.1844" y="-0.9652" dx="1.4224" dy="0.4318" layer="1"/>
+<smd name="6" x="2.1844" y="-0.3302" dx="1.4224" dy="0.4318" layer="1"/>
+<smd name="7" x="2.1844" y="0.3302" dx="1.4224" dy="0.4318" layer="1"/>
+<smd name="8" x="2.1844" y="0.9652" dx="1.4224" dy="0.4318" layer="1"/>
+<wire x1="-1.5494" y1="0.7874" x2="-1.5494" y2="1.1684" width="0" layer="51"/>
+<wire x1="-1.5494" y1="1.1684" x2="-2.5146" y2="1.1684" width="0" layer="51"/>
+<wire x1="-2.5146" y1="1.1684" x2="-2.5146" y2="0.7874" width="0" layer="51"/>
+<wire x1="-2.5146" y1="0.7874" x2="-1.5494" y2="0.7874" width="0" layer="51"/>
+<wire x1="-1.5494" y1="0.127" x2="-1.5494" y2="0.508" width="0" layer="51"/>
+<wire x1="-1.5494" y1="0.508" x2="-2.5146" y2="0.508" width="0" layer="51"/>
+<wire x1="-2.5146" y1="0.508" x2="-2.5146" y2="0.127" width="0" layer="51"/>
+<wire x1="-2.5146" y1="0.127" x2="-1.5494" y2="0.127" width="0" layer="51"/>
+<wire x1="-1.5494" y1="-0.508" x2="-1.5494" y2="-0.127" width="0" layer="51"/>
+<wire x1="-1.5494" y1="-0.127" x2="-2.5146" y2="-0.127" width="0" layer="51"/>
+<wire x1="-2.5146" y1="-0.127" x2="-2.5146" y2="-0.508" width="0" layer="51"/>
+<wire x1="-2.5146" y1="-0.508" x2="-1.5494" y2="-0.508" width="0" layer="51"/>
+<wire x1="-1.5494" y1="-1.1684" x2="-1.5494" y2="-0.7874" width="0" layer="51"/>
+<wire x1="-1.5494" y1="-0.7874" x2="-2.5146" y2="-0.7874" width="0" layer="51"/>
+<wire x1="-2.5146" y1="-0.7874" x2="-2.5146" y2="-1.1684" width="0" layer="51"/>
+<wire x1="-2.5146" y1="-1.1684" x2="-1.5494" y2="-1.1684" width="0" layer="51"/>
+<wire x1="1.5494" y1="-0.7874" x2="1.5494" y2="-1.1684" width="0" layer="51"/>
+<wire x1="1.5494" y1="-1.1684" x2="2.5146" y2="-1.1684" width="0" layer="51"/>
+<wire x1="2.5146" y1="-1.1684" x2="2.5146" y2="-0.7874" width="0" layer="51"/>
+<wire x1="2.5146" y1="-0.7874" x2="1.5494" y2="-0.7874" width="0" layer="51"/>
+<wire x1="1.5494" y1="-0.127" x2="1.5494" y2="-0.508" width="0" layer="51"/>
+<wire x1="1.5494" y1="-0.508" x2="2.5146" y2="-0.508" width="0" layer="51"/>
+<wire x1="2.5146" y1="-0.508" x2="2.5146" y2="-0.127" width="0" layer="51"/>
+<wire x1="2.5146" y1="-0.127" x2="1.5494" y2="-0.127" width="0" layer="51"/>
+<wire x1="1.5494" y1="0.508" x2="1.5494" y2="0.127" width="0" layer="51"/>
+<wire x1="1.5494" y1="0.127" x2="2.5146" y2="0.127" width="0" layer="51"/>
+<wire x1="2.5146" y1="0.127" x2="2.5146" y2="0.508" width="0" layer="51"/>
+<wire x1="2.5146" y1="0.508" x2="1.5494" y2="0.508" width="0" layer="51"/>
+<wire x1="1.5494" y1="1.1684" x2="1.5494" y2="0.7874" width="0" layer="51"/>
+<wire x1="1.5494" y1="0.7874" x2="2.5146" y2="0.7874" width="0" layer="51"/>
+<wire x1="2.5146" y1="0.7874" x2="2.5146" y2="1.1684" width="0" layer="51"/>
+<wire x1="2.5146" y1="1.1684" x2="1.5494" y2="1.1684" width="0" layer="51"/>
+<wire x1="-1.5494" y1="-1.5494" x2="1.5494" y2="-1.5494" width="0.1524" layer="21"/>
+<wire x1="1.5494" y1="1.5494" x2="0.3302" y2="1.5494" width="0.1524" layer="21"/>
+<wire x1="0.3302" y1="1.5494" x2="0.3048" y2="1.5494" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.5494" x2="-0.3048" y2="1.5494" width="0.1524" layer="21"/>
+<wire x1="-0.3048" y1="1.5494" x2="-0.3302" y2="1.5494" width="0.1524" layer="21"/>
+<wire x1="-0.3302" y1="1.5494" x2="-1.5494" y2="1.5494" width="0.1524" layer="21"/>
+<text x="-3.4544" y="2.54" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-3.4544" y="-4.445" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+<wire x1="0.3302" y1="1.5494" x2="-0.3302" y2="1.5494" width="0.1524" layer="21" curve="-180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="V_SIG">
@@ -13050,6 +13101,21 @@ distributor Farnell 149-452</description>
 </technology>
 </technologies>
 </device>
+<device name="_SOP" package="SOP65P490X110-8N">
+<connects>
+<connect gate="G$1" pin="+IN" pad="3"/>
+<connect gate="G$1" pin="-IN" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
+<connect gate="G$2" pin="+IN" pad="5"/>
+<connect gate="G$2" pin="-IN" pad="6"/>
+<connect gate="G$2" pin="OUT" pad="7"/>
+<connect gate="G$3" pin="V+" pad="8"/>
+<connect gate="G$3" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="REF5040MDREP" prefix="U">
@@ -13077,6 +13143,21 @@ distributor Farnell 149-452</description>
 <attribute name="PACKAGE" value="SOIC-8" constant="no"/>
 <attribute name="SUPPLIER" value="Texas Instruments" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="_SOP" package="SOP65P490X110-8N">
+<connects>
+<connect gate="A" pin="DNC" pad="1"/>
+<connect gate="A" pin="DNC_2" pad="8"/>
+<connect gate="A" pin="GND" pad="4"/>
+<connect gate="A" pin="NC" pad="7"/>
+<connect gate="A" pin="TEMP" pad="3"/>
+<connect gate="A" pin="TRIM/NR" pad="5"/>
+<connect gate="A" pin="VIN" pad="2"/>
+<connect gate="A" pin="VOUT" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

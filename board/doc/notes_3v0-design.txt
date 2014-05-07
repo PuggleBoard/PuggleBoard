@@ -1,4 +1,4 @@
-I spoke with Edgar Brown about revision 2.1 and he gave a lot of helpful advice. Here is the summary of his comments.
+﻿I spoke with Edgar Brown about revision 2.1 and he gave a lot of helpful advice. Here is the summary of his comments.
 
 1. [E] Use matched resistor arrays instead of discrete components
 
@@ -66,6 +66,10 @@ X4. [E] Regarding the reset button. Why a reset button at all? it takes space an
 14. [E] Place the capacitors C5, C6, C9, C12 close to the ADC itself. That way any injected noise in those traces will have a direct path to the common node of the ADC itself. Alternatively connect the “COM” line from the ADC close to those capacitor's gnd, with a trace that closely follows those inputs.
 
     > [J] Thank you. This is the type of thing I never would have figured out on my own. Will certainly implement.
+
+15. Replace the AD8032 and REF5040 with an MSOP package
+
+    > Make sure to update BOM with (DK: AD8032ARMZ-REEL7CT-ND, MPN: AD8032ARMZ-REEL7)
 
 
 
