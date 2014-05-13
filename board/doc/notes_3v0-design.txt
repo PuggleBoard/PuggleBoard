@@ -71,6 +71,10 @@ X4. [E] Regarding the reset button. Why a reset button at all? it takes space an
 
     > Make sure to update BOM with (DK: AD8032ARMZ-REEL7CT-ND, MPN: AD8032ARMZ-REEL7)
 
+16. You should have a mini-BNC or BNC sync out connection using a 50-ohm line driver or several paralled schmitt triggs with a characteristic 50-ohm out impedance. This will allow you to sync slave boards (e.g. the 64 channel version).
+
+
+
 
 
 
