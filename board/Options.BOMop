@@ -1,7 +1,7 @@
 ScreenWidth=700
 ScreenHeight=600
 AutoOpen=N
-AutoDatabase=
+AutoDatabase=M:/public/PuggleBoard/parts/puggle-parts.BOMdb
 Database=M:/public/PuggleBoard/parts/puggle-parts.BOMdb
 Database=/home/jon/github/PuggleBoard/parts/puggle-parts.BOMdb
 AutoOpenSetup=N
