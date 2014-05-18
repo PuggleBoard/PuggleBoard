@@ -4811,6 +4811,58 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="-3.81" y1="-1.27" x2="-4.572" y2="-0.762" width="0.127" layer="21"/>
 <rectangle x1="-7.366" y1="-4.826" x2="7.366" y2="4.826" layer="39"/>
 </package>
+<package name="153CLV-0807">
+<description>&lt;b&gt;Aluminum electrolytic capacitors&lt;/b&gt;&lt;p&gt;
+SMD (Chip) Long Life Vertical 153 CLV&lt;p&gt;
+http://www.bccomponents.com/</description>
+<wire x1="3.3" y1="-4.2" x2="-4.2" y2="-4.2" width="0.2032" layer="21"/>
+<wire x1="-4.2" y1="-4.2" x2="-4.2" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="-4.2" y1="-1.1" x2="-4.2" y2="1.1" width="0.2032" layer="51"/>
+<wire x1="-4.2" y1="1.1" x2="-4.2" y2="4.2" width="0.2032" layer="21"/>
+<wire x1="-4.2" y1="4.2" x2="3.3" y2="4.2" width="0.2032" layer="21"/>
+<wire x1="4.2" y1="3.3" x2="4.2" y2="1.1" width="0.2032" layer="21"/>
+<wire x1="4.2" y1="1.1" x2="4.2" y2="-1.1" width="0.2032" layer="51"/>
+<wire x1="4.2" y1="-1.1" x2="4.2" y2="-3.3" width="0.2032" layer="21"/>
+<wire x1="4.2" y1="-3.3" x2="3.3" y2="-4.2" width="0.2032" layer="21"/>
+<wire x1="3.3" y1="4.2" x2="4.2" y2="3.3" width="0.2032" layer="21"/>
+<wire x1="-3.75" y1="-1.05" x2="3.75" y2="-1.05" width="0.2032" layer="21" curve="148.008335"/>
+<wire x1="-3.75" y1="-1.05" x2="-3.75" y2="1.05" width="0.2032" layer="51" curve="-31.284493"/>
+<wire x1="-3.75" y1="1.05" x2="3.75" y2="1.05" width="0.2032" layer="21" curve="-148.008335"/>
+<wire x1="3.75" y1="1.05" x2="3.75" y2="-1.05" width="0.2032" layer="51" curve="-31.284493"/>
+<smd name="+" x="3.05" y="0" dx="4" dy="1.6" layer="1"/>
+<smd name="-" x="-3.05" y="0" dx="4" dy="1.6" layer="1"/>
+<text x="-4.29" y="4.53" size="1.27" layer="25">&gt;NAME</text>
+<text x="-4.325" y="-5.785" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="1206-POL">
+<wire x1="-1.5494" y1="0.8128" x2="1.5494" y2="0.8128" width="0.1016" layer="51"/>
+<wire x1="1.5494" y1="-0.8128" x2="-1.5494" y2="-0.8128" width="0.1016" layer="51"/>
+<wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.127" layer="21"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.127" layer="21"/>
+<smd name="+" x="-1.651" y="0" dx="1.2192" dy="1.8796" layer="1"/>
+<smd name="-" x="1.651" y="0" dx="1.2192" dy="1.8796" layer="1"/>
+<text x="-2.54" y="1.524" size="1.016" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<rectangle x1="-1.6002" y1="-0.8128" x2="-1.0922" y2="0.8128" layer="51"/>
+<rectangle x1="1.0922" y1="-0.8128" x2="1.6002" y2="0.8128" layer="51"/>
+<rectangle x1="-3.175" y1="-1.27" x2="-2.54" y2="1.27" layer="21"/>
+<wire x1="-2.54" y1="1.27" x2="-3.175" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.27" x2="-3.175" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="1.27" x2="-3.175" y2="-1.27" width="0.127" layer="21"/>
+</package>
+<package name="6032M-POL">
+<wire x1="-4.508" y1="1.3128" x2="4" y2="1.3128" width="0.127" layer="21"/>
+<wire x1="4" y1="1.3128" x2="4" y2="-1.3128" width="0.127" layer="21"/>
+<wire x1="4" y1="-1.3128" x2="-4.508" y2="-1.3128" width="0.127" layer="21"/>
+<wire x1="-4.508" y1="-1.3128" x2="-4.508" y2="1.3128" width="0.127" layer="21"/>
+<smd name="+" x="-2.47" y="0" dx="2.37" dy="2.23" layer="1"/>
+<text x="-2.54" y="1.774" size="1.016" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<smd name="-" x="2.47" y="0" dx="2.37" dy="2.23" layer="1"/>
+<rectangle x1="-4.4878" y1="-1.3128" x2="-3.7258" y2="1.3128" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="BEAGLEBONE-1">
@@ -5365,6 +5417,16 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pin name="4" x="2.54" y="0" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
 <pin name="5" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="6" x="2.54" y="-2.54" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
+</symbol>
+<symbol name="C-POL">
+<wire x1="0" y1="0" x2="0" y2="0.98425" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="2.032" width="0.1524" layer="94"/>
+<text x="1.27" y="3.81" size="1.778" layer="95">&gt;NAME</text>
+<pin name="+" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="-" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<wire x1="-1.74625" y1="0.3175" x2="1.74625" y2="0.3175" width="0.3048" layer="94" curve="-75.963757" cap="flat"/>
+<rectangle x1="-1.905" y1="1.74625" x2="1.905" y2="2.06375" layer="94"/>
+<text x="1.27" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -6958,6 +7020,41 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="C-POL" prefix="C" uservalue="yes">
+<description>&lt;b&gt;Polarized Capacitor&lt;/b&gt;</description>
+<gates>
+<gate name="C" symbol="C-POL" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="_0807" package="153CLV-0807">
+<connects>
+<connect gate="C" pin="+" pad="+"/>
+<connect gate="C" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_1206" package="1206-POL">
+<connects>
+<connect gate="C" pin="+" pad="+"/>
+<connect gate="C" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_6032M" package="6032M-POL">
+<connects>
+<connect gate="C" pin="+" pad="+"/>
+<connect gate="C" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -7130,7 +7227,6 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="DGND5" library="supply2" deviceset="PE" device="" value="DGND"/>
 <part name="SUPPLY28" library="puggleboard" deviceset="DGND" device=""/>
 <part name="DGND11" library="puggleboard" deviceset="DGND" device="" value="DGND"/>
-<part name="C39" library="puggleboard" deviceset="C" device="_1206" value="22uF"/>
 <part name="FRAME2" library="puggleboard" deviceset="FRAME_A_L" device=""/>
 <part name="FRAME1" library="puggleboard" deviceset="FRAME_A_L" device=""/>
 <part name="FRAME3" library="puggleboard" deviceset="FRAME_A_L" device=""/>
@@ -7204,6 +7300,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="DGND24" library="puggleboard" deviceset="DGND" device="" value="DGND"/>
 <part name="L3" library="puggleboard" deviceset="L" device="_0603" value="MPZ1608"/>
 <part name="L4" library="puggleboard" deviceset="L" device="_0603" value="MPZ1608"/>
+<part name="C39" library="puggleboard" deviceset="C-POL" device="_0807" value="47uF"/>
+<part name="C58" library="puggleboard" deviceset="C-POL" device="_0807" value="47uF"/>
+<part name="SUPPLY50" library="puggleboard" deviceset="DGND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8619,7 +8718,6 @@ SPI04 - MISO
 <instance part="SUPPLY46" gate="DGND" x="33.02" y="12.7"/>
 <instance part="SUPPLY47" gate="DGND" x="58.42" y="12.7"/>
 <instance part="DGND11" gate="DGND" x="152.4" y="-17.78"/>
-<instance part="C39" gate="C" x="152.4" y="-10.16" rot="R180"/>
 <instance part="FRAME4" gate="G$1" x="-109.22" y="-142.24"/>
 <instance part="FRAME4" gate="G$2" x="63.5" y="-142.24"/>
 <instance part="L1" gate="L" x="-68.58" y="-55.88" rot="R90"/>
@@ -8629,6 +8727,9 @@ SPI04 - MISO
 <instance part="SUPPLY49" gate="G$1" x="-45.72" y="-91.44"/>
 <instance part="L3" gate="L" x="53.34" y="-7.62" rot="R90"/>
 <instance part="L4" gate="L" x="53.34" y="-55.88" rot="R90"/>
+<instance part="C39" gate="C" x="152.4" y="-10.16"/>
+<instance part="C58" gate="C" x="119.38" y="20.32"/>
+<instance part="SUPPLY50" gate="DGND" x="119.38" y="12.7"/>
 </instances>
 <busses>
 </busses>
@@ -8651,7 +8752,11 @@ SPI04 - MISO
 <segment>
 <pinref part="R13" gate="R" pin="2"/>
 <label x="104.14" y="27.94" size="1.778" layer="95"/>
-<wire x1="127" y1="27.94" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="127" y1="27.94" x2="119.38" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="C58" gate="C" pin="+"/>
+<wire x1="119.38" y1="27.94" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="25.4" x2="119.38" y2="27.94" width="0.1524" layer="91"/>
+<junction x="119.38" y="27.94"/>
 </segment>
 <segment>
 <pinref part="L1" gate="L" pin="1"/>
@@ -8898,9 +9003,9 @@ SPI04 - MISO
 <pinref part="SUPPLY47" gate="DGND" pin="PE"/>
 </segment>
 <segment>
-<pinref part="C39" gate="C" pin="1"/>
 <pinref part="DGND11" gate="DGND" pin="PE"/>
 <wire x1="152.4" y1="-12.7" x2="152.4" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="C39" gate="C" pin="-"/>
 </segment>
 <segment>
 <pinref part="C29" gate="C" pin="2"/>
@@ -8915,10 +9020,10 @@ SPI04 - MISO
 </net>
 <net name="VDRIVE" class="0">
 <segment>
-<pinref part="C39" gate="C" pin="2"/>
 <wire x1="104.14" y1="0" x2="152.4" y2="0" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="-5.08" x2="152.4" y2="0" width="0.1524" layer="91"/>
 <label x="104.14" y="0" size="1.778" layer="95"/>
+<pinref part="C39" gate="C" pin="+"/>
 </segment>
 </net>
 <net name="VDD_POST_LC" class="0">
@@ -8994,6 +9099,13 @@ SPI04 - MISO
 <pinref part="L4" gate="L" pin="1"/>
 <wire x1="38.1" y1="-55.88" x2="45.72" y2="-55.88" width="0.1524" layer="91"/>
 <junction x="38.1" y="-55.88"/>
+</segment>
+</net>
+<net name="PE" class="0">
+<segment>
+<pinref part="SUPPLY50" gate="DGND" pin="PE"/>
+<pinref part="C58" gate="C" pin="-"/>
+<wire x1="119.38" y1="15.24" x2="119.38" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
