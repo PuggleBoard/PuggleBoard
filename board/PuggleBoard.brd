@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8255,12 +8255,10 @@ Please make sure your boards conform to these design rules.</description>
 <via x="14.986" y="12.7" extent="1-16" drill="0.3302"/>
 <via x="9.144" y="11.938" extent="1-16" drill="0.3302"/>
 <wire x1="7.493" y1="11.938" x2="9.144" y2="11.938" width="0.254" layer="1"/>
-<contactref element="BB1" pad="65"/>
 <wire x1="7.493" y1="11.938" x2="6.858" y2="11.303" width="0.254" layer="1"/>
 <wire x1="6.858" y1="11.303" x2="6.858" y2="10.033" width="0.254" layer="1"/>
 <wire x1="6.858" y1="10.033" x2="5.842" y2="9.017" width="0.254" layer="1"/>
 <wire x1="5.842" y1="9.017" x2="5.0546" y2="9.017" width="0.254" layer="1"/>
-<wire x1="52.705" y1="41.91" x2="53.975" y2="40.64" width="0.254" layer="16"/>
 <wire x1="53.975" y1="40.64" x2="53.975" y2="17.018" width="0.254" layer="16"/>
 <wire x1="53.975" y1="17.018" x2="52.451" y2="15.494" width="0.254" layer="16"/>
 <wire x1="52.451" y1="15.494" x2="41.783" y2="15.494" width="0.254" layer="16"/>
@@ -8284,11 +8282,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="13.335" y1="6.858" x2="8.128" y2="6.858" width="0.254" layer="1"/>
 <wire x1="13.97" y1="7.493" x2="14.097" y2="7.493" width="0.254" layer="1"/>
 <wire x1="14.097" y1="7.493" x2="13.97" y2="7.62" width="0.254" layer="1"/>
-<contactref element="BB1" pad="66"/>
 <wire x1="8.128" y1="6.858" x2="7.62" y2="7.366" width="0.254" layer="1"/>
 <wire x1="7.62" y1="7.366" x2="5.1816" y2="7.366" width="0.254" layer="1"/>
 <wire x1="5.1816" y1="7.366" x2="5.0546" y2="7.493" width="0.254" layer="1"/>
-<wire x1="50.165" y1="41.91" x2="51.435" y2="40.64" width="0.254" layer="16"/>
 <wire x1="51.435" y1="40.64" x2="51.435" y2="17.399" width="0.254" layer="16"/>
 <wire x1="51.435" y1="17.399" x2="50.038" y2="16.002" width="0.254" layer="16"/>
 <wire x1="50.038" y1="16.002" x2="42.037" y2="16.002" width="0.254" layer="16"/>
@@ -9415,30 +9411,30 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="SPI1">
 <contactref element="U4" pad="13"/>
-<contactref element="BB1" pad="88"/>
 <wire x1="35.9664" y1="61.4172" x2="41.8338" y2="61.4172" width="0.254" layer="1"/>
 <wire x1="41.8338" y1="61.4172" x2="42.164" y2="61.087" width="0.254" layer="1" curve="-90"/>
-<wire x1="41.8338" y1="61.4172" x2="50.165" y2="69.85" width="0" layer="19" extent="1-1"/>
+<contactref element="BB1" pad="65"/>
+<wire x1="52.705" y1="41.91" x2="42.164" y2="61.087" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI2">
 <contactref element="U2" pad="10"/>
 <contactref element="U4" pad="12"/>
-<contactref element="BB1" pad="77"/>
 <wire x1="35.9664" y1="60.7568" x2="41.7322" y2="60.7568" width="0.254" layer="1"/>
 <wire x1="41.7322" y1="60.7568" x2="41.91" y2="60.579" width="0.254" layer="1" curve="-90"/>
 <wire x1="35.433" y1="50.8" x2="35.433" y2="49.784" width="0.254" layer="1"/>
 <wire x1="35.433" y1="49.784" x2="36.068" y2="49.149" width="0.254" layer="1"/>
 <wire x1="36.068" y1="49.149" x2="45.212" y2="49.149" width="0.254" layer="1"/>
 <wire x1="45.212" y1="49.149" x2="45.339" y2="49.276" width="0.254" layer="1"/>
+<contactref element="BB1" pad="77"/>
 <wire x1="45.339" y1="49.276" x2="52.705" y2="57.15" width="0" layer="19" extent="1-1"/>
 <wire x1="35.9664" y1="60.7568" x2="35.433" y2="50.8" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI5">
 <contactref element="U2" pad="15"/>
-<contactref element="BB1" pad="78"/>
 <wire x1="35.433" y1="56.642" x2="35.433" y2="54.737" width="0.254" layer="1"/>
 <wire x1="35.433" y1="54.737" x2="41.783" y2="54.737" width="0.254" layer="1"/>
-<wire x1="41.783" y1="54.737" x2="50.165" y2="57.15" width="0" layer="19" extent="1-1"/>
+<contactref element="BB1" pad="71"/>
+<wire x1="41.783" y1="54.737" x2="52.705" y2="49.53" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$37">
 <contactref element="R7" pad="1"/>
@@ -9483,28 +9479,28 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="SPI3">
 <contactref element="U2" pad="12"/>
 <contactref element="U4" pad="14"/>
-<contactref element="BB1" pad="75"/>
 <wire x1="35.9664" y1="62.0522" x2="42.2148" y2="62.0522" width="0.254" layer="1"/>
 <wire x1="42.2148" y1="62.0522" x2="42.418" y2="61.849" width="0.254" layer="1" curve="-90"/>
 <wire x1="36.7284" y1="50.8" x2="44.323" y2="50.8" width="0.254" layer="1"/>
+<contactref element="BB1" pad="75"/>
 <wire x1="44.323" y1="50.8" x2="52.705" y2="54.61" width="0" layer="19" extent="1-1"/>
 <wire x1="42.418" y1="61.849" x2="44.323" y2="50.8" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI0">
 <contactref element="U2" pad="11"/>
-<contactref element="BB1" pad="74"/>
 <wire x1="36.068" y1="50.8" x2="36.068" y2="49.911" width="0.254" layer="1"/>
 <wire x1="36.068" y1="49.911" x2="36.195" y2="49.784" width="0.254" layer="1"/>
 <wire x1="36.195" y1="49.784" x2="43.688" y2="49.784" width="0.254" layer="1"/>
-<wire x1="43.688" y1="49.784" x2="50.165" y2="52.07" width="0" layer="19" extent="1-1"/>
+<contactref element="BB1" pad="66"/>
+<wire x1="43.688" y1="49.784" x2="50.165" y2="41.91" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI4">
 <contactref element="U2" pad="13"/>
 <contactref element="U4" pad="8"/>
-<contactref element="BB1" pad="76"/>
 <wire x1="36.7284" y1="56.642" x2="46.609" y2="56.642" width="0.254" layer="1"/>
 <wire x1="46.609" y1="56.642" x2="48.641" y2="54.61" width="0.254" layer="1"/>
-<wire x1="48.641" y1="54.61" x2="50.165" y2="54.61" width="0.254" layer="1"/>
+<contactref element="BB1" pad="76"/>
+<wire x1="48.641" y1="54.61" x2="50.165" y2="54.61" width="0" layer="19" extent="1-1"/>
 <wire x1="30.3276" y1="58.801" x2="36.7284" y2="56.642" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BOARD_TEMP">
@@ -9672,11 +9668,11 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="SPI6">
 <contactref element="U2" pad="9"/>
-<contactref element="BB1" pad="73"/>
 <wire x1="34.7726" y1="50.8" x2="34.7726" y2="49.4284" width="0.254" layer="1"/>
 <wire x1="34.7726" y1="49.4284" x2="35.56" y2="48.641" width="0.254" layer="1"/>
 <wire x1="35.56" y1="48.641" x2="45.974" y2="48.641" width="0.254" layer="1"/>
 <wire x1="45.974" y1="48.641" x2="46.228" y2="48.387" width="0.254" layer="1"/>
+<contactref element="BB1" pad="73"/>
 <wire x1="46.228" y1="48.387" x2="52.705" y2="52.07" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI10">
@@ -9899,6 +9895,12 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="72.517" y1="67.183" x2="71.882" y2="66.548" width="0.4064" layer="16"/>
 <wire x1="71.882" y1="66.548" x2="70.485" y2="66.548" width="0.4064" layer="16"/>
 <wire x1="70.485" y1="66.548" x2="69.977" y2="67.056" width="0.4064" layer="16"/>
+</signal>
+<signal name="SM_PIN_1">
+<contactref element="BB1" pad="87"/>
+</signal>
+<signal name="SM_PIN_2">
+<contactref element="BB1" pad="88"/>
 </signal>
 </signals>
 </board>

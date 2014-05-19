@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7423,20 +7423,6 @@ SPI10 - INTAN_MISO</text>
 <label x="-83.82" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="I2C2_SCL" class="0">
-<segment>
-<label x="-83.82" y="20.32" size="1.778" layer="95"/>
-<pinref part="BB1" gate="G$1" pin="I2C2_SCL"/>
-<wire x1="-55.88" y1="20.32" x2="-83.82" y2="20.32" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="I2C2_SDA" class="0">
-<segment>
-<label x="15.24" y="20.32" size="1.778" layer="95"/>
-<wire x1="27.94" y1="20.32" x2="0" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="BB1" gate="G$1" pin="I2C2_SDA"/>
-</segment>
-</net>
 <net name="ADC_D" class="0">
 <segment>
 <pinref part="A_I/O" gate="G$1" pin="8"/>
@@ -7472,9 +7458,9 @@ SPI10 - INTAN_MISO</text>
 <label x="71.12" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="22.86" y="10.16" size="1.778" layer="95"/>
-<pinref part="BB1" gate="G$1" pin="SPI1_CS0"/>
-<wire x1="27.94" y1="10.16" x2="0" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="BB1" gate="G$1" pin="I2C2_SDA"/>
+<wire x1="0" y1="20.32" x2="27.94" y2="20.32" width="0.1524" layer="91"/>
+<label x="22.86" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI1" class="0">
@@ -7484,9 +7470,9 @@ SPI10 - INTAN_MISO</text>
 <label x="71.12" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="22.86" y="-7.62" size="1.778" layer="95"/>
-<pinref part="BB1" gate="G$1" pin="GPIO0_7"/>
-<wire x1="27.94" y1="-7.62" x2="0" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="BB1" gate="G$1" pin="I2C2_SCL"/>
+<wire x1="-55.88" y1="20.32" x2="-83.82" y2="20.32" width="0.1524" layer="91"/>
+<label x="-83.82" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI2" class="0">
@@ -7496,9 +7482,9 @@ SPI10 - INTAN_MISO</text>
 <label x="71.12" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="-83.82" y="5.08" size="1.778" layer="95"/>
 <pinref part="BB1" gate="G$1" pin="SPI1_SCLK"/>
-<wire x1="-83.82" y1="5.08" x2="-55.88" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="5.08" x2="-83.82" y2="5.08" width="0.1524" layer="91"/>
+<label x="-83.82" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI3" class="0">
@@ -7508,9 +7494,9 @@ SPI10 - INTAN_MISO</text>
 <label x="71.12" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="-83.82" y="7.62" size="1.778" layer="95"/>
 <pinref part="BB1" gate="G$1" pin="SPI1_DO"/>
-<wire x1="-83.82" y1="7.62" x2="-55.88" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="7.62" x2="-83.82" y2="7.62" width="0.1524" layer="91"/>
+<label x="-83.82" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI4" class="0">
@@ -7520,9 +7506,9 @@ SPI10 - INTAN_MISO</text>
 <label x="71.12" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="22.86" y="7.62" size="1.778" layer="95"/>
 <pinref part="BB1" gate="G$1" pin="SPI1_DI"/>
 <wire x1="0" y1="7.62" x2="27.94" y2="7.62" width="0.1524" layer="91"/>
+<label x="22.86" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI5" class="0">
@@ -7532,9 +7518,9 @@ SPI10 - INTAN_MISO</text>
 <label x="71.12" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="22.86" y="5.08" size="1.778" layer="95"/>
-<pinref part="BB1" gate="G$1" pin="VDD_ADC"/>
-<wire x1="27.94" y1="5.08" x2="0" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="BB1" gate="G$1" pin="GPIO3_21"/>
+<wire x1="-55.88" y1="12.7" x2="-83.82" y2="12.7" width="0.1524" layer="91"/>
+<label x="-83.82" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DAC_B" class="0">
@@ -7572,9 +7558,9 @@ SPI10 - INTAN_MISO</text>
 <label x="71.12" y="40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="-83.82" y="10.16" size="1.778" layer="95"/>
 <pinref part="BB1" gate="G$1" pin="GPIO3_19"/>
-<wire x1="-83.82" y1="10.16" x2="-55.88" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="10.16" x2="-83.82" y2="10.16" width="0.1524" layer="91"/>
+<label x="-83.82" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI7" class="0">
@@ -7584,9 +7570,9 @@ SPI10 - INTAN_MISO</text>
 <label x="71.12" y="38.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="-83.82" y="22.86" size="1.778" layer="95"/>
 <pinref part="BB1" gate="G$1" pin="I2C1_SCL"/>
-<wire x1="-83.82" y1="22.86" x2="-55.88" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="22.86" x2="-83.82" y2="22.86" width="0.1524" layer="91"/>
+<label x="-83.82" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI8" class="0">
@@ -7596,9 +7582,9 @@ SPI10 - INTAN_MISO</text>
 <label x="71.12" y="35.56" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="22.86" y="17.78" size="1.778" layer="95"/>
 <pinref part="BB1" gate="G$1" pin="UART2_RXD"/>
-<wire x1="27.94" y1="17.78" x2="0" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="0" y1="17.78" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
+<label x="22.86" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI9" class="0">
@@ -7608,9 +7594,9 @@ SPI10 - INTAN_MISO</text>
 <label x="71.12" y="33.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="-83.82" y="17.78" size="1.778" layer="95"/>
 <pinref part="BB1" gate="G$1" pin="UART2_TXD"/>
-<wire x1="-83.82" y1="17.78" x2="-55.88" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="17.78" x2="-83.82" y2="17.78" width="0.1524" layer="91"/>
+<label x="-83.82" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI10" class="0">
@@ -7620,9 +7606,23 @@ SPI10 - INTAN_MISO</text>
 <label x="71.12" y="30.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="20.32" y="22.86" size="1.778" layer="95"/>
 <pinref part="BB1" gate="G$1" pin="I2C1_SDA"/>
-<wire x1="27.94" y1="22.86" x2="0" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="0" y1="22.86" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
+<label x="22.86" y="22.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SM_PIN_1" class="0">
+<segment>
+<pinref part="BB1" gate="G$1" pin="CLKOUT2"/>
+<wire x1="-55.88" y1="-7.62" x2="-83.82" y2="-7.62" width="0.1524" layer="91"/>
+<label x="-83.82" y="-7.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SM_PIN_2" class="0">
+<segment>
+<pinref part="BB1" gate="G$1" pin="GPIO0_7"/>
+<wire x1="0" y1="-7.62" x2="27.94" y2="-7.62" width="0.1524" layer="91"/>
+<label x="17.78" y="-7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
