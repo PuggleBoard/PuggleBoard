@@ -9020,6 +9020,11 @@ CH3 - ADC_A</text>
 <wire x1="-45.72" y1="-76.2" x2="-45.72" y2="-88.9" width="0.1524" layer="91"/>
 <pinref part="SUPPLY49" gate="G$1" pin="AGND"/>
 </segment>
+<segment>
+<pinref part="SUPPLY50" gate="DGND" pin="PE"/>
+<pinref part="C58" gate="C" pin="-"/>
+<wire x1="119.38" y1="15.24" x2="119.38" y2="17.78" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VDRIVE" class="0">
 <segment>
@@ -9102,13 +9107,6 @@ CH3 - ADC_A</text>
 <pinref part="L4" gate="L" pin="1"/>
 <wire x1="38.1" y1="-55.88" x2="45.72" y2="-55.88" width="0.1524" layer="91"/>
 <junction x="38.1" y="-55.88"/>
-</segment>
-</net>
-<net name="PE" class="0">
-<segment>
-<pinref part="SUPPLY50" gate="DGND" pin="PE"/>
-<pinref part="C58" gate="C" pin="-"/>
-<wire x1="119.38" y1="15.24" x2="119.38" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
