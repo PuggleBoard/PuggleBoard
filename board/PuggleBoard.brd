@@ -9117,13 +9117,14 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R1" pad="P8"/>
 <contactref element="$2_104_$" pad="P7"/>
 <wire x1="14.357" y1="75.864" x2="15.83" y2="75.864" width="0.254" layer="1"/>
-<wire x1="12.827" y1="68.388" x2="14.032" y2="68.388" width="0.254" layer="1"/>
-<wire x1="14.032" y1="68.388" x2="15.83" y2="70.186" width="0.254" layer="16"/>
-<via x="14.032" y="68.388" extent="1-16" drill="0.3302"/>
+<wire x1="14.159" y1="68.515" x2="15.83" y2="70.186" width="0.254" layer="16"/>
+<via x="14.159" y="68.515" extent="1-16" drill="0.3302"/>
 <via x="15.83" y="75.864" extent="1-16" drill="0.3302"/>
 <wire x1="15.83" y1="75.864" x2="15.83" y2="70.186" width="0.254" layer="16"/>
 <wire x1="12.857" y1="67.046" x2="12.857" y2="68.358" width="0.254" layer="1"/>
 <wire x1="12.857" y1="68.358" x2="12.827" y2="68.388" width="0.254" layer="1"/>
+<wire x1="12.827" y1="68.388" x2="14.032" y2="68.388" width="0.254" layer="1"/>
+<wire x1="14.032" y1="68.388" x2="14.159" y2="68.515" width="0.254" layer="1"/>
 </signal>
 <signal name="N$20">
 <contactref element="R13" pad="1"/>
