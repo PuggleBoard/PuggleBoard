@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7532,9 +7532,9 @@ SPI10 - INTAN_MISO</text>
 <label x="71.12" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="22.86" y="5.08" size="1.778" layer="95"/>
-<pinref part="BB1" gate="G$1" pin="VDD_ADC"/>
-<wire x1="27.94" y1="5.08" x2="0" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="BB1" gate="G$1" pin="GPIO3_19"/>
+<wire x1="-55.88" y1="10.16" x2="-83.82" y2="10.16" width="0.1524" layer="91"/>
+<label x="-83.82" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DAC_B" class="0">
@@ -7572,9 +7572,8 @@ SPI10 - INTAN_MISO</text>
 <label x="71.12" y="40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="-83.82" y="10.16" size="1.778" layer="95"/>
-<pinref part="BB1" gate="G$1" pin="GPIO3_19"/>
-<wire x1="-83.82" y1="10.16" x2="-55.88" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="BB1" gate="G$1" pin="UART1_TXD"/>
+<wire x1="0" y1="15.24" x2="27.94" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SPI7" class="0">
@@ -7623,6 +7622,20 @@ SPI10 - INTAN_MISO</text>
 <label x="20.32" y="22.86" size="1.778" layer="95"/>
 <pinref part="BB1" gate="G$1" pin="I2C1_SDA"/>
 <wire x1="27.94" y1="22.86" x2="0" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="MS_PIN2" class="0">
+<segment>
+<pinref part="BB1" gate="G$1" pin="CLKOUT2"/>
+<wire x1="-55.88" y1="-7.62" x2="-83.82" y2="-7.62" width="0.1524" layer="91"/>
+<label x="-83.82" y="-7.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MS_PIN1" class="0">
+<segment>
+<pinref part="BB1" gate="G$1" pin="GPIO3_21"/>
+<wire x1="-55.88" y1="12.7" x2="-83.82" y2="12.7" width="0.1524" layer="91"/>
+<label x="-83.82" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -9736,7 +9749,7 @@ CH3 - ADC_A</text>
 <pinref part="DGND24" gate="DGND" pin="PE"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="MS_PIN1" class="0">
 <segment>
 <pinref part="U14" gate="A" pin="R"/>
 <wire x1="132.08" y1="124.46" x2="121.92" y2="124.46" width="0.1524" layer="91"/>
@@ -9745,9 +9758,10 @@ CH3 - ADC_A</text>
 <wire x1="132.08" y1="129.54" x2="121.92" y2="129.54" width="0.1524" layer="91"/>
 <junction x="121.92" y="129.54"/>
 <wire x1="121.92" y1="129.54" x2="111.76" y2="129.54" width="0.1524" layer="91"/>
+<label x="111.76" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="MS_PIN2" class="0">
 <segment>
 <pinref part="U14" gate="A" pin="~RE"/>
 <wire x1="132.08" y1="114.3" x2="121.92" y2="114.3" width="0.1524" layer="91"/>
@@ -9756,6 +9770,7 @@ CH3 - ADC_A</text>
 <wire x1="132.08" y1="119.38" x2="121.92" y2="119.38" width="0.1524" layer="91"/>
 <junction x="121.92" y="119.38"/>
 <wire x1="121.92" y1="119.38" x2="111.76" y2="119.38" width="0.1524" layer="91"/>
+<label x="111.76" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VDRIVE" class="0">
