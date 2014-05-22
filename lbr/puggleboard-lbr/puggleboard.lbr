@@ -10787,12 +10787,12 @@ http://www.bccomponents.com/</description>
 <text x="-31.75" y="-1.905" size="1.778" layer="95">P9</text>
 <pin name="GND@1" x="-27.94" y="-5.08" visible="pin" length="short" direction="pwr" function="dot"/>
 <pin name="GND@2" x="27.94" y="-5.08" visible="pin" length="short" direction="pwr" function="dot" rot="R180"/>
-<pin name="VDD_3V3EXP@1" x="-27.94" y="-7.62" visible="pin" length="short" direction="pwr" function="dot"/>
-<pin name="VDD_3V3EXP@2" x="27.94" y="-7.62" visible="pin" length="short" direction="pwr" function="dot" rot="R180"/>
+<pin name="VDD_3V3EXP@1" x="-27.94" y="-7.62" visible="pin" length="short" direction="sup" function="dot"/>
+<pin name="VDD_3V3EXP@2" x="27.94" y="-7.62" visible="pin" length="short" direction="sup" function="dot" rot="R180"/>
 <pin name="VDD_5V@1" x="-27.94" y="-10.16" visible="pin" length="short" direction="pwr" function="dot"/>
 <pin name="VDD_5V@2" x="27.94" y="-10.16" visible="pin" length="short" direction="pwr" function="dot" rot="R180"/>
-<pin name="SYS_5V@1" x="-27.94" y="-12.7" visible="pin" length="short" direction="pwr" function="dot"/>
-<pin name="SYS_5V@2" x="27.94" y="-12.7" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="SYS_5V@1" x="-27.94" y="-12.7" visible="pin" length="short" direction="sup" function="dot"/>
+<pin name="SYS_5V@2" x="27.94" y="-12.7" visible="pin" length="short" direction="sup" function="dot" rot="R180"/>
 <pin name="PWR_BUT" x="-27.94" y="-15.24" visible="pin" length="short" direction="pas" function="dot"/>
 <pin name="SYS_RESETN" x="27.94" y="-15.24" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
 <pin name="UART4_RXD" x="-27.94" y="-17.78" visible="pin" length="short" direction="pas" function="dot"/>
@@ -10823,9 +10823,9 @@ http://www.bccomponents.com/</description>
 <pin name="AIN5" x="27.94" y="-48.26" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
 <pin name="AIN2" x="-27.94" y="-50.8" visible="pin" length="short" direction="pas" function="dot"/>
 <pin name="AIN3" x="27.94" y="-50.8" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="AIN0" x="-27.94" y="-53.34" visible="pin" length="short" direction="pwr" function="dot"/>
+<pin name="AIN0" x="-27.94" y="-53.34" visible="pin" length="short" direction="pas" function="dot"/>
 <pin name="AIN1" x="27.94" y="-53.34" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="CLKOUT2" x="-27.94" y="-55.88" visible="pin" length="short" direction="in" function="dot"/>
+<pin name="CLKOUT2" x="-27.94" y="-55.88" visible="pin" length="short" direction="pas" function="dot"/>
 <pin name="GPIO0_7" x="27.94" y="-55.88" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
 <pin name="GND@3" x="-27.94" y="-58.42" visible="pin" length="short" direction="pwr" function="dot"/>
 <pin name="GND@5" x="27.94" y="-58.42" visible="pin" length="short" direction="pwr" function="dot" rot="R180"/>
@@ -11239,7 +11239,7 @@ http://www.bccomponents.com/</description>
 </symbol>
 <symbol name="REF5040MDREP">
 <pin name="VIN" x="-17.78" y="7.62" length="middle" direction="pwr"/>
-<pin name="TEMP" x="-17.78" y="2.54" length="middle" direction="in"/>
+<pin name="TEMP" x="-17.78" y="2.54" length="middle" direction="out"/>
 <pin name="TRIM/NR" x="-17.78" y="0" length="middle" direction="in"/>
 <pin name="DNC_2" x="-17.78" y="-5.08" length="middle" direction="nc"/>
 <pin name="DNC" x="-17.78" y="-7.62" length="middle" direction="nc"/>
@@ -11485,18 +11485,20 @@ http://www.bccomponents.com/</description>
 <text x="1.27" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="AGND">
-<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="1.27" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="0" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
 <text x="-2.667" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="AGND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+<wire x1="0" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
 </symbol>
 <symbol name="DGND">
 <wire x1="-1.27" y1="-0.762" x2="1.27" y2="-0.762" width="0.254" layer="94"/>
 <wire x1="-0.635" y1="-1.524" x2="0.635" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 <text x="-4.445" y="-4.699" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="PE" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+<wire x1="0" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
 </symbol>
 <symbol name="SN65MLVD201D">
 <pin name="VCC" x="-17.78" y="7.62" length="middle" direction="pwr"/>
@@ -11527,6 +11529,22 @@ http://www.bccomponents.com/</description>
 <pin name="4" x="2.54" y="0" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
 <pin name="5" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="6" x="2.54" y="-2.54" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
+</symbol>
+<symbol name="GND1">
+<wire x1="-1.27" y1="-0.762" x2="1.27" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-1.524" x2="0.635" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="-4.445" y="-4.699" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="0" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
+</symbol>
+<symbol name="GND2">
+<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<text x="-2.667" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="0" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -13770,7 +13788,7 @@ distributor Farnell 149-452</description>
 <deviceset name="DGND" prefix="SUPPLY">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
-<gate name="DGND" symbol="DGND" x="0" y="0"/>
+<gate name="G$1" symbol="DGND" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -13823,6 +13841,30 @@ distributor Farnell 149-452</description>
 <connect gate="G$1" pin="5" pad="5"/>
 <connect gate="G$1" pin="6" pad="6"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GND1" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="GND1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GND2" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="GND2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
