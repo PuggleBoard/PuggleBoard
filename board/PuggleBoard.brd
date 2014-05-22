@@ -7974,7 +7974,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="SUPPLIER" value="Texas Instruments" x="45.466" y="59.944" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="OC_FARNELL" value="-" x="45.466" y="59.944" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="SNYC" library="puggleboard" package="2X03_IDC" value="PINHD-2X3_IDC" x="36.068" y="73.152" rot="R270"/>
+<element name="SNYC" library="puggleboard" package="2X03_IDC" value="PINHD-2X3_IDC" x="36.068" y="72.517" rot="R270"/>
 <element name="R20" library="puggleboard" package="0603" value="100" x="42.037" y="59.944" rot="MR270">
 <attribute name="MN" value="Panasonic" x="41.91" y="57.785" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="DK" value="PxxxxHTR-ND" x="41.91" y="57.785" size="1.778" layer="28" rot="MR270" display="off"/>
@@ -9840,9 +9840,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="44.831" y1="58.547" x2="44.831" y2="57.4802" width="0.1778" layer="16"/>
 <contactref element="SNYC" pad="3"/>
 <wire x1="42.037" y1="59.0804" x2="44.2976" y2="59.0804" width="0.1778" layer="16"/>
-<wire x1="34.798" y1="73.152" x2="34.798" y2="73.1139" width="0.1778" layer="16"/>
-<wire x1="34.798" y1="73.1139" x2="35.9029" y2="72.009" width="0.1778" layer="16"/>
-<wire x1="35.9029" y1="72.009" x2="35.9029" y2="67.2953" width="0.1778" layer="16"/>
+<wire x1="34.798" y1="72.517" x2="34.798" y2="72.4789" width="0.1778" layer="16"/>
+<wire x1="34.798" y1="72.4789" x2="35.9029" y2="71.374" width="0.1778" layer="16"/>
+<wire x1="35.9029" y1="71.374" x2="35.9029" y2="67.2953" width="0.1778" layer="16"/>
 <wire x1="35.9029" y1="67.2953" x2="35.6235" y2="67.0159" width="0.1778" layer="16" curve="-90"/>
 <wire x1="35.6235" y1="67.0159" x2="35.0139" y2="66.4063" width="0.1778" layer="16" curve="90"/>
 <wire x1="35.0139" y1="66.4063" x2="35.0139" y2="66.241865625" width="0.1778" layer="16"/>
@@ -9871,9 +9871,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="46.101" y1="59.563" x2="46.101" y2="57.4802" width="0.1778" layer="16"/>
 <contactref element="SNYC" pad="4"/>
 <wire x1="42.037" y1="60.8076" x2="44.8564" y2="60.8076" width="0.1778" layer="16"/>
-<wire x1="37.338" y1="73.152" x2="37.338" y2="73.1139" width="0.1778" layer="16"/>
-<wire x1="37.338" y1="73.1139" x2="36.2331" y2="72.009" width="0.1778" layer="16"/>
-<wire x1="36.2331" y1="72.009" x2="36.2331" y2="67.2953" width="0.1778" layer="16"/>
+<wire x1="37.338" y1="72.517" x2="37.338" y2="72.4789" width="0.1778" layer="16"/>
+<wire x1="37.338" y1="72.4789" x2="36.2331" y2="71.374" width="0.1778" layer="16"/>
+<wire x1="36.2331" y1="71.374" x2="36.2331" y2="67.2953" width="0.1778" layer="16"/>
 <wire x1="36.2331" y1="67.2953" x2="35.6235" y2="66.6857" width="0.1778" layer="16" curve="-90"/>
 <wire x1="35.6235" y1="66.6857" x2="35.3441" y2="66.4063" width="0.1778" layer="16" curve="90"/>
 <wire x1="35.3441" y1="66.4063" x2="35.3441" y2="66.241865625" width="0.1778" layer="16"/>
