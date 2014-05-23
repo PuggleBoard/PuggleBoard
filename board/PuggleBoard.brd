@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="12" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="12" fill="1" visible="no" active="yes"/>
 <layer number="2" name="GND" color="12" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,21 +23,21 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="PWR" color="1" fill="6" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="10" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="10" fill="1" visible="no" active="yes"/>
 <layer number="18" name="Vias" color="10" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -138,20 +138,13 @@
 </layers>
 <board>
 <plain>
-<text x="45.593" y="4.699" size="1.016" layer="21" font="vector" ratio="18" align="center">PuggleBoard 
+<text x="45.593" y="4.826" size="1.016" layer="21" font="vector" ratio="18" align="center">PuggleBoard 
 Rev. 3.0
 Apr. 2014</text>
-<text x="7.874" y="92.964" size="0.6096" layer="21" font="vector" ratio="18" rot="R90">AGND</text>
-<text x="21.336" y="95.377" size="0.6096" layer="21" font="vector" ratio="18">ADC</text>
-<text x="21.209" y="92.837" size="0.6096" layer="21" font="vector" ratio="18">DAC</text>
-<text x="20.193" y="93.472" size="0.6096" layer="21" font="vector" ratio="18">D</text>
-<text x="17.653" y="93.472" size="0.6096" layer="21" font="vector" ratio="18">C</text>
-<text x="15.113" y="93.472" size="0.6096" layer="21" font="vector" ratio="18">B</text>
-<text x="12.573" y="93.472" size="0.6096" layer="21" font="vector" ratio="18">A</text>
-<text x="125.222" y="21.336" size="1.016" layer="22" font="vector" ratio="12" rot="MR0">S/N:</text>
+<text x="24.765" y="51.562" size="3.81" layer="22" font="vector" ratio="20" rot="MR270">S/N:</text>
 <dimension x1="3.81" y1="0" x2="0" y2="86.36" x3="-7.62" y3="43.18" textsize="1.6764" layer="51" dtype="vertical" visible="yes"/>
 <dimension x1="0" y1="86.36" x2="54.61" y2="77.47" x3="27.305" y3="93.98" textsize="1.6764" layer="51" dtype="horizontal" visible="yes"/>
-<rectangle x1="107.823" y1="26.924" x2="135.509" y2="32.893" layer="22"/>
+<rectangle x1="-9.398" y1="38.1" x2="35.052" y2="50.8" layer="22" rot="R90"/>
 </plain>
 <libraries>
 <library name="testpad">
@@ -7344,7 +7337,7 @@ Please make sure your boards conform to these design rules.</description>
 <param name="mlMaxStopFrame" value="4mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="30mil"/>
+<param name="mlViaStopLimit" value="100mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -7487,12 +7480,12 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="16.383" y="65.913" size="0.8128" layer="25" font="vector" ratio="20"/>
 </element>
 <element name="U15" library="puggleboard" package="SO-08" value="24C" x="9.652" y="12.7" smashed="yes" rot="R180">
-<attribute name="NAME" x="5.969" y="11.811" size="0.8128" layer="25" font="vector" ratio="20" rot="R90"/>
-<attribute name="VALUE" x="6.985" y="11.811" size="0.8128" layer="27" font="vector" ratio="20" rot="R90"/>
+<attribute name="NAME" x="7.62" y="13.335" size="0.8128" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="7.62" y="12.446" size="0.8128" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="C58" library="puggleboard" package="0603" value="0.1uF" x="10.668" y="8.001" smashed="yes" rot="R180">
-<attribute name="NAME" x="7.366" y="6.223" size="0.8128" layer="25" font="vector" ratio="20" rot="R90"/>
-<attribute name="VALUE" x="8.255" y="6.223" size="0.8128" layer="27" font="vector" ratio="20" rot="R90"/>
+<attribute name="NAME" x="7.366" y="6.35" size="0.8128" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="9.906" y="6.35" size="0.8128" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="R29" library="puggleboard" package="0603" value="5.6k" x="4.191" y="7.493" smashed="yes" rot="R180">
 <attribute name="NAME" x="1.524" y="6.985" size="0.8128" layer="25" font="vector" ratio="20" rot="R180"/>
@@ -7537,16 +7530,16 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MPN" value="ERJ-3EKFxxxxV" x="4.191" y="10.541" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="U4" library="puggleboard" package="MO-153-AB" value="AD5686" x="33.147" y="61.087" smashed="yes">
-<attribute name="NAME" x="33.655" y="61.6204" size="0.8128" layer="25" font="vector" ratio="20" rot="SR270"/>
+<attribute name="NAME" x="33.274" y="61.6204" size="0.8128" layer="25" font="vector" ratio="20" rot="SR270"/>
 <attribute name="VALUE" x="32.258" y="63.0174" size="0.8128" layer="27" font="vector" ratio="20" rot="SR270"/>
 </element>
-<element name="I2C2_SCLK" library="testpad" package="B1,27" value="TPB1,27" x="14.605" y="14.351" smashed="yes" rot="R90">
+<element name="SCLK" library="testpad" package="B1,27" value="TPB1,27" x="14.605" y="14.351" smashed="yes" rot="R90">
 <attribute name="TP_SIGNAL_NAME" value="" x="16.51" y="13.716" size="1" layer="37" rot="R90"/>
-<attribute name="NAME" x="15.494" y="17.526" size="0.8128" layer="25" font="vector" ratio="20" rot="R270"/>
+<attribute name="NAME" x="14.986" y="15.24" size="0.8128" layer="25" font="vector" ratio="20" rot="R90"/>
 </element>
-<element name="VDRIVE" library="testpad" package="P1-17" value="TPPAD1-17" x="38.354" y="1.778" smashed="yes">
+<element name="3.3V" library="testpad" package="P1-17" value="TPPAD1-17" x="38.354" y="1.778" smashed="yes">
 <attribute name="TP_SIGNAL_NAME" value="" x="37.719" y="-0.127" size="1" layer="37"/>
-<attribute name="NAME" x="39.497" y="3.556" size="0.8128" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="NAME" x="37.338" y="3.175" size="0.8128" layer="25" font="vector" ratio="20"/>
 </element>
 <element name="C27" library="puggleboard" package="1206" value="10uF" x="18.288" y="33.274" smashed="yes" rot="R180">
 <attribute name="NAME" x="14.986" y="34.29" size="0.8128" layer="25" font="vector" ratio="20" rot="R270"/>
@@ -7556,9 +7549,9 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="14.224" y="43.307" size="0.8128" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="13.335" y="43.307" size="0.8128" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
-<element name="I2C2_SDA" library="testpad" package="B1,27" value="TPB1,27" x="13.97" y="7.493" smashed="yes" rot="R90">
+<element name="SDA" library="testpad" package="B1,27" value="TPB1,27" x="13.97" y="7.493" smashed="yes" rot="R90">
 <attribute name="TP_SIGNAL_NAME" value="" x="15.875" y="6.858" size="1" layer="37" rot="R90"/>
-<attribute name="NAME" x="14.986" y="10.414" size="0.8128" layer="25" font="vector" ratio="20" rot="R270"/>
+<attribute name="NAME" x="14.224" y="8.509" size="0.8128" layer="25" font="vector" ratio="20" rot="R90"/>
 </element>
 <element name="C16" library="puggleboard" package="0603" value="0.1uF" x="38.608" y="59.055" smashed="yes" rot="R270">
 <attribute name="NAME" x="38.989" y="56.515" size="0.8128" layer="25" font="vector" ratio="20" rot="R270"/>
@@ -7585,8 +7578,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MPN" value="ADS8331IBPW" x="33.147" y="53.721" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SUPPLIER" value="Texas Instruments" x="33.147" y="53.721" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="1882255" x="33.147" y="53.721" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="33.655" y="53.1368" size="0.8128" layer="25" font="vector" ratio="20" rot="SR180"/>
-<attribute name="VALUE" x="35.3822" y="55.0672" size="0.8128" layer="27" font="vector" ratio="20" rot="SR180"/>
+<attribute name="NAME" x="33.655" y="52.6288" size="0.8128" layer="25" font="vector" ratio="20" rot="SR180"/>
+<attribute name="VALUE" x="35.5092" y="53.5432" size="0.8128" layer="27" font="vector" ratio="20" rot="SR180"/>
 </element>
 <element name="U8" library="puggleboard" package="SOP65P490X110-8N" value="REF5040" x="15.367" y="52.832" smashed="yes" rot="R270">
 <attribute name="NAME" x="16.3068" y="52.2224" size="0.8128" layer="25" font="vector" ratio="20" rot="SR90"/>
@@ -7621,12 +7614,12 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="38.481" y="53.594" size="0.8128" layer="28" font="vector" ratio="20" rot="MR180"/>
 </element>
 <element name="C10" library="puggleboard" package="0603" value="0.1uF" x="26.162" y="75.565" smashed="yes" rot="MR90">
-<attribute name="NAME" x="27.051" y="79.121" size="0.8128" layer="26" font="vector" ratio="20" rot="MR270"/>
-<attribute name="VALUE" x="27.94" y="79.121" size="0.8128" layer="28" font="vector" ratio="20" rot="MR270"/>
+<attribute name="NAME" x="28.194" y="74.295" size="0.8128" layer="26" font="vector" ratio="20" rot="MR90"/>
+<attribute name="VALUE" x="27.178" y="74.295" size="0.8128" layer="28" font="vector" ratio="20" rot="MR90"/>
 </element>
 <element name="C13" library="puggleboard" package="0603" value="0.1uF" x="19.812" y="75.565" smashed="yes" rot="MR90">
-<attribute name="NAME" x="18.796" y="78.613" size="0.8128" layer="26" font="vector" ratio="20" rot="MR180"/>
-<attribute name="VALUE" x="18.161" y="76.962" size="0.8128" layer="28" font="vector" ratio="20" rot="MR270"/>
+<attribute name="NAME" x="21.844" y="74.168" size="0.8128" layer="26" font="vector" ratio="20" rot="MR90"/>
+<attribute name="VALUE" x="20.828" y="74.168" size="0.8128" layer="28" font="vector" ratio="20" rot="MR90"/>
 </element>
 <element name="C5" library="puggleboard" package="0603" value="10nF" x="8.89" y="63.627" smashed="yes" rot="R90">
 <attribute name="NAME" x="8.128" y="63.881" size="0.8128" layer="25" font="vector" ratio="20" rot="R90"/>
@@ -7653,7 +7646,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="12.573" y="58.293" size="0.8128" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="12.573" y="59.055" size="0.8128" layer="27" font="vector" ratio="20" rot="R180"/>
 </element>
-<element name="A_I/O" library="puggleboard" package="2X07" value="PINHD-2X7" x="13.462" y="83.566" smashed="yes"/>
+<element name="A_I/O" library="puggleboard" package="2X07" value="PINHD-2X7" x="15.748" y="83.058" smashed="yes"/>
 <element name="VBIAS" library="testpad" package="B1,27" value="TPB1,27" x="16.764" y="64.516" smashed="yes">
 <attribute name="TP_SIGNAL_NAME" value="" x="16.129" y="62.611" size="1" layer="37"/>
 <attribute name="NAME" x="18.415" y="63.5" size="0.8128" layer="25" font="vector" ratio="20" rot="R180"/>
@@ -7685,11 +7678,11 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="+4.5V" library="testpad" package="P1-17" value="TPPAD1-17" x="1.778" y="84.582" smashed="yes">
 <attribute name="TP_SIGNAL_NAME" value="" x="1.143" y="82.677" size="1" layer="37"/>
-<attribute name="NAME" x="0.254" y="82.296" size="0.8128" layer="25" font="vector" ratio="20"/>
+<attribute name="NAME" x="3.302" y="83.058" size="0.8128" layer="25" font="vector" ratio="20" rot="R45"/>
 </element>
 <element name="R16" library="puggleboard" package="0603" value="1k" x="53.086" y="10.922" smashed="yes" rot="R90">
-<attribute name="NAME" x="52.832" y="13.081" size="0.8128" layer="25" font="vector" ratio="20" rot="R90"/>
-<attribute name="VALUE" x="53.721" y="13.081" size="0.8128" layer="27" font="vector" ratio="20" rot="R90"/>
+<attribute name="NAME" x="52.832" y="12.827" size="0.8128" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="VALUE" x="53.721" y="12.827" size="0.8128" layer="27" font="vector" ratio="20" rot="R90"/>
 <attribute name="MN" value="Panasonic" x="53.086" y="10.922" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DK" value="PxxxxHTR-ND" x="53.086" y="10.922" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="ERJ-3EKFxxxxV" x="53.086" y="10.922" size="1.778" layer="27" rot="R90" display="off"/>
@@ -7701,7 +7694,7 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="DGND" library="testpad" package="P1-17" value="TPPAD1-17" x="35.433" y="1.778" smashed="yes">
 <attribute name="TP_SIGNAL_NAME" value="" x="34.163" y="-1.397" size="1" layer="37"/>
-<attribute name="NAME" x="35.052" y="3.556" size="0.8128" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="NAME" x="34.036" y="3.175" size="0.8128" layer="25" font="vector" ratio="20"/>
 </element>
 <element name="AIA+" library="testpad" package="B1,27" value="TPB1,27" x="8.001" y="65.913" smashed="yes">
 <attribute name="TP_SIGNAL_NAME" value="" x="7.366" y="64.008" size="1" layer="37"/>
@@ -7720,7 +7713,7 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="AGND" library="testpad" package="P1-17" value="TPPAD1-17" x="1.778" y="81.661" smashed="yes">
 <attribute name="TP_SIGNAL_NAME" value="" x="0.508" y="78.486" size="1" layer="37"/>
-<attribute name="NAME" x="0.254" y="79.375" size="0.8128" layer="25" font="vector" ratio="20"/>
+<attribute name="NAME" x="3.683" y="80.391" size="0.8128" layer="25" font="vector" ratio="20" rot="R45"/>
 </element>
 <element name="R8" library="puggleboard" package="0603" value="10k" x="39.116" y="63.246" smashed="yes">
 <attribute name="NAME" x="40.513" y="62.357" size="0.8128" layer="25" font="vector" ratio="20" rot="R180"/>
@@ -7734,12 +7727,12 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="13.204" y="71.5548" size="0.8128" layer="27" font="vector" ratio="20" rot="SR90"/>
 </element>
 <element name="C8" library="puggleboard" package="0603" value="1uF" x="26.162" y="72.009" smashed="yes" rot="MR270">
-<attribute name="NAME" x="27.305" y="70.104" size="0.8128" layer="26" font="vector" ratio="20" rot="MR180"/>
-<attribute name="VALUE" x="27.305" y="70.993" size="0.8128" layer="28" font="vector" ratio="20" rot="MR180"/>
+<attribute name="NAME" x="28.194" y="71.247" size="0.8128" layer="26" font="vector" ratio="20" rot="MR90"/>
+<attribute name="VALUE" x="27.178" y="71.247" size="0.8128" layer="28" font="vector" ratio="20" rot="MR90"/>
 </element>
 <element name="C12" library="puggleboard" package="0603" value="1uF" x="19.812" y="72.009" smashed="yes" rot="MR270">
-<attribute name="NAME" x="19.304" y="69.596" size="0.8128" layer="26" font="vector" ratio="20" rot="MR180"/>
-<attribute name="VALUE" x="18.161" y="72.644" size="0.8128" layer="28" font="vector" ratio="20" rot="MR270"/>
+<attribute name="NAME" x="21.844" y="70.993" size="0.8128" layer="26" font="vector" ratio="20" rot="MR90"/>
+<attribute name="VALUE" x="20.828" y="70.993" size="0.8128" layer="28" font="vector" ratio="20" rot="MR90"/>
 </element>
 <element name="AIB+" library="testpad" package="B1,27" value="TPB1,27" x="8.763" y="67.31" smashed="yes">
 <attribute name="TP_SIGNAL_NAME" value="" x="8.128" y="65.405" size="1" layer="37"/>
@@ -7754,18 +7747,18 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="13.843" y="64.389" size="0.8128" layer="25" font="vector" ratio="20"/>
 </element>
 <element name="C23" library="puggleboard" package="0603" value="0.1uF" x="14.732" y="75.692" smashed="yes" rot="MR90">
-<attribute name="NAME" x="13.716" y="78.867" size="0.8128" layer="26" font="vector" ratio="20" rot="MR180"/>
+<attribute name="NAME" x="15.621" y="77.47" size="0.8128" layer="26" font="vector" ratio="20" rot="MR0"/>
 </element>
 <element name="C25" library="puggleboard" package="0603" value="0.1uF" x="8.382" y="72.136" smashed="yes" rot="MR270">
-<attribute name="NAME" x="11.176" y="71.12" size="0.8128" layer="26" font="vector" ratio="20" rot="MR90"/>
-<attribute name="VALUE" x="10.287" y="71.12" size="0.8128" layer="28" font="vector" ratio="20" rot="MR90"/>
+<attribute name="NAME" x="10.414" y="70.993" size="0.8128" layer="26" font="vector" ratio="20" rot="MR90"/>
+<attribute name="VALUE" x="9.398" y="70.993" size="0.8128" layer="28" font="vector" ratio="20" rot="MR90"/>
 </element>
 <element name="C22" library="puggleboard" package="0603" value="1uF" x="14.732" y="72.136" smashed="yes" rot="MR270">
-<attribute name="NAME" x="13.97" y="69.596" size="0.8128" layer="26" font="vector" ratio="20" rot="MR180"/>
+<attribute name="NAME" x="15.621" y="69.596" size="0.8128" layer="26" font="vector" ratio="20" rot="MR0"/>
 </element>
 <element name="C24" library="puggleboard" package="0603" value="1uF" x="8.382" y="75.692" smashed="yes" rot="MR90">
-<attribute name="NAME" x="11.176" y="75.311" size="0.8128" layer="26" font="vector" ratio="20" rot="MR90"/>
-<attribute name="VALUE" x="10.287" y="75.311" size="0.8128" layer="28" font="vector" ratio="20" rot="MR90"/>
+<attribute name="NAME" x="10.287" y="75.057" size="0.8128" layer="26" font="vector" ratio="20" rot="MR90"/>
+<attribute name="VALUE" x="9.398" y="75.057" size="0.8128" layer="28" font="vector" ratio="20" rot="MR90"/>
 </element>
 <element name="S2" library="smd-special" package="SMS-002" value="SWS002" x="24.765" y="24.13" smashed="yes" rot="R90">
 <attribute name="NAME" x="22.479" y="23.622" size="0.8128" layer="25" font="vector" ratio="20" rot="R90"/>
@@ -7773,7 +7766,7 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="EEPROM_WP" library="testpad" package="TP14SQ" value="TPTP14SQ" x="13.081" y="15.494" smashed="yes" rot="R180">
 <attribute name="TP_SIGNAL_NAME" value="" x="13.716" y="17.399" size="1" layer="37" rot="R180"/>
-<attribute name="NAME" x="11.938" y="15.748" size="0.8128" layer="25" font="vector" ratio="20" rot="R180"/>
+<attribute name="NAME" x="13.335" y="16.51" size="0.8128" layer="25" font="vector" ratio="20" rot="R90"/>
 </element>
 <element name="U6" library="puggleboard" package="SOP65P490X110-9N" value="TPS7A3001" x="10.668" y="37.846" smashed="yes" rot="R270">
 <attribute name="PACKAGE" value="MSOP-8" x="10.668" y="37.846" size="1.778" layer="27" rot="R270" display="off"/>
@@ -7825,7 +7818,7 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="-4.5V" library="testpad" package="P1-17" value="TPPAD1-17" x="1.778" y="78.74" smashed="yes">
 <attribute name="TP_SIGNAL_NAME" value="" x="0.508" y="75.565" size="1" layer="37"/>
-<attribute name="NAME" x="0.381" y="76.454" size="0.8128" layer="25" font="vector" ratio="20"/>
+<attribute name="NAME" x="3.429" y="77.47" size="0.8128" layer="25" font="vector" ratio="20" rot="R45"/>
 </element>
 <element name="R11" library="puggleboard" package="0603" value="13.7k" x="10.668" y="46.482" smashed="yes" rot="R180">
 <attribute name="NAME" x="13.335" y="48.26" size="0.8128" layer="25" font="vector" ratio="20" rot="R180"/>
@@ -7861,8 +7854,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="35.737" y="29.876" size="0.8128" layer="25" font="vector" ratio="20"/>
 </element>
 <element name="C28" library="puggleboard" package="0805" value="4.7uF" x="43.815" y="31.369" smashed="yes" rot="R180">
-<attribute name="NAME" x="38.989" y="31.496" size="0.8128" layer="25" font="vector" ratio="20"/>
-<attribute name="VALUE" x="38.989" y="30.48" size="0.8128" layer="27" font="vector" ratio="20"/>
+<attribute name="NAME" x="41.783" y="32.131" size="0.8128" layer="25" font="vector" ratio="20" rot="R180"/>
+<attribute name="VALUE" x="41.783" y="31.242" size="0.8128" layer="27" font="vector" ratio="20" rot="R180"/>
 <attribute name="MN" value="TDK Corp." x="43.815" y="31.369" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DK" value="" x="43.815" y="31.369" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PARTNO" value="C2012X5R1Cxxxxxxx" x="43.815" y="31.369" size="1.778" layer="27" rot="R180" display="off"/>
@@ -7870,7 +7863,7 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="C36" library="puggleboard" package="1206" value="22uF" x="32.258" y="26.416" smashed="yes" rot="R270">
 <attribute name="NAME" x="32.258" y="21.082" size="0.8128" layer="25" font="vector" ratio="20" rot="R90"/>
-<attribute name="VALUE" x="33.274" y="21.082" size="0.8128" layer="27" font="vector" ratio="20" rot="R90"/>
+<attribute name="VALUE" x="33.147" y="21.082" size="0.8128" layer="27" font="vector" ratio="20" rot="R90"/>
 </element>
 <element name="L1" library="puggleboard" package="0603" value="MPZ1608" x="23.622" y="28.829" smashed="yes" rot="R180">
 <attribute name="NAME" x="22.225" y="29.845" size="0.8128" layer="25" font="vector" ratio="20"/>
@@ -7894,7 +7887,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="38.989" y="18.923" size="0.8128" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="U$1" library="puggleboard" package="PB-LOGO" value="" x="41.275" y="6.985" smashed="yes"/>
-<element name="U$2" library="ohw-logo" package="OSHW_FILLX500_NOTEXT" value="" x="128.778" y="34.798" rot="MR0"/>
+<element name="U$2" library="ohw-logo" package="OSHW_FILLX500_NOTEXT" value="" x="21.082" y="22.352" rot="MR90"/>
 <element name="U12" library="puggleboard" package="SOT95P280X145-5N" value="SN65LVDS1" x="42.291" y="77.597" smashed="yes" rot="MR90">
 <attribute name="PACKAGE" value="SOT-23-5" x="42.291" y="71.501" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="OC_NEWARK" value="76C0715" x="42.291" y="71.501" size="1.778" layer="28" rot="MR90" display="off"/>
@@ -7903,7 +7896,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="OC_FARNELL" value="-" x="42.291" y="71.501" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="DIGIKEY" value="296-6919-1-ND" x="42.291" y="71.501" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="NAME" x="44.831" y="74.1426" size="0.8128" layer="26" font="vector" ratio="20" rot="SMR90"/>
-<attribute name="VALUE" x="37.846" y="74.1426" size="0.8128" layer="28" font="vector" ratio="20" rot="SMR90"/>
+<attribute name="VALUE" x="40.4114" y="77.343" size="0.8128" layer="28" font="vector" ratio="20" rot="SMR0"/>
 </element>
 <element name="C54" library="puggleboard" package="0603" value="1nF" x="44.831" y="77.597" smashed="yes" rot="MR270">
 <attribute name="NAME" x="44.831" y="79.375" size="0.8128" layer="26" font="vector" ratio="20" rot="MR270" align="center-right"/>
@@ -7921,7 +7914,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="OC_FARNELL" value="-" x="28.067" y="48.133" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="DIGIKEY" value="296-6919-1-ND" x="28.067" y="48.133" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="NAME" x="44.831" y="68.9356" size="0.8128" layer="26" font="vector" ratio="20" rot="SMR90"/>
-<attribute name="VALUE" x="37.846" y="68.9356" size="0.8128" layer="28" font="vector" ratio="20" rot="SMR90"/>
+<attribute name="VALUE" x="40.4114" y="72.136" size="0.8128" layer="28" font="vector" ratio="20" rot="SMR0"/>
 </element>
 <element name="C53" library="puggleboard" package="0603" value="1nF" x="44.831" y="67.183" smashed="yes" rot="MR270">
 <attribute name="NAME" x="44.831" y="68.961" size="0.8128" layer="26" font="vector" ratio="20" rot="MR270" align="center-right"/>
@@ -7939,7 +7932,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="OC_FARNELL" value="-" x="30.099" y="82.804" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="DIGIKEY" value="296-6919-1-ND" x="30.099" y="82.804" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="NAME" x="44.831" y="79.3496" size="0.8128" layer="26" font="vector" ratio="20" rot="SMR90"/>
-<attribute name="VALUE" x="37.846" y="79.3496" size="0.8128" layer="28" font="vector" ratio="20" rot="SMR90"/>
+<attribute name="VALUE" x="40.2844" y="82.423" size="0.8128" layer="28" font="vector" ratio="20" rot="SMR0"/>
 </element>
 <element name="C55" library="puggleboard" package="0603" value="1nF" x="44.831" y="82.931" smashed="yes" rot="MR270">
 <attribute name="NAME" x="44.831" y="84.709" size="0.8128" layer="26" font="vector" ratio="20" rot="MR270" align="center-right"/>
@@ -7982,8 +7975,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MN" value="Panasonic" x="34.163" y="46.355" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DK" value="PxxxxHTR-ND" x="34.163" y="46.355" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="ERJ-3EKFxxxxV" x="34.163" y="46.355" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="34.163" y="48.133" size="0.8128" layer="25" font="vector" ratio="20" rot="R270" align="center-right"/>
-<attribute name="VALUE" x="34.163" y="44.577" size="0.8128" layer="27" font="vector" ratio="20" rot="R270" align="center-left"/>
+<attribute name="NAME" x="35.306" y="47.498" size="0.8128" layer="25" font="vector" ratio="20" rot="R180" align="center-right"/>
+<attribute name="VALUE" x="35.306" y="46.609" size="0.8128" layer="27" font="vector" ratio="20" align="center-left"/>
 </element>
 <element name="U9" library="puggleboard" package="SOP65P490X110-8N" value="AD8032" x="10.033" y="52.832" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.573" y="56.2864" size="0.8128" layer="25" font="vector" ratio="20" rot="SR270"/>
@@ -8028,16 +8021,16 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="9.557" y="67.088" size="0.8128" layer="27" font="vector" ratio="20" align="center-left"/>
 </element>
 <element name="R1" library="puggleboard" package="RX4_0612" value="2k,ACAS" x="11.557" y="78.613" smashed="yes">
-<attribute name="NAME" x="9.557" y="80.613" size="0.8128" layer="25" font="vector" ratio="20" rot="R180" align="center-right"/>
-<attribute name="VALUE" x="9.557" y="76.613" size="0.8128" layer="27" font="vector" ratio="20" align="center-left"/>
+<attribute name="NAME" x="13.875" y="79.597" size="0.8128" layer="25" font="vector" ratio="20" rot="R180" align="center-right"/>
+<attribute name="VALUE" x="13.875" y="78.645" size="0.8128" layer="27" font="vector" ratio="20" align="center-left"/>
 </element>
 <element name="R7" library="puggleboard" package="RX4_0612" value="2k,ACAS" x="22.987" y="68.961" smashed="yes">
 <attribute name="NAME" x="20.987" y="70.961" size="0.8128" layer="25" font="vector" ratio="20" rot="R180" align="center-right"/>
 <attribute name="VALUE" x="20.987" y="66.961" size="0.8128" layer="27" font="vector" ratio="20" align="center-left"/>
 </element>
 <element name="R6" library="puggleboard" package="RX4_0612" value="2k,ACAS" x="22.987" y="78.486" smashed="yes">
-<attribute name="NAME" x="20.987" y="80.486" size="0.8128" layer="25" font="vector" ratio="20" rot="R180" align="center-right"/>
-<attribute name="VALUE" x="20.987" y="76.486" size="0.8128" layer="27" font="vector" ratio="20" align="center-left"/>
+<attribute name="NAME" x="25.178" y="79.47" size="0.8128" layer="25" font="vector" ratio="20" rot="R180" align="center-right"/>
+<attribute name="VALUE" x="25.178" y="78.518" size="0.8128" layer="27" font="vector" ratio="20" align="center-left"/>
 </element>
 <element name="S1" library="puggleboard" package="OMNETICS_PZN-12-AA" value="RHD2000-CABLE-DAQ-SIDE" x="35.687" y="83.312" smashed="yes">
 <attribute name="NAME" x="33.147" y="79.6925" size="0.8128" layer="25" font="vector" ratio="20" rot="R90"/>
@@ -8079,12 +8072,12 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="20.828" y="43.307" size="0.8128" layer="27" font="vector" ratio="20" rot="R90" align="center-left"/>
 </element>
 <element name="C40" library="puggleboard" package="153CLV-0807" value="47uF" x="33.147" y="38.735" smashed="yes" rot="R270">
-<attribute name="NAME" x="37.677" y="43.025" size="0.8128" layer="25" font="vector" ratio="20" rot="R270"/>
-<attribute name="VALUE" x="27.362" y="43.06" size="0.8128" layer="27" font="vector" ratio="20" rot="R270"/>
+<attribute name="NAME" x="29.873" y="38.947" size="0.8128" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="29.838" y="37.903" size="0.8128" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="C39" library="puggleboard" package="153CLV-0807" value="47uF" x="42.545" y="38.735" smashed="yes" rot="R270">
-<attribute name="NAME" x="47.075" y="43.025" size="0.8128" layer="25" font="vector" ratio="20" rot="R270"/>
-<attribute name="VALUE" x="36.76" y="43.06" size="0.8128" layer="27" font="vector" ratio="20" rot="R270"/>
+<attribute name="NAME" x="39.144" y="38.947" size="0.8128" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="39.109" y="37.903" size="0.8128" layer="27" font="vector" ratio="20"/>
 </element>
 </elements>
 <signals>
@@ -8103,8 +8096,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="20.447" y1="71.577" x2="20.187" y2="71.837" width="0.254" layer="1"/>
 <wire x1="20.187" y1="71.837" x2="18.714" y2="71.837" width="0.254" layer="1"/>
 <via x="18.714" y="71.837" extent="1-16" drill="0.3302"/>
-<wire x1="18.714" y1="71.837" x2="18.714" y2="82.124" width="0.254" layer="16"/>
-<wire x1="18.542" y1="82.296" x2="18.714" y2="82.124" width="0.254" layer="16"/>
+<wire x1="18.714" y1="71.837" x2="18.714" y2="79.838" width="0.254" layer="16"/>
+<wire x1="20.828" y1="81.788" x2="18.714" y2="79.838" width="0.254" layer="16"/>
 </signal>
 <signal name="DAC_C">
 <contactref element="A_I/O" pad="12"/>
@@ -8120,26 +8113,19 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="25.787" y1="71.837" x2="27.26" y2="71.837" width="0.254" layer="1"/>
 <wire x1="27.26" y1="71.837" x2="27.26" y2="77.851" width="0.254" layer="16"/>
 <via x="27.26" y="71.837" extent="1-16" drill="0.3302"/>
-<wire x1="18.542" y1="84.836" x2="19.812" y2="83.566" width="0.254" layer="1"/>
-<wire x1="19.812" y1="83.566" x2="19.812" y2="81.407" width="0.254" layer="1"/>
-<wire x1="20.701" y1="80.518" x2="21.844" y2="80.518" width="0.254" layer="1"/>
-<wire x1="21.844" y1="80.518" x2="22.098" y2="80.772" width="0.254" layer="1"/>
-<wire x1="22.098" y1="80.772" x2="24.339" y2="80.772" width="0.254" layer="1"/>
-<wire x1="24.339" y1="80.772" x2="27.26" y2="77.851" width="0.254" layer="1"/>
 <via x="27.26" y="77.851" extent="1-16" drill="0.3302"/>
-<wire x1="19.812" y1="81.407" x2="20.701" y2="80.518" width="0.254" layer="1"/>
+<wire x1="27.26" y1="77.851" x2="27.26" y2="77.896" width="0.254" layer="1"/>
+<wire x1="27.26" y1="77.896" x2="24.892" y2="80.264" width="0.254" layer="1"/>
+<wire x1="24.892" y1="80.264" x2="22.987" y2="80.264" width="0.254" layer="1"/>
+<wire x1="22.987" y1="80.264" x2="22.098" y2="81.153" width="0.254" layer="1"/>
+<wire x1="22.098" y1="81.153" x2="22.098" y2="83.058" width="0.254" layer="1"/>
+<wire x1="22.098" y1="83.058" x2="20.828" y2="84.328" width="0.254" layer="1"/>
 </signal>
 <signal name="-4.5V">
 <contactref element="C10" pad="1"/>
 <contactref element="C8" pad="1"/>
 <contactref element="C23" pad="1"/>
 <contactref element="C22" pad="1"/>
-<polygon width="0.254" layer="1" spacing="0.6096" isolate="0.254" thermals="no" rank="3">
-<vertex x="10.668" y="47.498"/>
-<vertex x="13.97" y="47.498"/>
-<vertex x="13.97" y="41.402"/>
-<vertex x="10.668" y="41.402"/>
-</polygon>
 <wire x1="26.162" y1="72.8726" x2="26.162" y2="73.279" width="0.6096" layer="16"/>
 <wire x1="26.162" y1="73.279" x2="26.162" y2="73.787" width="0.6096" layer="16"/>
 <wire x1="26.162" y1="73.787" x2="26.162" y2="74.676" width="0.6096" layer="16"/>
@@ -8179,6 +8165,12 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="5.08" y="76.2"/>
 <vertex x="0" y="76.2"/>
 </polygon>
+<polygon width="0.254" layer="1" isolate="0.254" thermals="no">
+<vertex x="10.922" y="47.244"/>
+<vertex x="14.224" y="47.244"/>
+<vertex x="14.224" y="41.148"/>
+<vertex x="10.922" y="41.148"/>
+</polygon>
 </signal>
 <signal name="VDRIVE">
 <contactref element="BB1" pad="50"/>
@@ -8191,7 +8183,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R27" pad="2"/>
 <contactref element="R28" pad="2"/>
 <contactref element="U4" pad="11"/>
-<contactref element="VDRIVE" pad="TP"/>
+<contactref element="3.3V" pad="TP"/>
 <contactref element="C16" pad="1"/>
 <contactref element="C1" pad="1"/>
 <contactref element="U2" pad="16"/>
@@ -8355,7 +8347,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="I2C2_SCL">
 <contactref element="R28" pad="1"/>
 <contactref element="U15" pad="6"/>
-<contactref element="I2C2_SCLK" pad="TP"/>
+<contactref element="SCLK" pad="TP"/>
 <wire x1="9.144" y1="11.938" x2="9.144" y2="10.227" width="0.254" layer="1"/>
 <wire x1="9.144" y1="10.227" x2="9.017" y2="10.1" width="0.254" layer="1"/>
 <via x="14.986" y="12.7" extent="1-16" drill="0.3302"/>
@@ -8388,7 +8380,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="I2C2_SDA">
 <contactref element="U15" pad="5"/>
 <contactref element="R29" pad="1"/>
-<contactref element="I2C2_SDA" pad="TP"/>
+<contactref element="SDA" pad="TP"/>
 <wire x1="7.62" y1="7.366" x2="7.62" y2="9.973" width="0.254" layer="1"/>
 <wire x1="7.62" y1="9.973" x2="7.747" y2="10.1" width="0.254" layer="1"/>
 <wire x1="13.97" y1="7.62" x2="13.97" y2="7.493" width="0.254" layer="1"/>
@@ -8474,35 +8466,35 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="ADC_D">
 <contactref element="A_I/O" pad="8"/>
 <contactref element="R1" pad="P8"/>
-<wire x1="13.462" y1="84.836" x2="14.732" y2="83.566" width="0.254" layer="1"/>
-<wire x1="14.732" y1="83.566" x2="14.732" y2="81.534" width="0.254" layer="1"/>
-<wire x1="14.732" y1="81.534" x2="12.827" y2="79.629" width="0.254" layer="1"/>
-<wire x1="12.827" y1="79.629" x2="12.827" y2="79.313" width="0.3048" layer="1"/>
+<wire x1="12.827" y1="79.502" x2="14.478" y2="81.153" width="0.254" layer="1"/>
+<wire x1="14.478" y1="81.153" x2="14.478" y2="83.058" width="0.254" layer="1"/>
+<wire x1="14.478" y1="83.058" x2="15.748" y2="84.328" width="0.254" layer="1"/>
+<wire x1="12.827" y1="79.313" x2="12.827" y2="79.502" width="0.254" layer="1"/>
 </signal>
 <signal name="ADC_C">
 <contactref element="A_I/O" pad="6"/>
 <contactref element="R1" pad="P6"/>
 <wire x1="11.957" y1="79.313" x2="11.938" y2="79.332" width="0.3048" layer="1"/>
-<wire x1="11.938" y1="79.332" x2="11.938" y2="80.137" width="0.254" layer="1"/>
-<wire x1="11.938" y1="80.137" x2="12.192" y2="80.391" width="0.254" layer="1"/>
-<wire x1="12.192" y1="80.391" x2="12.192" y2="83.566" width="0.254" layer="1"/>
-<wire x1="12.192" y1="83.566" x2="10.922" y2="84.836" width="0.254" layer="1"/>
+<wire x1="11.938" y1="79.332" x2="11.938" y2="83.058" width="0.254" layer="1"/>
+<wire x1="11.938" y1="83.058" x2="13.208" y2="84.328" width="0.254" layer="1"/>
 </signal>
 <signal name="ADC_B">
 <contactref element="A_I/O" pad="4"/>
 <contactref element="R1" pad="P4"/>
-<wire x1="8.382" y1="84.836" x2="9.652" y2="83.566" width="0.254" layer="1"/>
-<wire x1="9.652" y1="83.566" x2="9.652" y2="81.661" width="0.254" layer="1"/>
-<wire x1="9.652" y1="81.661" x2="11.157" y2="80.156" width="0.254" layer="1"/>
-<wire x1="11.157" y1="80.156" x2="11.157" y2="79.313" width="0.254" layer="1"/>
+<wire x1="9.398" y1="81.153" x2="9.398" y2="83.058" width="0.254" layer="1"/>
+<wire x1="9.398" y1="83.058" x2="10.668" y2="84.328" width="0.254" layer="1"/>
+<wire x1="11.157" y1="79.313" x2="11.157" y2="79.902" width="0.254" layer="1"/>
+<wire x1="11.157" y1="79.902" x2="10.795" y2="80.264" width="0.254" layer="1"/>
+<wire x1="10.795" y1="80.264" x2="10.287" y2="80.264" width="0.254" layer="1"/>
+<wire x1="10.287" y1="80.264" x2="9.398" y2="81.153" width="0.254" layer="1"/>
 </signal>
 <signal name="ADC_A">
 <contactref element="A_I/O" pad="2"/>
 <contactref element="R1" pad="P2"/>
-<wire x1="10.287" y1="79.313" x2="9.46" y2="79.313" width="0.254" layer="1"/>
-<wire x1="9.46" y1="79.313" x2="7.112" y2="81.661" width="0.254" layer="1"/>
-<wire x1="7.112" y1="81.661" x2="7.112" y2="83.566" width="0.254" layer="1"/>
-<wire x1="7.112" y1="83.566" x2="5.842" y2="84.836" width="0.254" layer="1"/>
+<wire x1="10.287" y1="79.313" x2="8.19" y2="79.313" width="0.254" layer="1"/>
+<wire x1="8.19" y1="79.313" x2="6.858" y2="80.645" width="0.254" layer="1"/>
+<wire x1="6.858" y1="80.645" x2="6.858" y2="83.058" width="0.254" layer="1"/>
+<wire x1="6.858" y1="83.058" x2="8.128" y2="84.328" width="0.254" layer="1"/>
 </signal>
 <signal name="ADC_B+">
 <contactref element="U1" pad="7"/>
@@ -8531,12 +8523,11 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R6" pad="P8"/>
 <wire x1="21.717" y1="79.186" x2="22.587" y2="79.186" width="0.4064" layer="1"/>
 <wire x1="22.587" y1="79.186" x2="23.387" y2="79.186" width="0.4064" layer="1"/>
-<wire x1="23.387" y1="79.186" x2="24.257" y2="79.186" width="0.4064" layer="1"/>
 <wire x1="22.587" y1="79.186" x2="22.987" y2="79.186" width="0.4064" layer="1"/>
-<wire x1="22.987" y1="79.186" x2="22.987" y2="80.01" width="0.4064" layer="1"/>
-<via x="22.987" y="80.01" extent="1-16" drill="0.3302"/>
+<via x="20.828" y="79.121" extent="1-16" drill="0.3302"/>
 <wire x1="22.987" y1="60.071" x2="22.987" y2="63.627" width="0.4064" layer="16"/>
-<wire x1="22.987" y1="63.627" x2="22.987" y2="80.01" width="0.4064" layer="16"/>
+<wire x1="22.987" y1="63.627" x2="22.987" y2="79.121" width="0.4064" layer="16"/>
+<wire x1="22.987" y1="79.121" x2="20.828" y2="79.121" width="0.4064" layer="16"/>
 <wire x1="10.9982" y1="55.0164" x2="10.3632" y2="55.0164" width="0.3048" layer="1"/>
 <wire x1="19.812" y1="55.372" x2="19.812" y2="53.594" width="0.4064" layer="1"/>
 <wire x1="19.812" y1="53.594" x2="18.923" y2="52.705" width="0.4064" layer="1"/>
@@ -8563,10 +8554,15 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="30.2514" y1="64.2366" x2="30.353" y2="64.135" width="0.4064" layer="1"/>
 <wire x1="30.353" y1="64.135" x2="30.353" y2="63.3984" width="0.4064" layer="1"/>
 <wire x1="30.353" y1="63.3984" x2="30.3276" y2="63.373" width="0.4064" layer="1"/>
-<wire x1="22.987" y1="80.01" x2="25.908" y2="82.931" width="0.254" layer="16"/>
 <via x="25.908" y="82.931" extent="1-16" drill="0.3302"/>
 <wire x1="25.908" y1="82.931" x2="26.162" y2="83.185" width="0.254" layer="1"/>
 <wire x1="26.162" y1="83.185" x2="27.178" y2="83.185" width="0.254" layer="1"/>
+<wire x1="20.828" y1="79.121" x2="21.652" y2="79.121" width="0.4064" layer="1"/>
+<wire x1="21.652" y1="79.121" x2="21.717" y2="79.186" width="0.4064" layer="1"/>
+<wire x1="25.908" y1="82.931" x2="25.908" y2="80.837" width="0.254" layer="16"/>
+<wire x1="25.908" y1="80.837" x2="24.192" y2="79.121" width="0.254" layer="16"/>
+<wire x1="24.192" y1="79.121" x2="20.828" y2="79.121" width="0.254" layer="16"/>
+<wire x1="24.257" y1="79.186" x2="23.387" y2="79.186" width="0.4064" layer="1"/>
 </signal>
 <signal name="~ADCRST">
 <contactref element="U2" pad="8"/>
@@ -9521,10 +9517,10 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="20.187" y1="75.737" x2="20.142" y2="75.692" width="0.254" layer="1"/>
 <wire x1="20.142" y1="75.692" x2="18.034" y2="75.692" width="0.254" layer="1"/>
 <via x="18.034" y="75.692" extent="1-16" drill="0.3302"/>
-<wire x1="18.034" y1="75.692" x2="18.034" y2="80.899" width="0.254" layer="1"/>
-<wire x1="18.034" y1="80.899" x2="17.272" y2="81.661" width="0.254" layer="1"/>
-<wire x1="17.272" y1="81.661" x2="17.272" y2="83.566" width="0.254" layer="1"/>
-<wire x1="17.272" y1="83.566" x2="16.002" y2="84.836" width="0.254" layer="1"/>
+<wire x1="18.034" y1="75.692" x2="18.034" y2="80.137" width="0.254" layer="1"/>
+<wire x1="18.034" y1="80.137" x2="17.018" y2="81.153" width="0.254" layer="1"/>
+<wire x1="17.018" y1="81.153" x2="17.018" y2="83.058" width="0.254" layer="1"/>
+<wire x1="17.018" y1="83.058" x2="18.288" y2="84.328" width="0.254" layer="1"/>
 </signal>
 <signal name="DAC_D">
 <contactref element="A_I/O" pad="13"/>
@@ -9538,9 +9534,10 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="27.94" y1="70.40153125" x2="25.79946875" y2="68.261" width="0.254" layer="16"/>
 <via x="25.79946875" y="68.261" extent="1-16" drill="0.3302"/>
 <wire x1="25.787" y1="75.737" x2="25.832" y2="75.692" width="0.254" layer="1"/>
-<wire x1="21.082" y1="82.296" x2="24.892" y2="82.296" width="0.254" layer="1"/>
-<wire x1="24.892" y1="82.296" x2="27.94" y2="79.248" width="0.254" layer="1"/>
 <via x="27.94" y="79.248" extent="1-16" drill="0.3302"/>
+<wire x1="27.94" y1="79.248" x2="27.94" y2="79.375" width="0.254" layer="1"/>
+<wire x1="27.94" y1="79.375" x2="25.527" y2="81.788" width="0.254" layer="1"/>
+<wire x1="25.527" y1="81.788" x2="23.368" y2="81.788" width="0.254" layer="1"/>
 </signal>
 <signal name="N$6">
 </signal>
@@ -10184,13 +10181,13 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="19,1,6a3b883966a7cd48"/>
 <approved hash="19,1,f700a313714a608a"/>
 <approved hash="19,1,c41cd428d9ffc9cb"/>
-<approved hash="19,1,77a5ee7d26ed5ad6"/>
 <approved hash="19,1,a88cee4edf1c7003"/>
-<approved hash="19,1,5b00270c2d56ba8a"/>
+<approved hash="19,1,77a5ee7d26ed5ad6"/>
 <approved hash="19,1,b024d439e2a76154"/>
+<approved hash="19,1,5b00270c2d56ba8a"/>
 <approved hash="19,1,bc1c282825f0b1c4"/>
-<approved hash="19,1,6a89664f0f13280f"/>
 <approved hash="19,1,2fa43e78aee198d9"/>
+<approved hash="19,1,6a89664f0f13280f"/>
 </errors>
 </board>
 </drawing>

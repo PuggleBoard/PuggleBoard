@@ -7038,11 +7038,11 @@ http://www.bccomponents.com/</description>
 <part name="R28" library="puggleboard" deviceset="R" device="_0603" value="5.6k"/>
 <part name="R27" library="puggleboard" deviceset="R" device="_0603" value="10k"/>
 <part name="U4" library="puggleboard" deviceset="AD5686RARUZ" device="" value="AD5686"/>
-<part name="I2C2_SCLK" library="testpad" deviceset="TP" device="B1,27"/>
-<part name="VDRIVE" library="testpad" deviceset="TP" device="PAD1-17" value="TPPAD1-17"/>
+<part name="SCLK" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="3.3V" library="testpad" deviceset="TP" device="PAD1-17" value="TPPAD1-17"/>
 <part name="C27" library="puggleboard" deviceset="C" device="_1206" value="10uF"/>
 <part name="C38" library="puggleboard" deviceset="C" device="_1206" value="10uF"/>
-<part name="I2C2_SDA" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="SDA" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="C16" library="puggleboard" deviceset="C" device="_0603" value="0.1uF"/>
 <part name="C15" library="puggleboard" deviceset="C" device="_0603" value="0.1uF"/>
 <part name="C14" library="puggleboard" deviceset="C" device="_0603" value="4.7uF"/>
@@ -9676,9 +9676,9 @@ CH3 - ADC_A</text>
 <instance part="R26" gate="R" x="-58.42" y="50.8" rot="R90"/>
 <instance part="R28" gate="R" x="-20.32" y="50.8" rot="R90"/>
 <instance part="R27" gate="R" x="-50.8" y="50.8" rot="R90"/>
-<instance part="I2C2_SCLK" gate="G$1" x="-25.4" y="33.02"/>
-<instance part="VDRIVE" gate="G$1" x="-81.28" y="63.5"/>
-<instance part="I2C2_SDA" gate="G$1" x="15.24" y="25.4"/>
+<instance part="SCLK" gate="G$1" x="-25.4" y="33.02"/>
+<instance part="3.3V" gate="G$1" x="-81.28" y="63.5"/>
+<instance part="SDA" gate="G$1" x="15.24" y="25.4"/>
 <instance part="S2" gate="G$1" x="-86.36" y="17.78" rot="MR90"/>
 <instance part="EEPROM_WP" gate="G$1" x="-48.26" y="40.64" rot="R270"/>
 <instance part="FRAME6" gate="G$1" x="-154.94" y="-86.36"/>
@@ -9723,7 +9723,7 @@ CH3 - ADC_A</text>
 <pinref part="R28" gate="R" pin="2"/>
 <wire x1="-20.32" y1="60.96" x2="-20.32" y2="55.88" width="0.1524" layer="91"/>
 <junction x="-20.32" y="60.96"/>
-<pinref part="VDRIVE" gate="G$1" pin="TP"/>
+<pinref part="3.3V" gate="G$1" pin="TP"/>
 <junction x="-81.28" y="60.96"/>
 <wire x1="-81.28" y1="60.96" x2="-101.6" y2="60.96" width="0.1524" layer="91"/>
 <label x="-101.6" y="60.96" size="1.778" layer="95"/>
@@ -9756,7 +9756,7 @@ CH3 - ADC_A</text>
 <wire x1="20.32" y1="45.72" x2="20.32" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="R29" gate="R" pin="1"/>
 <junction x="20.32" y="22.86"/>
-<pinref part="I2C2_SDA" gate="G$1" pin="TP"/>
+<pinref part="SDA" gate="G$1" pin="TP"/>
 <junction x="15.24" y="22.86"/>
 <wire x1="20.32" y1="22.86" x2="35.56" y2="22.86" width="0.1524" layer="91"/>
 <label x="25.4" y="22.86" size="1.778" layer="95"/>
@@ -9800,7 +9800,7 @@ CH3 - ADC_A</text>
 <wire x1="-20.32" y1="30.48" x2="-15.24" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="30.48" x2="-25.4" y2="30.48" width="0.1524" layer="91"/>
 <junction x="-20.32" y="30.48"/>
-<pinref part="I2C2_SCLK" gate="G$1" pin="TP"/>
+<pinref part="SCLK" gate="G$1" pin="TP"/>
 <junction x="-25.4" y="30.48"/>
 <wire x1="-25.4" y1="30.48" x2="-40.64" y2="30.48" width="0.1524" layer="91"/>
 <label x="-40.64" y="30.48" size="1.778" layer="95"/>
