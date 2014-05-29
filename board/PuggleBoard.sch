@@ -1344,8 +1344,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pad name="90" x="50.165" y="72.39" drill="1" rot="R90"/>
 <pad name="91" x="52.705" y="74.93" drill="1" rot="R90"/>
 <pad name="92" x="50.165" y="74.93" drill="1" rot="R90"/>
-<text x="6.096" y="75.946" size="1.016" layer="21" font="vector" ratio="18" rot="R270">P8</text>
-<text x="48.514" y="74.168" size="1.016" layer="21" font="vector" ratio="18" rot="R90">P9</text>
+<text x="7.112" y="18.034" size="1.016" layer="21" font="vector" ratio="18" rot="R90">P8</text>
+<text x="48.514" y="18.288" size="1.016" layer="21" font="vector" ratio="18" rot="R90">P9</text>
 <rectangle x1="4.191" y1="18.796" x2="4.699" y2="19.304" layer="51" rot="R90"/>
 <rectangle x1="1.651" y1="18.796" x2="2.159" y2="19.304" layer="51" rot="R90"/>
 <rectangle x1="1.651" y1="21.336" x2="2.159" y2="21.844" layer="51" rot="R90"/>
@@ -7094,7 +7094,7 @@ http://www.bccomponents.com/</description>
 <part name="C22" library="puggleboard" deviceset="C" device="_0603" value="1uF"/>
 <part name="C24" library="puggleboard" deviceset="C" device="_0603" value="1uF"/>
 <part name="S2" library="smd-special" deviceset="SWS002" device=""/>
-<part name="EEPROM_WP" library="testpad" deviceset="TP" device="TP14SQ" value="TPTP14SQ"/>
+<part name="WP" library="testpad" deviceset="TP" device="TP14SQ" value="TPTP14SQ"/>
 <part name="U6" library="puggleboard" deviceset="TPS7A3001DGNR" device="" value="TPS7A3001"/>
 <part name="U7" library="puggleboard" deviceset="TPS7A4901DGNR" device="" value="TPS7A4901"/>
 <part name="R13" library="puggleboard" deviceset="R" device="_0603" value="13.7k"/>
@@ -9716,7 +9716,7 @@ CH3 - ADC_A</text>
 <instance part="3.3V" gate="G$1" x="-81.28" y="63.5"/>
 <instance part="SDA" gate="G$1" x="15.24" y="25.4"/>
 <instance part="S2" gate="G$1" x="-86.36" y="17.78" rot="MR90"/>
-<instance part="EEPROM_WP" gate="G$1" x="-48.26" y="40.64" rot="R270"/>
+<instance part="WP" gate="G$1" x="-48.26" y="40.64" rot="R270"/>
 <instance part="FRAME6" gate="G$1" x="-154.94" y="-86.36"/>
 <instance part="FRAME6" gate="G$2" x="17.78" y="-86.36"/>
 <instance part="U$78" gate="G$1" x="-101.6" y="5.08"/>
@@ -9848,7 +9848,7 @@ CH3 - ADC_A</text>
 <pinref part="U15" gate="G$1" pin="WP"/>
 <wire x1="-50.8" y1="27.94" x2="-15.24" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="-50.8" y1="45.72" x2="-50.8" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="EEPROM_WP" gate="G$1" pin="TP"/>
+<pinref part="WP" gate="G$1" pin="TP"/>
 <wire x1="-50.8" y1="40.64" x2="-50.8" y2="27.94" width="0.1524" layer="91"/>
 <junction x="-50.8" y="40.64"/>
 </segment>
