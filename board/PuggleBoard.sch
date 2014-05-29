@@ -919,9 +919,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <library name="puggleboard">
 <packages>
 <package name="PUGGLEBOARD_SHIELD">
-<wire x1="54.61" y1="6.35" x2="54.61" y2="85.09" width="0.127" layer="20"/>
-<wire x1="54.61" y1="85.09" x2="53.34" y2="86.36" width="0.127" layer="20" curve="90"/>
-<wire x1="53.34" y1="86.36" x2="1.27" y2="86.36" width="0.127" layer="20"/>
+<wire x1="54.61" y1="6.35" x2="54.61" y2="73.66" width="0.127" layer="20"/>
+<wire x1="54.61" y1="73.66" x2="41.91" y2="86.36" width="0.127" layer="20" curve="90"/>
+<wire x1="41.91" y1="86.36" x2="1.27" y2="86.36" width="0.127" layer="20"/>
 <wire x1="1.27" y1="86.36" x2="0" y2="85.09" width="0.127" layer="20" curve="90"/>
 <wire x1="0" y1="85.09" x2="0" y2="5.8928" width="0.127" layer="20"/>
 <wire x1="5.08" y1="17.78" x2="5.715" y2="18.415" width="0.1524" layer="21"/>
