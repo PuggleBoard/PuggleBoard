@@ -7159,7 +7159,7 @@ http://www.bccomponents.com/</description>
 <part name="R1" library="puggleboard" deviceset="RX4" device="_0612" value="2k,ACAS"/>
 <part name="R7" library="puggleboard" deviceset="RX4" device="_0612" value="2k,ACAS"/>
 <part name="R6" library="puggleboard" deviceset="RX4" device="_0612" value="2k,ACAS"/>
-<part name="S1" library="puggleboard" deviceset="RHD2000-CABLE-DAQ-SIDE" device=""/>
+<part name="INTAN" library="puggleboard" deviceset="RHD2000-CABLE-DAQ-SIDE" device=""/>
 <part name="FRAME8" library="puggleboard" deviceset="FRAME_A_L" device=""/>
 <part name="U14" library="puggleboard" deviceset="SN65MLVD201D" device="" value="SN65MLVD201"/>
 <part name="SNYC" library="puggleboard" deviceset="PINHD-2X3" device="_IDC"/>
@@ -9317,7 +9317,7 @@ CH3 - ADC_A</text>
 <instance part="R22" gate="R" x="53.34" y="30.48" rot="R180"/>
 <instance part="FRAME7" gate="G$1" x="-111.76" y="-116.84"/>
 <instance part="FRAME7" gate="G$2" x="60.96" y="-116.84"/>
-<instance part="S1" gate="A" x="106.68" y="5.08" rot="R90"/>
+<instance part="INTAN" gate="A" x="106.68" y="5.08" rot="R90"/>
 <instance part="U$60" gate="G$1" x="-53.34" y="17.78"/>
 <instance part="U$61" gate="G$1" x="-40.64" y="17.78"/>
 <instance part="U$62" gate="G$1" x="-53.34" y="-15.24"/>
@@ -9350,7 +9350,7 @@ CH3 - ADC_A</text>
 <wire x1="48.26" y1="-63.5" x2="48.26" y2="-12.7" width="0.1524" layer="91"/>
 <label x="76.2" y="-12.7" size="1.778" layer="95"/>
 <wire x1="48.26" y1="-12.7" x2="99.06" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="S1" gate="A" pin="!CS!+"/>
+<pinref part="INTAN" gate="A" pin="!CS!+"/>
 </segment>
 </net>
 <net name="VDRIVE" class="0">
@@ -9383,7 +9383,7 @@ CH3 - ADC_A</text>
 <segment>
 <wire x1="99.06" y1="25.4" x2="76.2" y2="25.4" width="0.1524" layer="91"/>
 <label x="76.2" y="25.4" size="1.778" layer="95"/>
-<pinref part="S1" gate="A" pin="VDD"/>
+<pinref part="INTAN" gate="A" pin="VDD"/>
 </segment>
 <segment>
 <pinref part="U11" gate="A" pin="VCC"/>
@@ -9417,7 +9417,7 @@ CH3 - ADC_A</text>
 <pinref part="U11" gate="A" pin="Y"/>
 <label x="76.2" y="2.54" size="1.778" layer="95"/>
 <wire x1="22.86" y1="2.54" x2="99.06" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="S1" gate="A" pin="MOSI+"/>
+<pinref part="INTAN" gate="A" pin="MOSI+"/>
 </segment>
 </net>
 <net name="SCLK_N" class="2">
@@ -9427,7 +9427,7 @@ CH3 - ADC_A</text>
 <label x="76.2" y="-7.62" size="1.778" layer="95"/>
 <wire x1="45.72" y1="-35.56" x2="45.72" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="-7.62" x2="99.06" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="S1" gate="A" pin="SCLK-"/>
+<pinref part="INTAN" gate="A" pin="SCLK-"/>
 </segment>
 </net>
 <net name="SCLK_P" class="2">
@@ -9437,7 +9437,7 @@ CH3 - ADC_A</text>
 <label x="76.2" y="-5.08" size="1.778" layer="95"/>
 <wire x1="43.18" y1="-30.48" x2="43.18" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="-5.08" x2="99.06" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="S1" gate="A" pin="SCLK+"/>
+<pinref part="INTAN" gate="A" pin="SCLK+"/>
 </segment>
 </net>
 <net name="CS1_N" class="2">
@@ -9447,7 +9447,7 @@ CH3 - ADC_A</text>
 <wire x1="50.8" y1="-68.58" x2="50.8" y2="-15.24" width="0.1524" layer="91"/>
 <label x="76.2" y="-15.24" size="1.778" layer="95"/>
 <wire x1="50.8" y1="-15.24" x2="99.06" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="S1" gate="A" pin="!CS!-"/>
+<pinref part="INTAN" gate="A" pin="!CS!-"/>
 </segment>
 </net>
 <net name="MOSI_N" class="2">
@@ -9457,7 +9457,7 @@ CH3 - ADC_A</text>
 <wire x1="43.18" y1="-2.54" x2="43.18" y2="0" width="0.1524" layer="91"/>
 <label x="76.2" y="0" size="1.778" layer="95"/>
 <wire x1="43.18" y1="0" x2="99.06" y2="0" width="0.1524" layer="91"/>
-<pinref part="S1" gate="A" pin="MOSI-"/>
+<pinref part="INTAN" gate="A" pin="MOSI-"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -9511,7 +9511,7 @@ CH3 - ADC_A</text>
 <segment>
 <wire x1="99.06" y1="22.86" x2="76.2" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="22.86" x2="76.2" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="S1" gate="A" pin="GND"/>
+<pinref part="INTAN" gate="A" pin="GND"/>
 </segment>
 <segment>
 <pinref part="U11" gate="A" pin="GND"/>
@@ -9558,7 +9558,7 @@ CH3 - ADC_A</text>
 <pinref part="R22" gate="R" pin="1"/>
 <wire x1="58.42" y1="30.48" x2="60.96" y2="30.48" width="0.1524" layer="91"/>
 <junction x="60.96" y="30.48"/>
-<pinref part="S1" gate="A" pin="MISO1+"/>
+<pinref part="INTAN" gate="A" pin="MISO1+"/>
 </segment>
 </net>
 <net name="MISO1_N" class="2">
@@ -9571,7 +9571,7 @@ CH3 - ADC_A</text>
 <wire x1="43.18" y1="30.48" x2="43.18" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="7.62" x2="99.06" y2="7.62" width="0.1524" layer="91"/>
 <junction x="43.18" y="30.48"/>
-<pinref part="S1" gate="A" pin="MISO1-"/>
+<pinref part="INTAN" gate="A" pin="MISO1-"/>
 </segment>
 </net>
 </nets>
