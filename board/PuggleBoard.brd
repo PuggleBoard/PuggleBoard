@@ -8104,10 +8104,11 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="21.082" y1="68.961" x2="20.447" y2="69.596" width="0.254" layer="1"/>
 <wire x1="20.447" y1="69.596" x2="20.447" y2="71.577" width="0.254" layer="1"/>
 <wire x1="20.447" y1="71.577" x2="20.187" y2="71.837" width="0.254" layer="1"/>
-<wire x1="20.187" y1="71.837" x2="18.714" y2="71.837" width="0.254" layer="1"/>
-<via x="18.714" y="71.837" extent="1-16" drill="0.3302"/>
-<wire x1="18.714" y1="71.837" x2="18.714" y2="79.838" width="0.254" layer="16"/>
-<wire x1="20.828" y1="81.788" x2="18.714" y2="79.838" width="0.254" layer="16"/>
+<via x="18.669" y="71.882" extent="1-16" drill="0.3302"/>
+<wire x1="18.669" y1="71.882" x2="18.669" y2="79.629" width="0.254" layer="16"/>
+<wire x1="20.828" y1="81.788" x2="18.669" y2="79.629" width="0.254" layer="16"/>
+<wire x1="20.187" y1="71.837" x2="18.669" y2="71.837" width="0.254" layer="1"/>
+<wire x1="18.669" y1="71.837" x2="18.669" y2="71.882" width="0.254" layer="1"/>
 </signal>
 <signal name="DAC_C">
 <contactref element="A_I/O" pad="12"/>
