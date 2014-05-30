@@ -9967,6 +9967,9 @@ CH3 - ADC_A</text>
 <approved hash="113,8,50.8,5.588,U$80,,,,,"/>
 <approved hash="113,5,20.32,-67.945,U$81,,,,,"/>
 <approved hash="113,5,5.08,-95.885,U$82,,,,,"/>
+<approved hash="113,3,-116.84,69.215,U$3,,,,,"/>
+<approved hash="113,2,-99.06,41.275,U$83,,,,,"/>
+<approved hash="113,2,-7.62,41.275,U$84,,,,,"/>
 <approved hash="115,8,5.08,10.16,GND,,,,,"/>
 <approved hash="115,8,50.8,13.97,GND,,,,,"/>
 <approved hash="115,8,-101.6,19.05,GND,,,,,"/>
@@ -10019,6 +10022,7 @@ CH3 - ADC_A</text>
 <approved hash="115,4,78.74,-78.74,GND,,,,,"/>
 <approved hash="115,4,-48.26,-82.55,GND,,,,,"/>
 <approved hash="115,4,149.86,-77.47,GND,,,,,"/>
+<approved hash="115,3,-116.84,76.2,GND,,,,,"/>
 <approved hash="115,3,-86.36,-29.21,GND,,,,,"/>
 <approved hash="115,3,-96.52,-38.1,GND,,,,,"/>
 <approved hash="115,3,30.48,77.47,GND,,,,,"/>
@@ -10033,6 +10037,8 @@ CH3 - ADC_A</text>
 <approved hash="115,3,10.16,-35.56,GND,,,,,"/>
 <approved hash="115,3,10.16,-76.2,GND,,,,,"/>
 <approved hash="115,3,10.16,-55.88,GND,,,,,"/>
+<approved hash="115,2,-7.62,48.26,GND,,,,,"/>
+<approved hash="115,2,-99.06,48.26,GND,,,,,"/>
 <approved hash="115,2,-104.14,-66.04,GND,,,,,"/>
 <approved hash="115,2,25.4,49.53,GND,,,,,"/>
 <approved hash="115,2,76.2,49.53,GND,,,,,"/>
