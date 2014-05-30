@@ -2168,14 +2168,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <vertex x="-5" y="-2.875"/>
 <vertex x="-5.375" y="-2.5"/>
 </polygon>
-<text x="-4.125" y="-3.625" size="0.6096" layer="21" font="vector" rot="R90">A</text>
-<text x="-2.875" y="-3.625" size="0.6096" layer="21" font="vector" rot="R90">B</text>
-<text x="-1.625" y="-3.625" size="0.6096" layer="21" font="vector" rot="R90">C</text>
-<text x="-0.375" y="-3.625" size="0.6096" layer="21" font="vector" rot="R90">D</text>
-<text x="0.875" y="-3.625" size="0.6096" layer="21" font="vector" rot="R90">E</text>
-<text x="2.125" y="-3.625" size="0.6096" layer="21" font="vector" rot="R90">F</text>
-<text x="3.375" y="-3.625" size="0.6096" layer="21" font="vector" rot="R90">G</text>
-<text x="4.75" y="-3.625" size="0.6096" layer="21" font="vector" rot="R90">H</text>
+<text x="-4.887" y="-2.355" size="0.6096" layer="21" font="vector" rot="R90">A</text>
 <text x="5.5" y="-2.75" size="0.6096" layer="21" font="vector" rot="R90">1</text>
 <text x="5.5" y="-1.5" size="0.6096" layer="21" font="vector" rot="R90">2</text>
 <text x="5.5" y="-0.25" size="0.6096" layer="21" font="vector" rot="R90">3</text>
@@ -2186,6 +2179,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="5.75" y1="3.25" x2="5.75" y2="-3.25" width="0.127" layer="39"/>
 <wire x1="5.75" y1="-3.25" x2="-5.75" y2="-3.25" width="0.127" layer="39"/>
 <text x="-6" y="-3.125" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="7.208" y="-3.125" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
 <package name="BEAGLEBONE_SHIELD">
 <wire x1="54.61" y1="73.66" x2="54.61" y2="6.35" width="0.127" layer="20"/>

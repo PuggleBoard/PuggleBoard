@@ -4100,14 +4100,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <vertex x="-5" y="-2.875"/>
 <vertex x="-5.375" y="-2.5"/>
 </polygon>
-<text x="-4.125" y="-3.625" size="0.6096" layer="21" font="vector" rot="R90">A</text>
-<text x="-2.875" y="-3.625" size="0.6096" layer="21" font="vector" rot="R90">B</text>
-<text x="-1.625" y="-3.625" size="0.6096" layer="21" font="vector" rot="R90">C</text>
-<text x="-0.375" y="-3.625" size="0.6096" layer="21" font="vector" rot="R90">D</text>
-<text x="0.875" y="-3.625" size="0.6096" layer="21" font="vector" rot="R90">E</text>
-<text x="2.125" y="-3.625" size="0.6096" layer="21" font="vector" rot="R90">F</text>
-<text x="3.375" y="-3.625" size="0.6096" layer="21" font="vector" rot="R90">G</text>
-<text x="4.75" y="-3.625" size="0.6096" layer="21" font="vector" rot="R90">H</text>
+<text x="-4.887" y="-2.355" size="0.6096" layer="21" font="vector" rot="R90">A</text>
 <text x="5.5" y="-2.75" size="0.6096" layer="21" font="vector" rot="R90">1</text>
 <text x="5.5" y="-1.5" size="0.6096" layer="21" font="vector" rot="R90">2</text>
 <text x="5.5" y="-0.25" size="0.6096" layer="21" font="vector" rot="R90">3</text>
@@ -4118,6 +4111,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="5.75" y1="3.25" x2="5.75" y2="-3.25" width="0.127" layer="39"/>
 <wire x1="5.75" y1="-3.25" x2="-5.75" y2="-3.25" width="0.127" layer="39"/>
 <text x="-6" y="-3.125" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="7.208" y="-3.125" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
 <package name="SOP65P640X120-14N-MOD">
 <smd name="11" x="2.8" y="0" dx="1.6" dy="0.35" layer="1"/>
@@ -7048,7 +7042,7 @@ http://www.bccomponents.com/</description>
 <part name="C14" library="puggleboard" deviceset="C" device="_0603" value="4.7uF"/>
 <part name="C17" library="puggleboard" deviceset="C" device="_0805" value="10uF"/>
 <part name="U2" library="puggleboard" deviceset="ADS8331IBPW" device="" value="ADS8331"/>
-<part name="U8" library="puggleboard" deviceset="REF5040MDREP" device="_SOP" value="REF5040"/>
+<part name="U8" library="puggleboard" deviceset="REF5040MDREP" device="_SOP" value="5040"/>
 <part name="C41" library="puggleboard" deviceset="C" device="_0603" value="1uF"/>
 <part name="C42" library="puggleboard" deviceset="C" device="_0603" value="1uF"/>
 <part name="VREF_PRE" library="testpad" deviceset="TP" device="B1,27"/>
@@ -7093,10 +7087,10 @@ http://www.bccomponents.com/</description>
 <part name="C25" library="puggleboard" deviceset="C" device="_0603" value="0.1uF"/>
 <part name="C22" library="puggleboard" deviceset="C" device="_0603" value="1uF"/>
 <part name="C24" library="puggleboard" deviceset="C" device="_0603" value="1uF"/>
-<part name="S2" library="smd-special" deviceset="SWS002" device=""/>
+<part name="S2" library="smd-special" deviceset="SWS002" device="" value="ADDRESS"/>
 <part name="WP" library="testpad" deviceset="TP" device="TP14SQ" value="TPTP14SQ"/>
-<part name="U6" library="puggleboard" deviceset="TPS7A3001DGNR" device="" value="TPS7A3001"/>
-<part name="U7" library="puggleboard" deviceset="TPS7A4901DGNR" device="" value="TPS7A4901"/>
+<part name="U6" library="puggleboard" deviceset="TPS7A3001DGNR" device="" value="3001"/>
+<part name="U7" library="puggleboard" deviceset="TPS7A4901DGNR" device="" value="4901"/>
 <part name="R13" library="puggleboard" deviceset="R" device="_0603" value="13.7k"/>
 <part name="R14" library="puggleboard" deviceset="R" device="_0603" value="4.7k"/>
 <part name="C35" library="puggleboard" deviceset="C" device="_0603" value="10nF"/>
@@ -7147,7 +7141,7 @@ http://www.bccomponents.com/</description>
 <part name="U3" library="puggleboard" deviceset="OPA4209AIPW" device="MOD" value="OPA4209"/>
 <part name="R5" library="puggleboard" deviceset="R" device="_0603" value="10k"/>
 <part name="FRAME7" library="puggleboard" deviceset="FRAME_A_L" device=""/>
-<part name="U9" library="puggleboard" deviceset="AD8032ARZ-REEL7" device="_SOP" value="AD8032"/>
+<part name="U9" library="puggleboard" deviceset="AD8032ARZ-REEL7" device="_SOP" value="8032"/>
 <part name="R3" library="puggleboard" deviceset="RX4" device="_0603" value="1k"/>
 <part name="R9" library="puggleboard" deviceset="RX4" device="_0603"/>
 <part name="L2" library="puggleboard" deviceset="L" device="_0603" value="MPZ1608"/>
