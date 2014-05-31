@@ -7139,10 +7139,10 @@ http://www.bccomponents.com/</description>
 <part name="R20" library="puggleboard" deviceset="R" device="_0603" value="2k"/>
 <part name="C29" library="puggleboard" deviceset="C" device="_0603" value="1nF"/>
 <part name="C30" library="puggleboard" deviceset="C" device="_0603" value="1nF"/>
-<part name="R2" library="puggleboard" deviceset="RX4" device="_0612" value="1k,ACAS"/>
-<part name="R1" library="puggleboard" deviceset="RX4" device="_0612" value="2k,ACAS"/>
-<part name="R7" library="puggleboard" deviceset="RX4" device="_0612" value="2k,ACAS"/>
-<part name="R6" library="puggleboard" deviceset="RX4" device="_0612" value="2k,ACAS"/>
+<part name="R2" library="puggleboard" deviceset="RX4" device="_0612" value="1k"/>
+<part name="R1" library="puggleboard" deviceset="RX4" device="_0612" value="2k"/>
+<part name="R7" library="puggleboard" deviceset="RX4" device="_0612" value="2k"/>
+<part name="R6" library="puggleboard" deviceset="RX4" device="_0612" value="2k"/>
 <part name="INTAN" library="puggleboard" deviceset="RHD2000-CABLE-DAQ-SIDE" device=""/>
 <part name="FRAME8" library="puggleboard" deviceset="FRAME_A_L" device=""/>
 <part name="U14" library="puggleboard" deviceset="SN65MLVD201D" device="" value="SN65MLVD201"/>
@@ -9882,9 +9882,9 @@ CH3 - ADC_A</text>
 <approved hash="113,7,139.596,107.846,FRAME8,,,,,"/>
 <approved hash="113,1,-91.44,104.648,U$4,,,,,"/>
 <approved hash="113,1,35.56,104.648,U$5,,,,,"/>
-<approved hash="113,1,-93.98,36.068,U$6,,,,,"/>
+<approved hash="113,1,-91.44,36.068,U$6,,,,,"/>
 <approved hash="113,1,35.56,36.068,U$7,,,,,"/>
-<approved hash="113,1,-93.98,-17.272,U$8,,,,,"/>
+<approved hash="113,1,-91.44,-17.272,U$8,,,,,"/>
 <approved hash="113,1,33.02,-17.272,U$9,,,,,"/>
 <approved hash="113,2,25.4,46.355,U$10,,,,,"/>
 <approved hash="113,2,35.56,46.355,U$11,,,,,"/>
@@ -10038,9 +10038,9 @@ CH3 - ADC_A</text>
 <approved hash="115,1,16.51,-10.16,GND,,,,,"/>
 <approved hash="115,1,17.78,109.22,GND,,,,,"/>
 <approved hash="115,1,-91.44,107.95,GND,,,,,"/>
-<approved hash="115,1,-93.98,-13.97,GND,,,,,"/>
+<approved hash="115,1,-91.44,-13.97,GND,,,,,"/>
 <approved hash="115,1,17.78,43.18,GND,,,,,"/>
-<approved hash="115,1,-74.93,43.18,GND,,,,,"/>
+<approved hash="115,1,-73.66,43.18,GND,,,,,"/>
 </errors>
 </schematic>
 </drawing>
