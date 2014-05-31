@@ -2,8 +2,12 @@
 % Minimum aquisition time for ADS8331 driving configuration
 
 % Passive elements
-r1 = 240;                       % ohms
-cin = 1e-9;                     % farad
+% External first order LFP
+r1 = 100;                       % ohms
+cin = 10e-9;                    % farad
+
+% Internal sampling filter caused by input resistance and sampling capacitor
+% of ADC
 r2 = 90;                        % ohms
 c2 = 40e-12;                    % farad
 
@@ -20,7 +24,7 @@ t1 = 1/(w*(e-sqrt(e^2 - 1)));   % sec
 t2 = 1/(w*(e+sqrt(e^2 - 1)));   % sec
 
 % Rise-time solutions
-tmax = 4000;                    % ns
+tmax = 12000;                    % ns
 t = (0:1:tmax)/1e9;
 k1 = ((e + sqrt(e^2 - 1))/(2*sqrt(e^2 - 1))).*exp(-t/t1);
 k2 = ((e - sqrt(e^2 - 1))/(2*sqrt(e^2 - 1))).*exp(-t/t2);
@@ -29,7 +33,7 @@ A2 = 1 - k1;
 
 % Max allowable offset
 n = 16;                         % bits
-er = 1/(2^(n+1));
+er = 1/(2^(n+1));               % 1 LSB
 tacq = (1/(w*(e - sqrt(e^2 - 1))))*((n+1)*log(2)*((e + sqrt(e^2 - 1))/(2*sqrt(e^2 - 1))));
 
 % Figure
@@ -48,6 +52,8 @@ title(['R_1 = ' num2str(r1) ' \Omega and ' 'C_1 = ' num2str(cin) ' nF'])
 xlabel('Time (ns)')
 ylabel('Amplitude (normalized)')
 set(gca,'Tickdir','out')
+
+%% Save fig
 saveas(gcf,['acq-time_R1-' num2str(r1) '_C1-' num2str(cin) '-nF'])
 export_fig('-pdf','-transparent',['acq-time_R1-' num2str(r1) '_C1-' num2str(cin) '-nF'],gcf)
 
