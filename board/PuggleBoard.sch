@@ -7275,9 +7275,9 @@ SPI10 - INTAN_MISO</text>
 <instance part="FRAME2" gate="G$2" x="48.26" y="-88.9"/>
 <instance part="U$4" gate="G$1" x="-91.44" y="104.14"/>
 <instance part="U$5" gate="G$1" x="35.56" y="104.14"/>
-<instance part="U$6" gate="G$1" x="-93.98" y="35.56"/>
+<instance part="U$6" gate="G$1" x="-91.44" y="35.56"/>
 <instance part="U$7" gate="G$1" x="35.56" y="35.56"/>
-<instance part="U$8" gate="G$1" x="-93.98" y="-17.78"/>
+<instance part="U$8" gate="G$1" x="-91.44" y="-17.78"/>
 <instance part="U$9" gate="G$1" x="33.02" y="-17.78"/>
 </instances>
 <busses>
@@ -7311,8 +7311,8 @@ SPI10 - INTAN_MISO</text>
 </segment>
 <segment>
 <pinref part="BB1" gate="G$1" pin="GND@1"/>
-<wire x1="-55.88" y1="43.18" x2="-93.98" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-93.98" y1="43.18" x2="-93.98" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="43.18" x2="-91.44" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-91.44" y1="43.18" x2="-91.44" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="BB1" gate="G$1" pin="GND@2"/>
@@ -7345,13 +7345,13 @@ SPI10 - INTAN_MISO</text>
 <label x="93.98" y="-12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-93.98" y1="-15.24" x2="-93.98" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-91.44" y1="-15.24" x2="-91.44" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="BB1" gate="G$1" pin="GND@4"/>
-<wire x1="-93.98" y1="-12.7" x2="-55.88" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="-93.98" y1="-12.7" x2="-93.98" y2="-10.16" width="0.1524" layer="91"/>
-<junction x="-93.98" y="-12.7"/>
+<wire x1="-91.44" y1="-12.7" x2="-55.88" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-91.44" y1="-12.7" x2="-91.44" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="-91.44" y="-12.7"/>
 <pinref part="BB1" gate="G$1" pin="GND@3"/>
-<wire x1="-93.98" y1="-10.16" x2="-55.88" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-91.44" y1="-10.16" x2="-55.88" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="-91.44" y1="106.68" x2="-91.44" y2="109.22" width="0.1524" layer="91"/>
