@@ -4,7 +4,7 @@
 % Passive elements
 % External first order LFP
 r1 = 100;                       % ohms
-cin = 10e-9;                    % farad
+cin = 68e-9;                    % farad
 
 % Internal sampling filter caused by input resistance and sampling capacitor
 % of ADC
@@ -24,7 +24,7 @@ t1 = 1/(w*(e-sqrt(e^2 - 1)));   % sec
 t2 = 1/(w*(e+sqrt(e^2 - 1)));   % sec
 
 % Rise-time solutions
-tmax = 12000;                    % ns
+tmax = 100000;                    % ns
 t = (0:1:tmax)/1e9;
 k1 = ((e + sqrt(e^2 - 1))/(2*sqrt(e^2 - 1))).*exp(-t/t1);
 k2 = ((e - sqrt(e^2 - 1))/(2*sqrt(e^2 - 1))).*exp(-t/t2);
@@ -54,6 +54,5 @@ ylabel('Amplitude (normalized)')
 set(gca,'Tickdir','out')
 
 %% Save fig
-saveas(gcf,['acq-time_R1-' num2str(r1) '_C1-' num2str(cin) '-nF'])
 export_fig('-pdf','-transparent',['acq-time_R1-' num2str(r1) '_C1-' num2str(cin) '-nF'],gcf)
 

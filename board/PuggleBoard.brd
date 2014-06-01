@@ -5032,17 +5032,17 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="20.701" y="70.993" size="0.8128" layer="26" font="vector" ratio="20" rot="MR90"/>
 <attribute name="VALUE" x="21.463" y="69.215" size="0.8128" layer="28" font="vector" ratio="20" rot="MR0"/>
 </element>
-<element name="C5" library="puggleboard" package="0603" value="10nF" x="8.89" y="63.627" smashed="yes" rot="R90">
+<element name="C5" library="puggleboard" package="0603" value="68nF" x="8.89" y="63.627" smashed="yes" rot="R90">
 <attribute name="NAME" x="9.144" y="62.103" size="0.8128" layer="25" font="vector" ratio="20" rot="R270"/>
 </element>
-<element name="C6" library="puggleboard" package="0603" value="10nF" x="10.668" y="63.627" smashed="yes" rot="R90">
+<element name="C6" library="puggleboard" package="0603" value="68nF" x="10.668" y="63.627" smashed="yes" rot="R90">
 <attribute name="NAME" x="10.922" y="62.103" size="0.8128" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="7.874" y="62.23" size="0.8128" layer="27" font="vector" ratio="20" rot="R90"/>
 </element>
-<element name="C7" library="puggleboard" package="0603" value="10nF" x="12.446" y="63.627" smashed="yes" rot="R90">
+<element name="C7" library="puggleboard" package="0603" value="68nF" x="12.446" y="63.627" smashed="yes" rot="R90">
 <attribute name="NAME" x="12.7" y="62.103" size="0.8128" layer="25" font="vector" ratio="20" rot="R270"/>
 </element>
-<element name="C9" library="puggleboard" package="0603" value="10nF" x="14.224" y="63.627" smashed="yes" rot="R90">
+<element name="C9" library="puggleboard" package="0603" value="68nF" x="14.224" y="63.627" smashed="yes" rot="R90">
 <attribute name="NAME" x="14.478" y="62.103" size="0.8128" layer="25" font="vector" ratio="20" rot="R270"/>
 </element>
 <element name="C44" library="puggleboard" package="0603" value="0.1uF" x="7.493" y="52.832" smashed="yes" rot="R90">

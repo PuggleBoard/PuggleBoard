@@ -7044,10 +7044,10 @@ http://www.bccomponents.com/</description>
 <part name="C1" library="puggleboard" deviceset="C" device="_0603" value="4.7uF"/>
 <part name="C10" library="puggleboard" deviceset="C" device="_0603" value="0.1uF"/>
 <part name="C13" library="puggleboard" deviceset="C" device="_0603" value="0.1uF"/>
-<part name="C5" library="puggleboard" deviceset="C" device="_0603" value="10nF"/>
-<part name="C6" library="puggleboard" deviceset="C" device="_0603" value="10nF"/>
-<part name="C7" library="puggleboard" deviceset="C" device="_0603" value="10nF"/>
-<part name="C9" library="puggleboard" deviceset="C" device="_0603" value="10nF"/>
+<part name="C5" library="puggleboard" deviceset="C" device="_0603" value="68nF"/>
+<part name="C6" library="puggleboard" deviceset="C" device="_0603" value="68nF"/>
+<part name="C7" library="puggleboard" deviceset="C" device="_0603" value="68nF"/>
+<part name="C9" library="puggleboard" deviceset="C" device="_0603" value="68nF"/>
 <part name="C44" library="puggleboard" deviceset="C" device="_0603" value="0.1uF"/>
 <part name="C45" library="puggleboard" deviceset="C" device="_0603" value="0.1uF"/>
 <part name="C47" library="puggleboard" deviceset="C" device="_0603" value="0.1uF"/>
