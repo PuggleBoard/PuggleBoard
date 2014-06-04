@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -13530,6 +13530,69 @@ http://www.bccomponents.com/</description>
 <rectangle x1="0.508" y1="3.2004" x2="2.0066" y2="4.1148" layer="51"/>
 <rectangle x1="0.9652" y1="4.1148" x2="1.5748" y2="5.1816" layer="51"/>
 </package>
+<package name="8BGA">
+<smd name="B1" x="-0.2" y="-0.2" dx="0.24" dy="0.24" layer="1" roundness="100"/>
+<smd name="C1" x="0.2" y="-0.2" dx="0.24" dy="0.24" layer="1" roundness="100"/>
+<smd name="D1" x="0.6" y="-0.2" dx="0.24" dy="0.24" layer="1" roundness="100"/>
+<smd name="D2" x="0.6" y="0.2" dx="0.24" dy="0.24" layer="1" roundness="100"/>
+<smd name="C2" x="0.2" y="0.2" dx="0.24" dy="0.24" layer="1" roundness="100"/>
+<smd name="B2" x="-0.2" y="0.2" dx="0.24" dy="0.24" layer="1" roundness="100"/>
+<smd name="A2" x="-0.6" y="0.2" dx="0.24" dy="0.24" layer="1" roundness="100"/>
+<smd name="A1" x="-0.6" y="-0.2" dx="0.24" dy="0.24" layer="1" roundness="100"/>
+<wire x1="-1.027" y1="0.577" x2="-1.027" y2="-0.577" width="0.127" layer="21"/>
+<wire x1="1.027" y1="0.577" x2="1.027" y2="-0.577" width="0.127" layer="21"/>
+<wire x1="-1.027" y1="0.577" x2="1.027" y2="0.577" width="0.127" layer="21"/>
+<wire x1="1.027" y1="-0.577" x2="-1.027" y2="-0.577" width="0.127" layer="21"/>
+<text x="-1.778" y="0.762" size="0.8128" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.778" y="-1.651" size="0.8128" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<rectangle x1="-1.0922" y1="-0.8382" x2="-0.8382" y2="-0.5842" layer="21"/>
+</package>
+<package name="SOD123">
+<wire x1="-2.6" y1="0.9" x2="2.6" y2="0.9" width="0.127" layer="21"/>
+<wire x1="0.15875" y1="0" x2="-0.79375" y2="0.63505" width="0.127" layer="21"/>
+<wire x1="-0.79375" y1="0.63505" x2="-0.79375" y2="-0.63505" width="0.127" layer="21"/>
+<wire x1="-0.79375" y1="-0.63505" x2="0.15875" y2="0" width="0.127" layer="21"/>
+<wire x1="0.15875" y1="0" x2="0.15875" y2="0.63505" width="0.127" layer="21"/>
+<wire x1="0.15875" y1="0" x2="0.15875" y2="-0.63505" width="0.127" layer="21"/>
+<smd name="A" x="-1.8" y="0" dx="0.9144" dy="1.2192" layer="1"/>
+<smd name="C" x="1.8" y="0" dx="0.9144" dy="1.2192" layer="1"/>
+<text x="-3.175" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.175" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-2.6" y1="0.9" x2="-2.6" y2="-0.9" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="-0.9" x2="2.6" y2="-0.9" width="0.127" layer="21"/>
+<wire x1="2.6" y1="-0.9" x2="2.6" y2="0.9" width="0.127" layer="21"/>
+<rectangle x1="0.635" y1="-0.9525" x2="0.9525" y2="0.9525" layer="21"/>
+</package>
+<package name="SOD882">
+<smd name="A" x="0.35" y="0" dx="0.4" dy="0.7" layer="1" roundness="10" rot="R180"/>
+<smd name="C" x="-0.35" y="0" dx="0.4" dy="0.7" layer="1" roundness="10" rot="R180"/>
+<wire x1="-1.024" y1="0.612" x2="-0.924" y2="0.612" width="0.127" layer="21"/>
+<wire x1="-0.924" y1="0.612" x2="-0.824" y2="0.612" width="0.127" layer="21"/>
+<wire x1="-0.824" y1="0.612" x2="0.824" y2="0.612" width="0.127" layer="21"/>
+<wire x1="0.824" y1="0.612" x2="0.824" y2="-0.612" width="0.127" layer="21"/>
+<wire x1="-0.924" y1="-0.612" x2="-0.924" y2="0.612" width="0.127" layer="21"/>
+<wire x1="-1.024" y1="-0.612" x2="-1.024" y2="0.612" width="0.127" layer="21"/>
+<wire x1="0.824" y1="-0.612" x2="-0.824" y2="-0.612" width="0.127" layer="21"/>
+<wire x1="-0.824" y1="-0.612" x2="-0.924" y2="-0.612" width="0.127" layer="21"/>
+<wire x1="-0.924" y1="-0.612" x2="-1.024" y2="-0.612" width="0.127" layer="21"/>
+<wire x1="-0.824" y1="-0.612" x2="-0.824" y2="0.612" width="0.127" layer="21"/>
+<text x="-1.078" y="0.762" size="0.8128" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.078" y="-1.651" size="0.8128" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="VLS2012E">
+<smd name="1" x="-0.675" y="0" dx="0.65" dy="2" layer="1" roundness="10"/>
+<smd name="2" x="0.675" y="0" dx="0.65" dy="2" layer="1" roundness="10"/>
+<wire x1="-0.983775" y1="-1.3" x2="1.017159375" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="1.017159375" y1="-1.3" x2="1.3" y2="-1.017159375" width="0.127" layer="21"/>
+<wire x1="1.3" y1="-1.017159375" x2="1.3" y2="1.017159375" width="0.127" layer="21"/>
+<wire x1="1.3" y1="1.017159375" x2="1.017159375" y2="1.3" width="0.127" layer="21"/>
+<wire x1="1.017159375" y1="1.3" x2="-1.017159375" y2="1.3" width="0.127" layer="21"/>
+<wire x1="-1.017159375" y1="1.3" x2="-1.3" y2="1.017159375" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="1.017159375" x2="-1.3" y2="-0.983775" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="-0.983775" x2="-0.983775" y2="-1.3" width="0.127" layer="21"/>
+<text x="-1.078" y="1.562" size="0.8128" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.178" y="-2.251" size="0.8128" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="V_SIG">
@@ -14470,6 +14533,35 @@ http://www.bccomponents.com/</description>
 <pin name="4" x="0" y="7.62" visible="pad" length="short" direction="pas" rot="R270"/>
 <pin name="1" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
 <pin name="2" x="2.54" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+</symbol>
+<symbol name="LMR70503">
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<pin name="VIN" x="-15.24" y="10.16" length="middle" direction="pwr"/>
+<pin name="EN" x="-15.24" y="2.54" length="middle" direction="in"/>
+<pin name="GND" x="-15.24" y="-5.08" length="middle" direction="pas"/>
+<pin name="SW" x="15.24" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="VOUT" x="15.24" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="FB" x="15.24" y="0" length="middle" direction="in" rot="R180"/>
+<text x="-3.81" y="13.97" size="1.6764" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-10.16" size="1.6764" layer="96">&gt;VALUE</text>
+<pin name="VREF" x="15.24" y="-5.08" length="middle" direction="in" rot="R180"/>
+</symbol>
+<symbol name="S-DIODE">
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<pin name="A" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<text x="-1.27" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.27" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="0" y1="-1.27" x2="-0.47625" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="0.47625" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0.47625" y1="1.27" x2="0.47625" y2="0.9525" width="0.254" layer="94"/>
+<wire x1="-0.47625" y1="-1.27" x2="-0.47625" y2="-0.9525" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -15522,6 +15614,15 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 </technologies>
 </device>
 <device name="_1206" package="1206">
+<connects>
+<connect gate="L" pin="1" pad="1"/>
+<connect gate="L" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_VLS2012E" package="VLS2012E">
 <connects>
 <connect gate="L" pin="1" pad="1"/>
 <connect gate="L" pin="2" pad="2"/>
@@ -16813,6 +16914,53 @@ distributor Farnell 149-452</description>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LMR70503">
+<gates>
+<gate name="G$1" symbol="LMR70503" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="8BGA">
+<connects>
+<connect gate="G$1" pin="EN" pad="B1"/>
+<connect gate="G$1" pin="FB" pad="A2"/>
+<connect gate="G$1" pin="GND" pad="C1 C2"/>
+<connect gate="G$1" pin="SW" pad="D1"/>
+<connect gate="G$1" pin="VIN" pad="D2"/>
+<connect gate="G$1" pin="VOUT" pad="B2"/>
+<connect gate="G$1" pin="VREF" pad="A1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="S-DIODE" prefix="D" uservalue="yes">
+<description>&lt;b&gt;Schottky Diode&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="S-DIODE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOD-123" package="SOD123">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SOD882" package="SOD882">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
