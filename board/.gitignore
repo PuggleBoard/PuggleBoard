@@ -1,0 +1,5 @@
+# Some rules to ignore certain files
+
+# Ignore CAM processor temp files
+*.dri
+*.gpi
