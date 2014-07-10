@@ -4644,7 +4644,7 @@ http://www.bccomponents.com/</description>
 <class number="3" name="gnd" width="0.254" drill="0">
 </class>
 </classes>
-<designrules name="ohs-park-mod *">
+<designrules name="ohs-park-4-layer">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -4654,27 +4654,29 @@ Einstellungen hier und speichern die Design Rules unter
 einem neuen Namen ab.</description>
 <description language="en">&lt;b&gt;Laen's PCB Order Design Rules&lt;/b&gt;
 &lt;p&gt;
-Please make sure your boards conform to these design rules.</description>
+Modified: 2014.07.10
+&lt;p&gt;
+4-layer, OSH Park PCB</description>
 <param name="layerSetup" value="(1+2*15+16)"/>
 <param name="mtCopper" value="0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm"/>
 <param name="mtIsolate" value="1.5011mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
-<param name="mdWireWire" value="6mil"/>
-<param name="mdWirePad" value="6mil"/>
-<param name="mdWireVia" value="6mil"/>
-<param name="mdPadPad" value="6mil"/>
-<param name="mdPadVia" value="6mil"/>
-<param name="mdViaVia" value="6mil"/>
-<param name="mdSmdPad" value="6mil"/>
-<param name="mdSmdVia" value="6mil"/>
-<param name="mdSmdSmd" value="6mil"/>
+<param name="mdWireWire" value="5mil"/>
+<param name="mdWirePad" value="5mil"/>
+<param name="mdWireVia" value="5mil"/>
+<param name="mdPadPad" value="5mil"/>
+<param name="mdPadVia" value="5mil"/>
+<param name="mdViaVia" value="5mil"/>
+<param name="mdSmdPad" value="5mil"/>
+<param name="mdSmdVia" value="5mil"/>
+<param name="mdSmdSmd" value="5mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
 <param name="mdCopperDimension" value="15mil"/>
-<param name="mdDrill" value="6mil"/>
+<param name="mdDrill" value="5mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="6mil"/>
-<param name="msDrill" value="13mil"/>
-<param name="msMicroVia" value="13mil"/>
+<param name="msWidth" value="5mil"/>
+<param name="msDrill" value="10mil"/>
+<param name="msMicroVia" value="10mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -7724,6 +7726,18 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="41.148" y1="27.559" x2="40.64" y2="27.559" width="0.6096" layer="1"/>
 </signal>
 </signals>
+<errors>
+<approved hash="19,1,64fd89fa845adfe7"/>
+<approved hash="19,1,64d6658eb8e7c2c7"/>
+<approved hash="19,1,7db14c4d40997165"/>
+<approved hash="19,1,5e3f29105878f007"/>
+<approved hash="19,1,9de07314a0fb5c9d"/>
+<approved hash="19,1,c7fd15faf447a182"/>
+<approved hash="19,1,c7cb1b8ec8e75ea2"/>
+<approved hash="19,1,77b2444e48977b6b"/>
+<approved hash="19,1,1b397f13ac76e86c"/>
+<approved hash="19,1,d8ee6b1754fd0af6"/>
+</errors>
 </board>
 </drawing>
 <compatibility>
