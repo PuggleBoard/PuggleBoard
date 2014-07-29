@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5472,7 +5472,7 @@ Modified: 2014.07.10
 <signals>
 <signal name="AIN0">
 </signal>
-<signal name="DAC_B">
+<signal name="DAC_C">
 <contactref element="A_I/O" pad="11"/>
 <contactref element="U3" pad="7"/>
 <contactref element="R7" pad="P3"/>
@@ -5489,7 +5489,7 @@ Modified: 2014.07.10
 <wire x1="20.187" y1="71.837" x2="18.669" y2="71.837" width="0.254" layer="1"/>
 <wire x1="18.669" y1="71.837" x2="18.669" y2="71.882" width="0.254" layer="1"/>
 </signal>
-<signal name="DAC_C">
+<signal name="DAC_A">
 <contactref element="A_I/O" pad="12"/>
 <contactref element="U3" pad="8"/>
 <contactref element="R7" pad="P5"/>
@@ -6919,7 +6919,7 @@ Modified: 2014.07.10
 <wire x1="10.668" y1="34.29" x2="10.3378" y2="34.6202" width="0.4064" layer="1"/>
 <wire x1="10.3378" y1="34.6202" x2="10.3378" y2="35.6616" width="0.4064" layer="1"/>
 </signal>
-<signal name="DAC_A">
+<signal name="DAC_D">
 <contactref element="A_I/O" pad="10"/>
 <contactref element="U3" pad="1"/>
 <contactref element="R7" pad="P1"/>
@@ -6935,7 +6935,7 @@ Modified: 2014.07.10
 <wire x1="17.018" y1="81.153" x2="17.018" y2="83.058" width="0.254" layer="1"/>
 <wire x1="17.018" y1="83.058" x2="18.288" y2="84.328" width="0.254" layer="1"/>
 </signal>
-<signal name="DAC_D">
+<signal name="DAC_B">
 <contactref element="A_I/O" pad="13"/>
 <contactref element="U3" pad="14"/>
 <contactref element="R7" pad="P7"/>
@@ -7726,18 +7726,6 @@ Modified: 2014.07.10
 <wire x1="41.148" y1="27.559" x2="40.64" y2="27.559" width="0.6096" layer="1"/>
 </signal>
 </signals>
-<errors>
-<approved hash="19,1,64fd89fa845adfe7"/>
-<approved hash="19,1,64d6658eb8e7c2c7"/>
-<approved hash="19,1,7db14c4d40997165"/>
-<approved hash="19,1,5e3f29105878f007"/>
-<approved hash="19,1,9de07314a0fb5c9d"/>
-<approved hash="19,1,c7fd15faf447a182"/>
-<approved hash="19,1,c7cb1b8ec8e75ea2"/>
-<approved hash="19,1,77b2444e48977b6b"/>
-<approved hash="19,1,1b397f13ac76e86c"/>
-<approved hash="19,1,d8ee6b1754fd0af6"/>
-</errors>
 </board>
 </drawing>
 <compatibility>
